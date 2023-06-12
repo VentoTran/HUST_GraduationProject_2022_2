@@ -1,0 +1,92 @@
+LoRa config:
+- dữ liệu mã hóa  thành các "Chip" sin với tần số thay đổi tuyến tính theo thời gian 
+- bao gồm Up-Chip và Down-Chip 
+Tham số đặc trưng cho điều chế:
+-Tỷ lệ mã hóa(Coding Rate)
+-Hệ số trải phổ(Spreading Factor)
+-Băng thông(Bandwidth)
+1. Tỷ lệ mã hóa
+	- Kỹ thuật FEC(Forward error Correction), tăng khả năng xử lý dữ liệu bên thiết bị nhận.
+	- độ lớn gói tin phụ thuộc vào hệ số CR,(norm 4) nếu CR=0 thì k có FEC.
+	- sử dụng tỉ lệ mã code là 4/5, 4/6, 4/7, 4,8.
+	-Nếu CR = 4/8 thì 4 bit data được mã hóa bởi 8 bit, --> chipset phải gửi gấp đôi dữ liệu cần truyền
+	- --> Dùng CR thấp tăng throughput nhưng độ nhạy sẽ giảm do khả năng tự phục hồi giảm 
+2. Hệ số trải phổ
+	- SF xác định số lượng chip khi mã hóa tín hiệu đã được điều chế tần số, biểu diễn lượng bit tối đa mà 1 symbol
+	có thể mang theo(7-12)
+	- mỗi symbol được mã hóa thành 2^SF"chip"
+	- việc tăng SF thì sẽ làm tăng lượng chip mã hóa một symb, làm cho tốc độ truyền nhận bị giảm thiểu
+	- thường sử dụng hệ số trải phổ trực giao từ 7 tới 12( riêng SX1277 là từ 6 tới 9)
+	cho phép thiết bị sử dụng nhiều hệ số khác nhau trong 1 hệ thống mà k gây nhiễu.
+3. Băng thông
+	- Một symbol gồm 2^SF chip được truyền đi trong toàn dải băng thông. loại tín hiệu được sử dụng
+là Up-chirp.
+	- tần số tăng tới tối đa của dải băng thông thì sẽ quay ngược lại và tiếp tục tăng, cứ như vậy
+trong suốt thời gian truyền 1 symbol.
+	- tốc độ chirp phụ thuộc vào độ rộng băng thông, dải các rộng thì Time càng << . 3 mức phổ biến
+là 125kHz, 250kHz và 500kHz
+	- Ts = 2^SF/BW
+	- tỉ lệ Symbol được truyền trong1 giây(Rs)
+		Rs=1/Ts
+	- tốc độ bit 
+		Rb=SF*(BW/2^SF)*CR
+
+SX1278 là chế độ bán song công, giảm thiểu năng lượng tiêu thụ rất nhiều nếu ta chọn 
+full duplex
+SF(hệ số trải phổ) được mô tả bằng cách biểu diễn từng bit của thông tin truyền tải 
+dưới dạng "chips" thông tin. Tốc độ mà SF được gửi đi liên quan tới symbol rate(Rs)
+, tỉ lệ giữa nominal symbol/chip rate chính là hệ số trải phổ và nó được tính bằng 
+só lượng symbol gửi đi mỗi bit tín hiệu.
+Coding rate(CR)- để cải thiện khả năng xác định lỗi và sửa chữa. Những lỗi mà xảy
+ra tại đầu truyền nhận, 
+Forward error correction(FEC) cực kì hiệu quả trong việc cải thiện sự tin cậy của
+việc giao tiếp. do đó CR có thể thay đổi đáp ứng trong điều kiện channel-(kênh RF)
+CR có thể 
+- Signal Bandwidth (SB) băng thông rộng cho phép sự hiệu quả cao hơn trong tốc độ
+truyền dữ liệu từ đó giảm thiểu thời gian truyền đạt nhưng cũng giảm đi độ nhạy. 
+Trái ngược với FSK modem cái mà được mô tả về mặt đơn biên băng thông, băng thông của LoRa modem
+sẽ là song biên băng thông( hoặc là tổng của các channel). 
+tốc độ truyền đạt Symbol được tính bằng công thức:
+	Rs=BW/(2^SF)
+với BW là băng thông được lập trình và SF là hệ số trải phổ. tín hiệu truyền đạt là một hằng số 
+tín hiệu dạng vỏ bọc. Tương đương với việc 1 chip được gửi mỗi giây trên mỗi Hz của băng thông
+-Ta có 1 gói LoRa sẽ bao gồm 3 phần chính
+	preamble
+	optional header
+	data payload
+-Preamble: được dùng để đồng bộ hóa tín hiệu nhận với lượng data tới. Thông thường thì 1 packet 
+sẽ được cấu hình với 12 symbol long sequence. Nó là 1 biến có thể lập trình được nên độ dài của
+preamble có thể rộng hơn, ex: trong việc muốn giảm thiểu chu kì nhận. Tuy nhiên độ dài ngắn nhất
+sẽ tương thích với mọi loại truyền thông. Độ dài của preamble transmit có thể thay đổi từ 6 tới 65535 
+bằng thanh ghi PreambleLength, tổng có thể lên tới 6+4 đến 65535+4 symbols.
+-Header: Dựa vào việc chọn chế độ thì sẽ có 2 kiểu header khả dụng. Header type is selected bởi
+bit ImplicitHeaderModeOn trong thanh ghi RegModemConfig1.
+	Explicit Header Mode: Đây là mode mặc định. ở đây thì header sẽ cung cấp thông tin payload
+		- Độ dài payload tính theo đơn vị bytes
+		- CR của FEC
+		- Sự tồn tại của 16 bits CRC payload
+	Header thì truyền tải với max error correction code(4/8). Nó cũng có CRC riêng cho phép bộ 
+nhận bỏ qua những header không hợp lệ
+	Implicit Header Mode: ở những trường hợp cụ thể, khi mà payload, CR và CRC cố định hoặc là 
+đã biết trước thì ta có thể giảm thiểu thời gian truyền đạt bằng cách gọi chế độ implicit.
+Ở chế độ này, header sẽ được bỏ qua khỏi packet. Với độ dài của payload, CR và CRC phải configured 
+ở cả 2 đầu một cách thủ công.
+Note : SF = 6, Implicit header mode is only mode possible
+
+Explicit header mode: presence of CRC tại cuối payload được chọn duy nhất qua phía truyền bởi bit
+RxPayloadCrcOn trong thanh ghi RegModemConfig1
+Ở đầu nhận, bit RxPayloadCrcOn trong thanh ghi RegModemConfig1 không được sử dụng và một khi payload 
+được nhận, ta phải check bit CrcOnPayload ở thanh ghi RegHopChannel. nếu bit CrcOnPayload = 1
+kiểm tra tiếp Irq Flag PayloadCrcError để chắc chắn CRC hợp lệ.
+nếu CrcOnPayload = 0 có nghĩa là không có CRC ở Payload và do đó IRQ Flag PayloadCrcError sẽ không
+được kích hoạt ngay cả khi payload xảy ra lỗi.
+
+Implicit Header Mode: Ở chế độ này, phải set bit RxPayloadCrcOn ở thanh ghi RegModemConfig1 ở cả 
+RX và TX
+
+
+
+
+
+
+	

@@ -1,0 +1,4 @@
+freertos.c:72:6:HAL_GPIO_EXTI_Callback	2
+freertos.c:124:6:peripheral_task	1
+freertos.c:143:6:MX_FREERTOS_Init	1
+freertos.c:185:6:Task0Func	1
