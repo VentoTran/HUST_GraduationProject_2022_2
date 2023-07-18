@@ -1,0 +1,1030 @@
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"common.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.rodata.LOG.str1.4,"aMS",%progbits,1
+  16              		.align	2
+  17              	.LC0:
+  18 0000 25733A20 		.ascii	"%s: %s\012\000"
+  18      25730A00 
+  19              		.section	.text.LOG,"ax",%progbits
+  20              		.align	1
+  21              		.global	LOG
+  22              		.arch armv7-m
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  26              		.fpu softvfp
+  28              	LOG:
+  29              	.LVL0:
+  30              	.LFB68:
+  31              		.file 1 "Core/Src/common.c"
+   1:Core/Src/common.c **** /*
+   2:Core/Src/common.c ****  * common.c
+   3:Core/Src/common.c ****  *
+   4:Core/Src/common.c ****  *  Created on: Feb 8, 2023
+   5:Core/Src/common.c ****  *      Author: dung
+   6:Core/Src/common.c ****  */
+   7:Core/Src/common.c **** 
+   8:Core/Src/common.c **** #include <stdio.h>
+   9:Core/Src/common.c **** #include <stdint.h>
+  10:Core/Src/common.c **** #include <string.h>
+  11:Core/Src/common.c **** #include <stdlib.h>
+  12:Core/Src/common.c **** #include <errno.h>
+  13:Core/Src/common.c **** #include <sys/unistd.h>
+  14:Core/Src/common.c **** #include <stdarg.h>
+  15:Core/Src/common.c **** #include <string.h>
+  16:Core/Src/common.c **** #include <math.h>
+  17:Core/Src/common.c **** #include <stdbool.h>
+  18:Core/Src/common.c **** #include <time.h>
+  19:Core/Src/common.c **** 
+  20:Core/Src/common.c **** #include "main.h"
+  21:Core/Src/common.c **** 
+  22:Core/Src/common.c **** #include "common.h"
+  23:Core/Src/common.c **** // #include "usbd_cdc.h"
+  24:Core/Src/common.c **** 
+  25:Core/Src/common.c **** #ifdef USE_USB
+  26:Core/Src/common.c **** #include "usbd_cdc_if.h"
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 2
+
+
+  27:Core/Src/common.c **** extern USBD_HandleTypeDef hUsbDeviceFS;
+  28:Core/Src/common.c **** #endif
+  29:Core/Src/common.c **** 
+  30:Core/Src/common.c **** 
+  31:Core/Src/common.c **** 
+  32:Core/Src/common.c **** void LOG(const char *TAG, char *data)
+  33:Core/Src/common.c **** {
+  32              		.loc 1 33 1 view -0
+  33              		.cfi_startproc
+  34              		@ args = 0, pretend = 0, frame = 104
+  35              		@ frame_needed = 0, uses_anonymous_args = 0
+  36              		.loc 1 33 1 is_stmt 0 view .LVU1
+  37 0000 30B5     		push	{r4, r5, lr}
+  38              	.LCFI0:
+  39              		.cfi_def_cfa_offset 12
+  40              		.cfi_offset 4, -12
+  41              		.cfi_offset 5, -8
+  42              		.cfi_offset 14, -4
+  43 0002 9BB0     		sub	sp, sp, #108
+  44              	.LCFI1:
+  45              		.cfi_def_cfa_offset 120
+  46 0004 0446     		mov	r4, r0
+  47 0006 0D46     		mov	r5, r1
+  34:Core/Src/common.c **** 	char data_log[100] = {0};
+  48              		.loc 1 34 2 is_stmt 1 view .LVU2
+  49              		.loc 1 34 7 is_stmt 0 view .LVU3
+  50 0008 0021     		movs	r1, #0
+  51              	.LVL1:
+  52              		.loc 1 34 7 view .LVU4
+  53 000a 0191     		str	r1, [sp, #4]
+  54 000c 6022     		movs	r2, #96
+  55 000e 02A8     		add	r0, sp, #8
+  56              	.LVL2:
+  57              		.loc 1 34 7 view .LVU5
+  58 0010 FFF7FEFF 		bl	memset
+  59              	.LVL3:
+  35:Core/Src/common.c **** 	sprintf(data_log, "%s: %s\n", TAG, data);
+  60              		.loc 1 35 2 is_stmt 1 view .LVU6
+  61 0014 2B46     		mov	r3, r5
+  62 0016 2246     		mov	r2, r4
+  63 0018 0249     		ldr	r1, .L3
+  64 001a 01A8     		add	r0, sp, #4
+  65 001c FFF7FEFF 		bl	sprintf
+  66              	.LVL4:
+  36:Core/Src/common.c **** 	// HAL_UART_Transmit(&huart1, (uint8_t*)data_log, strlen(data_log), 1000);
+  37:Core/Src/common.c **** #ifdef USE_USB
+  38:Core/Src/common.c ****     CDC_Transmit_FS(data_log, strlen(data_log));
+  39:Core/Src/common.c **** #endif /* USE_USB */
+  40:Core/Src/common.c **** }
+  67              		.loc 1 40 1 is_stmt 0 view .LVU7
+  68 0020 1BB0     		add	sp, sp, #108
+  69              	.LCFI2:
+  70              		.cfi_def_cfa_offset 12
+  71              		@ sp needed
+  72 0022 30BD     		pop	{r4, r5, pc}
+  73              	.LVL5:
+  74              	.L4:
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 3
+
+
+  75              		.loc 1 40 1 view .LVU8
+  76              		.align	2
+  77              	.L3:
+  78 0024 00000000 		.word	.LC0
+  79              		.cfi_endproc
+  80              	.LFE68:
+  82              		.section	.text.logPC,"ax",%progbits
+  83              		.align	1
+  84              		.global	logPC
+  85              		.syntax unified
+  86              		.thumb
+  87              		.thumb_func
+  88              		.fpu softvfp
+  90              	logPC:
+  91              	.LVL6:
+  92              	.LFB69:
+  41:Core/Src/common.c **** 
+  42:Core/Src/common.c **** #if DEBUG == 1
+  43:Core/Src/common.c **** 
+  44:Core/Src/common.c **** static char string[300];
+  45:Core/Src/common.c **** 
+  46:Core/Src/common.c **** /**
+  47:Core/Src/common.c ****  * @brief 
+  48:Core/Src/common.c ****  * 
+  49:Core/Src/common.c ****  * @param fmt 
+  50:Core/Src/common.c ****  * @param argp 
+  51:Core/Src/common.c ****  */
+  52:Core/Src/common.c **** void vprint(const char *fmt, va_list argp)
+  53:Core/Src/common.c **** {
+  54:Core/Src/common.c ****     memset(string, '\0', sizeof(string));
+  55:Core/Src/common.c ****     if(0 < vsprintf(string, fmt, argp)) // build string
+  56:Core/Src/common.c ****     {
+  57:Core/Src/common.c ****         // HAL_UART_Transmit(UART_DEBUG, (uint8_t*)string, strlen(string), 100); // send message vi
+  58:Core/Src/common.c **** #ifdef USE_USB
+  59:Core/Src/common.c ****         CDC_Transmit_FS(string, strlen(string));
+  60:Core/Src/common.c **** #endif /* USE_USB */
+  61:Core/Src/common.c ****     }
+  62:Core/Src/common.c **** }
+  63:Core/Src/common.c **** 
+  64:Core/Src/common.c **** /**
+  65:Core/Src/common.c ****  * @brief custom printf() function
+  66:Core/Src/common.c ****  * 
+  67:Core/Src/common.c ****  * @param fmt 
+  68:Core/Src/common.c ****  * @param ... 
+  69:Core/Src/common.c ****  */
+  70:Core/Src/common.c **** void logPC(const char *fmt, ...)
+  71:Core/Src/common.c **** {
+  72:Core/Src/common.c ****     va_list argp;
+  73:Core/Src/common.c ****     va_start(argp, fmt);
+  74:Core/Src/common.c ****     vprint(fmt, argp);
+  75:Core/Src/common.c ****     va_end(argp);
+  76:Core/Src/common.c **** }
+  77:Core/Src/common.c **** 
+  78:Core/Src/common.c **** #else
+  79:Core/Src/common.c **** void logPC(const char *fmt, ...)
+  80:Core/Src/common.c **** {
+  93              		.loc 1 80 1 is_stmt 1 view -0
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 4
+
+
+  94              		.cfi_startproc
+  95              		@ args = 4, pretend = 16, frame = 0
+  96              		@ frame_needed = 0, uses_anonymous_args = 1
+  97              		@ link register save eliminated.
+  98              		.loc 1 80 1 is_stmt 0 view .LVU10
+  99 0000 0FB4     		push	{r0, r1, r2, r3}
+ 100              	.LCFI3:
+ 101              		.cfi_def_cfa_offset 16
+ 102              		.cfi_offset 0, -16
+ 103              		.cfi_offset 1, -12
+ 104              		.cfi_offset 2, -8
+ 105              		.cfi_offset 3, -4
+  81:Core/Src/common.c ****     UNUSED(fmt);
+ 106              		.loc 1 81 5 is_stmt 1 view .LVU11
+  82:Core/Src/common.c **** }
+ 107              		.loc 1 82 1 is_stmt 0 view .LVU12
+ 108 0002 04B0     		add	sp, sp, #16
+ 109              	.LCFI4:
+ 110              		.cfi_restore 3
+ 111              		.cfi_restore 2
+ 112              		.cfi_restore 1
+ 113              		.cfi_restore 0
+ 114              		.cfi_def_cfa_offset 0
+ 115 0004 7047     		bx	lr
+ 116              		.cfi_endproc
+ 117              	.LFE69:
+ 119              		.section	.text.reverse,"ax",%progbits
+ 120              		.align	1
+ 121              		.global	reverse
+ 122              		.syntax unified
+ 123              		.thumb
+ 124              		.thumb_func
+ 125              		.fpu softvfp
+ 127              	reverse:
+ 128              	.LVL7:
+ 129              	.LFB70:
+  83:Core/Src/common.c **** #endif
+  84:Core/Src/common.c **** 
+  85:Core/Src/common.c **** 
+  86:Core/Src/common.c **** 
+  87:Core/Src/common.c **** 
+  88:Core/Src/common.c **** 
+  89:Core/Src/common.c **** 
+  90:Core/Src/common.c **** void reverse(char* str, int len)
+  91:Core/Src/common.c **** {
+ 130              		.loc 1 91 1 is_stmt 1 view -0
+ 131              		.cfi_startproc
+ 132              		@ args = 0, pretend = 0, frame = 0
+ 133              		@ frame_needed = 0, uses_anonymous_args = 0
+ 134              		@ link register save eliminated.
+  92:Core/Src/common.c ****     int i = 0, j = len - 1, temp;
+ 135              		.loc 1 92 5 view .LVU14
+ 136              		.loc 1 92 16 is_stmt 0 view .LVU15
+ 137 0000 0139     		subs	r1, r1, #1
+ 138              	.LVL8:
+  93:Core/Src/common.c ****     while (i < j)
+ 139              		.loc 1 93 5 is_stmt 1 view .LVU16
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 5
+
+
+  92:Core/Src/common.c ****     int i = 0, j = len - 1, temp;
+ 140              		.loc 1 92 9 is_stmt 0 view .LVU17
+ 141 0002 0023     		movs	r3, #0
+ 142              		.loc 1 93 11 view .LVU18
+ 143 0004 07E0     		b	.L8
+ 144              	.LVL9:
+ 145              	.L9:
+  94:Core/Src/common.c ****     {
+  95:Core/Src/common.c ****         temp = str[i];
+ 146              		.loc 1 95 9 is_stmt 1 view .LVU19
+ 147              		.loc 1 95 19 is_stmt 0 view .LVU20
+ 148 0006 C25C     		ldrb	r2, [r0, r3]	@ zero_extendqisi2
+ 149              	.LVL10:
+  96:Core/Src/common.c ****         str[i] = str[j];
+ 150              		.loc 1 96 9 is_stmt 1 view .LVU21
+ 151              		.loc 1 96 21 is_stmt 0 view .LVU22
+ 152 0008 10F801C0 		ldrb	ip, [r0, r1]	@ zero_extendqisi2
+ 153              		.loc 1 96 16 view .LVU23
+ 154 000c 00F803C0 		strb	ip, [r0, r3]
+  97:Core/Src/common.c ****         str[j] = temp;
+ 155              		.loc 1 97 9 is_stmt 1 view .LVU24
+ 156              		.loc 1 97 16 is_stmt 0 view .LVU25
+ 157 0010 4254     		strb	r2, [r0, r1]
+  98:Core/Src/common.c ****         i++;
+ 158              		.loc 1 98 9 is_stmt 1 view .LVU26
+ 159              		.loc 1 98 10 is_stmt 0 view .LVU27
+ 160 0012 0133     		adds	r3, r3, #1
+ 161              	.LVL11:
+  99:Core/Src/common.c ****         j--;
+ 162              		.loc 1 99 9 is_stmt 1 view .LVU28
+ 163              		.loc 1 99 10 is_stmt 0 view .LVU29
+ 164 0014 0139     		subs	r1, r1, #1
+ 165              	.LVL12:
+ 166              	.L8:
+  93:Core/Src/common.c ****     {
+ 167              		.loc 1 93 11 is_stmt 1 view .LVU30
+ 168 0016 8B42     		cmp	r3, r1
+ 169 0018 F5DB     		blt	.L9
+ 100:Core/Src/common.c ****     }
+ 101:Core/Src/common.c **** }
+ 170              		.loc 1 101 1 is_stmt 0 view .LVU31
+ 171 001a 7047     		bx	lr
+ 172              		.cfi_endproc
+ 173              	.LFE70:
+ 175              		.section	.text.intToStr,"ax",%progbits
+ 176              		.align	1
+ 177              		.global	intToStr
+ 178              		.syntax unified
+ 179              		.thumb
+ 180              		.thumb_func
+ 181              		.fpu softvfp
+ 183              	intToStr:
+ 184              	.LVL13:
+ 185              	.LFB71:
+ 102:Core/Src/common.c **** 
+ 103:Core/Src/common.c **** int intToStr(int x, char str[], int d)
+ 104:Core/Src/common.c **** {
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 6
+
+
+ 186              		.loc 1 104 1 is_stmt 1 view -0
+ 187              		.cfi_startproc
+ 188              		@ args = 0, pretend = 0, frame = 0
+ 189              		@ frame_needed = 0, uses_anonymous_args = 0
+ 190              		.loc 1 104 1 is_stmt 0 view .LVU33
+ 191 0000 70B5     		push	{r4, r5, r6, lr}
+ 192              	.LCFI5:
+ 193              		.cfi_def_cfa_offset 16
+ 194              		.cfi_offset 4, -16
+ 195              		.cfi_offset 5, -12
+ 196              		.cfi_offset 6, -8
+ 197              		.cfi_offset 14, -4
+ 198 0002 0E46     		mov	r6, r1
+ 105:Core/Src/common.c ****     int i = 0;
+ 199              		.loc 1 105 5 is_stmt 1 view .LVU34
+ 200              	.LVL14:
+ 106:Core/Src/common.c ****     if (x == 0)
+ 201              		.loc 1 106 5 view .LVU35
+ 202              		.loc 1 106 8 is_stmt 0 view .LVU36
+ 203 0004 18B9     		cbnz	r0, .L16
+ 107:Core/Src/common.c ****     {
+ 108:Core/Src/common.c ****         str[i++] = '0';
+ 204              		.loc 1 108 9 is_stmt 1 view .LVU37
+ 205              	.LVL15:
+ 206              		.loc 1 108 18 is_stmt 0 view .LVU38
+ 207 0006 3023     		movs	r3, #48
+ 208 0008 0B70     		strb	r3, [r1]
+ 209              		.loc 1 108 14 view .LVU39
+ 210 000a 0124     		movs	r4, #1
+ 211 000c 15E0     		b	.L12
+ 212              	.LVL16:
+ 213              	.L16:
+ 214              		.loc 1 108 14 view .LVU40
+ 215 000e 0546     		mov	r5, r0
+ 105:Core/Src/common.c ****     if (x == 0)
+ 216              		.loc 1 105 9 view .LVU41
+ 217 0010 0024     		movs	r4, #0
+ 218              	.LVL17:
+ 219              	.L11:
+ 109:Core/Src/common.c ****     }
+ 110:Core/Src/common.c ****     else
+ 111:Core/Src/common.c ****     {
+ 112:Core/Src/common.c ****         while (x)
+ 220              		.loc 1 112 15 is_stmt 1 view .LVU42
+ 221 0012 95B1     		cbz	r5, .L12
+ 113:Core/Src/common.c ****         {
+ 114:Core/Src/common.c ****             str[i++] = (x % 10) + '0';
+ 222              		.loc 1 114 13 view .LVU43
+ 223              		.loc 1 114 27 is_stmt 0 view .LVU44
+ 224 0014 0E49     		ldr	r1, .L18
+ 225 0016 81FB0531 		smull	r3, r1, r1, r5
+ 226 001a EB17     		asrs	r3, r5, #31
+ 227 001c C3EBA103 		rsb	r3, r3, r1, asr #2
+ 228 0020 1946     		mov	r1, r3
+ 229 0022 03EB8303 		add	r3, r3, r3, lsl #2
+ 230 0026 A5EB4303 		sub	r3, r5, r3, lsl #1
+ 231              	.LVL18:
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 7
+
+
+ 232              		.loc 1 114 33 view .LVU45
+ 233 002a 3033     		adds	r3, r3, #48
+ 234              		.loc 1 114 22 view .LVU46
+ 235 002c 3355     		strb	r3, [r6, r4]
+ 115:Core/Src/common.c ****             x = x / 10;
+ 236              		.loc 1 115 13 is_stmt 1 view .LVU47
+ 237              		.loc 1 115 15 is_stmt 0 view .LVU48
+ 238 002e 0D46     		mov	r5, r1
+ 239              	.LVL19:
+ 114:Core/Src/common.c ****             x = x / 10;
+ 240              		.loc 1 114 18 view .LVU49
+ 241 0030 0134     		adds	r4, r4, #1
+ 242              	.LVL20:
+ 114:Core/Src/common.c ****             x = x / 10;
+ 243              		.loc 1 114 18 view .LVU50
+ 244 0032 EEE7     		b	.L11
+ 245              	.LVL21:
+ 246              	.L15:
+ 116:Core/Src/common.c ****         }
+ 117:Core/Src/common.c ****     }
+ 118:Core/Src/common.c ****     
+ 119:Core/Src/common.c ****     // If number of digits required is more, then
+ 120:Core/Src/common.c ****     // add space at the beginning
+ 121:Core/Src/common.c ****     while (i < d)
+ 122:Core/Src/common.c ****         str[i++] = ' ';
+ 247              		.loc 1 122 9 is_stmt 1 view .LVU51
+ 248              		.loc 1 122 18 is_stmt 0 view .LVU52
+ 249 0034 2023     		movs	r3, #32
+ 250 0036 3355     		strb	r3, [r6, r4]
+ 251              		.loc 1 122 14 view .LVU53
+ 252 0038 0134     		adds	r4, r4, #1
+ 253              	.LVL22:
+ 254              	.L12:
+ 121:Core/Src/common.c ****         str[i++] = ' ';
+ 255              		.loc 1 121 11 is_stmt 1 view .LVU54
+ 256 003a 9442     		cmp	r4, r2
+ 257 003c FADB     		blt	.L15
+ 123:Core/Src/common.c **** 
+ 124:Core/Src/common.c ****     reverse(str, i);
+ 258              		.loc 1 124 5 view .LVU55
+ 259 003e 2146     		mov	r1, r4
+ 260 0040 3046     		mov	r0, r6
+ 261 0042 FFF7FEFF 		bl	reverse
+ 262              	.LVL23:
+ 125:Core/Src/common.c ****     str[i] = '\0';
+ 263              		.loc 1 125 5 view .LVU56
+ 264              		.loc 1 125 12 is_stmt 0 view .LVU57
+ 265 0046 0023     		movs	r3, #0
+ 266 0048 3355     		strb	r3, [r6, r4]
+ 126:Core/Src/common.c ****     return i;
+ 267              		.loc 1 126 5 is_stmt 1 view .LVU58
+ 127:Core/Src/common.c **** }
+ 268              		.loc 1 127 1 is_stmt 0 view .LVU59
+ 269 004a 2046     		mov	r0, r4
+ 270 004c 70BD     		pop	{r4, r5, r6, pc}
+ 271              	.LVL24:
+ 272              	.L19:
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 8
+
+
+ 273              		.loc 1 127 1 view .LVU60
+ 274 004e 00BF     		.align	2
+ 275              	.L18:
+ 276 0050 67666666 		.word	1717986919
+ 277              		.cfi_endproc
+ 278              	.LFE71:
+ 280              		.global	__aeabi_f2iz
+ 281              		.global	__aeabi_i2f
+ 282              		.global	__aeabi_fsub
+ 283              		.global	__aeabi_i2d
+ 284              		.global	__aeabi_f2d
+ 285              		.global	__aeabi_dmul
+ 286              		.global	__aeabi_d2f
+ 287              		.section	.text.ftoa,"ax",%progbits
+ 288              		.align	1
+ 289              		.global	ftoa
+ 290              		.syntax unified
+ 291              		.thumb
+ 292              		.thumb_func
+ 293              		.fpu softvfp
+ 295              	ftoa:
+ 296              	.LVL25:
+ 297              	.LFB72:
+ 128:Core/Src/common.c **** 
+ 129:Core/Src/common.c **** void ftoa(float n, char* res, int afterpoint)
+ 130:Core/Src/common.c **** {
+ 298              		.loc 1 130 1 is_stmt 1 view -0
+ 299              		.cfi_startproc
+ 300              		@ args = 0, pretend = 0, frame = 0
+ 301              		@ frame_needed = 0, uses_anonymous_args = 0
+ 302              		.loc 1 130 1 is_stmt 0 view .LVU62
+ 303 0000 2DE9F843 		push	{r3, r4, r5, r6, r7, r8, r9, lr}
+ 304              	.LCFI6:
+ 305              		.cfi_def_cfa_offset 32
+ 306              		.cfi_offset 3, -32
+ 307              		.cfi_offset 4, -28
+ 308              		.cfi_offset 5, -24
+ 309              		.cfi_offset 6, -20
+ 310              		.cfi_offset 7, -16
+ 311              		.cfi_offset 8, -12
+ 312              		.cfi_offset 9, -8
+ 313              		.cfi_offset 14, -4
+ 314 0004 0646     		mov	r6, r0
+ 315 0006 0C46     		mov	r4, r1
+ 316 0008 1746     		mov	r7, r2
+ 131:Core/Src/common.c ****     // Extract integer part
+ 132:Core/Src/common.c ****     int ipart = (int)n;
+ 317              		.loc 1 132 5 is_stmt 1 view .LVU63
+ 318              		.loc 1 132 9 is_stmt 0 view .LVU64
+ 319 000a FFF7FEFF 		bl	__aeabi_f2iz
+ 320              	.LVL26:
+ 321              		.loc 1 132 9 view .LVU65
+ 322 000e 0546     		mov	r5, r0
+ 323              	.LVL27:
+ 133:Core/Src/common.c ****     // Extract floating part
+ 134:Core/Src/common.c ****     float fpart = n - (float)ipart;
+ 324              		.loc 1 134 5 is_stmt 1 view .LVU66
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 9
+
+
+ 325              		.loc 1 134 23 is_stmt 0 view .LVU67
+ 326 0010 FFF7FEFF 		bl	__aeabi_i2f
+ 327              	.LVL28:
+ 328              		.loc 1 134 23 view .LVU68
+ 329 0014 0146     		mov	r1, r0
+ 330              		.loc 1 134 11 view .LVU69
+ 331 0016 3046     		mov	r0, r6
+ 332 0018 FFF7FEFF 		bl	__aeabi_fsub
+ 333              	.LVL29:
+ 334 001c 0646     		mov	r6, r0
+ 335              	.LVL30:
+ 135:Core/Src/common.c ****     // convert integer part to string
+ 136:Core/Src/common.c ****     int i = intToStr(ipart, res, 0);
+ 336              		.loc 1 136 5 is_stmt 1 view .LVU70
+ 337              		.loc 1 136 13 is_stmt 0 view .LVU71
+ 338 001e 0022     		movs	r2, #0
+ 339 0020 2146     		mov	r1, r4
+ 340 0022 2846     		mov	r0, r5
+ 341              	.LVL31:
+ 342              		.loc 1 136 13 view .LVU72
+ 343 0024 FFF7FEFF 		bl	intToStr
+ 344              	.LVL32:
+ 137:Core/Src/common.c ****     // check for display option after point
+ 138:Core/Src/common.c ****     if (afterpoint != 0)
+ 345              		.loc 1 138 5 is_stmt 1 view .LVU73
+ 346              		.loc 1 138 8 is_stmt 0 view .LVU74
+ 347 0028 0FB9     		cbnz	r7, .L23
+ 348              	.LVL33:
+ 349              	.L20:
+ 139:Core/Src/common.c ****     {
+ 140:Core/Src/common.c ****         res[i] = '.'; // add dot
+ 141:Core/Src/common.c ****         fpart = fpart * pow(10, afterpoint);
+ 142:Core/Src/common.c ****         intToStr((int)fpart, res + i + 1, afterpoint);
+ 143:Core/Src/common.c ****     }
+ 144:Core/Src/common.c **** }
+ 350              		.loc 1 144 1 view .LVU75
+ 351 002a BDE8F883 		pop	{r3, r4, r5, r6, r7, r8, r9, pc}
+ 352              	.LVL34:
+ 353              	.L23:
+ 354              		.loc 1 144 1 view .LVU76
+ 355 002e 0546     		mov	r5, r0
+ 356              	.LVL35:
+ 140:Core/Src/common.c ****         fpart = fpart * pow(10, afterpoint);
+ 357              		.loc 1 140 9 is_stmt 1 view .LVU77
+ 140:Core/Src/common.c ****         fpart = fpart * pow(10, afterpoint);
+ 358              		.loc 1 140 16 is_stmt 0 view .LVU78
+ 359 0030 2E23     		movs	r3, #46
+ 360 0032 2354     		strb	r3, [r4, r0]
+ 141:Core/Src/common.c ****         intToStr((int)fpart, res + i + 1, afterpoint);
+ 361              		.loc 1 141 9 is_stmt 1 view .LVU79
+ 141:Core/Src/common.c ****         intToStr((int)fpart, res + i + 1, afterpoint);
+ 362              		.loc 1 141 25 is_stmt 0 view .LVU80
+ 363 0034 3846     		mov	r0, r7
+ 364              	.LVL36:
+ 141:Core/Src/common.c ****         intToStr((int)fpart, res + i + 1, afterpoint);
+ 365              		.loc 1 141 25 view .LVU81
+ 366 0036 FFF7FEFF 		bl	__aeabi_i2d
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 10
+
+
+ 367              	.LVL37:
+ 368 003a 0246     		mov	r2, r0
+ 369 003c 0B46     		mov	r3, r1
+ 370 003e 0020     		movs	r0, #0
+ 371 0040 0B49     		ldr	r1, .L24
+ 372 0042 FFF7FEFF 		bl	pow
+ 373              	.LVL38:
+ 374 0046 8046     		mov	r8, r0
+ 375 0048 8946     		mov	r9, r1
+ 141:Core/Src/common.c ****         intToStr((int)fpart, res + i + 1, afterpoint);
+ 376              		.loc 1 141 23 view .LVU82
+ 377 004a 3046     		mov	r0, r6
+ 378 004c FFF7FEFF 		bl	__aeabi_f2d
+ 379              	.LVL39:
+ 380 0050 4246     		mov	r2, r8
+ 381 0052 4B46     		mov	r3, r9
+ 382 0054 FFF7FEFF 		bl	__aeabi_dmul
+ 383              	.LVL40:
+ 141:Core/Src/common.c ****         intToStr((int)fpart, res + i + 1, afterpoint);
+ 384              		.loc 1 141 15 view .LVU83
+ 385 0058 FFF7FEFF 		bl	__aeabi_d2f
+ 386              	.LVL41:
+ 142:Core/Src/common.c ****     }
+ 387              		.loc 1 142 9 is_stmt 1 view .LVU84
+ 142:Core/Src/common.c ****     }
+ 388              		.loc 1 142 38 is_stmt 0 view .LVU85
+ 389 005c 691C     		adds	r1, r5, #1
+ 142:Core/Src/common.c ****     }
+ 390              		.loc 1 142 9 view .LVU86
+ 391 005e 0C44     		add	r4, r4, r1
+ 392              	.LVL42:
+ 142:Core/Src/common.c ****     }
+ 393              		.loc 1 142 9 view .LVU87
+ 394 0060 FFF7FEFF 		bl	__aeabi_f2iz
+ 395              	.LVL43:
+ 142:Core/Src/common.c ****     }
+ 396              		.loc 1 142 9 view .LVU88
+ 397 0064 3A46     		mov	r2, r7
+ 398 0066 2146     		mov	r1, r4
+ 399 0068 FFF7FEFF 		bl	intToStr
+ 400              	.LVL44:
+ 401              		.loc 1 144 1 view .LVU89
+ 402 006c DDE7     		b	.L20
+ 403              	.L25:
+ 404 006e 00BF     		.align	2
+ 405              	.L24:
+ 406 0070 00002440 		.word	1076101120
+ 407              		.cfi_endproc
+ 408              	.LFE72:
+ 410              		.section	.text.intToStr0,"ax",%progbits
+ 411              		.align	1
+ 412              		.global	intToStr0
+ 413              		.syntax unified
+ 414              		.thumb
+ 415              		.thumb_func
+ 416              		.fpu softvfp
+ 418              	intToStr0:
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 11
+
+
+ 419              	.LVL45:
+ 420              	.LFB73:
+ 145:Core/Src/common.c **** 
+ 146:Core/Src/common.c **** int intToStr0(int x, char str[], int d)
+ 147:Core/Src/common.c **** {
+ 421              		.loc 1 147 1 is_stmt 1 view -0
+ 422              		.cfi_startproc
+ 423              		@ args = 0, pretend = 0, frame = 0
+ 424              		@ frame_needed = 0, uses_anonymous_args = 0
+ 425              		.loc 1 147 1 is_stmt 0 view .LVU91
+ 426 0000 70B5     		push	{r4, r5, r6, lr}
+ 427              	.LCFI7:
+ 428              		.cfi_def_cfa_offset 16
+ 429              		.cfi_offset 4, -16
+ 430              		.cfi_offset 5, -12
+ 431              		.cfi_offset 6, -8
+ 432              		.cfi_offset 14, -4
+ 433 0002 0E46     		mov	r6, r1
+ 148:Core/Src/common.c ****     int i = 0;
+ 434              		.loc 1 148 5 is_stmt 1 view .LVU92
+ 435              	.LVL46:
+ 149:Core/Src/common.c ****     if (x == 0)
+ 436              		.loc 1 149 5 view .LVU93
+ 437              		.loc 1 149 8 is_stmt 0 view .LVU94
+ 438 0004 18B9     		cbnz	r0, .L32
+ 150:Core/Src/common.c ****     {
+ 151:Core/Src/common.c ****         str[i++] = '0';
+ 439              		.loc 1 151 9 is_stmt 1 view .LVU95
+ 440              	.LVL47:
+ 441              		.loc 1 151 18 is_stmt 0 view .LVU96
+ 442 0006 3023     		movs	r3, #48
+ 443 0008 0B70     		strb	r3, [r1]
+ 444              		.loc 1 151 14 view .LVU97
+ 445 000a 0124     		movs	r4, #1
+ 446 000c 15E0     		b	.L28
+ 447              	.LVL48:
+ 448              	.L32:
+ 449              		.loc 1 151 14 view .LVU98
+ 450 000e 0546     		mov	r5, r0
+ 148:Core/Src/common.c ****     if (x == 0)
+ 451              		.loc 1 148 9 view .LVU99
+ 452 0010 0024     		movs	r4, #0
+ 453              	.LVL49:
+ 454              	.L27:
+ 152:Core/Src/common.c ****     }
+ 153:Core/Src/common.c ****     else
+ 154:Core/Src/common.c ****     {
+ 155:Core/Src/common.c ****         while (x)
+ 455              		.loc 1 155 15 is_stmt 1 view .LVU100
+ 456 0012 95B1     		cbz	r5, .L28
+ 156:Core/Src/common.c ****         {
+ 157:Core/Src/common.c ****             str[i++] = (x % 10) + '0';
+ 457              		.loc 1 157 13 view .LVU101
+ 458              		.loc 1 157 27 is_stmt 0 view .LVU102
+ 459 0014 0E49     		ldr	r1, .L34
+ 460 0016 81FB0531 		smull	r3, r1, r1, r5
+ 461 001a EB17     		asrs	r3, r5, #31
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 12
+
+
+ 462 001c C3EBA103 		rsb	r3, r3, r1, asr #2
+ 463 0020 1946     		mov	r1, r3
+ 464 0022 03EB8303 		add	r3, r3, r3, lsl #2
+ 465 0026 A5EB4303 		sub	r3, r5, r3, lsl #1
+ 466              	.LVL50:
+ 467              		.loc 1 157 33 view .LVU103
+ 468 002a 3033     		adds	r3, r3, #48
+ 469              		.loc 1 157 22 view .LVU104
+ 470 002c 3355     		strb	r3, [r6, r4]
+ 158:Core/Src/common.c ****             x = x / 10;
+ 471              		.loc 1 158 13 is_stmt 1 view .LVU105
+ 472              		.loc 1 158 15 is_stmt 0 view .LVU106
+ 473 002e 0D46     		mov	r5, r1
+ 474              	.LVL51:
+ 157:Core/Src/common.c ****             x = x / 10;
+ 475              		.loc 1 157 18 view .LVU107
+ 476 0030 0134     		adds	r4, r4, #1
+ 477              	.LVL52:
+ 157:Core/Src/common.c ****             x = x / 10;
+ 478              		.loc 1 157 18 view .LVU108
+ 479 0032 EEE7     		b	.L27
+ 480              	.LVL53:
+ 481              	.L31:
+ 159:Core/Src/common.c ****         }
+ 160:Core/Src/common.c ****     }
+ 161:Core/Src/common.c ****     
+ 162:Core/Src/common.c ****     // If number of digits required is more, then
+ 163:Core/Src/common.c ****     // add 0s at the beginning
+ 164:Core/Src/common.c ****     while (i < d)
+ 165:Core/Src/common.c ****         str[i++] = '0';
+ 482              		.loc 1 165 9 is_stmt 1 view .LVU109
+ 483              		.loc 1 165 18 is_stmt 0 view .LVU110
+ 484 0034 3023     		movs	r3, #48
+ 485 0036 3355     		strb	r3, [r6, r4]
+ 486              		.loc 1 165 14 view .LVU111
+ 487 0038 0134     		adds	r4, r4, #1
+ 488              	.LVL54:
+ 489              	.L28:
+ 164:Core/Src/common.c ****         str[i++] = '0';
+ 490              		.loc 1 164 11 is_stmt 1 view .LVU112
+ 491 003a 9442     		cmp	r4, r2
+ 492 003c FADB     		blt	.L31
+ 166:Core/Src/common.c **** 
+ 167:Core/Src/common.c ****     reverse(str, i);
+ 493              		.loc 1 167 5 view .LVU113
+ 494 003e 2146     		mov	r1, r4
+ 495 0040 3046     		mov	r0, r6
+ 496 0042 FFF7FEFF 		bl	reverse
+ 497              	.LVL55:
+ 168:Core/Src/common.c ****     str[i] = '\0';
+ 498              		.loc 1 168 5 view .LVU114
+ 499              		.loc 1 168 12 is_stmt 0 view .LVU115
+ 500 0046 0023     		movs	r3, #0
+ 501 0048 3355     		strb	r3, [r6, r4]
+ 169:Core/Src/common.c ****     return i;
+ 502              		.loc 1 169 5 is_stmt 1 view .LVU116
+ 170:Core/Src/common.c **** }
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 13
+
+
+ 503              		.loc 1 170 1 is_stmt 0 view .LVU117
+ 504 004a 2046     		mov	r0, r4
+ 505 004c 70BD     		pop	{r4, r5, r6, pc}
+ 506              	.LVL56:
+ 507              	.L35:
+ 508              		.loc 1 170 1 view .LVU118
+ 509 004e 00BF     		.align	2
+ 510              	.L34:
+ 511 0050 67666666 		.word	1717986919
+ 512              		.cfi_endproc
+ 513              	.LFE73:
+ 515              		.section	.text.ftoa0,"ax",%progbits
+ 516              		.align	1
+ 517              		.global	ftoa0
+ 518              		.syntax unified
+ 519              		.thumb
+ 520              		.thumb_func
+ 521              		.fpu softvfp
+ 523              	ftoa0:
+ 524              	.LVL57:
+ 525              	.LFB74:
+ 171:Core/Src/common.c **** 
+ 172:Core/Src/common.c **** void ftoa0(float n, char* res, int afterpoint)
+ 173:Core/Src/common.c **** {
+ 526              		.loc 1 173 1 is_stmt 1 view -0
+ 527              		.cfi_startproc
+ 528              		@ args = 0, pretend = 0, frame = 0
+ 529              		@ frame_needed = 0, uses_anonymous_args = 0
+ 530              		.loc 1 173 1 is_stmt 0 view .LVU120
+ 531 0000 2DE9F843 		push	{r3, r4, r5, r6, r7, r8, r9, lr}
+ 532              	.LCFI8:
+ 533              		.cfi_def_cfa_offset 32
+ 534              		.cfi_offset 3, -32
+ 535              		.cfi_offset 4, -28
+ 536              		.cfi_offset 5, -24
+ 537              		.cfi_offset 6, -20
+ 538              		.cfi_offset 7, -16
+ 539              		.cfi_offset 8, -12
+ 540              		.cfi_offset 9, -8
+ 541              		.cfi_offset 14, -4
+ 542 0004 0646     		mov	r6, r0
+ 543 0006 0C46     		mov	r4, r1
+ 544 0008 1746     		mov	r7, r2
+ 174:Core/Src/common.c ****     // Extract integer part
+ 175:Core/Src/common.c ****     int ipart = (int)n;
+ 545              		.loc 1 175 5 is_stmt 1 view .LVU121
+ 546              		.loc 1 175 9 is_stmt 0 view .LVU122
+ 547 000a FFF7FEFF 		bl	__aeabi_f2iz
+ 548              	.LVL58:
+ 549              		.loc 1 175 9 view .LVU123
+ 550 000e 0546     		mov	r5, r0
+ 551              	.LVL59:
+ 176:Core/Src/common.c ****     // Extract floating part
+ 177:Core/Src/common.c ****     float fpart = n - (float)ipart;
+ 552              		.loc 1 177 5 is_stmt 1 view .LVU124
+ 553              		.loc 1 177 23 is_stmt 0 view .LVU125
+ 554 0010 FFF7FEFF 		bl	__aeabi_i2f
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 14
+
+
+ 555              	.LVL60:
+ 556              		.loc 1 177 23 view .LVU126
+ 557 0014 0146     		mov	r1, r0
+ 558              		.loc 1 177 11 view .LVU127
+ 559 0016 3046     		mov	r0, r6
+ 560 0018 FFF7FEFF 		bl	__aeabi_fsub
+ 561              	.LVL61:
+ 562 001c 0646     		mov	r6, r0
+ 563              	.LVL62:
+ 178:Core/Src/common.c ****     // convert integer part to string
+ 179:Core/Src/common.c ****     int i = intToStr0(ipart, res, 0);
+ 564              		.loc 1 179 5 is_stmt 1 view .LVU128
+ 565              		.loc 1 179 13 is_stmt 0 view .LVU129
+ 566 001e 0022     		movs	r2, #0
+ 567 0020 2146     		mov	r1, r4
+ 568 0022 2846     		mov	r0, r5
+ 569              	.LVL63:
+ 570              		.loc 1 179 13 view .LVU130
+ 571 0024 FFF7FEFF 		bl	intToStr0
+ 572              	.LVL64:
+ 180:Core/Src/common.c ****     // check for display option after point
+ 181:Core/Src/common.c ****     if (afterpoint != 0)
+ 573              		.loc 1 181 5 is_stmt 1 view .LVU131
+ 574              		.loc 1 181 8 is_stmt 0 view .LVU132
+ 575 0028 0FB9     		cbnz	r7, .L39
+ 576              	.LVL65:
+ 577              	.L36:
+ 182:Core/Src/common.c ****     {
+ 183:Core/Src/common.c ****         res[i] = '.'; // add dot
+ 184:Core/Src/common.c ****         fpart = fpart * pow(10, afterpoint);
+ 185:Core/Src/common.c ****         intToStr((int)fpart, res + i + 1, afterpoint);
+ 186:Core/Src/common.c ****     }
+ 187:Core/Src/common.c **** }
+ 578              		.loc 1 187 1 view .LVU133
+ 579 002a BDE8F883 		pop	{r3, r4, r5, r6, r7, r8, r9, pc}
+ 580              	.LVL66:
+ 581              	.L39:
+ 582              		.loc 1 187 1 view .LVU134
+ 583 002e 0546     		mov	r5, r0
+ 584              	.LVL67:
+ 183:Core/Src/common.c ****         fpart = fpart * pow(10, afterpoint);
+ 585              		.loc 1 183 9 is_stmt 1 view .LVU135
+ 183:Core/Src/common.c ****         fpart = fpart * pow(10, afterpoint);
+ 586              		.loc 1 183 16 is_stmt 0 view .LVU136
+ 587 0030 2E23     		movs	r3, #46
+ 588 0032 2354     		strb	r3, [r4, r0]
+ 184:Core/Src/common.c ****         intToStr((int)fpart, res + i + 1, afterpoint);
+ 589              		.loc 1 184 9 is_stmt 1 view .LVU137
+ 184:Core/Src/common.c ****         intToStr((int)fpart, res + i + 1, afterpoint);
+ 590              		.loc 1 184 25 is_stmt 0 view .LVU138
+ 591 0034 3846     		mov	r0, r7
+ 592              	.LVL68:
+ 184:Core/Src/common.c ****         intToStr((int)fpart, res + i + 1, afterpoint);
+ 593              		.loc 1 184 25 view .LVU139
+ 594 0036 FFF7FEFF 		bl	__aeabi_i2d
+ 595              	.LVL69:
+ 596 003a 0246     		mov	r2, r0
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 15
+
+
+ 597 003c 0B46     		mov	r3, r1
+ 598 003e 0020     		movs	r0, #0
+ 599 0040 0B49     		ldr	r1, .L40
+ 600 0042 FFF7FEFF 		bl	pow
+ 601              	.LVL70:
+ 602 0046 8046     		mov	r8, r0
+ 603 0048 8946     		mov	r9, r1
+ 184:Core/Src/common.c ****         intToStr((int)fpart, res + i + 1, afterpoint);
+ 604              		.loc 1 184 23 view .LVU140
+ 605 004a 3046     		mov	r0, r6
+ 606 004c FFF7FEFF 		bl	__aeabi_f2d
+ 607              	.LVL71:
+ 608 0050 4246     		mov	r2, r8
+ 609 0052 4B46     		mov	r3, r9
+ 610 0054 FFF7FEFF 		bl	__aeabi_dmul
+ 611              	.LVL72:
+ 184:Core/Src/common.c ****         intToStr((int)fpart, res + i + 1, afterpoint);
+ 612              		.loc 1 184 15 view .LVU141
+ 613 0058 FFF7FEFF 		bl	__aeabi_d2f
+ 614              	.LVL73:
+ 185:Core/Src/common.c ****     }
+ 615              		.loc 1 185 9 is_stmt 1 view .LVU142
+ 185:Core/Src/common.c ****     }
+ 616              		.loc 1 185 38 is_stmt 0 view .LVU143
+ 617 005c 691C     		adds	r1, r5, #1
+ 185:Core/Src/common.c ****     }
+ 618              		.loc 1 185 9 view .LVU144
+ 619 005e 0C44     		add	r4, r4, r1
+ 620              	.LVL74:
+ 185:Core/Src/common.c ****     }
+ 621              		.loc 1 185 9 view .LVU145
+ 622 0060 FFF7FEFF 		bl	__aeabi_f2iz
+ 623              	.LVL75:
+ 185:Core/Src/common.c ****     }
+ 624              		.loc 1 185 9 view .LVU146
+ 625 0064 3A46     		mov	r2, r7
+ 626 0066 2146     		mov	r1, r4
+ 627 0068 FFF7FEFF 		bl	intToStr
+ 628              	.LVL76:
+ 629              		.loc 1 187 1 view .LVU147
+ 630 006c DDE7     		b	.L36
+ 631              	.L41:
+ 632 006e 00BF     		.align	2
+ 633              	.L40:
+ 634 0070 00002440 		.word	1076101120
+ 635              		.cfi_endproc
+ 636              	.LFE74:
+ 638              		.section	.text.random_number,"ax",%progbits
+ 639              		.align	1
+ 640              		.global	random_number
+ 641              		.syntax unified
+ 642              		.thumb
+ 643              		.thumb_func
+ 644              		.fpu softvfp
+ 646              	random_number:
+ 647              	.LVL77:
+ 648              	.LFB75:
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 16
+
+
+ 188:Core/Src/common.c **** 
+ 189:Core/Src/common.c **** int random_number(int min_num, int max_num)
+ 190:Core/Src/common.c **** {
+ 649              		.loc 1 190 1 is_stmt 1 view -0
+ 650              		.cfi_startproc
+ 651              		@ args = 0, pretend = 0, frame = 0
+ 652              		@ frame_needed = 0, uses_anonymous_args = 0
+ 653              		.loc 1 190 1 is_stmt 0 view .LVU149
+ 654 0000 38B5     		push	{r3, r4, r5, lr}
+ 655              	.LCFI9:
+ 656              		.cfi_def_cfa_offset 16
+ 657              		.cfi_offset 3, -16
+ 658              		.cfi_offset 4, -12
+ 659              		.cfi_offset 5, -8
+ 660              		.cfi_offset 14, -4
+ 661 0002 0446     		mov	r4, r0
+ 191:Core/Src/common.c ****     int result = 0, low_num = 0, hi_num = 0;
+ 662              		.loc 1 191 5 is_stmt 1 view .LVU150
+ 663              	.LVL78:
+ 192:Core/Src/common.c **** 
+ 193:Core/Src/common.c ****     if (min_num < max_num)
+ 664              		.loc 1 193 5 view .LVU151
+ 665              		.loc 1 193 8 is_stmt 0 view .LVU152
+ 666 0004 8842     		cmp	r0, r1
+ 667 0006 09DA     		bge	.L43
+ 194:Core/Src/common.c ****     {
+ 195:Core/Src/common.c ****         low_num = min_num;
+ 668              		.loc 1 195 9 is_stmt 1 view .LVU153
+ 669              	.LVL79:
+ 196:Core/Src/common.c ****         hi_num = max_num + 1; // include max_num in output
+ 670              		.loc 1 196 9 view .LVU154
+ 671              		.loc 1 196 16 is_stmt 0 view .LVU155
+ 672 0008 4D1C     		adds	r5, r1, #1
+ 673              	.LVL80:
+ 674              	.L44:
+ 197:Core/Src/common.c ****     } else {
+ 198:Core/Src/common.c ****         low_num = max_num + 1; // include max_num in output
+ 199:Core/Src/common.c ****         hi_num = min_num;
+ 200:Core/Src/common.c ****     }
+ 201:Core/Src/common.c **** 
+ 202:Core/Src/common.c ****     // srand(HAL_GetTick());
+ 203:Core/Src/common.c ****     result = (rand() % (hi_num - low_num)) + low_num;
+ 675              		.loc 1 203 5 is_stmt 1 view .LVU156
+ 676              		.loc 1 203 15 is_stmt 0 view .LVU157
+ 677 000a FFF7FEFF 		bl	rand
+ 678              	.LVL81:
+ 679              		.loc 1 203 32 view .LVU158
+ 680 000e 2B1B     		subs	r3, r5, r4
+ 681              		.loc 1 203 22 view .LVU159
+ 682 0010 90FBF3F2 		sdiv	r2, r0, r3
+ 683 0014 03FB1200 		mls	r0, r3, r2, r0
+ 684              	.LVL82:
+ 204:Core/Src/common.c ****     return result;
+ 685              		.loc 1 204 5 is_stmt 1 view .LVU160
+ 205:Core/Src/common.c **** }
+ 686              		.loc 1 205 1 is_stmt 0 view .LVU161
+ 687 0018 2044     		add	r0, r0, r4
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 17
+
+
+ 688              	.LVL83:
+ 689              		.loc 1 205 1 view .LVU162
+ 690 001a 38BD     		pop	{r3, r4, r5, pc}
+ 691              	.LVL84:
+ 692              	.L43:
+ 198:Core/Src/common.c ****         hi_num = min_num;
+ 693              		.loc 1 198 9 is_stmt 1 view .LVU163
+ 199:Core/Src/common.c ****     }
+ 694              		.loc 1 199 9 view .LVU164
+ 199:Core/Src/common.c ****     }
+ 695              		.loc 1 199 16 is_stmt 0 view .LVU165
+ 696 001c 0546     		mov	r5, r0
+ 198:Core/Src/common.c ****         hi_num = min_num;
+ 697              		.loc 1 198 17 view .LVU166
+ 698 001e 4C1C     		adds	r4, r1, #1
+ 699              	.LVL85:
+ 198:Core/Src/common.c ****         hi_num = min_num;
+ 700              		.loc 1 198 17 view .LVU167
+ 701 0020 F3E7     		b	.L44
+ 702              		.cfi_endproc
+ 703              	.LFE75:
+ 705              		.text
+ 706              	.Letext0:
+ 707              		.file 2 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\stdlib.h"
+ 708              		.file 3 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\stdio.h"
+ 709              		.file 4 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\math.h"
+ 710              		.file 5 "<built-in>"
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 18
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 common.c
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:16     .rodata.LOG.str1.4:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:20     .text.LOG:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:28     .text.LOG:00000000 LOG
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:78     .text.LOG:00000024 $d
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:83     .text.logPC:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:90     .text.logPC:00000000 logPC
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:120    .text.reverse:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:127    .text.reverse:00000000 reverse
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:176    .text.intToStr:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:183    .text.intToStr:00000000 intToStr
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:276    .text.intToStr:00000050 $d
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:288    .text.ftoa:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:295    .text.ftoa:00000000 ftoa
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:406    .text.ftoa:00000070 $d
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:411    .text.intToStr0:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:418    .text.intToStr0:00000000 intToStr0
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:511    .text.intToStr0:00000050 $d
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:516    .text.ftoa0:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:523    .text.ftoa0:00000000 ftoa0
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:634    .text.ftoa0:00000070 $d
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:639    .text.random_number:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:646    .text.random_number:00000000 random_number
+
+UNDEFINED SYMBOLS
+memset
+sprintf
+__aeabi_f2iz
+__aeabi_i2f
+__aeabi_fsub
+__aeabi_i2d
+__aeabi_f2d
+__aeabi_dmul
+__aeabi_d2f
+pow
+rand

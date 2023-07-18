@@ -1,0 +1,739 @@
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"touch.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.ILI9341_TouchUnselect,"ax",%progbits
+  16              		.align	1
+  17              		.global	ILI9341_TouchUnselect
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	ILI9341_TouchUnselect:
+  25              	.LFB69:
+  26              		.file 1 "Core/Src/touch.c"
+   1:Core/Src/touch.c **** /**
+   2:Core/Src/touch.c ****  * @file touch.c
+   3:Core/Src/touch.c ****  * @author Vento (zseefvhu12345@gmail.com)
+   4:Core/Src/touch.c ****  * @brief 
+   5:Core/Src/touch.c ****  * @version 1.0
+   6:Core/Src/touch.c ****  * @date 17-07_2023
+   7:Core/Src/touch.c ****  * 
+   8:Core/Src/touch.c ****  * @copyright Copyright (c) 2023
+   9:Core/Src/touch.c ****  * 
+  10:Core/Src/touch.c ****  */
+  11:Core/Src/touch.c **** 
+  12:Core/Src/touch.c **** 
+  13:Core/Src/touch.c **** #include "touch.h"
+  14:Core/Src/touch.c **** #include <stdio.h>
+  15:Core/Src/touch.c **** #include "common.h"
+  16:Core/Src/touch.c **** 
+  17:Core/Src/touch.c **** #define READ_X 0xD0
+  18:Core/Src/touch.c **** #define READ_Y 0x90
+  19:Core/Src/touch.c **** 
+  20:Core/Src/touch.c **** #define NUMBER_OF_SAMPLE    (200)
+  21:Core/Src/touch.c **** 
+  22:Core/Src/touch.c **** #define ABS(x) ((x) > 0 ? (x) : -(x))
+  23:Core/Src/touch.c **** 
+  24:Core/Src/touch.c **** inline static void ILI9341_TouchSelect()
+  25:Core/Src/touch.c **** {
+  26:Core/Src/touch.c ****     HAL_GPIO_WritePin(ILI9341_TOUCH_CS_GPIO_Port, ILI9341_TOUCH_CS_Pin, GPIO_PIN_RESET);
+  27:Core/Src/touch.c **** }
+  28:Core/Src/touch.c **** 
+  29:Core/Src/touch.c **** inline void ILI9341_TouchUnselect()
+  30:Core/Src/touch.c **** {
+  27              		.loc 1 30 1 view -0
+  28              		.cfi_startproc
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s 			page 2
+
+
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 08B5     		push	{r3, lr}
+  32              	.LCFI0:
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 3, -8
+  35              		.cfi_offset 14, -4
+  31:Core/Src/touch.c ****     HAL_GPIO_WritePin(ILI9341_TOUCH_CS_GPIO_Port, ILI9341_TOUCH_CS_Pin, GPIO_PIN_SET);
+  36              		.loc 1 31 5 view .LVU1
+  37 0002 0122     		movs	r2, #1
+  38 0004 4FF48051 		mov	r1, #4096
+  39 0008 0148     		ldr	r0, .L3
+  40 000a FFF7FEFF 		bl	HAL_GPIO_WritePin
+  41              	.LVL0:
+  32:Core/Src/touch.c **** }
+  42              		.loc 1 32 1 is_stmt 0 view .LVU2
+  43 000e 08BD     		pop	{r3, pc}
+  44              	.L4:
+  45              		.align	2
+  46              	.L3:
+  47 0010 000C0140 		.word	1073810432
+  48              		.cfi_endproc
+  49              	.LFE69:
+  51              		.section	.text.ILI9341_TouchPressed,"ax",%progbits
+  52              		.align	1
+  53              		.global	ILI9341_TouchPressed
+  54              		.syntax unified
+  55              		.thumb
+  56              		.thumb_func
+  57              		.fpu softvfp
+  59              	ILI9341_TouchPressed:
+  60              	.LFB70:
+  33:Core/Src/touch.c **** 
+  34:Core/Src/touch.c **** inline bool ILI9341_TouchPressed()
+  35:Core/Src/touch.c **** {
+  61              		.loc 1 35 1 is_stmt 1 view -0
+  62              		.cfi_startproc
+  63              		@ args = 0, pretend = 0, frame = 0
+  64              		@ frame_needed = 0, uses_anonymous_args = 0
+  65 0000 08B5     		push	{r3, lr}
+  66              	.LCFI1:
+  67              		.cfi_def_cfa_offset 8
+  68              		.cfi_offset 3, -8
+  69              		.cfi_offset 14, -4
+  36:Core/Src/touch.c ****     return HAL_GPIO_ReadPin(ILI9341_TOUCH_IRQ_GPIO_Port, ILI9341_TOUCH_IRQ_Pin) == GPIO_PIN_RESET;
+  70              		.loc 1 36 5 view .LVU4
+  71              		.loc 1 36 12 is_stmt 0 view .LVU5
+  72 0002 4021     		movs	r1, #64
+  73 0004 0348     		ldr	r0, .L7
+  74 0006 FFF7FEFF 		bl	HAL_GPIO_ReadPin
+  75              	.LVL1:
+  37:Core/Src/touch.c **** }
+  76              		.loc 1 37 1 view .LVU6
+  77 000a B0FA80F0 		clz	r0, r0
+  78 000e 4009     		lsrs	r0, r0, #5
+  79 0010 08BD     		pop	{r3, pc}
+  80              	.L8:
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s 			page 3
+
+
+  81 0012 00BF     		.align	2
+  82              	.L7:
+  83 0014 00100140 		.word	1073811456
+  84              		.cfi_endproc
+  85              	.LFE70:
+  87              		.section	.text.ILI9341_TouchGetCoordinates,"ax",%progbits
+  88              		.align	1
+  89              		.global	ILI9341_TouchGetCoordinates
+  90              		.syntax unified
+  91              		.thumb
+  92              		.thumb_func
+  93              		.fpu softvfp
+  95              	ILI9341_TouchGetCoordinates:
+  96              	.LVL2:
+  97              	.LFB71:
+  38:Core/Src/touch.c **** 
+  39:Core/Src/touch.c **** bool ILI9341_TouchGetCoordinates(uint16_t* x, uint16_t* y)
+  40:Core/Src/touch.c **** {
+  98              		.loc 1 40 1 is_stmt 1 view -0
+  99              		.cfi_startproc
+ 100              		@ args = 0, pretend = 0, frame = 16
+ 101              		@ frame_needed = 0, uses_anonymous_args = 0
+ 102              		.loc 1 40 1 is_stmt 0 view .LVU8
+ 103 0000 2DE9F04F 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
+ 104              	.LCFI2:
+ 105              		.cfi_def_cfa_offset 36
+ 106              		.cfi_offset 4, -36
+ 107              		.cfi_offset 5, -32
+ 108              		.cfi_offset 6, -28
+ 109              		.cfi_offset 7, -24
+ 110              		.cfi_offset 8, -20
+ 111              		.cfi_offset 9, -16
+ 112              		.cfi_offset 10, -12
+ 113              		.cfi_offset 11, -8
+ 114              		.cfi_offset 14, -4
+ 115 0004 87B0     		sub	sp, sp, #28
+ 116              	.LCFI3:
+ 117              		.cfi_def_cfa_offset 64
+ 118 0006 8346     		mov	fp, r0
+ 119 0008 0391     		str	r1, [sp, #12]
+  41:Core/Src/touch.c ****     static const uint8_t cmd_read_x[] = { READ_X };
+ 120              		.loc 1 41 5 is_stmt 1 view .LVU9
+  42:Core/Src/touch.c ****     static const uint8_t cmd_read_y[] = { READ_Y };
+ 121              		.loc 1 42 5 view .LVU10
+  43:Core/Src/touch.c ****     static const uint8_t zeroes_tx[] = { 0x00, 0x00 };
+ 122              		.loc 1 43 5 view .LVU11
+  44:Core/Src/touch.c **** 
+  45:Core/Src/touch.c ****     ILI9341_TouchSelect();
+ 123              		.loc 1 45 5 view .LVU12
+ 124              	.LBB10:
+ 125              	.LBI10:
+  24:Core/Src/touch.c **** {
+ 126              		.loc 1 24 20 view .LVU13
+ 127              	.LBB11:
+  26:Core/Src/touch.c **** }
+ 128              		.loc 1 26 5 view .LVU14
+ 129 000a 0022     		movs	r2, #0
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s 			page 4
+
+
+ 130 000c 4FF48051 		mov	r1, #4096
+ 131              	.LVL3:
+  26:Core/Src/touch.c **** }
+ 132              		.loc 1 26 5 is_stmt 0 view .LVU15
+ 133 0010 3C48     		ldr	r0, .L17
+ 134              	.LVL4:
+  26:Core/Src/touch.c **** }
+ 135              		.loc 1 26 5 view .LVU16
+ 136 0012 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 137              	.LVL5:
+ 138              	.LBE11:
+ 139              	.LBE10:
+  46:Core/Src/touch.c **** 
+  47:Core/Src/touch.c ****     uint32_t avg_x = 0;
+ 140              		.loc 1 47 5 is_stmt 1 view .LVU17
+  48:Core/Src/touch.c ****     uint32_t avg_y = 0;
+ 141              		.loc 1 48 5 view .LVU18
+  49:Core/Src/touch.c ****     uint8_t nsamples = 0;
+ 142              		.loc 1 49 5 view .LVU19
+  50:Core/Src/touch.c ****     for(uint8_t i = 0; i < NUMBER_OF_SAMPLE; i++) 
+ 143              		.loc 1 50 5 view .LVU20
+ 144              	.LBB12:
+ 145              		.loc 1 50 9 view .LVU21
+ 146              		.loc 1 50 17 is_stmt 0 view .LVU22
+ 147 0016 0024     		movs	r4, #0
+ 148              	.LBE12:
+  49:Core/Src/touch.c ****     uint8_t nsamples = 0;
+ 149              		.loc 1 49 13 view .LVU23
+ 150 0018 2646     		mov	r6, r4
+  48:Core/Src/touch.c ****     uint32_t avg_y = 0;
+ 151              		.loc 1 48 14 view .LVU24
+ 152 001a A046     		mov	r8, r4
+  47:Core/Src/touch.c ****     uint32_t avg_y = 0;
+ 153              		.loc 1 47 14 view .LVU25
+ 154 001c A246     		mov	r10, r4
+ 155              	.LVL6:
+ 156              	.L10:
+ 157              	.LBB16:
+ 158              		.loc 1 50 24 is_stmt 1 discriminator 1 view .LVU26
+ 159              		.loc 1 50 5 is_stmt 0 discriminator 1 view .LVU27
+ 160 001e C72C     		cmp	r4, #199
+ 161 0020 37D8     		bhi	.L12
+ 162              	.LBB13:
+  51:Core/Src/touch.c ****     {
+  52:Core/Src/touch.c ****         if(!ILI9341_TouchPressed())
+ 163              		.loc 1 52 9 is_stmt 1 view .LVU28
+ 164              	.LBB14:
+ 165              	.LBI14:
+  34:Core/Src/touch.c **** {
+ 166              		.loc 1 34 13 view .LVU29
+ 167              	.LBB15:
+  36:Core/Src/touch.c **** }
+ 168              		.loc 1 36 5 view .LVU30
+  36:Core/Src/touch.c **** }
+ 169              		.loc 1 36 12 is_stmt 0 view .LVU31
+ 170 0022 4021     		movs	r1, #64
+ 171 0024 3848     		ldr	r0, .L17+4
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s 			page 5
+
+
+ 172 0026 FFF7FEFF 		bl	HAL_GPIO_ReadPin
+ 173              	.LVL7:
+ 174              	.LBE15:
+ 175              	.LBE14:
+ 176              		.loc 1 52 11 view .LVU32
+ 177 002a 90BB     		cbnz	r0, .L12
+  53:Core/Src/touch.c ****             break;
+  54:Core/Src/touch.c **** 
+  55:Core/Src/touch.c ****         nsamples++;
+ 178              		.loc 1 55 9 is_stmt 1 view .LVU33
+ 179              		.loc 1 55 17 is_stmt 0 view .LVU34
+ 180 002c 0136     		adds	r6, r6, #1
+ 181              	.LVL8:
+ 182              		.loc 1 55 17 view .LVU35
+ 183 002e F6B2     		uxtb	r6, r6
+ 184              	.LVL9:
+  56:Core/Src/touch.c **** 
+  57:Core/Src/touch.c ****         HAL_SPI_Transmit(&ILI9341_TOUCH_SPI_PORT, (uint8_t*)cmd_read_y, sizeof(cmd_read_y), HAL_MAX
+ 185              		.loc 1 57 9 is_stmt 1 view .LVU36
+ 186 0030 364D     		ldr	r5, .L17+8
+ 187 0032 4FF0FF33 		mov	r3, #-1
+ 188 0036 0122     		movs	r2, #1
+ 189 0038 3549     		ldr	r1, .L17+12
+ 190 003a 2846     		mov	r0, r5
+ 191 003c FFF7FEFF 		bl	HAL_SPI_Transmit
+ 192              	.LVL10:
+  58:Core/Src/touch.c ****         uint8_t y_raw[2];
+ 193              		.loc 1 58 9 view .LVU37
+  59:Core/Src/touch.c ****         HAL_SPI_TransmitReceive(&ILI9341_TOUCH_SPI_PORT, (uint8_t*)zeroes_tx, y_raw, sizeof(y_raw),
+ 194              		.loc 1 59 9 view .LVU38
+ 195 0040 DFF8D090 		ldr	r9, .L17+16
+ 196 0044 4FF0FF37 		mov	r7, #-1
+ 197 0048 0097     		str	r7, [sp]
+ 198 004a 0223     		movs	r3, #2
+ 199 004c 04AA     		add	r2, sp, #16
+ 200 004e 4946     		mov	r1, r9
+ 201 0050 2846     		mov	r0, r5
+ 202 0052 FFF7FEFF 		bl	HAL_SPI_TransmitReceive
+ 203              	.LVL11:
+  60:Core/Src/touch.c **** 
+  61:Core/Src/touch.c ****         HAL_SPI_Transmit(&ILI9341_TOUCH_SPI_PORT, (uint8_t*)cmd_read_x, sizeof(cmd_read_x), HAL_MAX
+ 204              		.loc 1 61 9 view .LVU39
+ 205 0056 3B46     		mov	r3, r7
+ 206 0058 0122     		movs	r2, #1
+ 207 005a 2F49     		ldr	r1, .L17+20
+ 208 005c 2846     		mov	r0, r5
+ 209 005e FFF7FEFF 		bl	HAL_SPI_Transmit
+ 210              	.LVL12:
+  62:Core/Src/touch.c ****         uint8_t x_raw[2];
+ 211              		.loc 1 62 9 view .LVU40
+  63:Core/Src/touch.c ****         HAL_SPI_TransmitReceive(&ILI9341_TOUCH_SPI_PORT, (uint8_t*)zeroes_tx, x_raw, sizeof(x_raw),
+ 212              		.loc 1 63 9 view .LVU41
+ 213 0062 0097     		str	r7, [sp]
+ 214 0064 0223     		movs	r3, #2
+ 215 0066 05AA     		add	r2, sp, #20
+ 216 0068 4946     		mov	r1, r9
+ 217 006a 2846     		mov	r0, r5
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s 			page 6
+
+
+ 218 006c FFF7FEFF 		bl	HAL_SPI_TransmitReceive
+ 219              	.LVL13:
+  64:Core/Src/touch.c **** 
+  65:Core/Src/touch.c ****         avg_x += (((uint16_t)x_raw[0]) << 8) | ((uint16_t)x_raw[1]);
+ 220              		.loc 1 65 9 view .LVU42
+ 221              		.loc 1 65 35 is_stmt 0 view .LVU43
+ 222 0070 9DF81420 		ldrb	r2, [sp, #20]	@ zero_extendqisi2
+ 223              		.loc 1 65 64 view .LVU44
+ 224 0074 9DF81530 		ldrb	r3, [sp, #21]	@ zero_extendqisi2
+ 225              		.loc 1 65 46 view .LVU45
+ 226 0078 43EA0223 		orr	r3, r3, r2, lsl #8
+ 227              		.loc 1 65 15 view .LVU46
+ 228 007c 9A44     		add	r10, r10, r3
+ 229              	.LVL14:
+  66:Core/Src/touch.c ****         avg_y += (((uint16_t)y_raw[0]) << 8) | ((uint16_t)y_raw[1]);
+ 230              		.loc 1 66 9 is_stmt 1 view .LVU47
+ 231              		.loc 1 66 35 is_stmt 0 view .LVU48
+ 232 007e 9DF81020 		ldrb	r2, [sp, #16]	@ zero_extendqisi2
+ 233              		.loc 1 66 64 view .LVU49
+ 234 0082 9DF81130 		ldrb	r3, [sp, #17]	@ zero_extendqisi2
+ 235              		.loc 1 66 46 view .LVU50
+ 236 0086 43EA0223 		orr	r3, r3, r2, lsl #8
+ 237              		.loc 1 66 15 view .LVU51
+ 238 008a 9844     		add	r8, r8, r3
+ 239              	.LVL15:
+ 240              		.loc 1 66 15 view .LVU52
+ 241              	.LBE13:
+  50:Core/Src/touch.c ****     {
+ 242              		.loc 1 50 46 is_stmt 1 view .LVU53
+  50:Core/Src/touch.c ****     {
+ 243              		.loc 1 50 47 is_stmt 0 view .LVU54
+ 244 008c 0134     		adds	r4, r4, #1
+ 245              	.LVL16:
+  50:Core/Src/touch.c ****     {
+ 246              		.loc 1 50 47 view .LVU55
+ 247 008e E4B2     		uxtb	r4, r4
+ 248              	.LVL17:
+  50:Core/Src/touch.c ****     {
+ 249              		.loc 1 50 47 view .LVU56
+ 250 0090 C5E7     		b	.L10
+ 251              	.L12:
+  50:Core/Src/touch.c ****     {
+ 252              		.loc 1 50 47 view .LVU57
+ 253              	.LBE16:
+  67:Core/Src/touch.c ****     }
+  68:Core/Src/touch.c **** 
+  69:Core/Src/touch.c ****     ILI9341_TouchUnselect();
+ 254              		.loc 1 69 5 is_stmt 1 view .LVU58
+ 255              	.LBB17:
+ 256              	.LBI17:
+  29:Core/Src/touch.c **** {
+ 257              		.loc 1 29 13 view .LVU59
+ 258              	.LBB18:
+  31:Core/Src/touch.c **** }
+ 259              		.loc 1 31 5 view .LVU60
+ 260 0092 0122     		movs	r2, #1
+ 261 0094 4FF48051 		mov	r1, #4096
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s 			page 7
+
+
+ 262 0098 1A48     		ldr	r0, .L17
+ 263 009a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 264              	.LVL18:
+ 265              	.LBE18:
+ 266              	.LBE17:
+  70:Core/Src/touch.c **** 
+  71:Core/Src/touch.c ****     if(nsamples < NUMBER_OF_SAMPLE)
+ 267              		.loc 1 71 5 view .LVU61
+ 268              		.loc 1 71 7 is_stmt 0 view .LVU62
+ 269 009e C72E     		cmp	r6, #199
+ 270 00a0 2DD9     		bls	.L15
+  72:Core/Src/touch.c ****         return false;
+  73:Core/Src/touch.c **** 
+  74:Core/Src/touch.c ****     uint32_t raw_x = (avg_x / NUMBER_OF_SAMPLE);
+ 271              		.loc 1 74 5 is_stmt 1 view .LVU63
+ 272              		.loc 1 74 14 is_stmt 0 view .LVU64
+ 273 00a2 1E4B     		ldr	r3, .L17+24
+ 274 00a4 A3FB0A2A 		umull	r2, r10, r3, r10
+ 275              	.LVL19:
+ 276              		.loc 1 74 14 view .LVU65
+ 277 00a8 4FEA9A1A 		lsr	r10, r10, #6
+ 278              	.LVL20:
+  75:Core/Src/touch.c ****     // if(raw_x < ILI9341_TOUCH_MIN_RAW_X) raw_x = ILI9341_TOUCH_MIN_RAW_X;
+  76:Core/Src/touch.c ****     // if(raw_x > ILI9341_TOUCH_MAX_RAW_X) raw_x = ILI9341_TOUCH_MAX_RAW_X;
+  77:Core/Src/touch.c **** 
+  78:Core/Src/touch.c ****     uint32_t raw_y = (avg_y / NUMBER_OF_SAMPLE);
+ 279              		.loc 1 78 5 is_stmt 1 view .LVU66
+ 280              		.loc 1 78 14 is_stmt 0 view .LVU67
+ 281 00ac A3FB0838 		umull	r3, r8, r3, r8
+ 282              	.LVL21:
+ 283              		.loc 1 78 14 view .LVU68
+ 284 00b0 4FEA9818 		lsr	r8, r8, #6
+ 285              	.LVL22:
+  79:Core/Src/touch.c ****     // if(raw_y < ILI9341_TOUCH_MIN_RAW_X) raw_y = ILI9341_TOUCH_MIN_RAW_Y;
+  80:Core/Src/touch.c ****     // if(raw_y > ILI9341_TOUCH_MAX_RAW_Y) raw_y = ILI9341_TOUCH_MAX_RAW_Y;
+  81:Core/Src/touch.c **** 
+  82:Core/Src/touch.c ****     //char data[50];
+  83:Core/Src/touch.c ****     // Uncomment this line to calibrate touchscreen:
+  84:Core/Src/touch.c ****     //sprintf(data, "raw_x = %ld, raw_y = %ld\n\0", raw_x, raw_y);
+  85:Core/Src/touch.c ****     //uint32_t data[] = {raw_x, raw_y};
+  86:Core/Src/touch.c ****     //HAL_UART_Transmit(&huart3, data, sizeof(data), 10);
+  87:Core/Src/touch.c ****     // logPC("%s - raw_x = %ld, raw_y = %ld", "LCD", raw_x, raw_y);
+  88:Core/Src/touch.c ****     int tempx = ((raw_y - ILI9341_TOUCH_MIN_RAW_X) * ILI9341_TOUCH_SCALE_X / (ILI9341_TOUCH_MAX_RAW
+ 286              		.loc 1 88 5 is_stmt 1 view .LVU69
+ 287              		.loc 1 88 52 is_stmt 0 view .LVU70
+ 288 00b4 08EB8808 		add	r8, r8, r8, lsl #2
+ 289              	.LVL23:
+ 290              		.loc 1 88 52 view .LVU71
+ 291 00b8 4FEA8813 		lsl	r3, r8, #6
+ 292 00bc A3F5BB23 		sub	r3, r3, #382976
+ 293 00c0 A3F58063 		sub	r3, r3, #1024
+ 294              		.loc 1 88 76 view .LVU72
+ 295 00c4 164A     		ldr	r2, .L17+28
+ 296 00c6 A2FB0323 		umull	r2, r3, r2, r3
+ 297 00ca 5B0B     		lsrs	r3, r3, #13
+ 298              		.loc 1 88 131 view .LVU73
+ 299 00cc 1E3B     		subs	r3, r3, #30
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s 			page 8
+
+
+ 300              	.LVL24:
+  89:Core/Src/touch.c ****     int tempy = ((raw_x - ILI9341_TOUCH_MIN_RAW_Y) * ILI9341_TOUCH_SCALE_Y / (ILI9341_TOUCH_MAX_RAW
+ 301              		.loc 1 89 5 is_stmt 1 view .LVU74
+ 302              		.loc 1 89 52 is_stmt 0 view .LVU75
+ 303 00ce CAEB0A1A 		rsb	r10, r10, r10, lsl #4
+ 304              	.LVL25:
+ 305              		.loc 1 89 52 view .LVU76
+ 306 00d2 4FEA0A12 		lsl	r2, r10, #4
+ 307 00d6 A2F5AF22 		sub	r2, r2, #358400
+ 308 00da A2F5C862 		sub	r2, r2, #1600
+ 309              		.loc 1 89 131 view .LVU77
+ 310 00de 1149     		ldr	r1, .L17+32
+ 311 00e0 A1FB0212 		umull	r1, r2, r1, r2
+ 312 00e4 520B     		lsrs	r2, r2, #13
+ 313              	.LVL26:
+  90:Core/Src/touch.c **** 
+  91:Core/Src/touch.c ****     *x = (tempx > 0) ? (tempx) : (0U);
+ 314              		.loc 1 91 5 is_stmt 1 view .LVU78
+ 315              		.loc 1 91 32 is_stmt 0 view .LVU79
+ 316 00e6 23EAE373 		bic	r3, r3, r3, asr #31
+ 317              	.LVL27:
+ 318              		.loc 1 91 8 view .LVU80
+ 319 00ea ABF80030 		strh	r3, [fp]	@ movhi
+  92:Core/Src/touch.c ****     *y = (tempy > 0) ? (tempy) : (0U);
+ 320              		.loc 1 92 5 is_stmt 1 view .LVU81
+ 321              		.loc 1 92 32 is_stmt 0 view .LVU82
+ 322 00ee 22EAE273 		bic	r3, r2, r2, asr #31
+ 323              		.loc 1 92 8 view .LVU83
+ 324 00f2 039A     		ldr	r2, [sp, #12]
+ 325              	.LVL28:
+ 326              		.loc 1 92 8 view .LVU84
+ 327 00f4 1380     		strh	r3, [r2]	@ movhi
+  93:Core/Src/touch.c **** 
+  94:Core/Src/touch.c ****     // *x = (uint16_t)(ILI9341_TOUCH_SCALE_X - *x);
+  95:Core/Src/touch.c ****     // *y = (uint16_t)(ILI9341_TOUCH_SCALE_Y - *y);
+  96:Core/Src/touch.c **** 
+  97:Core/Src/touch.c ****     return true;
+ 328              		.loc 1 97 5 is_stmt 1 view .LVU85
+ 329              		.loc 1 97 12 is_stmt 0 view .LVU86
+ 330 00f6 0120     		movs	r0, #1
+ 331              	.LVL29:
+ 332              	.L14:
+  98:Core/Src/touch.c **** }
+ 333              		.loc 1 98 1 view .LVU87
+ 334 00f8 07B0     		add	sp, sp, #28
+ 335              	.LCFI4:
+ 336              		.cfi_remember_state
+ 337              		.cfi_def_cfa_offset 36
+ 338              		@ sp needed
+ 339 00fa BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
+ 340              	.LVL30:
+ 341              	.L15:
+ 342              	.LCFI5:
+ 343              		.cfi_restore_state
+  72:Core/Src/touch.c **** 
+ 344              		.loc 1 72 16 view .LVU88
+ 345 00fe 0020     		movs	r0, #0
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s 			page 9
+
+
+ 346 0100 FAE7     		b	.L14
+ 347              	.L18:
+ 348 0102 00BF     		.align	2
+ 349              	.L17:
+ 350 0104 000C0140 		.word	1073810432
+ 351 0108 00100140 		.word	1073811456
+ 352 010c 00000000 		.word	hspi2
+ 353 0110 00000000 		.word	.LANCHOR0
+ 354 0114 00000000 		.word	.LANCHOR1
+ 355 0118 00000000 		.word	.LANCHOR2
+ 356 011c 1F85EB51 		.word	1374389535
+ 357 0120 297F404E 		.word	1312849705
+ 358 0124 73B2E745 		.word	1172812403
+ 359              		.cfi_endproc
+ 360              	.LFE71:
+ 362              		.section	.text.ILI9341_checkButton,"ax",%progbits
+ 363              		.align	1
+ 364              		.global	ILI9341_checkButton
+ 365              		.syntax unified
+ 366              		.thumb
+ 367              		.thumb_func
+ 368              		.fpu softvfp
+ 370              	ILI9341_checkButton:
+ 371              	.LVL31:
+ 372              	.LFB72:
+  99:Core/Src/touch.c **** 
+ 100:Core/Src/touch.c **** 
+ 101:Core/Src/touch.c **** bool ILI9341_checkButton(uint16_t x, uint16_t y, const myButton_t* button)
+ 102:Core/Src/touch.c **** {
+ 373              		.loc 1 102 1 is_stmt 1 view -0
+ 374              		.cfi_startproc
+ 375              		@ args = 0, pretend = 0, frame = 0
+ 376              		@ frame_needed = 0, uses_anonymous_args = 0
+ 377              		@ link register save eliminated.
+ 378              		.loc 1 102 1 is_stmt 0 view .LVU90
+ 379 0000 10B4     		push	{r4}
+ 380              	.LCFI6:
+ 381              		.cfi_def_cfa_offset 4
+ 382              		.cfi_offset 4, -4
+ 103:Core/Src/touch.c ****     if ((button->shape_r != 0) && (button->shape_w == 0) && (button->shape_h == 0))
+ 383              		.loc 1 103 5 is_stmt 1 view .LVU91
+ 384              		.loc 1 103 16 is_stmt 0 view .LVU92
+ 385 0002 9388     		ldrh	r3, [r2, #4]
+ 386              		.loc 1 103 8 view .LVU93
+ 387 0004 D3B1     		cbz	r3, .L20
+ 388              		.loc 1 103 42 discriminator 1 view .LVU94
+ 389 0006 D488     		ldrh	r4, [r2, #6]
+ 390              		.loc 1 103 32 discriminator 1 view .LVU95
+ 391 0008 C4B9     		cbnz	r4, .L20
+ 392              		.loc 1 103 68 discriminator 2 view .LVU96
+ 393 000a 1489     		ldrh	r4, [r2, #8]
+ 394              		.loc 1 103 58 discriminator 2 view .LVU97
+ 395 000c B4B9     		cbnz	r4, .L20
+ 104:Core/Src/touch.c ****     {
+ 105:Core/Src/touch.c ****         if ((((ABS(x - button->pos_x))^2) + ((ABS(y - button->pos_y))^2)) <= ((button->shape_r)^2))
+ 396              		.loc 1 105 9 is_stmt 1 view .LVU98
+ 397              		.loc 1 105 16 is_stmt 0 view .LVU99
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s 			page 10
+
+
+ 398 000e B2F800C0 		ldrh	ip, [r2]
+ 399 0012 A0EB0C00 		sub	r0, r0, ip
+ 400              	.LVL32:
+ 401              		.loc 1 105 16 view .LVU100
+ 402 0016 0028     		cmp	r0, #0
+ 403 0018 B8BF     		it	lt
+ 404 001a 4042     		rsblt	r0, r0, #0
+ 405              		.loc 1 105 39 view .LVU101
+ 406 001c 80F00200 		eor	r0, r0, #2
+ 407              		.loc 1 105 47 view .LVU102
+ 408 0020 5288     		ldrh	r2, [r2, #2]
+ 409              	.LVL33:
+ 410              		.loc 1 105 47 view .LVU103
+ 411 0022 8A1A     		subs	r2, r1, r2
+ 412 0024 002A     		cmp	r2, #0
+ 413 0026 B8BF     		it	lt
+ 414 0028 5242     		rsblt	r2, r2, #0
+ 415              		.loc 1 105 70 view .LVU104
+ 416 002a 82F00202 		eor	r2, r2, #2
+ 417              		.loc 1 105 43 view .LVU105
+ 418 002e 0244     		add	r2, r2, r0
+ 419              		.loc 1 105 96 view .LVU106
+ 420 0030 83F00203 		eor	r3, r3, #2
+ 421              		.loc 1 105 12 view .LVU107
+ 422 0034 9A42     		cmp	r2, r3
+ 423 0036 11DD     		ble	.L22
+ 106:Core/Src/touch.c ****         {
+ 107:Core/Src/touch.c ****             return true;
+ 108:Core/Src/touch.c ****         }
+ 109:Core/Src/touch.c ****     }
+ 110:Core/Src/touch.c ****     else
+ 111:Core/Src/touch.c ****     {
+ 112:Core/Src/touch.c ****         if ((y >= button->pos_y) && (y <= (button->pos_y + button->shape_h)) && (x >= button->pos_x
+ 113:Core/Src/touch.c ****         {
+ 114:Core/Src/touch.c ****             return true;
+ 115:Core/Src/touch.c ****         }
+ 116:Core/Src/touch.c ****     }
+ 117:Core/Src/touch.c ****     return false;
+ 424              		.loc 1 117 12 view .LVU108
+ 425 0038 0020     		movs	r0, #0
+ 426 003a 12E0     		b	.L21
+ 427              	.LVL34:
+ 428              	.L20:
+ 112:Core/Src/touch.c ****         {
+ 429              		.loc 1 112 9 is_stmt 1 view .LVU109
+ 112:Core/Src/touch.c ****         {
+ 430              		.loc 1 112 25 is_stmt 0 view .LVU110
+ 431 003c 5388     		ldrh	r3, [r2, #2]
+ 112:Core/Src/touch.c ****         {
+ 432              		.loc 1 112 12 view .LVU111
+ 433 003e 8B42     		cmp	r3, r1
+ 434 0040 0ED8     		bhi	.L23
+ 112:Core/Src/touch.c ****         {
+ 435              		.loc 1 112 66 discriminator 1 view .LVU112
+ 436 0042 1489     		ldrh	r4, [r2, #8]
+ 112:Core/Src/touch.c ****         {
+ 437              		.loc 1 112 58 discriminator 1 view .LVU113
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s 			page 11
+
+
+ 438 0044 2344     		add	r3, r3, r4
+ 112:Core/Src/touch.c ****         {
+ 439              		.loc 1 112 34 discriminator 1 view .LVU114
+ 440 0046 9942     		cmp	r1, r3
+ 441 0048 0DDC     		bgt	.L24
+ 112:Core/Src/touch.c ****         {
+ 442              		.loc 1 112 93 discriminator 2 view .LVU115
+ 443 004a 1388     		ldrh	r3, [r2]
+ 112:Core/Src/touch.c ****         {
+ 444              		.loc 1 112 78 discriminator 2 view .LVU116
+ 445 004c 8342     		cmp	r3, r0
+ 446 004e 0CD8     		bhi	.L25
+ 112:Core/Src/touch.c ****         {
+ 447              		.loc 1 112 134 discriminator 3 view .LVU117
+ 448 0050 D288     		ldrh	r2, [r2, #6]
+ 449              	.LVL35:
+ 112:Core/Src/touch.c ****         {
+ 450              		.loc 1 112 126 discriminator 3 view .LVU118
+ 451 0052 1344     		add	r3, r3, r2
+ 112:Core/Src/touch.c ****         {
+ 452              		.loc 1 112 102 discriminator 3 view .LVU119
+ 453 0054 9842     		cmp	r0, r3
+ 454 0056 0ADD     		ble	.L26
+ 455              		.loc 1 117 12 view .LVU120
+ 456 0058 0020     		movs	r0, #0
+ 457              	.LVL36:
+ 458              		.loc 1 117 12 view .LVU121
+ 459 005a 02E0     		b	.L21
+ 460              	.L22:
+ 107:Core/Src/touch.c ****         }
+ 461              		.loc 1 107 20 view .LVU122
+ 462 005c 0120     		movs	r0, #1
+ 463 005e 00E0     		b	.L21
+ 464              	.LVL37:
+ 465              	.L23:
+ 466              		.loc 1 117 12 view .LVU123
+ 467 0060 0020     		movs	r0, #0
+ 468              	.LVL38:
+ 469              	.L21:
+ 118:Core/Src/touch.c **** }
+ 470              		.loc 1 118 1 view .LVU124
+ 471 0062 10BC     		pop	{r4}
+ 472              	.LCFI7:
+ 473              		.cfi_remember_state
+ 474              		.cfi_restore 4
+ 475              		.cfi_def_cfa_offset 0
+ 476 0064 7047     		bx	lr
+ 477              	.LVL39:
+ 478              	.L24:
+ 479              	.LCFI8:
+ 480              		.cfi_restore_state
+ 117:Core/Src/touch.c **** }
+ 481              		.loc 1 117 12 view .LVU125
+ 482 0066 0020     		movs	r0, #0
+ 483              	.LVL40:
+ 117:Core/Src/touch.c **** }
+ 484              		.loc 1 117 12 view .LVU126
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s 			page 12
+
+
+ 485 0068 FBE7     		b	.L21
+ 486              	.LVL41:
+ 487              	.L25:
+ 117:Core/Src/touch.c **** }
+ 488              		.loc 1 117 12 view .LVU127
+ 489 006a 0020     		movs	r0, #0
+ 490              	.LVL42:
+ 117:Core/Src/touch.c **** }
+ 491              		.loc 1 117 12 view .LVU128
+ 492 006c F9E7     		b	.L21
+ 493              	.LVL43:
+ 494              	.L26:
+ 114:Core/Src/touch.c ****         }
+ 495              		.loc 1 114 20 view .LVU129
+ 496 006e 0120     		movs	r0, #1
+ 497              	.LVL44:
+ 114:Core/Src/touch.c ****         }
+ 498              		.loc 1 114 20 view .LVU130
+ 499 0070 F7E7     		b	.L21
+ 500              		.cfi_endproc
+ 501              	.LFE72:
+ 503              		.section	.rodata.cmd_read_x.0,"a"
+ 504              		.align	2
+ 505              		.set	.LANCHOR2,. + 0
+ 508              	cmd_read_x.0:
+ 509 0000 D0       		.ascii	"\320"
+ 510              		.section	.rodata.cmd_read_y.2,"a"
+ 511              		.align	2
+ 512              		.set	.LANCHOR0,. + 0
+ 515              	cmd_read_y.2:
+ 516 0000 90       		.ascii	"\220"
+ 517              		.section	.rodata.zeroes_tx.1,"a"
+ 518              		.align	2
+ 519              		.set	.LANCHOR1,. + 0
+ 522              	zeroes_tx.1:
+ 523 0000 0000     		.space	2
+ 524              		.text
+ 525              	.Letext0:
+ 526              		.file 2 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\machine\\_default_type
+ 527              		.file 3 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 528              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
+ 529              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 530              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ 531              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 532              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"
+ 533              		.file 9 "Core/Inc/touch.h"
+ 534              		.file 10 "Core/Inc/spi.h"
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s 			page 13
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 touch.c
+C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s:16     .text.ILI9341_TouchUnselect:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s:24     .text.ILI9341_TouchUnselect:00000000 ILI9341_TouchUnselect
+C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s:47     .text.ILI9341_TouchUnselect:00000010 $d
+C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s:52     .text.ILI9341_TouchPressed:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s:59     .text.ILI9341_TouchPressed:00000000 ILI9341_TouchPressed
+C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s:83     .text.ILI9341_TouchPressed:00000014 $d
+C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s:88     .text.ILI9341_TouchGetCoordinates:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s:95     .text.ILI9341_TouchGetCoordinates:00000000 ILI9341_TouchGetCoordinates
+C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s:350    .text.ILI9341_TouchGetCoordinates:00000104 $d
+C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s:363    .text.ILI9341_checkButton:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s:370    .text.ILI9341_checkButton:00000000 ILI9341_checkButton
+C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s:504    .rodata.cmd_read_x.0:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s:508    .rodata.cmd_read_x.0:00000000 cmd_read_x.0
+C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s:511    .rodata.cmd_read_y.2:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s:515    .rodata.cmd_read_y.2:00000000 cmd_read_y.2
+C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s:518    .rodata.zeroes_tx.1:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccUIgMaf.s:522    .rodata.zeroes_tx.1:00000000 zeroes_tx.1
+
+UNDEFINED SYMBOLS
+HAL_GPIO_WritePin
+HAL_GPIO_ReadPin
+HAL_SPI_Transmit
+HAL_SPI_TransmitReceive
+hspi2

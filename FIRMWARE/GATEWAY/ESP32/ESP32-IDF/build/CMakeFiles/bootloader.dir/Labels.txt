@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+D:/GitHub/HUST_GraduateProject/FIRMWARE/GATEWAY/ESP32/ESP32-IDF/build/CMakeFiles/bootloader
+D:/GitHub/HUST_GraduateProject/FIRMWARE/GATEWAY/ESP32/ESP32-IDF/build/CMakeFiles/bootloader.rule
+D:/GitHub/HUST_GraduateProject/FIRMWARE/GATEWAY/ESP32/ESP32-IDF/build/CMakeFiles/bootloader-complete.rule
+D:/GitHub/HUST_GraduateProject/FIRMWARE/GATEWAY/ESP32/ESP32-IDF/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+D:/GitHub/HUST_GraduateProject/FIRMWARE/GATEWAY/ESP32/ESP32-IDF/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+D:/GitHub/HUST_GraduateProject/FIRMWARE/GATEWAY/ESP32/ESP32-IDF/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+D:/GitHub/HUST_GraduateProject/FIRMWARE/GATEWAY/ESP32/ESP32-IDF/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+D:/GitHub/HUST_GraduateProject/FIRMWARE/GATEWAY/ESP32/ESP32-IDF/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+D:/GitHub/HUST_GraduateProject/FIRMWARE/GATEWAY/ESP32/ESP32-IDF/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+D:/GitHub/HUST_GraduateProject/FIRMWARE/GATEWAY/ESP32/ESP32-IDF/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
