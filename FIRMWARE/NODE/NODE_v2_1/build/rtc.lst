@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s 			page 1
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s 			page 1
   30:Core/Src/rtc.c **** void MX_RTC_Init(void)
   31:Core/Src/rtc.c **** {
   27              		.loc 1 31 1 view -0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s 			page 2
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s 			page 2
 
 
   28              		.cfi_startproc
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s 			page 1
   64              	.L2:
   50:Core/Src/rtc.c ****   {
   51:Core/Src/rtc.c ****     Error_Handler();
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s 			page 3
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s 			page 3
 
 
   52:Core/Src/rtc.c ****   }
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s 			page 1
   72:Core/Src/rtc.c **** 
   73:Core/Src/rtc.c ****   if (HAL_RTC_SetDate(&hrtc, &DateToUpdate, RTC_FORMAT_BCD) != HAL_OK)
   99              		.loc 1 73 3 is_stmt 1 view .LVU31
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s 			page 4
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s 			page 4
 
 
  100              		.loc 1 73 7 is_stmt 0 view .LVU32
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s 			page 1
  144              		.syntax unified
  145              		.thumb
  146              		.thumb_func
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s 			page 5
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s 			page 5
 
 
  147              		.fpu softvfp
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s 			page 1
  189 0024 019B     		ldr	r3, [sp, #4]
  190              	.LBE2:
  191              		.loc 1 93 5 view .LVU50
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s 			page 6
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s 			page 6
 
 
   94:Core/Src/rtc.c ****     /* RTC clock enable */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s 			page 1
  234              		@ args = 0, pretend = 0, frame = 0
  235              		@ frame_needed = 0, uses_anonymous_args = 0
  236              		.loc 1 107 1 is_stmt 0 view .LVU56
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s 			page 7
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s 			page 7
 
 
  237 0000 08B5     		push	{r3, lr}
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s 			page 1
  272              		.cfi_endproc
  273              	.LFE67:
  275              		.global	hrtc
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s 			page 8
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s 			page 8
 
 
  276              		.section	.bss.hrtc,"aw",%nobits
@@ -442,22 +442,22 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s 			page 1
  292              		.file 9 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h"
  293              		.file 10 "Core/Inc/main.h"
  294              		.file 11 "Core/Inc/rtc.h"
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s 			page 9
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 rtc.c
-C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s:16     .text.MX_RTC_Init:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s:24     .text.MX_RTC_Init:00000000 MX_RTC_Init
-C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s:136    .text.MX_RTC_Init:00000074 $d
-C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s:142    .text.HAL_RTC_MspInit:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s:149    .text.HAL_RTC_MspInit:00000000 HAL_RTC_MspInit
-C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s:215    .text.HAL_RTC_MspInit:00000044 $d
-C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s:222    .text.HAL_RTC_MspDeInit:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s:229    .text.HAL_RTC_MspDeInit:00000000 HAL_RTC_MspDeInit
-C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s:270    .text.HAL_RTC_MspDeInit:0000001c $d
-C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s:281    .bss.hrtc:00000000 hrtc
-C:\Users\Vento\AppData\Local\Temp\ccfcINuG.s:277    .bss.hrtc:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s:16     .text.MX_RTC_Init:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s:24     .text.MX_RTC_Init:00000000 MX_RTC_Init
+C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s:136    .text.MX_RTC_Init:00000074 $d
+C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s:142    .text.HAL_RTC_MspInit:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s:149    .text.HAL_RTC_MspInit:00000000 HAL_RTC_MspInit
+C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s:215    .text.HAL_RTC_MspInit:00000044 $d
+C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s:222    .text.HAL_RTC_MspDeInit:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s:229    .text.HAL_RTC_MspDeInit:00000000 HAL_RTC_MspDeInit
+C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s:270    .text.HAL_RTC_MspDeInit:0000001c $d
+C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s:281    .bss.hrtc:00000000 hrtc
+C:\Users\Vento\AppData\Local\Temp\ccB9kaDo.s:277    .bss.hrtc:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_RTC_Init

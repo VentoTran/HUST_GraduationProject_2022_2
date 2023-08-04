@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
   24:Core/Src/common.c **** 
   25:Core/Src/common.c **** #ifdef USE_USB
   26:Core/Src/common.c **** #include "usbd_cdc_if.h"
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 2
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s 			page 2
 
 
   27:Core/Src/common.c **** extern USBD_HandleTypeDef hUsbDeviceFS;
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
   72 0022 30BD     		pop	{r4, r5, pc}
   73              	.LVL5:
   74              	.L4:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 3
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s 			page 3
 
 
   75              		.loc 1 40 1 view .LVU8
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
   79:Core/Src/common.c **** void logPC(const char *fmt, ...)
   80:Core/Src/common.c **** {
   93              		.loc 1 80 1 is_stmt 1 view -0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 4
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s 			page 4
 
 
   94              		.cfi_startproc
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
  138              	.LVL8:
   93:Core/Src/common.c ****     while (i < j)
  139              		.loc 1 93 5 is_stmt 1 view .LVU16
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 5
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s 			page 5
 
 
   92:Core/Src/common.c ****     int i = 0, j = len - 1, temp;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
  102:Core/Src/common.c **** 
  103:Core/Src/common.c **** int intToStr(int x, char str[], int d)
  104:Core/Src/common.c **** {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 6
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s 			page 6
 
 
  186              		.loc 1 104 1 is_stmt 1 view -0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
  229 0022 03EB8303 		add	r3, r3, r3, lsl #2
  230 0026 A5EB4303 		sub	r3, r5, r3, lsl #1
  231              	.LVL18:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 7
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s 			page 7
 
 
  232              		.loc 1 114 33 view .LVU45
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
  270 004c 70BD     		pop	{r4, r5, r6, pc}
  271              	.LVL24:
  272              	.L19:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 8
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s 			page 8
 
 
  273              		.loc 1 127 1 view .LVU60
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
  133:Core/Src/common.c ****     // Extract floating part
  134:Core/Src/common.c ****     float fpart = n - (float)ipart;
  324              		.loc 1 134 5 is_stmt 1 view .LVU66
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 9
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s 			page 9
 
 
  325              		.loc 1 134 23 is_stmt 0 view .LVU67
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
  141:Core/Src/common.c ****         intToStr((int)fpart, res + i + 1, afterpoint);
  365              		.loc 1 141 25 view .LVU81
  366 0036 FFF7FEFF 		bl	__aeabi_i2d
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 10
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s 			page 10
 
 
  367              	.LVL37:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
  415              		.thumb_func
  416              		.fpu softvfp
  418              	intToStr0:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 11
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s 			page 11
 
 
  419              	.LVL45:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
  459 0014 0E49     		ldr	r1, .L34
  460 0016 81FB0531 		smull	r3, r1, r1, r5
  461 001a EB17     		asrs	r3, r5, #31
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 12
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s 			page 12
 
 
  462 001c C3EBA103 		rsb	r3, r3, r1, asr #2
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
  169:Core/Src/common.c ****     return i;
  502              		.loc 1 169 5 is_stmt 1 view .LVU116
  170:Core/Src/common.c **** }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 13
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s 			page 13
 
 
  503              		.loc 1 170 1 is_stmt 0 view .LVU117
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
  552              		.loc 1 177 5 is_stmt 1 view .LVU124
  553              		.loc 1 177 23 is_stmt 0 view .LVU125
  554 0010 FFF7FEFF 		bl	__aeabi_i2f
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 14
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s 			page 14
 
 
  555              	.LVL60:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
  594 0036 FFF7FEFF 		bl	__aeabi_i2d
  595              	.LVL69:
  596 003a 0246     		mov	r2, r0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 15
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s 			page 15
 
 
  597 003c 0B46     		mov	r3, r1
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
  646              	random_number:
  647              	.LVL77:
  648              	.LFB75:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 16
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s 			page 16
 
 
  188:Core/Src/common.c **** 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
  205:Core/Src/common.c **** }
  686              		.loc 1 205 1 is_stmt 0 view .LVU161
  687 0018 2044     		add	r0, r0, r4
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 17
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s 			page 17
 
 
  688              	.LVL83:
@@ -988,33 +988,33 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 1
  708              		.file 3 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\stdio.h"
  709              		.file 4 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\math.h"
  710              		.file 5 "<built-in>"
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s 			page 18
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s 			page 18
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 common.c
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:16     .rodata.LOG.str1.4:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:20     .text.LOG:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:28     .text.LOG:00000000 LOG
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:78     .text.LOG:00000024 $d
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:83     .text.logPC:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:90     .text.logPC:00000000 logPC
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:120    .text.reverse:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:127    .text.reverse:00000000 reverse
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:176    .text.intToStr:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:183    .text.intToStr:00000000 intToStr
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:276    .text.intToStr:00000050 $d
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:288    .text.ftoa:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:295    .text.ftoa:00000000 ftoa
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:406    .text.ftoa:00000070 $d
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:411    .text.intToStr0:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:418    .text.intToStr0:00000000 intToStr0
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:511    .text.intToStr0:00000050 $d
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:516    .text.ftoa0:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:523    .text.ftoa0:00000000 ftoa0
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:634    .text.ftoa0:00000070 $d
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:639    .text.random_number:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cckvxv5B.s:646    .text.random_number:00000000 random_number
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:16     .rodata.LOG.str1.4:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:20     .text.LOG:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:28     .text.LOG:00000000 LOG
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:78     .text.LOG:00000024 $d
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:83     .text.logPC:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:90     .text.logPC:00000000 logPC
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:120    .text.reverse:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:127    .text.reverse:00000000 reverse
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:176    .text.intToStr:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:183    .text.intToStr:00000000 intToStr
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:276    .text.intToStr:00000050 $d
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:288    .text.ftoa:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:295    .text.ftoa:00000000 ftoa
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:406    .text.ftoa:00000070 $d
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:411    .text.intToStr0:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:418    .text.intToStr0:00000000 intToStr0
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:511    .text.intToStr0:00000050 $d
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:516    .text.ftoa0:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:523    .text.ftoa0:00000000 ftoa0
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:634    .text.ftoa0:00000070 $d
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:639    .text.random_number:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTYWPNO.s:646    .text.random_number:00000000 random_number
 
 UNDEFINED SYMBOLS
 memset

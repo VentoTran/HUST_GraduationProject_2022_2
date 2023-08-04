@@ -89,7 +89,9 @@ void sx1278_tx(void)
 
 void sx1278_cad(void)
 {
+    sx1278_standby();
 	sx1278_set_irq(0x80);
+    sx1278_write_reg(REG_IRQ_FLAGS, sx1278_read_reg(REG_IRQ_FLAGS));
     sx1278_write_reg(REG_OP_MODE, MODE_LONG_RANGE_MODE | MODE_CAD);
 }
 
@@ -281,52 +283,11 @@ void sx1278_send_data(uint8_t *data_send, int size)
  */
 void sx1278_start_recv_data(void)
 {
+    sx1278_standby();
 	sx1278_set_irq(0x00);
+    sx1278_write_reg(REG_IRQ_FLAGS, sx1278_read_reg(REG_IRQ_FLAGS));
     sx1278_rx_contiuous();
 }
-
-// sx1278_err_t parse_packet(uint8_t *packet_data, sx1278_node_t *node)
-// {
-//     sx1278_packet_t packet;
-//     int packet_len = strlen((char *)packet_data);
-//     packet.crc = get_crc_value(packet_data, packet_len - 1);
-//     if (packet.crc != packet_data[packet_len - 1])
-//     {
-//         // LOG(TAG, "ERROR CRC");
-//         return SX1278_NOT_OK;
-//     }
-//     else
-//     {
-//         int res = sscanf((char *)packet_data, "$,%[^,],%[^,],%[^,],%[^,],%[^,],*", packet.opcode, packet.node_id, packet.gate_id, packet.period, packet.threshold);
-//         if (res < 5)
-//         {
-//         	// LOG(TAG, "ERROR PACKET");
-//             return SX1278_NOT_OK;
-//         }
-//         if (atoi(packet.node_id) != node->node_id)
-//         {
-//         	// LOG(TAG, "ERROR NODE_ID");
-//             return SX1278_NOT_OK;
-//         }
-//         if (atoi(packet.opcode) != DOWNLINK_RX_REQUEST_OPCODE)
-//         {
-//         	// LOG(TAG, "ERROR OPCODE");
-//             return SX1278_NOT_OK;
-//         }
-// //        if (atoi(packet.gate_id) != sx1278_network.gate_id)
-// //        {
-// //        	LOG(TAG, "ERROR GATE_ID");
-// //            return SX1278_NOT_OK;
-// //        }
-//         node->gate_id = atoi(packet.gate_id);
-// 		node->period = atoi(packet.period);
-// 		strcpy(node->threshold, packet.threshold);
-// 		// char data_log[100];
-// 		// sprintf(data_log, "RECV PACKET: opcode:%s, period:%s, threshold:%s", packet.opcode, packet.period, packet.threshold);
-//         // LOG(TAG, data_log);
-// 		return SX1278_OK;
-//     }
-// }
 
 /**
  * @brief Function to check, parse and get data from LoRa packet
@@ -337,11 +298,10 @@ void sx1278_start_recv_data(void)
  * @param node place to store data
  * @return sx1278_err_t 
  */
-sx1278_err_t sx1278_recv_data(uint8_t *data_recv, int *rssi, float *snr, sx1278_node_t *node)
+sx1278_err_t sx1278_recv_data(uint8_t *data_recv, uint32_t *len, int *rssi, float *snr, bool isStayinRX)
 {
     memset((char *)data_recv, '\0', strlen((char *)data_recv));
     int irq = sx1278_read_reg(REG_IRQ_FLAGS);
-    // sx1278_set_irq(0x00);
     sx1278_write_reg(REG_IRQ_FLAGS, irq);
 
     if (!(irq & IRQ_RX_DONE_MASK))
@@ -362,23 +322,22 @@ sx1278_err_t sx1278_recv_data(uint8_t *data_recv, int *rssi, float *snr, sx1278_
         return SX1278_PAYLOAD_CRC_ERROR;
     }
 
-    int len = sx1278_read_reg(REG_RX_NB_BYTES);
+    *len = sx1278_read_reg(REG_RX_NB_BYTES);
     *rssi = sx1278_get_rssi();
     *snr = sx1278_get_snr();
     sx1278_write_reg(REG_FIFO_ADDR_PTR, sx1278_read_reg(REG_FIFO_RX_CURRENT_ADDR));
-    for (int index = 0; index < len; index++)
+    for (int index = 0; index < *len; index++)
     {
         data_recv[index] = sx1278_read_reg(REG_FIFO);
     }
-    // sx1278_standby();
-    // return parse_packet(data_recv, node);
+    if (isStayinRX == false)    sx1278_standby();
     return SX1278_OK;
 }
 
 int get_random_value(int min, int max)
 {
-    srand(time(NULL));
-    return (rand() % max) + min;
+    srand(HAL_GetTick());
+    return (rand() % (int)(max-min)) + min;
 }
 
 uint8_t get_crc_value(uint8_t *data, int len)
@@ -391,41 +350,7 @@ uint8_t get_crc_value(uint8_t *data, int len)
     return crc;
 }
 
-/**
- * @brief check communicate line for idle slot to talk
- * 
- * @return true ok now TALK!
- * @return false <infinite loop with random delay time>
- */
-bool listen_before_talk(void)
-{
-    // EventBits_t evt_bits;
-    // while (1)
-    // {
-    //     xEventGroupClearBits(sx1278_evt_group, SX1278_DIO0_BIT);
-    //     sx1278_cad();
-    //     evt_bits = xEventGroupWaitBits(sx1278_evt_group, SX1278_DIO0_BIT, pdTRUE, pdFALSE, portMAX_DELAY);
-    //     if(evt_bits & SX1278_DIO0_BIT)
-    //     {
-    //         int irq = sx1278_read_reg(REG_IRQ_FLAGS);
-    //         sx1278_write_reg(REG_IRQ_FLAGS, irq);
-    //         LOG(TAG, "CAD timeout");
-    //         sx1278_set_irq(0xB0);
-    //         sx1278_standby();
-    //         return true;
-    //     }
-    //     else
-    //     {
-    //         int irq = sx1278_read_reg(REG_IRQ_FLAGS);
-    //         sx1278_write_reg(REG_IRQ_FLAGS, irq);
-    //         sx1278_standby();
-    //         TickType_t time_delay = (TickType_t)get_random_value(0, 50);
-    //         LOG(TAG, "CAD detect");
-    //         HAL_Delay(time_delay);
-    //     }
-    // }
-    return true;
-}
+
 
 /**
  * @brief response packet

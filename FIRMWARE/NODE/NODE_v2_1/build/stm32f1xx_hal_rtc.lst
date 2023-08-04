@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
   30:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     (+) Enable the RTC domain access (see description in the section above).
   31:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     (+) Configure the RTC Prescaler (Asynchronous prescaler to generate RTC 1Hz time base)
   32:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****         using the HAL_RTC_Init() function.
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 2
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 2
 
 
   33:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
   87:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   [..] To allow the RTC operating even when the main digital supply (VDD) is turned
   88:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****        off, the VBAT pin powers the following blocks:
   89:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     (#) The RTC
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 3
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 3
 
 
   90:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     (#) The LSE oscillator
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  144:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     (+) MspInitCallback              : RTC MspInit callback.
  145:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     (+) MspDeInitCallback            : RTC MspDeInit callback.
  146:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   [..]	  
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 4
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 4
 
 
  147:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   This function takes as parameters the HAL peripheral handle, the Callback ID
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  201:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** /* Private define ------------------------------------------------------------*/
  202:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** /** @defgroup RTC_Private_Constants RTC Private Constants
  203:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   * @{
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 5
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 5
 
 
  204:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  258:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****          (#) All RTC registers are Write protected. Writing to the RTC registers
  259:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****              is enabled by setting the CNF bit in the RTC_CRL register.
  260:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****          (#) To read the calendar after wakeup from low power modes (Standby or Stop)
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 6
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 6
 
 
  261:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****              the software must first wait for the RSF bit (Register Synchronized Flag)
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  315:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     hrtc->Lock = HAL_UNLOCKED;
  316:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
  317:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     /* Initialize RTC MSP */
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 7
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 7
 
 
  318:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     HAL_RTC_MspInit(hrtc);
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  372:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****         return HAL_ERROR;
  373:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****       }
  374:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****       else
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 8
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 8
 
 
  375:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****       {
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  429:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     /* Set RTC state */
  430:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     hrtc->State = HAL_RTC_STATE_ERROR;
  431:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 9
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 9
 
 
  432:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     /* Release Lock */
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  486:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
  487:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** #if (USE_HAL_RTC_REGISTER_CALLBACKS == 1)
  488:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** /**
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 10
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 10
 
 
  489:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   * @brief  Register a User RTC Callback
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  543:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****       case HAL_RTC_MSPINIT_CB_ID :
  544:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****         hrtc->MspInitCallback = pCallback;
  545:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****         break;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 11
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 11
 
 
  546:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  600:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****       case HAL_RTC_MSPINIT_CB_ID :
  601:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****         hrtc->MspInitCallback = HAL_RTC_MspInit;
  602:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****         break;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 12
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 12
 
 
  603:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  657:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****    */
  658:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** }
  659:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 13
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 13
 
 
  660:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** /**
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  714:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   /* Check the parameters */
  715:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   assert_param(IS_RTC_FORMAT(Format));
  716:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 14
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 14
 
 
  717:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   /* Process Locked */
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  771:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****         if (RTC_WriteAlarmCounter(hrtc, counter_alarm) != HAL_OK)
  772:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****         {
  773:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****           /* Set RTC state */
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 15
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 15
 
 
  774:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****           hrtc->State = HAL_RTC_STATE_ERROR;
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  828:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   sTime->Seconds  = (uint8_t)((counter_time % 3600U) % 60U);
  829:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
  830:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   if (hours >= 24U)
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 16
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 16
 
 
  831:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   {
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  885:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   else
  886:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   {
  887:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     sTime->Hours = hours;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 17
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 17
 
 
  888:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   }
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  942:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   }
  943:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   else
  944:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 18
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 18
 
 
  945:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     assert_param(IS_RTC_YEAR(RTC_Bcd2ToByte(sDate->Year)));
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  999:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****           __HAL_UNLOCK(hrtc);
 1000:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
 1001:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****           return HAL_ERROR;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 19
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 19
 
 
 1002:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****         }
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1056:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     /* Convert the date structure parameters to BCD format */
 1057:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     sDate->Year   = (uint8_t)RTC_ByteToBcd2(sDate->Year);
 1058:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     sDate->Month  = (uint8_t)RTC_ByteToBcd2(sDate->Month);
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 20
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 20
 
 
 1059:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     sDate->Date   = (uint8_t)RTC_ByteToBcd2(sDate->Date);
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1113:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   /* Call HAL_RTC_GetTime function to update date if counter higher than 24 hours */
 1114:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   if (HAL_RTC_GetTime(hrtc, &stime, RTC_FORMAT_BIN) != HAL_OK)
 1115:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 21
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 21
 
 
 1116:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     return HAL_ERROR;
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1170:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   }
 1171:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** }
 1172:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 22
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 22
 
 
 1173:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** /**
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1227:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   {
 1228:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     assert_param(IS_RTC_HOUR24(RTC_Bcd2ToByte(sAlarm->AlarmTime.Hours)));
 1229:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     assert_param(IS_RTC_MINUTES(RTC_Bcd2ToByte(sAlarm->AlarmTime.Minutes)));
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 23
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 23
 
 
 1230:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     assert_param(IS_RTC_SECONDS(RTC_Bcd2ToByte(sAlarm->AlarmTime.Seconds)));
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1284:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   * @param  Format: Specifies the format of the entered parameters.
 1285:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   *          This parameter can be one of the following values:
 1286:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   *             @arg RTC_FORMAT_BIN: Binary data format
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 24
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 24
 
 
 1287:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   *             @arg RTC_FORMAT_BCD: BCD data format
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1341:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   assert_param(IS_RTC_ALARM(Alarm));
 1342:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
 1343:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   /* Check input parameters */
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 25
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 25
 
 
 1344:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   if (hrtc == NULL)
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1398:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
 1399:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** /**
 1400:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   * @brief  This function handles Alarm interrupt request.
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 26
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 26
 
 
 1401:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   * @param  hrtc   pointer to a RTC_HandleTypeDef structure that contains
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1455:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   uint32_t tickstart = HAL_GetTick();
 1456:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
 1457:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   /* Check input parameters */
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 27
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 27
 
 
 1458:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   if (hrtc == NULL)
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1512:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
 1513:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** /**
 1514:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   * @}
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 28
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 28
 
 
 1515:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   */
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1569:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   * @}
 1570:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   */
 1571:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 29
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 29
 
 
 1572:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1596:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
 1597:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   if (high1 != high2)
   57              		.loc 1 1597 3 is_stmt 1 view .LVU12
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 30
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 30
 
 
   58              		.loc 1 1597 6 is_stmt 0 view .LVU13
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
   93              	.LFE82:
   95              		.section	.text.RTC_ReadAlarmCounter,"ax",%progbits
   96              		.align	1
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 31
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 31
 
 
   97              		.syntax unified
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1654:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   uint16_t high1 = 0U, low = 0U;
  110              		.loc 1 1654 3 view .LVU25
 1655:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 32
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 32
 
 
 1656:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   high1 = READ_REG(hrtc->Instance->ALRH & RTC_CNTH_RTC_CNT);
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1682:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     /* Set RTC COUNTER LSB word */
 1683:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     WRITE_REG(hrtc->Instance->ALRL, (AlarmCounter & RTC_ALRL_RTC_ALR));
 1684:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 33
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 33
 
 
 1685:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     /* Wait for synchro */
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1739:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     if ((HAL_GetTick() - tickstart) >  RTC_TIMEOUT_VALUE)
 1740:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     {
 1741:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****       return HAL_TIMEOUT;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 34
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 34
 
 
 1742:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     }
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  171 000e 1B01     		lsls	r3, r3, #4
  172              	.LVL19:
  173              		.loc 1 1763 11 view .LVU47
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 35
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 35
 
 
  174 0010 DBB2     		uxtb	r3, r3
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  218              		.align	1
  219              		.syntax unified
  220              		.thumb
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 36
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 36
 
 
  221              		.thumb_func
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1826:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****       {
 1827:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****         day++;
 1828:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****       }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 37
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 37
 
 
 1829:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****       /* Date structure member: day = 30 */
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  228              		.cfi_startproc
  229              		@ args = 0, pretend = 0, frame = 0
  230              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 38
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 38
 
 
  231              		@ link register save eliminated.
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1889:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   }
  270              		.loc 1 1889 12 view .LVU72
  271 0034 0120     		movs	r0, #1
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 39
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 39
 
 
  272              	.LVL29:
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  302              		.loc 1 1919 3 view .LVU77
 1920:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
 1921:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   year = 2000U + nYear;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 40
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 40
 
 
  303              		.loc 1 1921 3 view .LVU78
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1930:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     /*D = { [(23 x month)/9] + day + 4 + year + [year/4] - [year/100] + [year/400] - 2 } mod 7*/
 1931:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     weekday = (((23U * nMonth) / 9U) + nDay + 4U + year + (year / 4U) - (year / 100U) + (year / 400
 1932:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 41
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 41
 
 
 1933:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  387 0076 A0FB0320 		umull	r2, r0, r0, r3
  388 007a 1A1A     		subs	r2, r3, r0
  389 007c 00EB5200 		add	r0, r0, r2, lsr #1
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 42
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 42
 
 
  390 0080 8008     		lsrs	r0, r0, #2
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  439              	.LVL46:
 1794:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   day = hrtc->DateToUpdate.Date;
  440              		.loc 1 1794 3 is_stmt 1 view .LVU117
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 43
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 43
 
 
 1794:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   day = hrtc->DateToUpdate.Date;
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  478 0024 032C     		cmp	r4, #3
  479 0026 F5D0     		beq	.L24
 1799:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****         (month == 8U) || (month == 10U) || (month == 12U))
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 44
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 44
 
 
  480              		.loc 1 1799 40 discriminator 2 view .LVU135
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  519              	.LVL52:
 1840:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****       }
  520              		.loc 1 1840 12 view .LVU151
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 45
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 45
 
 
  521 0056 E0E7     		b	.L27
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  558              		.loc 1 1827 12 view .LVU168
  559 0072 D2E7     		b	.L27
  560              	.L31:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 46
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 46
 
 
 1832:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****         day = 1U;
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  598 0092 0135     		adds	r5, r5, #1
  599              	.LVL63:
 1847:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****         }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 47
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 47
 
 
  600              		.loc 1 1847 14 view .LVU186
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  640              		.thumb
  641              		.thumb_func
  642              		.fpu softvfp
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 48
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 48
 
 
  644              	RTC_EnterInitMode:
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  684 0018 401B     		subs	r0, r0, r5
 1709:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     {
  685              		.loc 1 1709 8 view .LVU216
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 49
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 49
 
 
  686 001a B0F57A7F 		cmp	r0, #1000
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  732 0004 0268     		ldr	r2, [r0]
  733 0006 5368     		ldr	r3, [r2, #4]
  734 0008 23F01003 		bic	r3, r3, #16
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 50
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 50
 
 
  735 000c 5360     		str	r3, [r2, #4]
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  773              	.LFE87:
  775              		.section	.text.RTC_WriteTimeCounter,"ax",%progbits
  776              		.align	1
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 51
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 51
 
 
  777              		.syntax unified
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  821 0016 2B68     		ldr	r3, [r5]
  822 0018 A4B2     		uxth	r4, r4
  823              	.LVL82:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 52
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 52
 
 
 1634:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1674:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   {
  870              		.loc 1 1674 6 view .LVU264
  871 000a 08B1     		cbz	r0, .L64
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 53
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 53
 
 
 1676:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   }
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  917              		.cfi_startproc
  918              		@ args = 0, pretend = 0, frame = 0
  919              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 54
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 54
 
 
  920              		@ link register save eliminated.
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  971              		.cfi_offset 14, -4
  706:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
  972              		.loc 1 706 3 is_stmt 1 view .LVU283
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 55
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 55
 
 
  973              	.LVL94:
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  729:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****                               ((uint32_t)sTime->Seconds));
  1009              		.loc 1 729 57 view .LVU302
  1010 0022 C3EB0313 		rsb	r3, r3, r3, lsl #4
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 56
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 56
 
 
  1011 0026 9C00     		lsls	r4, r3, #2
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  1050              	.L69:
  734:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     assert_param(IS_RTC_MINUTES(RTC_Bcd2ToByte(sTime->Minutes)));
  1051              		.loc 1 734 5 is_stmt 1 view .LVU318
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 57
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 57
 
 
  735:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     assert_param(IS_RTC_SECONDS(RTC_Bcd2ToByte(sTime->Seconds)));
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  1091 0080 FFF7FEFF 		bl	RTC_ReadAlarmCounter
  1092              	.LVL107:
  763:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 58
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 58
 
 
  1093              		.loc 1 763 5 is_stmt 1 view .LVU334
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  774:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
  1131              		.loc 1 774 23 is_stmt 0 view .LVU351
  1132 00aa 0423     		movs	r3, #4
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 59
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 59
 
 
  1133 00ac 7374     		strb	r3, [r6, #17]
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  1177 0000 0028     		cmp	r0, #0
  1178 0002 6FD0     		beq	.L85
  804:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   uint32_t counter_time = 0U, counter_alarm = 0U, days_elapsed = 0U, hours = 0U;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 60
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 60
 
 
  1179              		.loc 1 804 1 discriminator 1 view .LVU364
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  1221              		.loc 1 826 9 is_stmt 0 view .LVU376
  1222 0028 334B     		ldr	r3, .L100
  1223 002a A3FB0023 		umull	r2, r3, r3, r0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 61
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 61
 
 
  1224 002e DB0A     		lsrs	r3, r3, #11
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  1261              		.loc 1 894 32 is_stmt 0 view .LVU393
  1262 005c 2078     		ldrb	r0, [r4]	@ zero_extendqisi2
  1263 005e FFF7FEFF 		bl	RTC_ByteToBcd2
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 62
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 62
 
 
  1264              	.LVL121:
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  1303              	.LVL127:
  1304 0092 8146     		mov	r9, r0
  1305              	.LVL128:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 63
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 63
 
 
  842:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     {
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  1344              		.loc 1 868 7 view .LVU424
  868:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****       {
  1345              		.loc 1 868 11 is_stmt 0 view .LVU425
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 64
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 64
 
 
  1346 00be 09EB0601 		add	r1, r9, r6
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  1391              		.loc 1 900 1 view .LVU434
  1392 00e6 7047     		bx	lr
  1393              	.LVL143:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 65
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 65
 
 
  1394              	.L86:
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  1445              	.LVL148:
  1446              	.LFB71:
  915:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   uint32_t counter_time = 0U, counter_alarm = 0U, hours = 0U;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 66
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 66
 
 
  1447              		.loc 1 915 1 is_stmt 1 view -0
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  1486              		.loc 1 934 5 is_stmt 1 view .LVU455
  935:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     assert_param(IS_RTC_DATE(sDate->Date));
  1487              		.loc 1 935 5 view .LVU456
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 67
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 67
 
 
  936:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  965:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   {
  1524              		.loc 1 965 3 view .LVU475
  965:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 68
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 68
 
 
  1525              		.loc 1 965 6 is_stmt 0 view .LVU476
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  951:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     hrtc->DateToUpdate.Date  = RTC_Bcd2ToByte(sDate->Date);
  1563              		.loc 1 951 30 view .LVU493
  1564 005c 6073     		strb	r0, [r4, #13]
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 69
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 69
 
 
  952:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   }
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  978:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     }
  1604              		.loc 1 978 14 is_stmt 0 view .LVU509
  1605 0088 0120     		movs	r0, #1
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 70
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 70
 
 
  1606 008a DFE7     		b	.L103
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1001:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****         }
  1644              		.loc 1 1001 11 view .LVU526
 1001:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****         }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 71
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 71
 
 
  1645              		.loc 1 1001 18 is_stmt 0 view .LVU527
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  1694              		.thumb
  1695              		.thumb_func
  1696              		.fpu softvfp
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 72
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 72
 
 
  1698              	HAL_RTC_GetDate:
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  1740 001e FFF7FEFF 		bl	HAL_RTC_GetTime
  1741              	.LVL176:
 1042:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 73
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 73
 
 
  1742              		.loc 1 1042 6 view .LVU546
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  1777 0042 4046     		mov	r0, r8
  1778 0044 FFF7FEFF 		bl	RTC_ByteToBcd2
  1779              	.LVL179:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 74
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 74
 
 
 1058:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     sDate->Date   = (uint8_t)RTC_ByteToBcd2(sDate->Date);
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  1828              	.LFB73:
 1094:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   uint32_t counter_alarm = 0U, counter_time;
  1829              		.loc 1 1094 1 is_stmt 1 view -0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 75
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 75
 
 
  1830              		.cfi_startproc
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1109:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
  1872              		.loc 1 1109 3 discriminator 2 view .LVU587
 1111:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 76
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 76
 
 
  1873              		.loc 1 1111 3 discriminator 2 view .LVU588
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  1910              		.loc 1 1127 5 view .LVU605
 1128:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
  1911              		.loc 1 1128 5 view .LVU606
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 77
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 77
 
 
 1130:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****                                ((uint32_t)sAlarm->AlarmTime.Minutes * 60U) + \
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  1949              		.loc 1 1156 17 is_stmt 0 view .LVU623
  1950 007e 0423     		movs	r3, #4
  1951 0080 7374     		strb	r3, [r6, #17]
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 78
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 78
 
 
 1159:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  1989 00ac 2918     		adds	r1, r5, r0
  1990              	.LVL199:
 1140:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****                      ((uint32_t)(RTC_Bcd2ToByte(sAlarm->AlarmTime.Minutes)) * 60U) + \
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 79
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 79
 
 
  1991              		.loc 1 1140 19 view .LVU641
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  2033              	.LVL206:
 1109:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
  2034              		.loc 1 1109 3 view .LVU654
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 80
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 80
 
 
  2035 00c6 F9E7     		b	.L125
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  2083 0014 1646     		mov	r6, r2
  2084 0016 0546     		mov	r5, r0
 1191:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 81
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 81
 
 
  2085              		.loc 1 1191 22 discriminator 1 view .LVU663
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  2122 003e C3EB0313 		rsb	r3, r3, r3, lsl #4
  2123 0042 9F00     		lsls	r7, r3, #2
 1212:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****                             ((uint32_t)stime.Minutes * 60U) + \
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 82
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 82
 
 
  2124              		.loc 1 1212 61 view .LVU681
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  2160              		.loc 1 1241 19 is_stmt 0 view .LVU699
  2161 006e 01F5A831 		add	r1, r1, #86016
  2162              	.LVL215:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 83
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 83
 
 
 1241:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   }
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1232:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****                      ((uint32_t)(RTC_Bcd2ToByte(sAlarm->AlarmTime.Minutes)) * 60U) + \
  2200              		.loc 1 1232 75 view .LVU717
  2201 0094 00FB06F6 		mul	r6, r0, r6
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 84
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 84
 
 
 1233:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****                      ((uint32_t)RTC_Bcd2ToByte(sAlarm->AlarmTime.Seconds)));
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1270:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
  2244              		.loc 1 1270 5 is_stmt 1 view .LVU730
 1270:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 85
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 85
 
 
  2245              		.loc 1 1270 5 view .LVU731
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  2289 00f4 00040140 		.word	1073808384
  2290              		.cfi_endproc
  2291              	.LFE74:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 86
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 86
 
 
  2293              		.section	.text.HAL_RTC_GetAlarm,"ax",%progbits
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1312:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   sAlarm->AlarmTime.Minutes = (uint32_t)((counter_alarm % 3600U) / 60U);
  2336              		.loc 1 1312 3 is_stmt 1 view .LVU754
 1312:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   sAlarm->AlarmTime.Minutes = (uint32_t)((counter_alarm % 3600U) / 60U);
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 87
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 87
 
 
  2337              		.loc 1 1312 57 is_stmt 0 view .LVU755
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  2376              		.loc 1 1318 33 is_stmt 0 view .LVU770
  2377 0050 FFF7FEFF 		bl	RTC_ByteToBcd2
  2378              	.LVL237:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 88
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 88
 
 
 1318:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     sAlarm->AlarmTime.Minutes = RTC_ByteToBcd2(sAlarm->AlarmTime.Minutes);
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1300:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   }
  2423              		.loc 1 1300 12 view .LVU781
  2424 006e 0120     		movs	r0, #1
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 89
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 89
 
 
  2425              	.LVL243:
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  2471              		.cfi_offset 4, -8
  2472              		.cfi_offset 14, -4
  2473 0006 0446     		mov	r4, r0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 90
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 90
 
 
 1350:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
 1397:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
  2511              		.loc 1 1397 1 view .LVU809
  2512 0030 10BD     		pop	{r4, pc}
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 91
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 91
 
 
  2513              	.LVL248:
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  2552              		.loc 1 1383 7 is_stmt 1 view .LVU824
 1383:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
  2553              		.loc 1 1383 19 is_stmt 0 view .LVU825
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 92
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 92
 
 
  2554 0064 0423     		movs	r3, #4
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  2600              		.fpu softvfp
  2602              	HAL_RTC_AlarmAEventCallback:
  2603              	.LVL254:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 93
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 93
 
 
  2604              	.LFB78:
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  2649 0010 13F0020F 		tst	r3, #2
  2650 0014 06D1     		bne	.L176
  2651              	.LVL256:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 94
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 94
 
 
  2652              	.L174:
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  2700              		.cfi_offset 4, -16
  2701              		.cfi_offset 5, -12
  2702              		.cfi_offset 6, -8
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 95
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 95
 
 
  2703              		.cfi_offset 14, -4
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  2741              		.loc 1 1469 9 is_stmt 1 view .LVU869
 1469:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****         return HAL_TIMEOUT;
  2742              		.loc 1 1469 21 is_stmt 0 view .LVU870
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 96
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 96
 
 
  2743 002a 0320     		movs	r0, #3
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  2788              		@ link register save eliminated.
 1510:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** }
  2789              		.loc 1 1510 3 view .LVU882
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 97
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 97
 
 
 1510:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** }
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  2835              		.loc 1 1554 15 view .LVU893
  2836 0014 0446     		mov	r4, r0
  2837              	.LVL270:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 98
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 98
 
 
 1557:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   {
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  2878 0036 7047     		bx	lr
  2879              		.cfi_endproc
  2880              	.LFE81:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 99
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 99
 
 
  2882              		.section	.text.HAL_RTC_Init,"ax",%progbits
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  2923              		.loc 1 326 3 is_stmt 1 view .LVU921
  326:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   {
  2924              		.loc 1 326 7 is_stmt 0 view .LVU922
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 100
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 100
 
 
  2925 0010 2046     		mov	r0, r4
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  2964              		.loc 1 347 5 view .LVU937
  347:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****     {
  2965              		.loc 1 347 19 is_stmt 0 view .LVU938
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 101
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 101
 
 
  2966 003a A368     		ldr	r3, [r4, #8]
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  3007              		.loc 1 388 7 is_stmt 1 view .LVU951
  388:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
  3008              		.loc 1 388 19 is_stmt 0 view .LVU952
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 102
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 102
 
 
  3009 0074 0423     		movs	r3, #4
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  372:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****       }
  3047              		.loc 1 372 16 is_stmt 0 view .LVU969
  3048 0094 0120     		movs	r0, #1
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 103
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 103
 
 
  3049              	.LVL288:
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  3091              		.syntax unified
  3092              		.thumb
  3093              		.thumb_func
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 104
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 104
 
 
  3094              		.fpu softvfp
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  433:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
  3135              		.loc 1 433 5 view .LVU997
  435:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c ****   }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 105
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 105
 
 
  3136              		.loc 1 435 5 view .LVU998
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  3177 004a 6374     		strb	r3, [r4, #17]
  453:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
  3178              		.loc 1 453 7 is_stmt 1 view .LVU1012
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 106
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 106
 
 
  453:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c **** 
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  3218              	.LFE66:
  3220              		.text
  3221              	.Letext0:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 107
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 107
 
 
  3222              		.file 2 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\machine\\_default_type
@@ -6369,79 +6369,79 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 1
  3227              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc.h"
  3228              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
  3229              		.file 9 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h"
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 108
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 108
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f1xx_hal_rtc.c
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:16     .text.RTC_ReadTimeCounter:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:23     .text.RTC_ReadTimeCounter:00000000 RTC_ReadTimeCounter
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:96     .text.RTC_ReadAlarmCounter:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:102    .text.RTC_ReadAlarmCounter:00000000 RTC_ReadAlarmCounter
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:132    .text.RTC_ByteToBcd2:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:138    .text.RTC_ByteToBcd2:00000000 RTC_ByteToBcd2
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:184    .text.RTC_Bcd2ToByte:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:190    .text.RTC_Bcd2ToByte:00000000 RTC_Bcd2ToByte
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:218    .text.RTC_IsLeapYear:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:224    .text.RTC_IsLeapYear:00000000 RTC_IsLeapYear
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:283    .text.RTC_IsLeapYear:0000003c $d
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:288    .text.RTC_WeekDayNum:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:294    .text.RTC_WeekDayNum:00000000 RTC_WeekDayNum
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:399    .text.RTC_WeekDayNum:0000008c $d
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:406    .text.RTC_DateUpdate:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:412    .text.RTC_DateUpdate:00000000 RTC_DateUpdate
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:638    .text.RTC_EnterInitMode:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:644    .text.RTC_EnterInitMode:00000000 RTC_EnterInitMode
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:707    .text.RTC_ExitInitMode:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:713    .text.RTC_ExitInitMode:00000000 RTC_ExitInitMode
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:776    .text.RTC_WriteTimeCounter:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:782    .text.RTC_WriteTimeCounter:00000000 RTC_WriteTimeCounter
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:841    .text.RTC_WriteAlarmCounter:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:847    .text.RTC_WriteAlarmCounter:00000000 RTC_WriteAlarmCounter
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:906    .text.HAL_RTC_MspInit:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:913    .text.HAL_RTC_MspInit:00000000 HAL_RTC_MspInit
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:928    .text.HAL_RTC_MspDeInit:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:935    .text.HAL_RTC_MspDeInit:00000000 HAL_RTC_MspDeInit
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:950    .text.HAL_RTC_SetTime:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:957    .text.HAL_RTC_SetTime:00000000 HAL_RTC_SetTime
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:1160   .text.HAL_RTC_GetTime:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:1167   .text.HAL_RTC_GetTime:00000000 HAL_RTC_GetTime
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:1428   .text.HAL_RTC_GetTime:000000f8 $d
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:1437   .text.HAL_RTC_SetDate:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:1444   .text.HAL_RTC_SetDate:00000000 HAL_RTC_SetDate
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:1684   .text.HAL_RTC_SetDate:000000c8 $d
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:1691   .text.HAL_RTC_GetDate:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:1698   .text.HAL_RTC_GetDate:00000000 HAL_RTC_GetDate
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:1819   .text.HAL_RTC_SetAlarm:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:1826   .text.HAL_RTC_SetAlarm:00000000 HAL_RTC_SetAlarm
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2045   .text.HAL_RTC_SetAlarm_IT:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2052   .text.HAL_RTC_SetAlarm_IT:00000000 HAL_RTC_SetAlarm_IT
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2289   .text.HAL_RTC_SetAlarm_IT:000000f4 $d
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2294   .text.HAL_RTC_GetAlarm:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2301   .text.HAL_RTC_GetAlarm:00000000 HAL_RTC_GetAlarm
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2440   .text.HAL_RTC_GetAlarm:00000078 $d
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2447   .text.HAL_RTC_DeactivateAlarm:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2454   .text.HAL_RTC_DeactivateAlarm:00000000 HAL_RTC_DeactivateAlarm
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2590   .text.HAL_RTC_DeactivateAlarm:00000078 $d
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2595   .text.HAL_RTC_AlarmAEventCallback:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2602   .text.HAL_RTC_AlarmAEventCallback:00000000 HAL_RTC_AlarmAEventCallback
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2617   .text.HAL_RTC_AlarmIRQHandler:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2624   .text.HAL_RTC_AlarmIRQHandler:00000000 HAL_RTC_AlarmIRQHandler
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2677   .text.HAL_RTC_AlarmIRQHandler:00000034 $d
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2682   .text.HAL_RTC_PollForAlarmAEvent:00000000 $t
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s 			page 109
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:16     .text.RTC_ReadTimeCounter:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:23     .text.RTC_ReadTimeCounter:00000000 RTC_ReadTimeCounter
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:96     .text.RTC_ReadAlarmCounter:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:102    .text.RTC_ReadAlarmCounter:00000000 RTC_ReadAlarmCounter
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:132    .text.RTC_ByteToBcd2:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:138    .text.RTC_ByteToBcd2:00000000 RTC_ByteToBcd2
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:184    .text.RTC_Bcd2ToByte:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:190    .text.RTC_Bcd2ToByte:00000000 RTC_Bcd2ToByte
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:218    .text.RTC_IsLeapYear:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:224    .text.RTC_IsLeapYear:00000000 RTC_IsLeapYear
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:283    .text.RTC_IsLeapYear:0000003c $d
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:288    .text.RTC_WeekDayNum:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:294    .text.RTC_WeekDayNum:00000000 RTC_WeekDayNum
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:399    .text.RTC_WeekDayNum:0000008c $d
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:406    .text.RTC_DateUpdate:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:412    .text.RTC_DateUpdate:00000000 RTC_DateUpdate
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:638    .text.RTC_EnterInitMode:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:644    .text.RTC_EnterInitMode:00000000 RTC_EnterInitMode
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:707    .text.RTC_ExitInitMode:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:713    .text.RTC_ExitInitMode:00000000 RTC_ExitInitMode
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:776    .text.RTC_WriteTimeCounter:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:782    .text.RTC_WriteTimeCounter:00000000 RTC_WriteTimeCounter
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:841    .text.RTC_WriteAlarmCounter:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:847    .text.RTC_WriteAlarmCounter:00000000 RTC_WriteAlarmCounter
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:906    .text.HAL_RTC_MspInit:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:913    .text.HAL_RTC_MspInit:00000000 HAL_RTC_MspInit
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:928    .text.HAL_RTC_MspDeInit:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:935    .text.HAL_RTC_MspDeInit:00000000 HAL_RTC_MspDeInit
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:950    .text.HAL_RTC_SetTime:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:957    .text.HAL_RTC_SetTime:00000000 HAL_RTC_SetTime
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:1160   .text.HAL_RTC_GetTime:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:1167   .text.HAL_RTC_GetTime:00000000 HAL_RTC_GetTime
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:1428   .text.HAL_RTC_GetTime:000000f8 $d
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:1437   .text.HAL_RTC_SetDate:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:1444   .text.HAL_RTC_SetDate:00000000 HAL_RTC_SetDate
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:1684   .text.HAL_RTC_SetDate:000000c8 $d
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:1691   .text.HAL_RTC_GetDate:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:1698   .text.HAL_RTC_GetDate:00000000 HAL_RTC_GetDate
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:1819   .text.HAL_RTC_SetAlarm:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:1826   .text.HAL_RTC_SetAlarm:00000000 HAL_RTC_SetAlarm
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2045   .text.HAL_RTC_SetAlarm_IT:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2052   .text.HAL_RTC_SetAlarm_IT:00000000 HAL_RTC_SetAlarm_IT
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2289   .text.HAL_RTC_SetAlarm_IT:000000f4 $d
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2294   .text.HAL_RTC_GetAlarm:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2301   .text.HAL_RTC_GetAlarm:00000000 HAL_RTC_GetAlarm
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2440   .text.HAL_RTC_GetAlarm:00000078 $d
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2447   .text.HAL_RTC_DeactivateAlarm:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2454   .text.HAL_RTC_DeactivateAlarm:00000000 HAL_RTC_DeactivateAlarm
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2590   .text.HAL_RTC_DeactivateAlarm:00000078 $d
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2595   .text.HAL_RTC_AlarmAEventCallback:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2602   .text.HAL_RTC_AlarmAEventCallback:00000000 HAL_RTC_AlarmAEventCallback
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2617   .text.HAL_RTC_AlarmIRQHandler:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2624   .text.HAL_RTC_AlarmIRQHandler:00000000 HAL_RTC_AlarmIRQHandler
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2677   .text.HAL_RTC_AlarmIRQHandler:00000034 $d
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2682   .text.HAL_RTC_PollForAlarmAEvent:00000000 $t
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s 			page 109
 
 
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2689   .text.HAL_RTC_PollForAlarmAEvent:00000000 HAL_RTC_PollForAlarmAEvent
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2774   .text.HAL_RTC_GetState:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2781   .text.HAL_RTC_GetState:00000000 HAL_RTC_GetState
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2799   .text.HAL_RTC_WaitForSynchro:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2806   .text.HAL_RTC_WaitForSynchro:00000000 HAL_RTC_WaitForSynchro
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2883   .text.HAL_RTC_Init:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:2890   .text.HAL_RTC_Init:00000000 HAL_RTC_Init
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:3084   .text.HAL_RTC_Init:000000ac $d
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:3089   .text.HAL_RTC_DeInit:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc12eKoK.s:3096   .text.HAL_RTC_DeInit:00000000 HAL_RTC_DeInit
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2689   .text.HAL_RTC_PollForAlarmAEvent:00000000 HAL_RTC_PollForAlarmAEvent
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2774   .text.HAL_RTC_GetState:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2781   .text.HAL_RTC_GetState:00000000 HAL_RTC_GetState
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2799   .text.HAL_RTC_WaitForSynchro:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2806   .text.HAL_RTC_WaitForSynchro:00000000 HAL_RTC_WaitForSynchro
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2883   .text.HAL_RTC_Init:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:2890   .text.HAL_RTC_Init:00000000 HAL_RTC_Init
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:3084   .text.HAL_RTC_Init:000000ac $d
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:3089   .text.HAL_RTC_DeInit:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc8qTyfk.s:3096   .text.HAL_RTC_DeInit:00000000 HAL_RTC_DeInit
 
 UNDEFINED SYMBOLS
 HAL_GetTick

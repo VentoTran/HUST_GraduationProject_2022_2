@@ -67,6 +67,7 @@ void Error_Handler(void);
 #define LoRa_RST_GPIO_Port GPIOB
 #define LoRa_EXT0_Pin GPIO_PIN_1
 #define LoRa_EXT0_GPIO_Port GPIOB
+#define LoRa_EXT0_EXTI_IRQn EXTI1_IRQn
 #define LoRa_EXT1_Pin GPIO_PIN_2
 #define LoRa_EXT1_GPIO_Port GPIOB
 #define LoRa_EXT2_Pin GPIO_PIN_10
@@ -85,8 +86,6 @@ void Error_Handler(void);
 #define DE_GPIO_Port GPIOA
 #define LED1_Pin GPIO_PIN_15
 #define LED1_GPIO_Port GPIOA
-#define RTC_IN_Pin GPIO_PIN_5
-#define RTC_IN_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

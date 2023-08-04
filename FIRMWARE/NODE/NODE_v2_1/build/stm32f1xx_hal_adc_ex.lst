@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
   29:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   */
   30:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c **** 
   31:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c **** /* Includes ------------------------------------------------------------------*/
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 2
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 2
 
 
   32:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c **** #include "stm32f1xx_hal.h"
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
   86:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c **** @verbatim    
   87:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****  ===============================================================================
   88:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****                       ##### IO operation functions #####
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 3
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 3
 
 
   89:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****  ===============================================================================
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
   47              		.loc 1 123 17 is_stmt 0 view .LVU5
   48 0004 0023     		movs	r3, #0
   49 0006 0193     		str	r3, [sp, #4]
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 4
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 4
 
 
  124:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  152:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c **** 
  153:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     while(wait_loop_index != 0U)
  154:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 5
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 5
 
 
  155:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****       wait_loop_index--;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  209:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     
  210:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     /* Set ADC state */
  211:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     ADC_STATE_CLR_SET(hadc->State,
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 6
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 6
 
 
  212:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****                       HAL_ADC_STATE_BUSY_INTERNAL,
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  151:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c **** 
  114              		.loc 1 151 24 view .LVU28
  115 0050 7600     		lsls	r6, r6, #1
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 7
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 7
 
 
  149:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****                         / HAL_RCCEx_GetPeriphCLKFreq(RCC_PERIPHCLK_ADC))
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  154              		.loc 1 166 7 is_stmt 1 view .LVU44
  166:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****       {
  155              		.loc 1 166 11 is_stmt 0 view .LVU45
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 8
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 8
 
 
  156 007c FFF7FEFF 		bl	HAL_GetTick
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  195              		.loc 1 190 5 is_stmt 1 view .LVU60
  196              	.L8:
  190:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 9
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 9
 
 
  197              		.loc 1 190 10 view .LVU61
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  235              		.loc 1 211 5 is_stmt 1 view .LVU77
  236 00e8 A36A     		ldr	r3, [r4, #40]
  237 00ea 23F00303 		bic	r3, r3, #3
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 10
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 10
 
 
  238 00ee 43F00103 		orr	r3, r3, #1
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  276 0008 10B5     		push	{r4, lr}
  277              	.LCFI4:
  278              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 11
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 11
 
 
  279              		.cfi_offset 4, -8
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  258:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     else
  259:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     {
  260:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****       SET_BIT(hadc->State, HAL_ADC_STATE_MULTIMODE_SLAVE);
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 12
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 12
 
 
  261:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     }
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  336 0056 12F4806F 		tst	r2, #1024
  337 005a 27D1     		bne	.L18
  292:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 13
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 13
 
 
  293:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****       if (ADC_IS_SOFTWARE_START_INJECTED(hadc)     &&
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  293:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****           ADC_NONMULTIMODE_OR_MULTIMODEMASTER(hadc)  )
  377              		.loc 1 293 52 discriminator 2 view .LVU116
  378 009e 12F4702F 		tst	r2, #983040
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 14
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 14
 
 
  379 00a2 E1D1     		bne	.L24
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  319:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   * @note   If ADC must be disabled and if conversion is on going on 
  320:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   *         regular group, function HAL_ADC_Stop must be used to stop both
  321:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   *         injected and regular groups, and disable the ADC.
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 15
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 15
 
 
  322:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   * @note   If injected group mode auto-injection is enabled,
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  447 001a 0368     		ldr	r3, [r0]
  448 001c 5B68     		ldr	r3, [r3, #4]
  344:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****      HAL_IS_BIT_CLR(hadc->Instance->CR1, ADC_CR1_JAUTO)   )
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 16
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 16
 
 
  449              		.loc 1 344 57 discriminator 1 view .LVU134
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  349:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     
  474              		.loc 1 349 22 is_stmt 0 view .LVU144
  475 0036 FFF7FEFF 		bl	ADC_ConversionStop_Disable
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 17
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 17
 
 
  476              	.LVL24:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  519              	.LCFI8:
  520              		.cfi_def_cfa_offset 20
  521              		.cfi_offset 4, -20
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 18
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 18
 
 
  522              		.cfi_offset 5, -16
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  546              		.loc 1 412 3 is_stmt 1 view .LVU160
  547              		.loc 1 412 12 is_stmt 0 view .LVU161
  548 0012 2B68     		ldr	r3, [r5]
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 19
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 19
 
 
  549              		.loc 1 412 22 view .LVU162
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  586              		.loc 1 429 13 view .LVU177
  430:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c **** 
  431:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****             return HAL_TIMEOUT;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 20
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 20
 
 
  587              		.loc 1 431 13 view .LVU178
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  624 0074 1142     		tst	r1, r2
  625 0076 09D1     		bne	.L55
  626              		.loc 1 445 44 discriminator 3 view .LVU190
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 21
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 21
 
 
  627 0078 1969     		ldr	r1, [r3, #16]
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  447:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     while(Conversion_Timeout_CPU_cycles < Conversion_Timeout_CPU_cycles_max)
  679              		.loc 1 447 5 is_stmt 1 view .LVU199
  680              		.loc 1 447 10 is_stmt 0 view .LVU200
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 22
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 22
 
 
  681 00c4 07E0     		b	.L58
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  709              		.loc 1 450 9 is_stmt 0 view .LVU211
  710 00dc B4F1FF3F 		cmp	r4, #-1
  711 00e0 F6D0     		beq	.L59
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 23
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 23
 
 
  452:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****         {
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  745              		.loc 1 477 3 view .LVU224
  746 010c AB6A     		ldr	r3, [r5, #40]
  747 010e 43F40053 		orr	r3, r3, #8192
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 24
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 24
 
 
  748 0112 AB62     		str	r3, [r5, #40]
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  777              		.loc 1 488 5 is_stmt 1 view .LVU235
  778 013e AB6A     		ldr	r3, [r5, #40]
  779 0140 23F48053 		bic	r3, r3, #4096
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 25
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 25
 
 
  780 0144 AB62     		str	r3, [r5, #40]
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  828              		.align	1
  829              		.global	HAL_ADCEx_InjectedStart_IT
  830              		.syntax unified
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 26
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 26
 
 
  831              		.thumb
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  520:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   /* Start conversion if ADC is effectively enabled */
  521:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   if (tmp_hal_status == HAL_OK)
  864              		.loc 1 521 3 is_stmt 1 discriminator 2 view .LVU255
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 27
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 27
 
 
  865              		.loc 1 521 6 is_stmt 0 discriminator 2 view .LVU256
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  548:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****       ADC_CLEAR_ERRORCODE(hadc);
  893              		.loc 1 548 7 is_stmt 1 view .LVU265
  894 0042 0023     		movs	r3, #0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 28
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 28
 
 
  895 0044 E362     		str	r3, [r4, #44]
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  573:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****       {
  574:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****         /* Start ADC conversion on injected group with SW start */
  575:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****         SET_BIT(hadc->Instance->CR2, (ADC_CR2_JSWSTART | ADC_CR2_JEXTTRIG));
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 29
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 29
 
 
  576:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****       }
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  961              		.loc 1 587 5 is_stmt 1 view .LVU284
  962              		.loc 1 587 5 view .LVU285
  963 00b0 0023     		movs	r3, #0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 30
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 30
 
 
  964 00b2 84F82430 		strb	r3, [r4, #36]
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  999              		@ args = 0, pretend = 0, frame = 0
  1000              		@ frame_needed = 0, uses_anonymous_args = 0
  608:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   HAL_StatusTypeDef tmp_hal_status = HAL_OK;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 31
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 31
 
 
  1001              		.loc 1 608 3 view .LVU290
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  630:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     if (tmp_hal_status == HAL_OK)
  631:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     {
  632:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****       /* Disable ADC end of conversion interrupt for injected channels */
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 32
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 32
 
 
  633:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****       __HAL_ADC_DISABLE_IT(hadc, ADC_IT_JEOC);
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  633:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****       
  1060              		.loc 1 633 7 is_stmt 1 view .LVU314
  1061 003e 2268     		ldr	r2, [r4]
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 33
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 33
 
 
  1062 0040 5368     		ldr	r3, [r2, #4]
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  674:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   */
  675:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c **** HAL_StatusTypeDef HAL_ADCEx_MultiModeStart_DMA(ADC_HandleTypeDef* hadc, uint32_t* pData, uint32_t L
  676:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c **** {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 34
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 34
 
 
  1097              		.loc 1 676 1 is_stmt 1 view -0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  686:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c **** 
  687:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   /* Set a temporary handle of the ADC slave associated to the ADC master     */
  688:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   ADC_MULTI_SLAVE(hadc, &tmphadcSlave);
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 35
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 35
 
 
  1142              		.loc 1 688 3 discriminator 2 view .LVU332
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  719:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     ADC_STATE_CLR_SET(hadc->State,
  720:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****                       HAL_ADC_STATE_READY | HAL_ADC_STATE_REG_EOC | HAL_ADC_STATE_MULTIMODE_SLAVE,
  721:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****                       HAL_ADC_STATE_REG_BUSY);
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 36
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 36
 
 
  722:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****       
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  776:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     }
  777:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   }
  778:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   else
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 37
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 37
 
 
  779:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   {
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  1203 0066 5B68     		ldr	r3, [r3, #4]
  725:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     {
  1204              		.loc 1 725 8 view .LVU352
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 38
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 38
 
 
  1205 0068 13F4806F 		tst	r3, #1024
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  1243 009c 2268     		ldr	r2, [r4]
  1244 009e 9368     		ldr	r3, [r2, #8]
  1245 00a0 43F48073 		orr	r3, r3, #256
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 39
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 39
 
 
  1246 00a4 9360     		str	r3, [r2, #8]
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  1288 00de B0E7     		b	.L110
  1289              	.L113:
  781:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 40
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 40
 
 
  1290              		.loc 1 781 5 view .LVU381
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  1328              	.LCFI20:
  1329              		.cfi_def_cfa_offset 8
  1330              		.cfi_offset 4, -8
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 41
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 41
 
 
  1331              		.cfi_offset 14, -4
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  822:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     /* Disable ADC slave peripheral */
  823:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     tmp_hal_status = ADC_ConversionStop_Disable(&tmphadcSlave);
  824:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 42
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 42
 
 
  825:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     /* Check if ADC is effectively disabled */
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  1385              		.loc 1 820 5 is_stmt 1 view .LVU404
  1386 0030 134B     		ldr	r3, .L129
  1387 0032 0093     		str	r3, [sp]
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 43
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 43
 
 
  823:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c **** 
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  1426              		.loc 1 845 22 is_stmt 0 view .LVU420
  1427 0062 206A     		ldr	r0, [r4, #32]
  1428              	.LVL80:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 44
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 44
 
 
  845:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c **** 
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  879:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   *         or @ref __HAL_ADC_CLEAR_FLAG(&hadc, ADC_FLAG_JEOS).
  880:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   * @param  hadc: ADC handle
  881:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   * @param  InjectedRank: the converted ADC injected rank.
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 45
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 45
 
 
  882:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   *          This parameter can be one of the following values:
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  914:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   
  915:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   /* Return ADC converted value */ 
  916:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   return tmp_jdr;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 46
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 46
 
 
  1484              		.loc 1 916 3 view .LVU433
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  1526              		.fpu softvfp
  1528              	HAL_ADCEx_MultiModeGetValue:
  1529              	.LVL91:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 47
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 47
 
 
  1530              	.LFB74:
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  1556              		.loc 1 945 11 view .LVU459
  1557 0012 40EA0340 		orr	r0, r0, r3, lsl #16
  1558              	.LVL93:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 48
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 48
 
 
  946:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   }
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  1596              		.syntax unified
  1597              		.thumb
  1598              		.thumb_func
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 49
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 49
 
 
  1599              		.fpu softvfp
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  1618              		.cfi_def_cfa_offset 24
  1619 0004 0346     		mov	r3, r0
 1002:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   HAL_StatusTypeDef tmp_hal_status = HAL_OK;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 50
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 50
 
 
  1620              		.loc 1 1002 3 is_stmt 1 view .LVU467
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
 1029:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   /*   conversions is forced to 0x00 for alignment over all STM32 devices.    */
 1030:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   /* - if scan mode is enabled, injected channels sequence length is set to   */
 1031:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   /*   parameter "InjectedNbrOfConversion".                                   */
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 51
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 51
 
 
 1032:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   if (hadc->Init.ScanConvMode == ADC_SCAN_DISABLE)
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
 1066:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****       MODIFY_REG(hadc->Instance->JSQR                                         ,
 1067:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****                  
 1068:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****                  ADC_JSQR_JL                                               |
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 52
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 52
 
 
 1069:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****                  ADC_JSQR_RK_JL(ADC_JSQR_JSQ1,                         
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
 1108:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   
 1109:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   
 1110:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   /* Configuration of injected group                                          */
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 53
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 53
 
 
 1111:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   /*  - Automatic injected conversion                                         */
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
 1149:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   /* InjectedChannel sampling time configuration */
 1150:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   /* For channels 10 to 17 */
 1151:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   if (sConfigInjected->InjectedChannel >= ADC_CHANNEL_10)
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 54
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 54
 
 
  1699              		.loc 1 1151 3 is_stmt 1 view .LVU503
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  1730              		.loc 1 1174 3 view .LVU513
  1731 0086 022A     		cmp	r2, #2
  1732 0088 00F08B80 		beq	.L158
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 55
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 55
 
 
  1733 008c 032A     		cmp	r2, #3
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  1760              	.L146:
 1062:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     {
  1761              		.loc 1 1062 5 is_stmt 1 view .LVU518
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 56
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 56
 
 
 1062:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     {
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  1807 0114 8C69     		ldr	r4, [r1, #24]
 1118:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****       {
  1808              		.loc 1 1118 10 view .LVU528
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 57
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 57
 
 
  1809 0116 B4F5E04F 		cmp	r4, #28672
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
 1144:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****       }
  1851              		.loc 1 1144 24 is_stmt 0 view .LVU541
  1852 014c 1046     		mov	r0, r2
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 58
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 58
 
 
  1853 014e 82E7     		b	.L153
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
 1207:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     /* For STM32F1 devices with several ADC: Only ADC1 can access internal    */
 1208:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     /* measurement channels (VrefInt/TempSensor). If these channels are       */
 1209:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     /* intended to be set on other ADC instances, an error is reported.       */
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 59
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 59
 
 
 1210:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****     if (hadc->Instance == ADC1)
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  1917              	.LVL112:
  1918              	.L158:
  1919              	.LCFI28:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 60
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 60
 
 
  1920              		.cfi_restore_state
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  1962              		.loc 1 1212 11 is_stmt 0 view .LVU566
  1963 01de 9468     		ldr	r4, [r2, #8]
 1212:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****       {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 61
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 61
 
 
  1964              		.loc 1 1212 10 view .LVU567
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  2003 0210 019A     		ldr	r2, [sp, #4]
 1221:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****           {
  2004              		.loc 1 1221 16 view .LVU583
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 62
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 62
 
 
  2005 0212 002A     		cmp	r2, #0
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  2040              		.cfi_def_cfa_offset 12
  2041              		.cfi_offset 4, -12
  2042              		.cfi_offset 5, -8
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 63
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 63
 
 
  2043              		.cfi_offset 14, -4
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
 1284:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   if ((ADC_IS_ENABLE(hadc) == RESET)                     &&
  2076              		.loc 1 1284 3 discriminator 2 view .LVU599
  2077              		.loc 1 1284 8 is_stmt 0 discriminator 2 view .LVU600
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 64
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 64
 
 
  2078 0024 2368     		ldr	r3, [r4]
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
 1307:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c ****   return tmp_hal_status;
  2109              		.loc 1 1307 3 view .LVU611
  2110              	.LVL124:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 65
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 65
 
 
  2111              	.L179:
@@ -3893,46 +3893,46 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 1
  2156              		.file 11 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
  2157              		.file 12 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h"
  2158              		.file 13 "<built-in>"
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s 			page 66
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s 			page 66
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f1xx_hal_adc_ex.c
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:16     .text.HAL_ADCEx_Calibration_Start:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:24     .text.HAL_ADCEx_Calibration_Start:00000000 HAL_ADCEx_Calibration_Start
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:249    .text.HAL_ADCEx_Calibration_Start:000000fc $d
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:254    .text.HAL_ADCEx_InjectedStart:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:261    .text.HAL_ADCEx_InjectedStart:00000000 HAL_ADCEx_InjectedStart
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:403    .text.HAL_ADCEx_InjectedStart:000000b4 $d
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:408    .text.HAL_ADCEx_InjectedStop:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:415    .text.HAL_ADCEx_InjectedStop:00000000 HAL_ADCEx_InjectedStop
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:503    .text.HAL_ADCEx_InjectedPollForConversion:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:510    .text.HAL_ADCEx_InjectedPollForConversion:00000000 HAL_ADCEx_InjectedPollForConversion
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:819    .text.HAL_ADCEx_InjectedPollForConversion:00000168 $d
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:828    .text.HAL_ADCEx_InjectedStart_IT:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:835    .text.HAL_ADCEx_InjectedStart_IT:00000000 HAL_ADCEx_InjectedStart_IT
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:982    .text.HAL_ADCEx_InjectedStart_IT:000000bc $d
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:987    .text.HAL_ADCEx_InjectedStop_IT:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:994    .text.HAL_ADCEx_InjectedStop_IT:00000000 HAL_ADCEx_InjectedStop_IT
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:1087   .text.HAL_ADCEx_MultiModeStart_DMA:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:1094   .text.HAL_ADCEx_MultiModeStart_DMA:00000000 HAL_ADCEx_MultiModeStart_DMA
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:1303   .text.HAL_ADCEx_MultiModeStart_DMA:000000ec $d
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:1312   .text.HAL_ADCEx_MultiModeStop_DMA:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:1319   .text.HAL_ADCEx_MultiModeStop_DMA:00000000 HAL_ADCEx_MultiModeStop_DMA
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:1447   .text.HAL_ADCEx_MultiModeStop_DMA:00000080 $d
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:1452   .text.HAL_ADCEx_InjectedGetValue:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:1459   .text.HAL_ADCEx_InjectedGetValue:00000000 HAL_ADCEx_InjectedGetValue
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:1521   .text.HAL_ADCEx_MultiModeGetValue:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:1528   .text.HAL_ADCEx_MultiModeGetValue:00000000 HAL_ADCEx_MultiModeGetValue
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:1566   .text.HAL_ADCEx_MultiModeGetValue:00000018 $d
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:1572   .text.HAL_ADCEx_InjectedConvCpltCallback:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:1579   .text.HAL_ADCEx_InjectedConvCpltCallback:00000000 HAL_ADCEx_InjectedConvCpltCallback
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:1594   .text.HAL_ADCEx_InjectedConfigChannel:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:1601   .text.HAL_ADCEx_InjectedConfigChannel:00000000 HAL_ADCEx_InjectedConfigChannel
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:2016   .text.HAL_ADCEx_InjectedConfigChannel:0000021c $d
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:2023   .text.HAL_ADCEx_MultiModeConfigChannel:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:2030   .text.HAL_ADCEx_MultiModeConfigChannel:00000000 HAL_ADCEx_MultiModeConfigChannel
-C:\Users\Vento\AppData\Local\Temp\cc0M8EJj.s:2140   .text.HAL_ADCEx_MultiModeConfigChannel:00000068 $d
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:16     .text.HAL_ADCEx_Calibration_Start:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:24     .text.HAL_ADCEx_Calibration_Start:00000000 HAL_ADCEx_Calibration_Start
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:249    .text.HAL_ADCEx_Calibration_Start:000000fc $d
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:254    .text.HAL_ADCEx_InjectedStart:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:261    .text.HAL_ADCEx_InjectedStart:00000000 HAL_ADCEx_InjectedStart
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:403    .text.HAL_ADCEx_InjectedStart:000000b4 $d
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:408    .text.HAL_ADCEx_InjectedStop:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:415    .text.HAL_ADCEx_InjectedStop:00000000 HAL_ADCEx_InjectedStop
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:503    .text.HAL_ADCEx_InjectedPollForConversion:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:510    .text.HAL_ADCEx_InjectedPollForConversion:00000000 HAL_ADCEx_InjectedPollForConversion
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:819    .text.HAL_ADCEx_InjectedPollForConversion:00000168 $d
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:828    .text.HAL_ADCEx_InjectedStart_IT:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:835    .text.HAL_ADCEx_InjectedStart_IT:00000000 HAL_ADCEx_InjectedStart_IT
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:982    .text.HAL_ADCEx_InjectedStart_IT:000000bc $d
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:987    .text.HAL_ADCEx_InjectedStop_IT:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:994    .text.HAL_ADCEx_InjectedStop_IT:00000000 HAL_ADCEx_InjectedStop_IT
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:1087   .text.HAL_ADCEx_MultiModeStart_DMA:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:1094   .text.HAL_ADCEx_MultiModeStart_DMA:00000000 HAL_ADCEx_MultiModeStart_DMA
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:1303   .text.HAL_ADCEx_MultiModeStart_DMA:000000ec $d
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:1312   .text.HAL_ADCEx_MultiModeStop_DMA:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:1319   .text.HAL_ADCEx_MultiModeStop_DMA:00000000 HAL_ADCEx_MultiModeStop_DMA
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:1447   .text.HAL_ADCEx_MultiModeStop_DMA:00000080 $d
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:1452   .text.HAL_ADCEx_InjectedGetValue:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:1459   .text.HAL_ADCEx_InjectedGetValue:00000000 HAL_ADCEx_InjectedGetValue
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:1521   .text.HAL_ADCEx_MultiModeGetValue:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:1528   .text.HAL_ADCEx_MultiModeGetValue:00000000 HAL_ADCEx_MultiModeGetValue
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:1566   .text.HAL_ADCEx_MultiModeGetValue:00000018 $d
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:1572   .text.HAL_ADCEx_InjectedConvCpltCallback:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:1579   .text.HAL_ADCEx_InjectedConvCpltCallback:00000000 HAL_ADCEx_InjectedConvCpltCallback
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:1594   .text.HAL_ADCEx_InjectedConfigChannel:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:1601   .text.HAL_ADCEx_InjectedConfigChannel:00000000 HAL_ADCEx_InjectedConfigChannel
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:2016   .text.HAL_ADCEx_InjectedConfigChannel:0000021c $d
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:2023   .text.HAL_ADCEx_MultiModeConfigChannel:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:2030   .text.HAL_ADCEx_MultiModeConfigChannel:00000000 HAL_ADCEx_MultiModeConfigChannel
+C:\Users\Vento\AppData\Local\Temp\ccTjoyc0.s:2140   .text.HAL_ADCEx_MultiModeConfigChannel:00000068 $d
 
 UNDEFINED SYMBOLS
 ADC_ConversionStop_Disable

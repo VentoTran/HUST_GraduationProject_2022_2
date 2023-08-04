@@ -11,6 +11,7 @@
 
 #define DEBUG   1
 
+void Log_Init(void);
 
 void LOG(const char *TAG, char *data);
 void logPC(const char *fmt, ...);

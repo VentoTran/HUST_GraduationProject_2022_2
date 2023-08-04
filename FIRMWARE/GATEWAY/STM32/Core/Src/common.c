@@ -22,6 +22,27 @@
 #include "common.h"
 
 #define USE_UART
+#define USE_FREERTOS
+
+
+#ifdef USE_FREERTOS
+#include "FreeRTOS.h"
+#include "semphr.h"
+// #include "task.h"
+// #include "cmsis_os.h"
+#include "portmacro.h"
+
+static SemaphoreHandle_t log_semaphore;
+
+void Log_Init(void)
+{
+    log_semaphore = xSemaphoreCreateBinary();
+    xSemaphoreGive(log_semaphore);
+}
+
+#else
+void Log_Init(void) {}
+#endif
 
 #ifdef USE_USB
 #include "usbd_cdc_if.h"
@@ -34,10 +55,8 @@ extern USBD_HandleTypeDef hUsbDeviceFS;
 #endif
 
 
-
 void LOG(const char *TAG, char *data)
 {
-
 #ifdef USE_UART
 	// HAL_UART_Transmit(UART, (uint8_t*)TAG, strlen(TAG), 100);
     // HAL_UART_Transmit(UART, (uint8_t*)" - ", 3, 100);
@@ -84,10 +103,16 @@ void vprint(const char *fmt, va_list argp)
  */
 void logPC(const char *fmt, ...)
 {
+#ifdef USE_FREERTOS
+    xSemaphoreTake(log_semaphore, portMAX_DELAY);
+#endif
     va_list argp;
     va_start(argp, fmt);
     vprint(fmt, argp);
     va_end(argp);
+#ifdef USE_FREERTOS
+    xSemaphoreGive(log_semaphore);
+#endif
 }
 
 #else

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 1
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cccdVEwg.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 1
   30:Core/Src/gpio.c **** /*----------------------------------------------------------------------------*/
   31:Core/Src/gpio.c **** /* USER CODE BEGIN 1 */
   32:Core/Src/gpio.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 2
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cccdVEwg.s 			page 2
 
 
   33:Core/Src/gpio.c **** /* USER CODE END 1 */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 1
   65              		.loc 1 48 3 view .LVU7
   66 0022 009A     		ldr	r2, [sp]
   67              	.LBE2:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 3
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cccdVEwg.s 			page 3
 
 
   68              		.loc 1 48 3 view .LVU8
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 1
  116 005c 2246     		mov	r2, r4
  117 005e 43F21F01 		movw	r1, #12319
  118 0062 3046     		mov	r0, r6
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 4
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cccdVEwg.s 			page 4
 
 
  119 0064 FFF7FEFF 		bl	HAL_GPIO_WritePin
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 1
  151              		.loc 1 76 3 is_stmt 1 view .LVU34
  152              		.loc 1 76 24 is_stmt 0 view .LVU35
  153 00a2 0125     		movs	r5, #1
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 5
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cccdVEwg.s 			page 5
 
 
  154 00a4 0595     		str	r5, [sp, #20]
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 1
  193              		.loc 1 91 24 is_stmt 0 view .LVU55
  194 00d2 0694     		str	r4, [sp, #24]
   92:Core/Src/gpio.c ****   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 6
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cccdVEwg.s 			page 6
 
 
  195              		.loc 1 92 3 is_stmt 1 view .LVU56
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 1
  235 010c FFF7FEFF 		bl	HAL_GPIO_Init
  236              	.LVL9:
  107:Core/Src/gpio.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 7
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cccdVEwg.s 			page 7
 
 
  108:Core/Src/gpio.c ****   /*Configure GPIO pins : PBPin PBPin PBPin PBPin
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 1
  128:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = LoRa_EXT1_Pin|LoRa_EXT2_Pin|LoRa_EXT3_Pin;
  271              		.loc 1 128 3 view .LVU91
  272              		.loc 1 128 23 is_stmt 0 view .LVU92
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 8
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cccdVEwg.s 			page 8
 
 
  273 013c 4FF46073 		mov	r3, #896
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 1
  312              		.loc 1 143 25 is_stmt 0 view .LVU112
  313 016e 0795     		str	r5, [sp, #28]
  144:Core/Src/gpio.c ****   HAL_GPIO_Init(RST_GPIO_Port, &GPIO_InitStruct);
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 9
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cccdVEwg.s 			page 9
 
 
  314              		.loc 1 144 3 is_stmt 1 view .LVU113
@@ -513,10 +513,10 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 1
  336              	.LVL15:
  152:Core/Src/gpio.c **** 
  153:Core/Src/gpio.c ****   /* EXTI interrupt init*/
- 154:Core/Src/gpio.c ****   HAL_NVIC_SetPriority(EXTI9_5_IRQn, 6, 0);
+ 154:Core/Src/gpio.c ****   HAL_NVIC_SetPriority(EXTI9_5_IRQn, 8, 0);
  337              		.loc 1 154 3 view .LVU123
  338 018e 2246     		mov	r2, r4
- 339 0190 0621     		movs	r1, #6
+ 339 0190 0821     		movs	r1, #8
  340 0192 1720     		movs	r0, #23
  341 0194 FFF7FEFF 		bl	HAL_NVIC_SetPriority
  342              	.LVL16:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 1
  355              	.L3:
  356 01a4 00100240 		.word	1073876992
  357 01a8 00100140 		.word	1073811456
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 10
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cccdVEwg.s 			page 10
 
 
  358 01ac 00080140 		.word	1073809408
@@ -555,14 +555,14 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 1
  370              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
  371              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
  372              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h"
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s 			page 11
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cccdVEwg.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 gpio.c
-C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s:16     .text.MX_GPIO_Init:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s:24     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
-C:\Users\Vento\AppData\Local\Temp\ccOZqJYl.s:356    .text.MX_GPIO_Init:000001a4 $d
+C:\Users\Vento\AppData\Local\Temp\cccdVEwg.s:16     .text.MX_GPIO_Init:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cccdVEwg.s:24     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+C:\Users\Vento\AppData\Local\Temp\cccdVEwg.s:356    .text.MX_GPIO_Init:000001a4 $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin

@@ -55,13 +55,25 @@ static void initialise_wifi(void);
 static void wifi_event_handler(void *arg, esp_event_base_t event_base, int32_t event_id, void *event_data);
 static void log_error_if_nonzero(const char *message, int error_code);
 static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data);
-static void mqtt_app_start(void);
 
 QueueHandle_t uart_queue;
 static EventGroupHandle_t s_wifi_event_group;
 
 static const int CONNECTED_BIT = BIT0;
 static const int ESPTOUCH_DONE_BIT = BIT1;
+
+volatile static bool is_WiFi_connected = false;
+volatile static bool is_MQTT_connected = false;
+
+esp_mqtt_client_config_t mqtt_cfg = {
+    .uri = "mqtt://test.mosquitto.org",
+};
+
+typedef struct link_struct
+{
+    uint16_t Node_ID
+};
+
 
 void app_main(void)
 {
@@ -108,8 +120,8 @@ static void tx_task(void *arg)
     esp_log_level_set(TX_TASK_TAG, ESP_LOG_INFO);
     while (1)
     {
-        sendData(TX_TASK_TAG, "Hello STM32");
-        vTaskDelay(10000 / portTICK_PERIOD_MS);
+        sendData(TX_TASK_TAG, "Check STM32");
+        vTaskDelay(60000 / portTICK_PERIOD_MS);
     }
 }
 
@@ -127,7 +139,12 @@ static void rx_task(void *arg)
         {
             data[rxBytes] = 0;
             ESP_LOGI(RX_TASK_TAG, "Read %d bytes: '%s'", rxBytes, data);
-            // ESP_LOG_BUFFER_HEXDUMP(RX_TASK_TAG, data, rxBytes, ESP_LOG_INFO);
+            // if (strstr((const char *)data, "LoRa") != NULL)
+            //     ESP_LOG_BUFFER_HEXDUMP(RX_TASK_TAG, data, rxBytes, ESP_LOG_INFO);
+            if (strstr((const char *)data, "MQTT") != NULL)
+            {
+                uint8_t * pdata = (uint8_t*)strstr((const char *)data, "MQTT");
+            }
         }
         rxBytes = 0;
         vTaskDelay(10 / portTICK_PERIOD_MS);
@@ -138,6 +155,14 @@ static void rx_task(void *arg)
 static void blink_task(void *arg)
 {
     static const char *BLINK_TASK_TAG = "BLINK_TASK";
+    esp_mqtt_client_handle_t client = NULL;
+    uint32_t timeKeeper = xTaskGetTickCount();
+    uint32_t timeKeeper1 = xTaskGetTickCount()-30000;
+    char a[] = "[{\"Node ID\": \"0x1303\",\"Node Mode\": \"Normal\",\"Battery Voltage\": 7831,\"Period\": 180}]";
+    char b[] = "[{\"Soil Temp.\": 28.6,\"Air Temp.\": 26.7,\"Soil Humd.\": 40,\"Air Humd.\": 65,\"Salinity\": 2155,\"Conductivity\": 2254,\"pH\": 6.7,\"N\": 118,\"P\": 163,\"K\": 402}]";
+    char c[] = "[{\"Node ID\": \"0x3112\",\"Node Mode\": \"Normal\",\"Battery Voltage\": 7935,\"Period\": 180}]";
+    char d[] = "[{\"Soil Temp.\": 29.5,\"Air Temp.\": 26.2,\"Soil Humd.\": 57,\"Air Humd.\": 60,\"Salinity\": 2643,\"Conductivity\": 2673,\"pH\": 7.4,\"N\": 145,\"P\": 164,\"K\": 526}]";
+    
     while (1)
     {
         // ESP_LOGI(BLINK_TASK_TAG, "LED Toggle lv 0");
@@ -146,6 +171,26 @@ static void blink_task(void *arg)
         // ESP_LOGI(BLINK_TASK_TAG, "LED Toggle lv 1");
         gpio_set_level(LED_PIN, 1);
         vTaskDelay(1000 / portTICK_PERIOD_MS);
+        if ((is_MQTT_connected == true) && (is_WiFi_connected == true) && ((xTaskGetTickCount() - timeKeeper) >= 60000) && (client != NULL))
+        {
+            esp_mqtt_client_publish(client, "SolGarden/Node/1303/link", a, sizeof(a)-1, 0, 0);
+            esp_mqtt_client_publish(client, "SolGarden/Node/1303/data", b, sizeof(b)-1, 0, 0);
+            timeKeeper = xTaskGetTickCount();
+        }
+        if ((is_MQTT_connected == true) && (is_WiFi_connected == true) && ((xTaskGetTickCount() - timeKeeper1) >= 60000) && (client != NULL))
+        {
+            esp_mqtt_client_publish(client, "SolGarden/Node/3112/link", c, sizeof(c)-1, 0, 0);
+            esp_mqtt_client_publish(client, "SolGarden/Node/3112/data", d, sizeof(d)-1, 0, 0);
+            timeKeeper1 = xTaskGetTickCount();
+        }
+
+        if ((is_WiFi_connected == true) && (is_MQTT_connected == false))
+        {
+            client = esp_mqtt_client_init(&mqtt_cfg);
+
+            esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL);
+            esp_mqtt_client_start(client);
+        }
     }
 }
 
@@ -164,9 +209,9 @@ static void smartconfig_task(void *parm)
         }
         if (uxBits & ESPTOUCH_DONE_BIT)
         {
+            is_WiFi_connected = true;
             ESP_LOGI(TAG, "Smartconfig Over");
             esp_smartconfig_stop();
-            mqtt_app_start();
             vTaskDelete(NULL);
         }
     }
@@ -178,7 +223,7 @@ static void wifi_event_handler(void *arg, esp_event_base_t event_base, int32_t e
 {
     if ((event_base == WIFI_EVENT) && (event_id == WIFI_EVENT_STA_START))
     {
-        xTaskCreate(smartconfig_task, "smartconfig_example_task", 4096, NULL, 3, NULL);
+        xTaskCreate(smartconfig_task, "smartconfig_task", 4096, NULL, 3, NULL);
     }
     else if ((event_base == WIFI_EVENT) && (event_id == WIFI_EVENT_STA_DISCONNECTED))
     {
@@ -290,11 +335,12 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
     {
         case MQTT_EVENT_CONNECTED:
             ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
+            is_MQTT_connected = true;
             // msg_id = esp_mqtt_client_publish(client, "/topic/qos1", "data_3", 0, 1, 0);
             // ESP_LOGI(TAG, "sent publish successful, msg_id=%d", msg_id);
 
-            msg_id = esp_mqtt_client_subscribe(client, "/topic/qos0", 0);
-            ESP_LOGI(TAG, "sent subscribe successful, msg_id=%d", msg_id);
+            msg_id = esp_mqtt_client_subscribe(client, "SolGarden/Gateway/2508", 0);
+            // ESP_LOGI(TAG, "sent subscribe successful, msg_id=%d", msg_id);
 
             // msg_id = esp_mqtt_client_subscribe(client, "/topic/qos1", 1);
             // ESP_LOGI(TAG, "sent subscribe successful, msg_id=%d", msg_id);
@@ -303,6 +349,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
             // ESP_LOGI(TAG, "sent unsubscribe successful, msg_id=%d", msg_id);
             break;
         case MQTT_EVENT_DISCONNECTED:
+            is_MQTT_connected = false;
             ESP_LOGI(TAG, "MQTT_EVENT_DISCONNECTED");
             break;
         case MQTT_EVENT_SUBSCRIBED:
@@ -337,16 +384,9 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
     }
 }
 
-static void mqtt_app_start(void)
-{
-    esp_mqtt_client_config_t mqtt_cfg = {
-        .uri = "mqtt://test.mosquitto.org",
-    };
 
-    esp_mqtt_client_handle_t client = esp_mqtt_client_init(&mqtt_cfg);
 
-    esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL);
-    esp_mqtt_client_start(client);
-}
+
+
 
 

@@ -27,6 +27,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "event_groups.h"
 #include "common.h"
 /* USER CODE END Includes */
 
@@ -98,6 +99,8 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM7_Init();
   MX_TIM6_Init();
+  MX_TIM5_Init();
+  MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
   NVIC_SetPriorityGrouping( NVIC_PRIORITYGROUP_4 );
   /* USER CODE END 2 */
@@ -171,6 +174,7 @@ void SystemClock_Config(void)
 
 extern bool is_UART1_RX_Done;
 extern bool is_UART2_RX_Done;
+extern uint64_t traceTime;
 
 /* USER CODE END 4 */
 
@@ -195,6 +199,16 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
   {
     is_UART2_RX_Done = true;
     HAL_TIM_Base_Stop_IT(&htim6);
+  }
+
+  if (htim->Instance == TIM5)
+  {
+    traceTime++;
+  }
+
+  if (htim->Instance == TIM4)
+  {
+    App_Refresh_Tick();
   }
 
   /* USER CODE END Callback 0 */

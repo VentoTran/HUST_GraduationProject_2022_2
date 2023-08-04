@@ -3,7 +3,7 @@
 #define __ILI9341_TOUCH_H__
 
 #include <stdbool.h>
-// #include "lcd.h"
+#include "lcd.h"
 #include "main.h"
 #include "spi.h"
 /*** Redefine if necessary ***/
@@ -46,6 +46,8 @@
 
 //------------ define type --------------
 
+#define BUTTON_ON   (true)
+#define BUTTON_OFF  (false)
 
 typedef struct
 {
@@ -56,9 +58,10 @@ typedef struct
     const uint16_t shape_w;
     const uint16_t shape_h;
 
-    const uint16_t color;
+    const uint16_t color_on;
+    const uint16_t color_off;
 
-    bool state;
+    volatile bool state;
 
 } myButton_t;
 
@@ -70,6 +73,8 @@ void ILI9341_TouchUnselect();
 bool ILI9341_TouchPressed();
 bool ILI9341_TouchGetCoordinates(uint16_t* x, uint16_t* y);
 
-bool ILI9341_checkButton(uint16_t x, uint16_t y, const myButton_t* button);
+bool ILI9341_UpdateButton(const myButton_t* button);
+
+bool ILI9341_checkButton(uint16_t x, uint16_t y, myButton_t* button, bool change_state);
 
 #endif // __ILI9341_TOUCH_H__

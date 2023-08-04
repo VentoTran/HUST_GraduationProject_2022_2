@@ -27,7 +27,7 @@
 // extern SPI_HandleTypeDef hspi2;
 static const char *TAG = "SX1278";
 // extern EventGroupHandle_t sx1278_evt_group;
-extern int node_id;
+
 
 
 uint8_t sx1278_read_reg(uint8_t reg)
@@ -57,9 +57,10 @@ void sx1278_write_reg(uint8_t reg, uint8_t val)
 void sx1278_reset(void)
 {
 	HAL_GPIO_WritePin(LoRa_RST_PORT, LoRa_RST_PIN, GPIO_PIN_RESET);
-    HAL_Delay(10);
+    HAL_Delay(50);
     HAL_GPIO_WritePin(LoRa_RST_PORT, LoRa_RST_PIN, GPIO_PIN_SET);
-    HAL_Delay(10);
+    HAL_Delay(50);
+    HAL_GPIO_WritePin(LoRa_CS_PORT, LoRa_CS_PIN, GPIO_PIN_SET);
 }
 
 void sx1278_sleep(void)
@@ -247,7 +248,7 @@ void sx1278_init(void)
     sx1278_set_preamble(12);
     sx1278_set_header(true, 0);
     sx1278_set_crc(true);
-//    sx1278_set_irq(0x00);
+    sx1278_set_irq(0x00);
     sx1278_standby();
 }
 
@@ -262,14 +263,14 @@ void sx1278_send_data(uint8_t *data_send, int size)
     }
     sx1278_write_reg(REG_PAYLOAD_LENGTH, size);
     // Start transmission and wait for conclusion
-    sx1278_write_reg(REG_OP_MODE, MODE_LONG_RANGE_MODE | MODE_TX);
+    sx1278_tx();
     while (!(sx1278_read_reg(REG_IRQ_FLAGS) & IRQ_TX_DONE_MASK))
     {
         HAL_Delay(10);
     }
     int irq = sx1278_read_reg(REG_IRQ_FLAGS);
     sx1278_write_reg(REG_IRQ_FLAGS, irq);
-//    sx1278_sleep();
+    sx1278_standby();
 }
 
 /**
@@ -278,67 +279,31 @@ void sx1278_send_data(uint8_t *data_send, int size)
  */
 void sx1278_start_recv_data(void)
 {
+    sx1278_standby();
 	sx1278_set_irq(0x00);
-    sx1278_rx_contiuous();
+    sx1278_write_reg(REG_IRQ_FLAGS, sx1278_read_reg(REG_IRQ_FLAGS));
+    sx1278_rx_single();
 }
 
 sx1278_err_t parse_packet(uint8_t *packet_data, sx1278_node_t *node)
 {
-    sx1278_packet_t packet;
-    int packet_len = strlen((char *)packet_data);
-    packet.crc = get_crc_value(packet_data, packet_len - 1);
-    if (packet.crc != packet_data[packet_len - 1])
-    {
-        LOG(TAG, "ERROR CRC");
-        return SX1278_NOT_OK;
-    }
-    else
-    {
-        int res = sscanf((char *)packet_data, "$,%[^,],%[^,],%[^,],%[^,],%[^,],*", packet.opcode, packet.node_id, packet.gate_id, packet.period, packet.threshold);
-        if (res < 5)
-        {
-        	LOG(TAG, "ERROR PACKET");
-            return SX1278_NOT_OK;
-        }
-        if (atoi(packet.node_id) != node->node_id)
-        {
-        	LOG(TAG, "ERROR NODE_ID");
-            return SX1278_NOT_OK;
-        }
-        if (atoi(packet.opcode) != DOWNLINK_RX_REQUEST_OPCODE)
-        {
-        	LOG(TAG, "ERROR OPCODE");
-            return SX1278_NOT_OK;
-        }
-//        if (atoi(packet.gate_id) != sx1278_network.gate_id)
-//        {
-//        	LOG(TAG, "ERROR GATE_ID");
-//            return SX1278_NOT_OK;
-//        }
-        node->gate_id = atoi(packet.gate_id);
-		node->period = atoi(packet.period);
-		strcpy(node->threshold, packet.threshold);
-		char data_log[100];
-		sprintf(data_log, "RECV PACKET: opcode:%s, period:%s, threshold:%s", packet.opcode, packet.period, packet.threshold);
-        LOG(TAG, data_log);
-		return SX1278_OK;
-    }
+    return SX1278_OK;
 }
 
 /**
  * @brief Function to check, parse and get data from LoRa packet
  * 
  * @param data_recv packet
+ * @param len length of data received
  * @param rssi signal strength (Received Signal Strength Indicator)
  * @param snr Signal-to-Noise Ratio
  * @param node place to store data
  * @return sx1278_err_t 
  */
-sx1278_err_t sx1278_recv_data(uint8_t *data_recv, int *rssi, float *snr, sx1278_node_t *node)
+sx1278_err_t sx1278_recv_data(uint8_t *data_recv, uint32_t *len, int *rssi, float *snr, bool isStayinRX)
 {
     memset((char *)data_recv, '\0', strlen((char *)data_recv));
     int irq = sx1278_read_reg(REG_IRQ_FLAGS);
-    sx1278_set_irq(0xB0);
     sx1278_write_reg(REG_IRQ_FLAGS, irq);
 
     if (!(irq & IRQ_RX_DONE_MASK))
@@ -359,16 +324,16 @@ sx1278_err_t sx1278_recv_data(uint8_t *data_recv, int *rssi, float *snr, sx1278_
         return SX1278_PAYLOAD_CRC_ERROR;
     }
 
-    int len = sx1278_read_reg(REG_RX_NB_BYTES);
+    *len = sx1278_read_reg(REG_RX_NB_BYTES);
     *rssi = sx1278_get_rssi();
     *snr = sx1278_get_snr();
     sx1278_write_reg(REG_FIFO_ADDR_PTR, sx1278_read_reg(REG_FIFO_RX_CURRENT_ADDR));
-    for (int index = 0; index < len; index++)
+    for (int index = 0; index < *len; index++)
     {
         data_recv[index] = sx1278_read_reg(REG_FIFO);
     }
-    sx1278_standby();
-    return parse_packet(data_recv, node);
+    if (isStayinRX == false)    sx1278_standby();
+    return SX1278_OK;
 }
 
 int get_random_value(int min, int max)
@@ -420,6 +385,7 @@ bool listen_before_talk(void)
     //         HAL_Delay(time_delay);
     //     }
     // }
+    return true;
 }
 
 /**

@@ -91,19 +91,32 @@ bool ILI9341_TouchGetCoordinates(uint16_t* x, uint16_t* y)
     *x = (tempx > 0) ? (tempx) : (0U);
     *y = (tempy > 0) ? (tempy) : (0U);
 
-    // *x = (uint16_t)(ILI9341_TOUCH_SCALE_X - *x);
+    *x = (uint16_t)(ILI9341_TOUCH_SCALE_X - *x);
     // *y = (uint16_t)(ILI9341_TOUCH_SCALE_Y - *y);
 
     return true;
 }
 
+bool ILI9341_UpdateButton(const myButton_t* button)
+{
+    if ((button->shape_r != 0) && (button->shape_w == 0) && (button->shape_h == 0))
+    {
+        ILI9341_FillCircle(button->pos_x, button->pos_y, button->shape_r, ((button->state == BUTTON_ON)? (button->color_on):(button->color_off)));
+    }
+    else
+    {
+        ILI9341_FillRectangle(button->pos_x, button->pos_y, button->shape_w, button->shape_h, ((button->state == BUTTON_ON)? (button->color_on):(button->color_off)));
+    }
+    return true;
+}
 
-bool ILI9341_checkButton(uint16_t x, uint16_t y, const myButton_t* button)
+bool ILI9341_checkButton(uint16_t x, uint16_t y, myButton_t* button, bool change_state)
 {
     if ((button->shape_r != 0) && (button->shape_w == 0) && (button->shape_h == 0))
     {
         if ((((ABS(x - button->pos_x))^2) + ((ABS(y - button->pos_y))^2)) <= ((button->shape_r)^2))
         {
+            if (change_state == true)   button->state = !(button->state);
             return true;
         }
     }
@@ -111,6 +124,7 @@ bool ILI9341_checkButton(uint16_t x, uint16_t y, const myButton_t* button)
     {
         if ((y >= button->pos_y) && (y <= (button->pos_y + button->shape_h)) && (x >= button->pos_x) && (x <= (button->pos_x + button->shape_w)))
         {
+            if (change_state == true)   button->state = !(button->state);
             return true;
         }
     }

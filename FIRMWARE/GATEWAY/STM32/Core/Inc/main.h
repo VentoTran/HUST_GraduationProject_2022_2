@@ -55,7 +55,7 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+void App_Refresh_Tick(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
