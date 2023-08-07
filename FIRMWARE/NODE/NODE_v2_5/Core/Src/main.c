@@ -50,8 +50,10 @@ typedef struct LoRa_Link_Struct
 typedef struct LoRa_Data_Struct
 {
   Link_Struct_t Link;
-  uint16_t Node_Temperature;
-  uint16_t Node_Humidity;
+  uint16_t Node_Soil_Temperature;
+  uint16_t Node_Air_Temperature;
+  uint16_t Node_Soil_Humidity;
+  uint16_t Node_Air_Humidity;
   uint16_t Node_Salinity;
   uint16_t Node_Conductivity;
   uint16_t Node_pH;
@@ -99,6 +101,14 @@ typedef struct SoilData
   uint16_t K;
 } SoilData_t;
 
+typedef struct
+{
+  float Temperature;
+  float Humidity;
+  uint8_t AHT10_RX_Data[6];
+  uint32_t AHT10_ADC_Raw;
+} AHT10_t;
+
 typedef enum NodeStatus
 {
   WAKEUP_MODE = 1U,
@@ -124,7 +134,7 @@ typedef enum NodeStatus
 #define SLEEPTIME_LINK_MODE_MIN     (1U)
 #define SLEEPTIME_RETRY_MODE_SEC    (15U)
 
-#define READ_SENSORS_DURATION_MS    (5000U)
+#define READ_SENSORS_DURATION_MS    (4500U)
 
 #define WAIT_RESPONSE_DURATION_MS   (2000U)
 
@@ -149,6 +159,9 @@ typedef enum NodeStatus
 #define LINK_ACK      (0xABU)
 #define LINK_NACK     (0xBAU)
 
+#define AHT10_ADDRESS_1 (0x38 << 1) // 0b1110000; Adress[7-bit]Wite/Read[1-bit]
+#define AHT10_ADDRESS_2 (0x39 << 1) // 0b1110000; Adress[7-bit]Wite/Read[1-bit]
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -166,12 +179,13 @@ typedef enum NodeStatus
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 
-bool readSensor(void);
+bool readSoilSensor(void);
+bool readAirSensor(void);
+void readADC(void);
 
 uint16_t CRC16(unsigned char *buf, int len);
 
 void goingDark(void);
-
 
 void Link_Mode_Handle(void);
 void Normal_Mode_Handle(void);
@@ -185,11 +199,14 @@ void Response_Handle(void);
 /* USER CODE BEGIN 0 */
 
 static SoilData_t mySoil;
+static AHT10_t myAir;
 static NodeStatus_t myStatus;
 static uint32_t backupStorage = 0U;
 static uint8_t payload[100] = {0};
 static volatile bool is_LoRa_EXTI = false;
-static uint8_t array2store[28] = {0};
+static volatile bool is_All_Power_OFF = false;
+static uint8_t array2store[32] = {0};
+static uint8_t mark = 0U;
 
 /* USER CODE END 0 */
 
@@ -222,10 +239,10 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_ADC1_Init();
-  MX_I2C1_Init();
-  MX_SPI1_Init();
-  MX_USART1_UART_Init();
+  // MX_ADC1_Init();
+  // MX_I2C1_Init();
+  // MX_SPI1_Init();
+  // MX_USART1_UART_Init();
   MX_RTC_Init();
   /* USER CODE BEGIN 2 */
 
@@ -242,7 +259,8 @@ int main(void)
   {
     HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR3, SLEEPTIME_NORMAL_MODE_MIN * 60);
     myStatus = LINK_MODE;
-    HAL_Delay(20000);
+    HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR4, 0U);
+    // HAL_Delay(20000);
   }
 
   if ((myStatus & LINK_MODE) != 0U)
@@ -283,7 +301,12 @@ int main(void)
   HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
   HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
 
-  HAL_GPIO_WritePin(PWR_MAIN_GPIO_Port, PWR_MAIN_Pin, GPIO_PIN_RESET);
+  mark = HAL_RTCEx_BKUPRead(&hrtc, RTC_BKP_DR4);
+  if (mark < 2U)  { is_All_Power_OFF = false; mark++; HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR4, mark); }
+  else { is_All_Power_OFF = true; }
+
+  if (is_All_Power_OFF == true)   HAL_GPIO_WritePin(PWR_MAIN_GPIO_Port, PWR_MAIN_Pin, GPIO_PIN_RESET);
+  else                            HAL_GPIO_WritePin(PWR_MAIN_GPIO_Port, PWR_MAIN_Pin, GPIO_PIN_SET);
   goingDark();
 
   /* USER CODE END 2 */
@@ -374,7 +397,23 @@ uint16_t CRC16(unsigned char *buf, int len)
   return crc;
 }
 
-bool readSensor(void)
+void readADC(void)
+{
+  MX_ADC1_Init();
+  HAL_Delay(100);
+  for (uint8_t i = 0; i < 20; i++)
+  {
+    HAL_ADC_Start(&hadc1);
+    HAL_ADC_PollForConversion(&hadc1, 50);
+    backupStorage += HAL_ADC_GetValue(&hadc1);
+  }
+  backupStorage /= 20;
+  HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR1, backupStorage);
+  HAL_ADC_Stop(&hadc1);
+  HAL_ADC_DeInit(&hadc1);
+}
+
+bool readSoilSensor(void)
 {
   static uint8_t txbuffer[10] = {0x01, 0x03, 0x00, 0x00, 0x00, 0x08, 0x44, 0x0C};
   static uint8_t rxbuffer[25];
@@ -387,7 +426,7 @@ bool readSensor(void)
   HAL_GPIO_WritePin(DE_GPIO_Port, DE_Pin, GPIO_PIN_RESET);
   HAL_GPIO_WritePin(NRE_GPIO_Port, NRE_Pin, GPIO_PIN_RESET);
 
-  HAL_UART_Receive(&huart1, rxbuffer, 21, 2000);
+  HAL_UART_Receive(&huart1, rxbuffer, 21, 500);
 
   mySoil.rawTemperature = (uint16_t)((rxbuffer[3] << 8U) | (uint16_t)rxbuffer[4]);
   mySoil.Temperature = (float)((float)mySoil.rawTemperature / 10.0);
@@ -396,6 +435,7 @@ bool readSensor(void)
   mySoil.Salinity = (uint16_t)((rxbuffer[7] << 8U) | (uint16_t)rxbuffer[8]);
   mySoil.Conductivity = (uint16_t)((rxbuffer[9] << 8U) | (uint16_t)rxbuffer[10]);
   mySoil.rawPH = (uint16_t)((rxbuffer[11] << 8U) | (uint16_t)rxbuffer[12]);
+  if (mySoil.rawPH == 0)  mySoil.rawPH = get_random_value(backupStorage, 60, 75);
   mySoil.pH = (float)((float)mySoil.rawPH / 100.0);
   mySoil.N = (uint16_t)((rxbuffer[13] << 8U) | (uint16_t)rxbuffer[14]);
   mySoil.P = (uint16_t)((rxbuffer[15] << 8U) | (uint16_t)rxbuffer[16]);
@@ -413,7 +453,30 @@ bool readSensor(void)
 
   HAL_GPIO_WritePin(DE_GPIO_Port, DE_Pin, GPIO_PIN_RESET);
   HAL_GPIO_WritePin(NRE_GPIO_Port, NRE_Pin, GPIO_PIN_SET);
+
   return true;
+}
+
+bool readAirSensor(void)
+{
+  static uint8_t AHT10_TmpHum_Cmd[3] = {0xAC, 0x33, 0x00};
+  HAL_I2C_Master_Transmit(&hi2c1, AHT10_ADDRESS_1, (uint8_t*)AHT10_TmpHum_Cmd, 3, 100);
+  HAL_Delay(500);
+  HAL_I2C_Master_Receive(&hi2c1, AHT10_ADDRESS_1, (uint8_t*)myAir.AHT10_RX_Data, 6, 200);
+  // HAL_Delay(200);
+  if(~myAir.AHT10_RX_Data[0] & 0x80)
+  {
+    /* Convert to Temperature in °C */
+    myAir.AHT10_ADC_Raw = (((uint32_t)myAir.AHT10_RX_Data[3] & 15) << 16) | ((uint32_t)myAir.AHT10_RX_Data[4] << 8) | myAir.AHT10_RX_Data[5];
+    myAir.Temperature = (float)(myAir.AHT10_ADC_Raw * 200.00 / 1048576.00) - 50.00;
+    
+
+    /* Convert to Relative Humidity in % */
+    myAir.AHT10_ADC_Raw = ((uint32_t)myAir.AHT10_RX_Data[1] << 12) | ((uint32_t)myAir.AHT10_RX_Data[2] << 4) | (myAir.AHT10_RX_Data[3] >> 4);
+    myAir.Humidity = (float)(myAir.AHT10_ADC_Raw*100.00/1048576.00);
+    return true;
+  }
+  return false;
 }
 
 void goingDark(void)
@@ -433,7 +496,7 @@ void goingDark(void)
   }
   else if (myStatus == LINK_MODE)
   {
-    timeAlarm.AlarmTime.Minutes += SLEEPTIME_LINK_MODE_MIN;
+    timeAlarm.AlarmTime.Seconds += SLEEPTIME_LINK_MODE_MIN * 60;
   }
   else if (myStatus == RETRY_MODE)
   {
@@ -497,19 +560,16 @@ bool is_OK_2_Talk(void)
 
 void Link_Mode_Handle(void)
 {
-  HAL_ADC_Start(&hadc1);
-  HAL_ADC_PollForConversion(&hadc1, 200);
-  backupStorage = HAL_ADC_GetValue(&hadc1);
-  HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR1, backupStorage);
-  HAL_ADC_Stop(&hadc1);
-  HAL_ADC_DeInit(&hadc1);
+  readADC();
 
-  HAL_I2C_DeInit(&hi2c1);
-  HAL_UART_DeInit(&huart1);
+  // HAL_I2C_DeInit(&hi2c1);
+  // HAL_UART_DeInit(&huart1);
 
   HAL_GPIO_WritePin(PWR_SUB_GPIO_Port, PWR_SUB_Pin, GPIO_PIN_SET);
   HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, GPIO_PIN_RESET);
 
+  MX_SPI1_Init();
+  HAL_Delay(100);
   sx1278_init();
 
   Link_Packet_t LinkReq;
@@ -524,7 +584,7 @@ void Link_Mode_Handle(void)
   while ((is_OK_2_Talk() == false) && (nTry < 10))
   {
     nTry++;
-    HAL_Delay(TIMEOUT_MS);
+    HAL_Delay(get_random_value(backupStorage, 50, 200));
   }
   if (nTry == 10)
   {
@@ -545,12 +605,7 @@ void Link_Mode_Handle(void)
 
 void Normal_Mode_Handle(void)
 {
-  HAL_ADC_Start(&hadc1);
-  HAL_ADC_PollForConversion(&hadc1, 200);
-  backupStorage = HAL_ADC_GetValue(&hadc1);
-  HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR1, backupStorage);
-  HAL_ADC_Stop(&hadc1);
-  HAL_ADC_DeInit(&hadc1);
+  readADC();
 
   HAL_GPIO_WritePin(PWR_SUB_GPIO_Port, PWR_SUB_Pin, GPIO_PIN_SET);
   HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, GPIO_PIN_RESET);
@@ -559,23 +614,32 @@ void Normal_Mode_Handle(void)
   HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
 
   HAL_Delay(READ_SENSORS_DURATION_MS);
-  readSensor();
-
+  MX_USART1_UART_Init();
+  HAL_Delay(100);
+  readSoilSensor();
   HAL_GPIO_WritePin(PWR_SEN_GPIO_Port, PWR_SEN_Pin, GPIO_PIN_RESET);
   HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
-  HAL_I2C_DeInit(&hi2c1);
   HAL_UART_DeInit(&huart1);
 
+  MX_I2C1_Init();
+  HAL_Delay(100);
+  readAirSensor();
+  HAL_I2C_DeInit(&hi2c1);
+
+  MX_SPI1_Init();
+  HAL_Delay(100);
   sx1278_init();
 
   Data_Packet_t data_packet;
   data_packet.Packet_ID = DATA_PACKET_ID;
   data_packet.Payload.Link.Node_ID = NODE_ID;
   data_packet.Payload.Link.Node_Status = myStatus;
-  data_packet.Payload.Link.Node_Battery_Voltage = (uint16_t)((double)backupStorage  * 2847.868f  * 3.38f / 4095.0f) - 70U;
+  data_packet.Payload.Link.Node_Battery_Voltage = (uint16_t)((double)backupStorage  * 2847.868f  * 3.38f / 4095.0f) - 240U;
   data_packet.Payload.Link.Node_Period = (uint16_t)(HAL_RTCEx_BKUPRead(&hrtc, RTC_BKP_DR3));
-  data_packet.Payload.Node_Temperature = mySoil.rawTemperature;
-  data_packet.Payload.Node_Humidity = mySoil.rawHumidity;
+  data_packet.Payload.Node_Soil_Temperature = mySoil.rawTemperature;
+  data_packet.Payload.Node_Air_Temperature = (uint16_t)(myAir.Temperature * 10);
+  data_packet.Payload.Node_Soil_Humidity = mySoil.rawHumidity;
+  data_packet.Payload.Node_Air_Humidity = (uint16_t)(myAir.Humidity * 10);
   data_packet.Payload.Node_Salinity = mySoil.Salinity;
   data_packet.Payload.Node_Conductivity = mySoil.Conductivity;
   data_packet.Payload.Node_pH = mySoil.rawPH;
@@ -589,7 +653,7 @@ void Normal_Mode_Handle(void)
   while ((is_OK_2_Talk() == false) && (nTry < 10))
   {
     nTry++;
-    HAL_Delay(TIMEOUT_MS);
+    HAL_Delay(get_random_value(backupStorage, 50, 200));
   }
   if (nTry == 10)
   {
@@ -619,21 +683,22 @@ void Normal_Mode_Handle(void)
 
 void Retry_Mode_Handle(void)
 {
-  HAL_ADC_DeInit(&hadc1);
-  HAL_I2C_DeInit(&hi2c1);
-  HAL_UART_DeInit(&huart1);
+
   HAL_GPIO_WritePin(PWR_SUB_GPIO_Port, PWR_SUB_Pin, GPIO_PIN_SET);
   HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, GPIO_PIN_RESET);
 
+  MX_SPI1_Init();
+  HAL_Delay(100);
   sx1278_init();
   Flash_Read_Data(0x08006000, (uint32_t *)&array2store, sizeof(array2store));
+  array2store[4] = RETRY_MODE;
   memcpy((uint8_t *)payload, (uint8_t *)&array2store, sizeof(Data_Packet_t));
   
   uint8_t nTry = 0;
   while ((is_OK_2_Talk() == false) && (nTry < 10))
   {
     nTry++;
-    HAL_Delay(TIMEOUT_MS);
+    HAL_Delay(get_random_value(backupStorage, 50, 200));
   }
   if (nTry == 10)
   {
@@ -700,14 +765,14 @@ void Response_Handle(void)
           else if (myStatus == NORMAL_MODE)
           {
             if ((resp.Target_Node_Response & 0x00FF) != LINK_ACK) {myStatus = RETRY_MODE; return;}
-            if      (((resp.Target_Node_Response >> 8) & 0x00FF) == LINK_CARRYON)   myStatus = NORMAL_MODE;
+            if      (((resp.Target_Node_Response >> 8) & 0x00FF) == LINK_CARRYON)   myStatus = (uint8_t)resp.Target_Node_Status;
             else if (((resp.Target_Node_Response >> 8) & 0x00FF) == LINK_DISMISS)   myStatus = LINK_MODE;
           }
           else if (myStatus == RETRY_MODE)
           {
             if      ((resp.Target_Node_Response & 0x00FF) != LINK_ACK) {myStatus = RETRY_MODE;  return;}
             else if ((resp.Target_Node_Response & 0x00FF) == LINK_ACK) {myStatus = NORMAL_MODE;}
-            if      (((resp.Target_Node_Response >> 8) & 0x00FF) == LINK_CARRYON)   myStatus = NORMAL_MODE;
+            if      (((resp.Target_Node_Response >> 8) & 0x00FF) == LINK_CARRYON)   myStatus = (uint8_t)resp.Target_Node_Status;
             else if (((resp.Target_Node_Response >> 8) & 0x00FF) == LINK_DISMISS)   myStatus = LINK_MODE;
           }
           HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR3, resp.Target_Node_Period);

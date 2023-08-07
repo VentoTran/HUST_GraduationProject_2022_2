@@ -337,10 +337,10 @@ sx1278_err_t sx1278_recv_data(uint8_t *data_recv, uint32_t *len, int *rssi, floa
     return SX1278_OK;
 }
 
-int get_random_value(int min, int max)
+int get_random_value(uint32_t seed, int min, int max)
 {
-    srand(time(NULL));
-    return (rand() % max) + min;
+    srand(seed);
+    return (rand() % (int)(max-min)) + min;
 }
 
 uint8_t get_crc_value(uint8_t *data, int len)

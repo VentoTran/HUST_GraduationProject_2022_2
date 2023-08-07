@@ -138,7 +138,7 @@ void sx1278_send_data(uint8_t *data_send, int size);
 void sx1278_start_recv_data(void);
 sx1278_err_t sx1278_recv_data(uint8_t *data_recv, uint32_t *len, int *rssi, float *snr, bool isStayinRX);
 sx1278_err_t parse_packet(uint8_t *packet_data, sx1278_node_t *node);
-int get_random_value(int min, int max);
+int get_random_value(uint32_t seed, int min, int max);
 bool listen_before_talk(void);
 uint8_t get_crc_value(uint8_t *data, int len);
 void send_respond(sx1278_opcode_type_t opcode, sx1278_node_t node, uint8_t *packet);

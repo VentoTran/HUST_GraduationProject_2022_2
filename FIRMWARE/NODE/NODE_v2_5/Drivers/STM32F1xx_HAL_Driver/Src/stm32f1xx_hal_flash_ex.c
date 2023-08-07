@@ -211,7 +211,7 @@ HAL_StatusTypeDef HAL_FLASHEx_Erase(FLASH_EraseInitTypeDef *pEraseInit, uint32_t
     {
       /* Mass Erase requested for Bank1 */
       /* Wait for last operation to be completed */
-      if (FLASH_WaitForLastOperation((uint32_t)FLASH_TIMEOUT_VALUE/10) == HAL_OK)
+      if (FLASH_WaitForLastOperation((uint32_t)FLASH_TIMEOUT_VALUE) == HAL_OK)
       {
         /*Mass erase to be done*/
         FLASH_MassErase(FLASH_BANK_1);

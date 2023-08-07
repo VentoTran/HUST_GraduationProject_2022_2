@@ -59,8 +59,10 @@ typedef struct LoRa_Link_Struct
 typedef struct LoRa_Data_Struct
 {
   Link_Struct_t Link;
-  uint16_t Node_Temperature;
-  uint16_t Node_Humidity;
+  uint16_t Node_Soil_Temperature;
+  uint16_t Node_Air_Temperature;
+  uint16_t Node_Soil_Humidity;
+  uint16_t Node_Air_Humidity;
   uint16_t Node_Salinity;
   uint16_t Node_Conductivity;
   uint16_t Node_pH;
@@ -161,8 +163,10 @@ volatile bool is_UART2_RX_Done = true;
 volatile bool is_LCD_processing = false;
 volatile bool is_LoRa_processing = false;
 volatile bool is_4G_or_WiFi = USE_WIFI;
+volatile bool is_4G_connected = false;
 volatile bool is_WiFi_connected = false;
 volatile bool is_MQTT_connected = false;
+volatile bool is_MQTT_update = false;
 volatile bool is_promt_window_on = false;
 volatile bool is_page_change = false;
 
@@ -172,6 +176,7 @@ static uint8_t number_of_Node_inNetwork = 0;
 static uint8_t number_of_Node_inQueue = 0;
 static uint8_t number_of_Response_Packet_inQueue = 0;
 static uint16_t selected_Node_ID = 0;
+static uint16_t updated_Node_ID = 0;
 
 static EventGroupHandle_t evt_group;
 static BaseType_t xHigherPriorityTaskWoken = pdFALSE;
@@ -316,7 +321,7 @@ void MX_FREERTOS_Init(void) {
   Task3Handle = osThreadNew(Task3Func, NULL, &Task3_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
-
+  if ((Task0Handle == NULL) || (Task1Handle == NULL) || (Task2Handle == NULL) || (Task3Handle == NULL)) while(1);
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
 
@@ -378,6 +383,10 @@ void Task0Func(void *argument)
     if ((is_UART1_RX_Done == true) && (rxIndexUART1 != 1))
     {
       logPC("UART1 RX - %s", rxBufferUART1);
+      if      (strstr(rxBufferUART1, "WIFI-CONNECTED") != NULL)     is_WiFi_connected = true;
+      else if (strstr(rxBufferUART1, "WIFI-DISCONNECTED") != NULL)  is_WiFi_connected = false;
+      else if (strstr(rxBufferUART1, "MQTT-CONNECTED") != NULL)     is_MQTT_connected = true;
+      else if (strstr(rxBufferUART1, "MQTT-DISCONNECTED") != NULL)  is_MQTT_connected = false;
       rxIndexUART1 = 0;
       memset(rxBufferUART1, '\0', sizeof(rxBufferUART1));
       HAL_UART_Abort_IT(&huart1);
@@ -394,6 +403,14 @@ void Task0Func(void *argument)
       HAL_UART_Abort_IT(&huart2);
       HAL_UART_Receive_IT(&huart2, &rxBufferUART2[rxIndexUART2++], sizeof(uint8_t));
       HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, GPIO_PIN_SET);
+    }
+
+    if ((is_MQTT_update == true) && (is_Node_ID_inNetwork(updated_Node_ID) == true) && (is_4G_or_WiFi == USE_WIFI))
+    {
+      HAL_UART_Transmit(&huart1, "MQTT-", 5U, 100);
+      HAL_UART_Transmit(&huart1, &Node_Table[get_Index_from_Node_ID(updated_Node_ID)], sizeof(Data_Struct_t), 100);
+      updated_Node_ID = 0xFFFF;
+      is_MQTT_update = false;
     }
 
     if ((HAL_GetTick() - timeKeeper0) >= 2000)
@@ -617,7 +634,7 @@ void Task2Func(void *argument)
 void Task3Func(void *argument)
 {
   /* USER CODE BEGIN Task3Func */
-  // if (is_4G_or_WiFi != USE_4G)  osThreadTerminate(Task3Handle);
+  if (is_4G_or_WiFi != USE_4G)  osThreadTerminate(Task3Handle);
   // TODO: implement SIM 4G MQTT here
   osDelay(CMD_DELAY_SHORT);
   if (SIM_Init() == true)
@@ -669,13 +686,13 @@ bool App_Add_Node_To_Network(Link_Struct_t link)
 
 bool App_Delete_Node_From_Network(uint16_t Node_ID)
 {
-  Link_Struct_t link = {0};
-  memset(&link, '\0', sizeof(Link_Struct_t));
+  Data_Struct_t data = {0};
+  memset(&data, '\0', sizeof(Data_Struct_t));
   for (int i = 0; i < MAX_NODE; i++)
   {
     if (Node_Table[i].Link.Node_ID == Node_ID)
     {
-      Node_Table[i].Link = link;
+      Node_Table[i] = data;
       number_of_Node_inNetwork--;
       return true;
     }
@@ -823,7 +840,7 @@ void* LoRa_Packet_Parser(const uint8_t* data, uint32_t len)
         }
         logPC("Response Ready...\t");
         if (listen_before_talk() == false)  xQueueSendToFront(response_queue, &resp, 100);
-        else  {logPC("Sending packet...\n"); sx1278_send_data(&resp, sizeof(ResponsePacket_t));}
+        else  {logPC("Sending packet...\t"); sx1278_send_data(&resp, sizeof(ResponsePacket_t)); logPC("Done!\n");}
         sx1278_start_recv_data();
         break;
       }
@@ -842,21 +859,23 @@ void* LoRa_Packet_Parser(const uint8_t* data, uint32_t len)
       memcpy((uint8_t *)&data_recv, (uint8_t *)&data[2], sizeof(Data_Struct_t));
       if (is_Node_ID_inNetwork(data_recv.Link.Node_ID) == true)
       {
-        logPC("Node Registered -> Saving data...\t%s", (App_Save_Data(data_recv))? ("Success\t"):("Fail\t"));
+        logPC("Node Registered -> Saving data... %s", (App_Save_Data(data_recv))? ("Success\t"):("Fail\t"));
         ResponsePacket_t resp = {PACKET_ID_2, data_recv.Link.Node_ID, NORMAL_MODE, 180U, (uint16_t)(((LINK_CARRYON << 8) & 0xFF00) | LINK_ACK)};
         logPC("Response Ready...\t");
         if (listen_before_talk() == false)  break;
-        else  {logPC("Sending packet...\n"); sx1278_send_data(&resp, sizeof(ResponsePacket_t));}
+        else  {logPC("Sending packet...\t"); sx1278_send_data(&resp, sizeof(ResponsePacket_t));}
         logPC("Done!\n");
         sx1278_start_recv_data();
+        updated_Node_ID = data_recv.Link.Node_ID;
+        is_MQTT_update = true;
       }
       else
       {
         logPC("Node Unregister -> Demote Node...\t");
-        ResponsePacket_t resp = {PACKET_ID_2, data_recv.Link.Node_ID, NORMAL_MODE, 180U, (uint16_t)(((LINK_DISMISS << 8) & 0xFF00) | LINK_ACK)};
+        ResponsePacket_t resp = {PACKET_ID_2, data_recv.Link.Node_ID, LINK_MODE, 180U, (uint16_t)(((LINK_DISMISS << 8) & 0xFF00) | LINK_ACK)};
         logPC("Response Ready...\t");
         if (listen_before_talk() == false)  break;
-        else  {logPC("Sending packet...\n"); sx1278_send_data(&resp, sizeof(ResponsePacket_t));}
+        else  {logPC("Sending packet...\t"); sx1278_send_data(&resp, sizeof(ResponsePacket_t));}
         logPC("Done!\n");
         sx1278_start_recv_data();
       }
@@ -1130,11 +1149,16 @@ void LCD_Print_Main_Page(void)
   HAL_RTC_GetTime(&hrtc, &sTime, RTC_FORMAT_BIN);
   HAL_RTC_GetDate(&hrtc, &sDate, RTC_FORMAT_BIN);
 
+  memset(tempString, '\0', sizeof(tempString));
+
   if (is_page_change == true) ILI9341_FillScreen(ILI9341_BLACK);
 
-  ILI9341_WriteString(20, 10, "SIM:OFF", Font_7x10, ILI9341_YELLOW, ILI9341_BLACK);
-  ILI9341_WriteString(122, 10, "WIFI:ON-DIS", Font_7x10, ILI9341_YELLOW, ILI9341_BLACK);
-  ILI9341_WriteString(244, 10, "MQTT:DIS", Font_7x10, ILI9341_YELLOW, ILI9341_BLACK);
+  sprintf(tempString, "SIM:%s-%s", (is_4G_or_WiFi==USE_4G)? ("ON"):("OFF"), (is_4G_connected==true)? ("CON"):("DIS"));
+  ILI9341_WriteString(20, 10, tempString, Font_7x10, ILI9341_YELLOW, ILI9341_BLACK);
+  sprintf(tempString, "WIFI:%s-%s", (is_4G_or_WiFi==USE_WIFI)? ("ON"):("OFF"), (is_WiFi_connected==true)? ("CON"):("DIS"));
+  ILI9341_WriteString(125, 10, tempString, Font_7x10, ILI9341_YELLOW, ILI9341_BLACK);
+  sprintf(tempString, "MQTT:%s", (is_MQTT_connected==true)? ("CON"):("DIS"));
+  ILI9341_WriteString(244, 10, tempString, Font_7x10, ILI9341_YELLOW, ILI9341_BLACK);
 
   sprintf(tempString, "%02i:%02i", sTime.Hours, sTime.Minutes);
   ILI9341_WriteString(120, 40, tempString, Font_16x26, ILI9341_PINK, ILI9341_BLACK);
@@ -1345,16 +1369,16 @@ void LCD_Print_Node_Page(void)
 
   if (data_stored.Link.Node_Status != 4U) {is_page_change = false; return;}
 
-  sprintf(tempString, "Soil Temp.: % 2.1f dC", (float)(data_stored.Node_Temperature/10.0 + 0.1));
+  sprintf(tempString, "Soil Temp.: % 2.1f dC", (float)(data_stored.Node_Soil_Temperature/10.0));
   ILI9341_WriteString(15, 100, tempString, Font_7x10, ILI9341_RED, ILI9341_BLACK);
 
-  sprintf(tempString, "Air Temp.: % 2.1f dC", (float)(data_stored.Node_Temperature/10.0 + 0.1 + get_random_value(2, 5)));
+  sprintf(tempString, "Air Temp.: % 2.1f dC", (float)(data_stored.Node_Air_Temperature/10.0));
   ILI9341_WriteString(175, 100, tempString, Font_7x10, ILI9341_RED, ILI9341_BLACK);
 
-  sprintf(tempString, "Soil Humd.: % 2.1f %%RH", (float)(data_stored.Node_Humidity/10.0 + 0.1));
+  sprintf(tempString, "Soil Humd.: % 2.1f %%RH", (float)(data_stored.Node_Soil_Humidity/10.0));
   ILI9341_WriteString(15, 120, tempString, Font_7x10, ILI9341_ORANGE, ILI9341_BLACK);
 
-  sprintf(tempString, "Air Humd.: % 2.1f %%RH", (float)(data_stored.Node_Humidity/10.0 + 0.1 - get_random_value(5, 10)));
+  sprintf(tempString, "Air Humd.: % 2.1f %%RH", (float)(data_stored.Node_Air_Humidity/10.0));
   ILI9341_WriteString(175, 120, tempString, Font_7x10, ILI9341_ORANGE, ILI9341_BLACK);
 
   sprintf(tempString, "Salinity: %d uS/cm", data_stored.Node_Salinity);
@@ -1363,16 +1387,16 @@ void LCD_Print_Node_Page(void)
   sprintf(tempString, "Conductivity: %d uS/cm", data_stored.Node_Conductivity);
   ILI9341_WriteString(15, 160, tempString, Font_7x10, ILI9341_LIGHTGREEN, ILI9341_BLACK);
 
-  sprintf(tempString, "pH: % 2.1f pH", (float)(get_random_value(55, 75)/10.0 + 0.1));
+  sprintf(tempString, "pH: % 2.1f pH", (float)(data_stored.Node_pH/10.0));
   ILI9341_WriteString(15, 180, tempString, Font_7x10, ILI9341_LIGHTBLUE, ILI9341_BLACK);
 
-  sprintf(tempString, "N: %d mg/kg", data_stored.Node_N);
+  sprintf(tempString, "N: %d mg/kg", (uint16_t)(data_stored.Node_N/10));
   ILI9341_WriteString(175, 180, tempString, Font_7x10, ILI9341_LIGHTBLUE, ILI9341_BLACK);
 
-  sprintf(tempString, "P: %d mg/kg", data_stored.Node_P);
+  sprintf(tempString, "P: %d mg/kg", (uint16_t)(data_stored.Node_P/10));
   ILI9341_WriteString(15, 200, tempString, Font_7x10, ILI9341_PINK, ILI9341_BLACK);
 
-  sprintf(tempString, "K: %d mg/kg", data_stored.Node_K);
+  sprintf(tempString, "K: %d mg/kg", (uint16_t)(data_stored.Node_K/10));
   ILI9341_WriteString(175, 200, tempString, Font_7x10, ILI9341_PINK, ILI9341_BLACK);
 
   is_page_change = false;
@@ -1382,18 +1406,18 @@ void LCD_Node_Page_Handle(const uint16_t x, const uint16_t y)
 {
   if (is_promt_window_on == true)
   {
-    if (ILI9341_checkButton(x, y, &Promt_Accept, false) == true)
+    if (ILI9341_checkButton(x, y, &Promt_Confirm, false) == true)
     {
-
+      App_Delete_Node_From_Network(selected_Node_ID);
+      ILI9341_FillRectangle(Promt_Window.pos_x, Promt_Window.pos_y, Promt_Window.shape_w,Promt_Window.shape_h, ILI9341_BLACK);
       is_page_change = true;
-      LCD_Print_Network_Page();
+      Current_Page = NETWORK_PAGE;
       is_promt_window_on = false;
     } 
     else if (ILI9341_checkButton(x, y, &Promt_Window, false) == false)
     {
-
       ILI9341_FillRectangle(Promt_Window.pos_x, Promt_Window.pos_y, Promt_Window.shape_w,Promt_Window.shape_h, ILI9341_BLACK);
-      LCD_Print_Node_Page();
+      Current_Page = NODE_PAGE;
       is_promt_window_on = false;
     }
     return;
