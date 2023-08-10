@@ -71,6 +71,7 @@ Core/Src/flash.c \
 Core/Src/sx1278.c
 
 
+
 # ASM sources
 ASM_SOURCES =  \
 startup_stm32f103xb.s

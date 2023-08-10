@@ -162,6 +162,8 @@ typedef enum NodeStatus
 #define AHT10_ADDRESS_1 (0x38 << 1) // 0b1110000; Adress[7-bit]Wite/Read[1-bit]
 #define AHT10_ADDRESS_2 (0x39 << 1) // 0b1110000; Adress[7-bit]Wite/Read[1-bit]
 
+#define SAVE_ADDR     (0x08013030U)
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -204,9 +206,9 @@ static NodeStatus_t myStatus;
 static uint32_t backupStorage = 0U;
 static uint8_t payload[100] = {0};
 static volatile bool is_LoRa_EXTI = false;
-static volatile bool is_All_Power_OFF = false;
+static volatile bool is_All_Power_OFF = true;
 static uint8_t array2store[32] = {0};
-static uint8_t mark = 0U;
+static volatile uint8_t nTry = 0;
 
 /* USER CODE END 0 */
 
@@ -259,7 +261,8 @@ int main(void)
   {
     HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR3, SLEEPTIME_NORMAL_MODE_MIN * 60);
     myStatus = LINK_MODE;
-    HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR4, 0U);
+    // HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR4, 0U);
+    is_All_Power_OFF = false;
     // HAL_Delay(20000);
   }
 
@@ -301,9 +304,9 @@ int main(void)
   HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
   HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
 
-  mark = HAL_RTCEx_BKUPRead(&hrtc, RTC_BKP_DR4);
-  if (mark < 2U)  { is_All_Power_OFF = false; mark++; HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR4, mark); }
-  else { is_All_Power_OFF = true; }
+  // mark = HAL_RTCEx_BKUPRead(&hrtc, RTC_BKP_DR4);
+  // if (mark < 2U)  { is_All_Power_OFF = false; mark++; HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR4, mark); }
+  // else { is_All_Power_OFF = true; }
 
   if (is_All_Power_OFF == true)   HAL_GPIO_WritePin(PWR_MAIN_GPIO_Port, PWR_MAIN_Pin, GPIO_PIN_RESET);
   else                            HAL_GPIO_WritePin(PWR_MAIN_GPIO_Port, PWR_MAIN_Pin, GPIO_PIN_SET);
@@ -562,9 +565,6 @@ void Link_Mode_Handle(void)
 {
   readADC();
 
-  // HAL_I2C_DeInit(&hi2c1);
-  // HAL_UART_DeInit(&huart1);
-
   HAL_GPIO_WritePin(PWR_SUB_GPIO_Port, PWR_SUB_Pin, GPIO_PIN_SET);
   HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, GPIO_PIN_RESET);
 
@@ -580,7 +580,7 @@ void Link_Mode_Handle(void)
   LinkReq.Payload.Node_Period = (uint16_t)(HAL_RTCEx_BKUPRead(&hrtc, RTC_BKP_DR3));
   memcpy((uint8_t*)&payload, (uint8_t*)&LinkReq, sizeof(Link_Packet_t));
 
-  uint8_t nTry = 0;
+  nTry = 0;
   while ((is_OK_2_Talk() == false) && (nTry < 10))
   {
     nTry++;
@@ -589,6 +589,9 @@ void Link_Mode_Handle(void)
   if (nTry == 10)
   {
     myStatus = LINK_MODE;
+    HAL_SPI_DeInit(&hspi1);
+    HAL_GPIO_WritePin(PWR_SUB_GPIO_Port, PWR_SUB_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, GPIO_PIN_SET);
     return;
   }
 
@@ -649,15 +652,16 @@ void Normal_Mode_Handle(void)
   memset(payload, '\0', sizeof(payload));
   memcpy((uint8_t *)payload, (uint8_t *)&data_packet, sizeof(Data_Packet_t));
   
-  uint8_t nTry = 0;
+  nTry = 0;
   while ((is_OK_2_Talk() == false) && (nTry < 10))
   {
     nTry++;
-    HAL_Delay(get_random_value(backupStorage, 50, 200));
+    HAL_Delay(100);
   }
   if (nTry == 10)
   {
     myStatus = RETRY_MODE;
+    HAL_SPI_DeInit(&hspi1);
     HAL_GPIO_WritePin(PWR_SUB_GPIO_Port, PWR_SUB_Pin, GPIO_PIN_RESET);
     HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, GPIO_PIN_SET);
     return;
@@ -671,7 +675,8 @@ void Normal_Mode_Handle(void)
   {
     memset(array2store, '\0', sizeof(array2store));
     memcpy((uint8_t *)&array2store, (uint8_t *)&data_packet, sizeof(Data_Packet_t));
-    Flash_Write_Data(0x08006000, (uint32_t*)&array2store, (sizeof(array2store)/4));
+    Flash_Write_Data(SAVE_ADDR, (uint32_t*)&array2store, 8U);
+    HAL_Delay(300);
   }
 
   sx1278_sleep();
@@ -681,8 +686,11 @@ void Normal_Mode_Handle(void)
   HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, GPIO_PIN_SET);
 }
 
-void Retry_Mode_Handle(void)
+void Retry_Mode_Handle(void) 
 {
+  Flash_Read_Data(SAVE_ADDR, (uint32_t *)&array2store, sizeof(array2store));
+  array2store[4] = RETRY_MODE;
+  memcpy((uint8_t *)payload, (uint8_t *)&array2store, sizeof(Data_Packet_t));
 
   HAL_GPIO_WritePin(PWR_SUB_GPIO_Port, PWR_SUB_Pin, GPIO_PIN_SET);
   HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, GPIO_PIN_RESET);
@@ -690,11 +698,8 @@ void Retry_Mode_Handle(void)
   MX_SPI1_Init();
   HAL_Delay(100);
   sx1278_init();
-  Flash_Read_Data(0x08006000, (uint32_t *)&array2store, sizeof(array2store));
-  array2store[4] = RETRY_MODE;
-  memcpy((uint8_t *)payload, (uint8_t *)&array2store, sizeof(Data_Packet_t));
-  
-  uint8_t nTry = 0;
+
+  nTry = 0;
   while ((is_OK_2_Talk() == false) && (nTry < 10))
   {
     nTry++;
@@ -703,6 +708,7 @@ void Retry_Mode_Handle(void)
   if (nTry == 10)
   {
     myStatus = RETRY_MODE;
+    HAL_SPI_DeInit(&hspi1);
     HAL_GPIO_WritePin(PWR_SUB_GPIO_Port, PWR_SUB_Pin, GPIO_PIN_RESET);
     HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, GPIO_PIN_SET);
     return;
@@ -844,3 +850,4 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+

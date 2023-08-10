@@ -33,6 +33,8 @@ extern const myButton_t Promt_Reject;
 extern const myButton_t To_Join_Request_Page;
 extern const myButton_t To_Network_Page;
 extern const myButton_t To_Control_Page;
+extern const myButton_t Select_4G;
+extern const myButton_t Select_WiFi;
 
 //-------------------------------------------------------------------------------------------------------------------
 

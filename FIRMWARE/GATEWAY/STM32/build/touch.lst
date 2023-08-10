@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 1
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 1
   30:Core/Src/touch.c **** {
   27              		.loc 1 30 1 view -0
   28              		.cfi_startproc
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 2
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s 			page 2
 
 
   29              		@ args = 0, pretend = 0, frame = 0
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 1
   78 000e 4009     		lsrs	r0, r0, #5
   79 0010 08BD     		pop	{r3, pc}
   80              	.L8:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 3
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s 			page 3
 
 
   81 0012 00BF     		.align	2
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 1
   26:Core/Src/touch.c **** }
  128              		.loc 1 26 5 view .LVU14
  129 000a 0022     		movs	r2, #0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 4
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s 			page 4
 
 
  130 000c 4FF48051 		mov	r1, #4096
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 1
  169              		.loc 1 36 12 is_stmt 0 view .LVU31
  170 0022 4021     		movs	r1, #64
  171 0024 3B48     		ldr	r0, .L17+4
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 5
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s 			page 5
 
 
  172 0026 FFF7FEFF 		bl	HAL_GPIO_ReadPin
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 1
  215 0066 05AA     		add	r2, sp, #20
  216 0068 4946     		mov	r1, r9
  217 006a 2846     		mov	r0, r5
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 6
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s 			page 6
 
 
  218 006c FFF7FEFF 		bl	HAL_SPI_TransmitReceive
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 1
  259              		.loc 1 31 5 view .LVU60
  260 0092 0122     		movs	r2, #1
  261 0094 4FF48051 		mov	r1, #4096
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 7
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s 			page 7
 
 
  262 0098 1D48     		ldr	r0, .L17
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 1
  297 00ca 5B0B     		lsrs	r3, r3, #13
  298              		.loc 1 88 131 view .LVU73
  299 00cc 1E3B     		subs	r3, r3, #30
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 8
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s 			page 8
 
 
  300              	.LVL24:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 1
  344              		.cfi_def_cfa_offset 36
  345              		@ sp needed
  346 0106 BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 9
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s 			page 9
 
 
  347              	.LVL30:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 1
  398 0008 8AB1     		cbz	r2, .L20
  399              		.loc 1 102 42 discriminator 1 view .LVU98
  400 000a C388     		ldrh	r3, [r0, #6]
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 10
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s 			page 10
 
 
  401              		.loc 1 102 32 discriminator 1 view .LVU99
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 1
  449              	.L23:
  109:Core/Src/touch.c ****     }
  110:Core/Src/touch.c ****     return true;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 11
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s 			page 11
 
 
  450              		.loc 1 110 5 is_stmt 1 view .LVU116
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 1
  500              		.loc 1 115 68 discriminator 2 view .LVU126
  501 000a 1589     		ldrh	r5, [r2, #8]
  502              		.loc 1 115 58 discriminator 2 view .LVU127
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 12
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s 			page 12
 
 
  503 000c FDB9     		cbnz	r5, .L28
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 1
  119:Core/Src/touch.c ****             return true;
  539              		.loc 1 119 41 is_stmt 1 discriminator 1 view .LVU141
  119:Core/Src/touch.c ****             return true;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 13
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s 			page 13
 
 
  540              		.loc 1 119 65 is_stmt 0 discriminator 1 view .LVU142
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 1
  579 006a 01DD     		ble	.L39
  580              		.loc 1 131 12 view .LVU158
  581 006c 0020     		movs	r0, #0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 14
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s 			page 14
 
 
  582              	.LVL45:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 1
  625              	.LVL52:
  131:Core/Src/touch.c **** }
  626              		.loc 1 131 12 view .LVU172
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 15
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s 			page 15
 
 
  627 0086 FBE7     		b	.L29
@@ -880,30 +880,30 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 1
  668              		.file 9 "Core/Inc/touch.h"
  669              		.file 10 "Core/Inc/spi.h"
  670              		.file 11 "Core/Inc/lcd.h"
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s 			page 16
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 touch.c
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:16     .text.ILI9341_TouchUnselect:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:24     .text.ILI9341_TouchUnselect:00000000 ILI9341_TouchUnselect
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:47     .text.ILI9341_TouchUnselect:00000010 $d
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:52     .text.ILI9341_TouchPressed:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:59     .text.ILI9341_TouchPressed:00000000 ILI9341_TouchPressed
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:83     .text.ILI9341_TouchPressed:00000014 $d
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:88     .text.ILI9341_TouchGetCoordinates:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:95     .text.ILI9341_TouchGetCoordinates:00000000 ILI9341_TouchGetCoordinates
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:357    .text.ILI9341_TouchGetCoordinates:00000110 $d
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:370    .text.ILI9341_UpdateButton:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:377    .text.ILI9341_UpdateButton:00000000 ILI9341_UpdateButton
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:470    .text.ILI9341_checkButton:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:477    .text.ILI9341_checkButton:00000000 ILI9341_checkButton
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:639    .rodata.cmd_read_x.0:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:643    .rodata.cmd_read_x.0:00000000 cmd_read_x.0
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:646    .rodata.cmd_read_y.2:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:650    .rodata.cmd_read_y.2:00000000 cmd_read_y.2
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:653    .rodata.zeroes_tx.1:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\ccTGE4lR.s:657    .rodata.zeroes_tx.1:00000000 zeroes_tx.1
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:16     .text.ILI9341_TouchUnselect:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:24     .text.ILI9341_TouchUnselect:00000000 ILI9341_TouchUnselect
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:47     .text.ILI9341_TouchUnselect:00000010 $d
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:52     .text.ILI9341_TouchPressed:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:59     .text.ILI9341_TouchPressed:00000000 ILI9341_TouchPressed
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:83     .text.ILI9341_TouchPressed:00000014 $d
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:88     .text.ILI9341_TouchGetCoordinates:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:95     .text.ILI9341_TouchGetCoordinates:00000000 ILI9341_TouchGetCoordinates
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:357    .text.ILI9341_TouchGetCoordinates:00000110 $d
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:370    .text.ILI9341_UpdateButton:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:377    .text.ILI9341_UpdateButton:00000000 ILI9341_UpdateButton
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:470    .text.ILI9341_checkButton:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:477    .text.ILI9341_checkButton:00000000 ILI9341_checkButton
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:639    .rodata.cmd_read_x.0:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:643    .rodata.cmd_read_x.0:00000000 cmd_read_x.0
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:646    .rodata.cmd_read_y.2:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:650    .rodata.cmd_read_y.2:00000000 cmd_read_y.2
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:653    .rodata.zeroes_tx.1:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccXk2L1w.s:657    .rodata.zeroes_tx.1:00000000 zeroes_tx.1
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin

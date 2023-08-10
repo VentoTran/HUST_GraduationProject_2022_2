@@ -51,9 +51,10 @@ uint32_t Flash_Write_Data(uint32_t StartPageAddress, uint32_t *Data, uint16_t nu
 
     while (sofar < numberofwords)
     {
-        if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, StartPageAddress, (uint32_t)Data[sofar]) == HAL_OK)
+        if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, StartPageAddress, (uint32_t)*Data) == HAL_OK)
         {
             StartPageAddress += 4; // use StartPageAddress += 2 for half word and 8 for double word
+            Data++;
             sofar++;
         }
         else

@@ -33,6 +33,7 @@
 #define RESET_PORT      SIM_RST_GPIO_Port
 #define RESET_PIN       SIM_RST_Pin
 
+//------------------------------------------------------------------------------------------------------
 
 typedef struct 
 {
@@ -62,6 +63,15 @@ typedef struct
     SIM_ST_t status;
 } SIM_t;
 
+typedef void (*MQTT_Callback_func_p)(const char*);
+
+//------------------------------------------------------------------------------------------------------
+
+extern SIM_t SIM;
+extern volatile bool isWaiting4Response;
+extern uint8_t responseBuffer[200];
+
+//------------------------------------------------------------------------------------------------------
 
 bool SIM_Init(void);
 
@@ -72,6 +82,8 @@ void SIM_Reset(void);
 void SIM_GetResponse(const char* response);
 
 void SIM_sendATCommand(char* command);
+
+void SIM_sendATCommand_withLength(char* command, uint32_t len);
 
 bool SIM_sendATCommandResponse(char* command, char* response, uint32_t waitms);
 
@@ -86,6 +98,9 @@ bool SIM_startGPRS(void);
 bool SIM_getIP(void);
 
 uint8_t SIM_checkSignalStrength(void);
+
+
+void setMQTT_Callback(MQTT_Callback_func_p func);
 
 #endif /* _SIM_H_ */
 

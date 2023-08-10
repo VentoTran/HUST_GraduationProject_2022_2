@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s 			page 1
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccM96iqD.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s 			page 1
   19:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c ****   *
   20:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c ****   ******************************************************************************
   21:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c ****   @verbatim
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s 			page 2
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccM96iqD.s 			page 2
 
 
   22:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c ****   ==============================================================================
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s 			page 1
   76:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c ****   *   This parameter can be a value of @ref GPIOEx_EVENTOUT_PORT.
   77:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c ****   * @param  GPIO_PinSource Select the pin used to output the Cortex EVENTOUT signal.
   78:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c ****   *   This parameter can be a value of @ref GPIOEx_EVENTOUT_PIN.
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s 			page 3
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccM96iqD.s 			page 3
 
 
   79:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c ****   * @retval None
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s 			page 1
   76              	.LVL2:
   77              	.L5:
   84:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c ****   assert_param(IS_AFIO_EVENTOUT_PIN(GPIO_PinSource));
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s 			page 4
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccM96iqD.s 			page 4
 
 
   78              		.loc 1 84 3 discriminator 5 view .LVU10
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s 			page 1
   98:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c **** }
  123              		.loc 1 98 1 is_stmt 0 view .LVU16
  124 000a 7047     		bx	lr
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s 			page 5
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccM96iqD.s 			page 5
 
 
  125              	.L11:
@@ -289,21 +289,21 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s 			page 1
  164              		.file 3 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\sys\\_stdint.h"
  165              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
  166              		.file 5 "Core/Inc/stm32f1xx_hal_conf.h"
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s 			page 6
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccM96iqD.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f1xx_hal_gpio_ex.c
-C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s:16     .rodata.HAL_GPIOEx_ConfigEventout.str1.4:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s:21     .text.HAL_GPIOEx_ConfigEventout:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s:29     .text.HAL_GPIOEx_ConfigEventout:00000000 HAL_GPIOEx_ConfigEventout
-C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s:98     .text.HAL_GPIOEx_ConfigEventout:00000044 $d
-C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s:104    .text.HAL_GPIOEx_EnableEventout:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s:111    .text.HAL_GPIOEx_EnableEventout:00000000 HAL_GPIOEx_EnableEventout
-C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s:128    .text.HAL_GPIOEx_EnableEventout:0000000c $d
-C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s:133    .text.HAL_GPIOEx_DisableEventout:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s:140    .text.HAL_GPIOEx_DisableEventout:00000000 HAL_GPIOEx_DisableEventout
-C:\Users\Vento\AppData\Local\Temp\ccjevJAm.s:157    .text.HAL_GPIOEx_DisableEventout:0000000c $d
+C:\Users\Vento\AppData\Local\Temp\ccM96iqD.s:16     .rodata.HAL_GPIOEx_ConfigEventout.str1.4:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccM96iqD.s:21     .text.HAL_GPIOEx_ConfigEventout:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccM96iqD.s:29     .text.HAL_GPIOEx_ConfigEventout:00000000 HAL_GPIOEx_ConfigEventout
+C:\Users\Vento\AppData\Local\Temp\ccM96iqD.s:98     .text.HAL_GPIOEx_ConfigEventout:00000044 $d
+C:\Users\Vento\AppData\Local\Temp\ccM96iqD.s:104    .text.HAL_GPIOEx_EnableEventout:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccM96iqD.s:111    .text.HAL_GPIOEx_EnableEventout:00000000 HAL_GPIOEx_EnableEventout
+C:\Users\Vento\AppData\Local\Temp\ccM96iqD.s:128    .text.HAL_GPIOEx_EnableEventout:0000000c $d
+C:\Users\Vento\AppData\Local\Temp\ccM96iqD.s:133    .text.HAL_GPIOEx_DisableEventout:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccM96iqD.s:140    .text.HAL_GPIOEx_DisableEventout:00000000 HAL_GPIOEx_DisableEventout
+C:\Users\Vento\AppData\Local\Temp\ccM96iqD.s:157    .text.HAL_GPIOEx_DisableEventout:0000000c $d
 
 UNDEFINED SYMBOLS
 assert_failed

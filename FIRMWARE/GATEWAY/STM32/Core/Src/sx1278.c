@@ -237,8 +237,8 @@ void sx1278_init(void)
 	sx1278_reset();
 	uint8_t ver = sx1278_read_reg(REG_VERSION);
     // LOG(TAG, "LoRa Version: 0x%02X");
-    logPC("%s - Module version: 0x%02X", TAG, ver);
-    logPC("%s - Initialize Start...", TAG);
+    logPC("%s - Module version: 0x%02X\t", TAG, ver);
+    logPC("%s - Initialize Start...\t", TAG);
 	sx1278_sleep();
     sx1278_write_reg(REG_FIFO_RX_BASE_ADDR, 0x00);
     sx1278_write_reg(REG_FIFO_TX_BASE_ADDR, 0x00);
@@ -253,7 +253,7 @@ void sx1278_init(void)
     sx1278_set_crc(true);
     sx1278_set_irq(0x00);
     sx1278_standby();
-    logPC("%s - Initialize Done!", TAG);
+    logPC("%s - Initialize Done!\t", TAG);
 }
 
 void sx1278_send_data(uint8_t *data_send, int size)

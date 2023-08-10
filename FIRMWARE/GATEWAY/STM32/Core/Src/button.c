@@ -114,6 +114,26 @@ const myButton_t To_Control_Page = {
     .state = BUTTON_ON
 };
 
+const myButton_t Select_4G = {
+    .color_on = ILI9341_BLACK,
+    .pos_x = 10,
+    .pos_y = 10,
+    .shape_w = 100,
+    .shape_h = 20,
+    .state = BUTTON_ON
+};
+
+const myButton_t Select_WiFi = {
+    .color_on = ILI9341_BLACK,
+    .pos_x = 120,
+    .pos_y = 10,
+    .shape_w = 100,
+    .shape_h = 20,
+    .state = BUTTON_ON
+};
+
+
+
 //-------------------------------------------------------------------------------------------------------------------
 
 const myButton_t Back_Top_Right = {

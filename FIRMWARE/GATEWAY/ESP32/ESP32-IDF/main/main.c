@@ -78,24 +78,32 @@ typedef struct Server_CMD_Struct
 #define RX_BUF_SIZE (512)
 #define TX_BUF_SIZE (512)
 
-static const char *TAG = "MAIN ESP";
+static const char *TAG = "MAIN ESP32";
 
 static void tx_task(void *arg);
 static void rx_task(void *arg);
 static void blink_task(void *arg);
-static void smartconfig_task(void *parm);
+static void smartconfig_task(void *arg);
+static void wifi_task(void *arg);
 
-int sendData(const char *logName, const char *data);
+static int sendData(const char *logName, const char *data);
 static void initialise_wifi(void);
 static void wifi_event_handler(void *arg, esp_event_base_t event_base, int32_t event_id, void *event_data);
 static void log_error_if_nonzero(const char *message, int error_code);
 static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data);
+
+static TaskHandle_t UART_RX_TASK_Handle;
+static TaskHandle_t UART_TX_TASK_Handle;
+static TaskHandle_t BLINK_TASK_Handle;
+static TaskHandle_t WIFI_TASK_Handle;
+static TaskHandle_t SC_TASK_Handle;
 
 static QueueHandle_t uart_queue_rx;
 static QueueHandle_t uart_queue_tx;
 static EventGroupHandle_t s_wifi_event_group;
 static EventGroupHandle_t s_uart_event_group;
 static nvs_handle_t my_nvs_handle;
+static esp_mqtt_client_handle_t mqtt_client = NULL;
 
 static const int CONNECTED_BIT = BIT0;
 static const int ESPTOUCH_DONE_BIT = BIT1;
@@ -103,16 +111,20 @@ static const int ESPTOUCH_DONE_BIT = BIT1;
 static const int CMD_ACK_BIT = BIT0;
 static const int CMD_NACK_BIT = BIT1;
 
+volatile static bool is_WiFi_allowed = false;
 volatile static bool is_WiFi_connected = false;
 volatile static bool is_MQTT_connected = false;
 volatile static bool is_use_ESPTOUCH = false;
-volatile static bool is_sync_time = false;
-
+volatile static bool is_WiFi_task_running = false;
+volatile static bool is_SC_task_running = false;
 
 static char SSID[100] = {0};
 static char PASS[100] = {0};
 static size_t lengthSSID = 100;
 static size_t lengthPASS = 100;
+
+static time_t now;
+static struct tm timeinfo = {0};
 
 esp_mqtt_client_config_t mqtt_cfg = {
     .uri = "mqtt://test.mosquitto.org",
@@ -179,13 +191,17 @@ void app_main(void)
 
     if ((uart_queue_rx == NULL) || (uart_queue_tx == NULL) || (s_uart_event_group == NULL)) {ESP_LOGE(TAG, "CANT INIT"); while(1);}
 
-    vTaskDelay(3000 / portTICK_RATE_MS);
+    // vTaskDelay(3000 / portTICK_RATE_MS);
 
-    xTaskCreate(rx_task, "uart_rx_task", 8192, NULL, configMAX_PRIORITIES - 0, NULL);
-    xTaskCreate(tx_task, "uart_tx_task", 8192, NULL, configMAX_PRIORITIES - 1, NULL);
-    xTaskCreate(blink_task, "blink_task", 8192, NULL, configMAX_PRIORITIES - 2, NULL);
+    xTaskCreate(rx_task, "uart_rx_task", 8192, NULL, configMAX_PRIORITIES - 0, &UART_RX_TASK_Handle);
+    xTaskCreate(tx_task, "uart_tx_task", 8192, NULL, configMAX_PRIORITIES - 1, &UART_TX_TASK_Handle);
+    xTaskCreate(blink_task, "blink_task", 8192, NULL, configMAX_PRIORITIES - 2, &BLINK_TASK_Handle);
+
+    ESP_LOGW("MAIN", "NOW INITIALIZE WIFI");
 
     initialise_wifi();
+
+    ESP_LOGW("MAIN", "NOW EXIT MAIN");
 }
 
 //------------------------------------------------------------------------------------------------------------------------
@@ -248,10 +264,30 @@ static void rx_task(void *arg)
             ESP_LOGI(RX_TASK_TAG, "Read %d bytes: '%s'", rxBytes, data);
             
             pChar = strstr((const char *)data, "MQTT-");
-            if (pChar != NULL)  xQueueSend(uart_queue_rx, &pChar[5], 100 / portTICK_RATE_MS);
+            if (pChar != NULL)
+            {
+                ESP_LOG_BUFFER_HEXDUMP(RX_TASK_TAG, data, rxBytes, ESP_LOG_INFO);
+                xQueueSend(uart_queue_rx, &pChar[5], 100 / portTICK_RATE_MS);
+            }
 
-            if          (strstr((const char *)data, "CMD-OK")   != NULL)     xEventGroupSetBits(s_uart_event_group, CMD_ACK_BIT);
-            else if     (strstr((const char *)data, "CMD-NOK")  != NULL)     xEventGroupSetBits(s_uart_event_group, CMD_NACK_BIT);
+            // pChar = strstr((const char *)data, "TIME-");
+            // if (pChar != NULL)  {ESP_LOG_BUFFER_HEXDUMP(RX_TASK_TAG, data, rxBytes, ESP_LOG_INFO);}
+
+            if          (strstr((const char *)data, "CMD-OK")   != NULL)    xEventGroupSetBits(s_uart_event_group, CMD_ACK_BIT);
+            else if     (strstr((const char *)data, "CMD-NOK")  != NULL)    xEventGroupSetBits(s_uart_event_group, CMD_NACK_BIT);
+
+            if          (strstr((const char *)data, "WIFI-ON")   != NULL)   xTaskCreate(wifi_task, "wifi_task", 8192, NULL, configMAX_PRIORITIES - 2, &WIFI_TASK_Handle);
+            else if     (strstr((const char *)data, "WIFI-OFF")   != NULL)
+            {
+                is_WiFi_allowed = false;
+                if (is_WiFi_task_running == true)   {vTaskDelete(WIFI_TASK_Handle); is_WiFi_task_running = false;}
+                if (is_SC_task_running == true)     {vTaskDelete(SC_TASK_Handle); is_SC_task_running = false; esp_smartconfig_stop();}
+                esp_mqtt_client_disconnect(mqtt_client);
+                esp_mqtt_client_stop(mqtt_client);
+                ESP_ERROR_CHECK(esp_wifi_disconnect());
+                is_WiFi_connected = false;
+                is_MQTT_connected = false;
+            }
         }
         rxBytes = 0;
         vTaskDelay(100 / portTICK_PERIOD_MS);
@@ -265,8 +301,9 @@ static void blink_task(void *arg)
     static char temp[2][200];
     static char * pChar = NULL;
     static uint32_t len = 0;
-    esp_mqtt_client_handle_t client = NULL;
-    Data_Struct_t data_to_send;
+    static Data_Struct_t data_to_send;
+    mqtt_client = esp_mqtt_client_init(&mqtt_cfg);
+    esp_mqtt_client_register_event(mqtt_client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL);
     uint32_t timeKeeper = xTaskGetTickCount();
     uint32_t timeKeeperMQTT = timeKeeper;
     uint32_t timeKeeperBlink = timeKeeper;
@@ -295,11 +332,11 @@ static void blink_task(void *arg)
                             data_to_send.Link.Node_Period);
             ESP_LOGI("MQTT", "Topic: '%s'", temp[0]);
             ESP_LOGI("MQTT", "Payload: '%s'", temp[1]);
-            if (len > 0)    {esp_mqtt_client_publish(client, temp[0], temp[1], len, 0, 0); ESP_LOGI("MQTT", "Valid payload length -> Send MQTT...");}
+            if (len > 0)    {esp_mqtt_client_publish(mqtt_client, temp[0], temp[1], len, 0, 0); ESP_LOGI("MQTT", "Valid payload length -> Send MQTT...");}
             else {ESP_LOGI("MQTT", "Invalid payload length -> Put back to RX Queue"); xQueueSend(uart_queue_rx, &data_to_send, 100 / portTICK_RATE_MS);}
 
             memset(temp, '\0', sizeof(temp));
-            vTaskDelay(100 / portTICK_PERIOD_MS);
+            vTaskDelay(500 / portTICK_PERIOD_MS);
 
             sprintf(&temp[0], "SolGarden/Node/%04X/data", data_to_send.Link.Node_ID);
             len = sprintf(  &temp[1], "[{\"Soil Temp.\": %2.1f,\"Air Temp.\": %2.1f,\"Soil Humd.\": %2.1f,\"Air Humd.\": %2.1f,\"Salinity\": %d,\"Conductivity\": %d,\"pH\": %.1f,\"N\": %d,\"P\": %d,\"K\": %d}]",
@@ -315,34 +352,76 @@ static void blink_task(void *arg)
                             (uint16_t)(data_to_send.Node_K/10));
             ESP_LOGI("MQTT", "Topic: '%s'", temp[0]);
             ESP_LOGI("MQTT", "Payload: '%s'", temp[1]);
-            if (len > 0)    {esp_mqtt_client_publish(client, temp[0], temp[1], len, 0, 0); ESP_LOGI("MQTT", "Valid payload length -> Send MQTT...");}
+            if (len > 0)    {esp_mqtt_client_publish(mqtt_client, temp[0], temp[1], len, 0, 0); ESP_LOGI("MQTT", "Valid payload length -> Send MQTT...");}
             else {ESP_LOGI("MQTT", "Invalid payload length -> Put back to RX Queue"); xQueueSend(uart_queue_rx, &data_to_send, 100 / portTICK_RATE_MS);}
             vTaskDelay(100 / portTICK_PERIOD_MS);
         }
 
-        if (((xTaskGetTickCount() - timeKeeper) >= 10000) && (is_WiFi_connected == false) && (is_use_ESPTOUCH == false))
-        {
-            is_use_ESPTOUCH = true;
-            ESP_LOGI("WIFI", "WiFi change to ESP_TOUCH");
-            xTaskCreate(smartconfig_task, "ESP_TOUCH", 4096, NULL, configMAX_PRIORITIES - 2, NULL);
-            timeKeeper = xTaskGetTickCount();
-        }
-
         if ((is_WiFi_connected == true) && (is_MQTT_connected == false))
         {
-            client = esp_mqtt_client_init(&mqtt_cfg);
-            esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL);
-            esp_mqtt_client_start(client);
+            esp_mqtt_client_start(mqtt_client);
             timeKeeperMQTT = xTaskGetTickCount();
             while ((is_MQTT_connected == false) && ((xTaskGetTickCount() - timeKeeperMQTT) < 5000));
         }
 
-        if ((is_WiFi_connected == true) && (is_sync_time == false))
+        vTaskDelay(100 / portTICK_PERIOD_MS);
+    }
+}
+
+static void smartconfig_task(void *arg)
+{
+    EventBits_t uxBits;
+    is_SC_task_running = true;
+    ESP_ERROR_CHECK(esp_smartconfig_set_type(SC_TYPE_ESPTOUCH));
+    smartconfig_start_config_t cfg = SMARTCONFIG_START_CONFIG_DEFAULT();
+    ESP_ERROR_CHECK(esp_smartconfig_start(&cfg));
+    while (1)
+    {
+        uxBits = xEventGroupWaitBits(s_wifi_event_group, CONNECTED_BIT | ESPTOUCH_DONE_BIT, true, false, portMAX_DELAY);
+        if (uxBits & CONNECTED_BIT)
         {
-            time_t now;
-            struct tm timeinfo = {0};
+            ESP_LOGI(TAG, "WiFi Connected to Access Point (AP)");
+        }
+        if (uxBits & ESPTOUCH_DONE_BIT)
+        {
+            is_WiFi_connected = true;
+            ESP_LOGI(TAG, "Smartconfig Over");
+            esp_smartconfig_stop();
+            is_SC_task_running = false;
+            vTaskDelete(NULL);
+        }
+    }
+}
+
+static void wifi_task(void *arg)
+{
+    static const char *BLINK_TASK_TAG = "WIFI_TASK";
+    is_WiFi_connected = false;
+    is_MQTT_connected = false;
+    is_use_ESPTOUCH = false;
+    is_WiFi_allowed = true;
+    is_WiFi_task_running = true;
+    wifi_config_t wifi_config;
+    bzero(&wifi_config, sizeof(wifi_config_t));
+    memcpy(wifi_config.sta.ssid, SSID, sizeof(wifi_config.sta.ssid));
+    memcpy(wifi_config.sta.password, PASS, sizeof(wifi_config.sta.password));
+    ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config));
+    ESP_ERROR_CHECK(esp_wifi_disconnect());
+    esp_wifi_connect();
+    uint32_t timeKeeper = xTaskGetTickCount();
+    while (1)
+    {
+        if ((is_WiFi_connected == false) && (is_use_ESPTOUCH == false) && ((xTaskGetTickCount() - timeKeeper) >= 20000))
+        {
+            is_use_ESPTOUCH = true;
+            ESP_LOGI("WIFI", "WiFi change to ESP_TOUCH");
+            xTaskCreate(smartconfig_task, "ESP_TOUCH", 4096, NULL, configMAX_PRIORITIES - 2, &SC_TASK_Handle);
+        }
+
+        if (is_WiFi_connected == true)
+        {
             int retry = 0;
-            char strftime_buf[64];
+            static char strftime_buf[64] = {0};
 
             time(&now);
             localtime_r(&now, &timeinfo);
@@ -366,26 +445,15 @@ static void blink_task(void *arg)
                 // update 'now' variable with current time
                 time(&now);
             }
-            // Set timezone to Eastern Standard Time and print local time
-            setenv("TZ", "EST5EDT,M3.2.0/2,M11.1.0", 1);
-            tzset();
-            localtime_r(&now, &timeinfo);
-            strftime(strftime_buf, sizeof(strftime_buf), "%c", &timeinfo);
-            ESP_LOGI("SNTP", "The current date/time in New York is: %s", strftime_buf);
-
-            // Set timezone to China Standard Time
-            setenv("TZ", "CST-8", 1);
-            tzset();
-            localtime_r(&now, &timeinfo);
-            strftime(strftime_buf, sizeof(strftime_buf), "%c", &timeinfo);
-            ESP_LOGI("SNTP", "The current date/time in Shanghai is: %s", strftime_buf);
-
             // Set timezone to IndoChina Time
-            setenv("UTC", "UTC+7", 1);
+            setenv("TZ", "GTM-7", 1);
             tzset();
             localtime_r(&now, &timeinfo);
             strftime(strftime_buf, sizeof(strftime_buf), "%c", &timeinfo);
-            ESP_LOGI("SNTP", "The current date/time in VietNam is: %s", strftime_buf);
+            ESP_LOGI("SNTP", "The current date/time in Viet Nam is: %s", strftime_buf);
+            ESP_LOG_BUFFER_HEXDUMP("TIME", &timeinfo, sizeof(struct tm), ESP_LOG_INFO);
+            uart_write_bytes(UART_NUM_2, "TIME-", 5U);
+            uart_write_bytes(UART_NUM_2, &timeinfo, sizeof(struct tm));
 
             if (sntp_get_sync_mode() == SNTP_SYNC_MODE_SMOOTH)
             {
@@ -400,33 +468,11 @@ static void blink_task(void *arg)
                     vTaskDelay(2000 / portTICK_PERIOD_MS);
                 }
             }
-            is_sync_time = true;
+            is_WiFi_task_running = false;
+            vTaskDelete(WIFI_TASK_Handle);
         }
 
         vTaskDelay(100 / portTICK_PERIOD_MS);
-    }
-}
-
-static void smartconfig_task(void *parm)
-{
-    EventBits_t uxBits;
-    ESP_ERROR_CHECK(esp_smartconfig_set_type(SC_TYPE_ESPTOUCH));
-    smartconfig_start_config_t cfg = SMARTCONFIG_START_CONFIG_DEFAULT();
-    ESP_ERROR_CHECK(esp_smartconfig_start(&cfg));
-    while (1)
-    {
-        uxBits = xEventGroupWaitBits(s_wifi_event_group, CONNECTED_BIT | ESPTOUCH_DONE_BIT, true, false, portMAX_DELAY);
-        if (uxBits & CONNECTED_BIT)
-        {
-            ESP_LOGI(TAG, "WiFi Connected to Access Point (AP)");
-        }
-        if (uxBits & ESPTOUCH_DONE_BIT)
-        {
-            is_WiFi_connected = true;
-            ESP_LOGI(TAG, "Smartconfig Over");
-            esp_smartconfig_stop();
-            vTaskDelete(NULL);
-        }
     }
 }
 
@@ -455,22 +501,13 @@ static void wifi_event_handler(void *arg, esp_event_base_t event_base, int32_t e
 {
     if ((event_base == WIFI_EVENT) && (event_id == WIFI_EVENT_STA_START))
     {
-        if (is_use_ESPTOUCH == false)
-        {
-            wifi_config_t wifi_config;
-            bzero(&wifi_config, sizeof(wifi_config_t));
-            memcpy(wifi_config.sta.ssid, SSID, sizeof(wifi_config.sta.ssid));
-            memcpy(wifi_config.sta.password, PASS, sizeof(wifi_config.sta.password));
-            ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config));
-            ESP_ERROR_CHECK(esp_wifi_disconnect());
-            esp_wifi_connect();
-        }
+        return;
     }
     else if ((event_base == WIFI_EVENT) && (event_id == WIFI_EVENT_STA_DISCONNECTED))
     {
         is_WiFi_connected = false;
         uart_write_bytes(UART_NUM_2, "WIFI-DISCONNECTED", 17U);
-        esp_wifi_connect();
+        if (is_WiFi_allowed == true)    esp_wifi_connect();
     }
     else if ((event_base == IP_EVENT) && (event_id == IP_EVENT_STA_GOT_IP))
     {
@@ -479,7 +516,7 @@ static void wifi_event_handler(void *arg, esp_event_base_t event_base, int32_t e
             is_WiFi_connected = true;
             uart_write_bytes(UART_NUM_2, "WIFI-CONNECTED", 14U);
         }
-        xEventGroupSetBits(s_wifi_event_group, CONNECTED_BIT);
+        else xEventGroupSetBits(s_wifi_event_group, CONNECTED_BIT);
     }
     else if ((event_base == SC_EVENT) && (event_id == SC_EVENT_SCAN_DONE))
     {
@@ -541,7 +578,7 @@ static void wifi_event_handler(void *arg, esp_event_base_t event_base, int32_t e
     }
     else if ((event_base == SC_EVENT) && (event_id == SC_EVENT_SEND_ACK_DONE))
     {
-        xEventGroupSetBits(s_wifi_event_group, ESPTOUCH_DONE_BIT);
+        if (is_use_ESPTOUCH == true)    xEventGroupSetBits(s_wifi_event_group, ESPTOUCH_DONE_BIT);
     }
 }
 
@@ -569,7 +606,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
             ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
             uart_write_bytes(UART_NUM_2, "MQTT-CONNECTED", 14U);
             is_MQTT_connected = true;
-            msg_id = esp_mqtt_client_subscribe(client, "SolGarden/Gateway/2508", 0);
+            msg_id = esp_mqtt_client_subscribe(client, "SolGarden/Gateway/0x2508", 0);
             break;
         case MQTT_EVENT_DISCONNECTED:
             ESP_LOGI(TAG, "MQTT_EVENT_DISCONNECTED");

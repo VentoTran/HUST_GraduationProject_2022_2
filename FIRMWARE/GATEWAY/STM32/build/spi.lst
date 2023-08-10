@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 1
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 1
   30:Core/Src/spi.c **** /* SPI1 init function */
   31:Core/Src/spi.c **** void MX_SPI1_Init(void)
   32:Core/Src/spi.c **** {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 2
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s 			page 2
 
 
   27              		.loc 1 32 1 view -0
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 1
   65 0020 C261     		str	r2, [r0, #28]
   49:Core/Src/spi.c ****   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   66              		.loc 1 49 3 is_stmt 1 view .LVU17
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 3
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s 			page 3
 
 
   67              		.loc 1 49 23 is_stmt 0 view .LVU18
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 1
  110              	MX_SPI2_Init:
  111              	.LFB66:
   62:Core/Src/spi.c **** /* SPI2 init function */
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 4
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s 			page 4
 
 
   63:Core/Src/spi.c **** void MX_SPI2_Init(void)
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 1
  148              		.loc 1 80 32 is_stmt 0 view .LVU47
  149 001e 2822     		movs	r2, #40
  150 0020 C261     		str	r2, [r0, #28]
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 5
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s 			page 5
 
 
   81:Core/Src/spi.c ****   hspi2.Init.FirstBit = SPI_FIRSTBIT_MSB;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 1
  192              		.thumb_func
  193              		.fpu softvfp
  195              	HAL_SPI_MspInit:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 6
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s 			page 6
 
 
  196              	.LVL4:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 1
  118:Core/Src/spi.c ****     GPIO_InitStruct.Pin = GPIO_PIN_6;
  119:Core/Src/spi.c ****     GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
  120:Core/Src/spi.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 7
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s 			page 7
 
 
  121:Core/Src/spi.c ****     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 1
  239 001e 30BD     		pop	{r4, r5, pc}
  240              	.LVL6:
  241              	.L17:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 8
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s 			page 8
 
 
  242              	.LCFI5:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 1
  280              		.loc 1 114 26 is_stmt 0 view .LVU87
  281 004a 0223     		movs	r3, #2
  282 004c 0593     		str	r3, [sp, #20]
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 9
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s 			page 9
 
 
  115:Core/Src/spi.c ****     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 1
  136:Core/Src/spi.c **** 
  324              		.loc 1 136 5 view .LVU101
  325              	.LBB4:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 10
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s 			page 10
 
 
  136:Core/Src/spi.c **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 1
  146:Core/Src/spi.c ****     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
  364              		.loc 1 146 27 is_stmt 0 view .LVU118
  365 00b0 0323     		movs	r3, #3
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 11
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s 			page 11
 
 
  366 00b2 0793     		str	r3, [sp, #28]
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 1
  409 00f0 00080140 		.word	1073809408
  410 00f4 000C0140 		.word	1073810432
  411              		.cfi_endproc
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 12
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s 			page 12
 
 
  412              	.LFE67:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 1
  442              		.loc 1 187 8 is_stmt 1 view .LVU136
  443              		.loc 1 187 10 is_stmt 0 view .LVU137
  444 000a 114A     		ldr	r2, .L27+4
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 13
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s 			page 13
 
 
  445 000c 9342     		cmp	r3, r2
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 1
  473 002e 02F5EC32 		add	r2, r2, #120832
  474 0032 D369     		ldr	r3, [r2, #28]
  475 0034 23F48043 		bic	r3, r3, #16384
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 14
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s 			page 14
 
 
  476 0038 D361     		str	r3, [r2, #28]
@@ -838,31 +838,31 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 1
  524              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"
  525              		.file 9 "Core/Inc/spi.h"
  526              		.file 10 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h"
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 15
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s 			page 15
 
 
  527              		.file 11 "Core/Inc/main.h"
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s 			page 16
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 spi.c
-C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s:16     .text.MX_SPI1_Init:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s:24     .text.MX_SPI1_Init:00000000 MX_SPI1_Init
-C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s:97     .text.MX_SPI1_Init:0000003c $d
-C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s:103    .text.MX_SPI2_Init:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s:110    .text.MX_SPI2_Init:00000000 MX_SPI2_Init
-C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s:182    .text.MX_SPI2_Init:0000003c $d
-C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s:188    .text.HAL_SPI_MspInit:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s:195    .text.HAL_SPI_MspInit:00000000 HAL_SPI_MspInit
-C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s:406    .text.HAL_SPI_MspInit:000000e4 $d
-C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s:415    .text.HAL_SPI_MspDeInit:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s:422    .text.HAL_SPI_MspDeInit:00000000 HAL_SPI_MspDeInit
-C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s:493    .text.HAL_SPI_MspDeInit:0000004c $d
-C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s:514    .bss.hspi2:00000000 hspi2
-C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s:507    .bss.hspi1:00000000 hspi1
-C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s:503    .bss.hspi1:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\cciCBIqA.s:510    .bss.hspi2:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s:16     .text.MX_SPI1_Init:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s:24     .text.MX_SPI1_Init:00000000 MX_SPI1_Init
+C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s:97     .text.MX_SPI1_Init:0000003c $d
+C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s:103    .text.MX_SPI2_Init:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s:110    .text.MX_SPI2_Init:00000000 MX_SPI2_Init
+C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s:182    .text.MX_SPI2_Init:0000003c $d
+C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s:188    .text.HAL_SPI_MspInit:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s:195    .text.HAL_SPI_MspInit:00000000 HAL_SPI_MspInit
+C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s:406    .text.HAL_SPI_MspInit:000000e4 $d
+C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s:415    .text.HAL_SPI_MspDeInit:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s:422    .text.HAL_SPI_MspDeInit:00000000 HAL_SPI_MspDeInit
+C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s:493    .text.HAL_SPI_MspDeInit:0000004c $d
+C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s:514    .bss.hspi2:00000000 hspi2
+C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s:507    .bss.hspi1:00000000 hspi1
+C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s:503    .bss.hspi1:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccjNKqbT.s:510    .bss.hspi2:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_SPI_Init

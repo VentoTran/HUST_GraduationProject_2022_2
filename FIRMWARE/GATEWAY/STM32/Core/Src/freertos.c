@@ -42,6 +42,7 @@
 #include "sim.h"
 #include "flash.h"
 #include "button.h"
+#include "mqtt.h"
 
 /* USER CODE END Includes */
 
@@ -111,6 +112,19 @@ typedef enum Page_Enum
   FAKE_PAGE = 133U
 } Page_t;
 
+typedef struct Time_Struct
+{
+  int	tm_sec;
+  int	tm_min;
+  int	tm_hour;
+  int	tm_mday;
+  int	tm_mon;
+  int	tm_year;
+  int	tm_wday;
+  int	tm_yday;
+  int	tm_isdst;
+} Time_t;
+
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -152,10 +166,10 @@ typedef enum Page_Enum
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
 
-static uint8_t rxBufferUART1[100] = {0};
+static uint8_t rxBufferUART1[200] = {0};
 volatile static uint8_t rxIndexUART1 = 0;
 
-static uint8_t rxBufferUART2[100] = {0};
+static uint8_t rxBufferUART2[200] = {0};
 volatile static uint8_t rxIndexUART2 = 0;
 
 volatile bool is_UART1_RX_Done = true;
@@ -189,6 +203,10 @@ static Page_t Current_Page = MAIN_PAGE;
 static uint16_t arrayNodeDisplay[4] = {0};
 static char tempString[50] = {0};
 
+const char link_mode_string[] = "LINK";
+const char normal_mode_string[] = "NORMAL";
+const char retry_mode_string[] = "RETRY";
+
 /* USER CODE END Variables */
 /* Definitions for Task0 */
 osThreadId_t Task0Handle;
@@ -208,14 +226,14 @@ const osThreadAttr_t Task1_attributes = {
 osThreadId_t Task2Handle;
 const osThreadAttr_t Task2_attributes = {
   .name = "Task2",
-  .stack_size = 256 * 4,
+  .stack_size = 512 * 4,
   .priority = (osPriority_t) osPriorityAboveNormal,
 };
 /* Definitions for Task3 */
 osThreadId_t Task3Handle;
 const osThreadAttr_t Task3_attributes = {
   .name = "Task3",
-  .stack_size = 256 * 4,
+  .stack_size = 512 * 4,
   .priority = (osPriority_t) osPriorityBelowNormal,
 };
 
@@ -225,14 +243,20 @@ const osThreadAttr_t Task3_attributes = {
 bool App_Add_Node_To_Network(Link_Struct_t link);
 bool App_Delete_Node_From_Network(uint16_t Node_ID);
 
+void App_SIM_MQTT_Parser(void);
+void App_ESP_MQTT_Parser(void);
+
+void App_ESP_getTime(void);
+
 bool is_Node_ID_inLinkQueue(uint16_t Node_ID, bool remove);
 bool is_Node_ID_inResponseQueue(uint16_t Node_ID, bool remove);
 bool is_Node_ID_inNetwork(uint16_t Node_ID);
 uint8_t get_Index_from_Node_ID(uint16_t Node_ID);
-void* LoRa_Packet_Parser(const uint8_t* data, uint32_t len);
+void LoRa_Packet_Parser(const uint8_t* data, uint32_t len);
+
+void LCD_Print_Promt_Window(void);
 
 void LCD_Print_Join_Request_Page(void);
-void LCD_Print_Promt_Window(void);
 void LCD_Join_Request_Page_Handle(const uint16_t x, const uint16_t y);
 
 void LCD_Print_Main_Page(void);
@@ -243,6 +267,9 @@ void LCD_Network_Page_Handle(const uint16_t x, const uint16_t y);
 
 void LCD_Print_Node_Page(void);
 void LCD_Node_Page_Handle(const uint16_t x, const uint16_t y);
+
+void LCD_Print_Control_Page(void);
+void LCD_Control_Page_Handle(const uint16_t x, const uint16_t y);
 
 void LCD_Print_Fake_Page(void);
 void LCD_Fake_Page_Handle(const uint16_t x, const uint16_t y);
@@ -353,6 +380,7 @@ void MX_FREERTOS_Init(void) {
 void Task0Func(void *argument)
 {
   /* USER CODE BEGIN Task0Func */
+  static const char *TAG_LCD = "Utility";
 
   HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, GPIO_PIN_RESET);
   HAL_Delay(200);
@@ -375,18 +403,26 @@ void Task0Func(void *argument)
 	static unsigned long ulTotalRunTime;
 	static float runtime_percent;
 
+  HAL_Delay(500);
+
+  if (is_4G_or_WiFi == USE_4G)    logPC("WIFI-OFF\t");
+  if (is_4G_or_WiFi == USE_WIFI)  logPC("WIFI-ON\t");
+
   uint32_t timeKeeper0 = HAL_GetTick();
   uint32_t timeKeeper1 = HAL_GetTick();
+  uint32_t timeKeeper2 = HAL_GetTick();
   /* Infinite loop */
   for (;;)
   {
     if ((is_UART1_RX_Done == true) && (rxIndexUART1 != 1))
     {
       logPC("UART1 RX - %s", rxBufferUART1);
-      if      (strstr(rxBufferUART1, "WIFI-CONNECTED") != NULL)     is_WiFi_connected = true;
-      else if (strstr(rxBufferUART1, "WIFI-DISCONNECTED") != NULL)  is_WiFi_connected = false;
-      else if (strstr(rxBufferUART1, "MQTT-CONNECTED") != NULL)     is_MQTT_connected = true;
-      else if (strstr(rxBufferUART1, "MQTT-DISCONNECTED") != NULL)  is_MQTT_connected = false;
+      if      (strstr(rxBufferUART1, "WIFI-CONNECTED") != NULL)     {is_WiFi_connected = true;}
+      else if (strstr(rxBufferUART1, "WIFI-DISCONNECTED") != NULL)  {is_WiFi_connected = false; is_MQTT_connected = false;}
+      else if (strstr(rxBufferUART1, "MQTT-CONNECTED") != NULL)     {is_MQTT_connected = true;}
+      else if (strstr(rxBufferUART1, "MQTT-DISCONNECTED") != NULL)  {is_MQTT_connected = false;}
+      if      (strstr(rxBufferUART1, "MQTT-DATA") != NULL)          {App_ESP_MQTT_Parser();};
+      if      (strstr(rxBufferUART1, "TIME-") != NULL)              {App_ESP_getTime();};
       rxIndexUART1 = 0;
       memset(rxBufferUART1, '\0', sizeof(rxBufferUART1));
       HAL_UART_Abort_IT(&huart1);
@@ -405,7 +441,7 @@ void Task0Func(void *argument)
       HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, GPIO_PIN_SET);
     }
 
-    if ((is_MQTT_update == true) && (is_Node_ID_inNetwork(updated_Node_ID) == true) && (is_4G_or_WiFi == USE_WIFI))
+    if ((is_MQTT_update == true) && (is_Node_ID_inNetwork(updated_Node_ID) == true) && (is_4G_or_WiFi == USE_WIFI) && (is_WiFi_connected == true) && (is_MQTT_connected == true))
     {
       HAL_UART_Transmit(&huart1, "MQTT-", 5U, 100);
       HAL_UART_Transmit(&huart1, &Node_Table[get_Index_from_Node_ID(updated_Node_ID)], sizeof(Data_Struct_t), 100);
@@ -413,7 +449,7 @@ void Task0Func(void *argument)
       is_MQTT_update = false;
     }
 
-    if ((HAL_GetTick() - timeKeeper0) >= 2000)
+    if ((HAL_GetTick() - timeKeeper0) >= 3000)
     {
       if (is_LCD_processing == true)  is_LCD_processing = false;
       if (is_LoRa_processing == true)
@@ -425,7 +461,7 @@ void Task0Func(void *argument)
       timeKeeper0 = HAL_GetTick();
     }
 
-    if ((HAL_GetTick() - timeKeeper1) >= 30000)
+    if ((HAL_GetTick() - timeKeeper1) >= 60000)
     {
       uxArraySize = uxTaskGetNumberOfTasks();
       pxTaskStatusArray = pvPortMalloc(uxArraySize * sizeof(TaskStatus_t)); // a little bit scary!
@@ -447,7 +483,6 @@ void Task0Func(void *argument)
       timeKeeper1 = HAL_GetTick();
     }
 
-    // HAL_Delay(10);
     osDelay(10);
   }
   /* USER CODE END Task0Func */
@@ -472,16 +507,14 @@ void Task1Func(void *argument)
   static EventBits_t evt_bits_lcd;
   xEventGroupClearBits(evt_group, EVT_TOCUH);
 
-  // osDelay(500);
-
   ILI9341_Unselect();
   ILI9341_Init();
-  LOG(TAG_LCD, "Initialize Done...");
+  LOG(TAG_LCD, "Initialize Done!\t");
   {
     uint32_t timeMark = HAL_GetTick();
     ILI9341_FillScreen(ILI9341_WHITE);
     timeMark = HAL_GetTick() - timeMark;
-    logPC("%s - Screen Fill time: %d ms\tFPS: %2.1f", TAG_LCD, timeMark, (float)((1000.0)/(float)(timeMark)));
+    logPC("%s - Screen Fill time: %d ms\tFPS: %2.1f\t", TAG_LCD, timeMark, (float)((1000.0)/(float)(timeMark)));
   }
   ILI9341_DrawImage(60, 45, 200, 150, (const uint16_t *)gLogoMain);
   osDelay(2000);
@@ -501,7 +534,7 @@ void Task1Func(void *argument)
     {
       if (ILI9341_TouchGetCoordinates((uint16_t*)&coordinateX, (uint16_t*)&coordinateY) == true)
       {
-        logPC("%s - Touched!\tCoordinate X - %d\tCoordinate Y - %d", TAG_LCD, coordinateX, coordinateY);
+        logPC("%s - Touched!\tCoordinate X - %d\tCoordinate Y - %d\t", TAG_LCD, coordinateX, coordinateY);
         switch (Current_Page)
         {
           case MAIN_PAGE: {
@@ -583,13 +616,14 @@ void Task1Func(void *argument)
 void Task2Func(void *argument)
 {
   /* USER CODE BEGIN Task2Func */
-  osDelay(2000);
+  static const char *TAG_LCD = "LoRa";
   static uint8_t data[100] = {0};
   static uint32_t nByteRx = 0;
   static int rssi = -1;
   static float snr = -1;
   static EventBits_t evt_bits;
-  static void * ptr2payload = NULL;
+
+  osDelay(1000);
 
   sx1278_init();
   sx1278_start_recv_data();
@@ -610,8 +644,7 @@ void Task2Func(void *argument)
         {
           logPC("%02X ", data[i]);
         }
-        ptr2payload = LoRa_Packet_Parser((const uint8_t*)data, nByteRx);
-        // TODO: process payload
+        LoRa_Packet_Parser((const uint8_t*)data, nByteRx);
       }
     }
     xEventGroupClearBits(evt_group, EVT_LORA);
@@ -634,21 +667,98 @@ void Task2Func(void *argument)
 void Task3Func(void *argument)
 {
   /* USER CODE BEGIN Task3Func */
+  static char temp[2][200];
+  static char * pChar = NULL;
+  static uint32_t len = 0;
+  static Data_Struct_t data_to_send;
+  static const char *TAG_LCD = "SIM";
+
   if (is_4G_or_WiFi != USE_4G)  osThreadTerminate(Task3Handle);
-  // TODO: implement SIM 4G MQTT here
+
   osDelay(CMD_DELAY_SHORT);
   if (SIM_Init() == true)
   {
-    SIM_checkSignalStrength();
-    SIM_startGPRS();
+    if (SIM_checkSignalStrength() != 99U) {logPC("SIM signal OK");}
+    else                                  {logPC("SIM signal FAIL");}
+
+    if (SIM_startGPRS() == true)  {logPC("SIM 4G OK");}
+    else                          {logPC("SIM 4G FAIL");}
   }
-  SIM_Deinit();
-  osThreadTerminate(Task3Handle);
+  osDelay(CMD_DELAY_SHORT);
+  if (MQTT_Connect() == true)
+  {
+    setMQTT_Callback(MQTT_Callback);
+    MQTT_Sub("SolGarden/Gateway/0x2508");
+  }
+
+  is_4G_connected = true;
+  is_MQTT_connected = true;
+
+  uint32_t timeKeeper = HAL_GetTick();
 
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+    if ((HAL_GetTick() - timeKeeper) >= 30000)
+    {
+      MQTT_PingReq();
+      timeKeeper = HAL_GetTick();
+    }
+    
+    if ((is_4G_connected == true) && (is_MQTT_connected == true) && (is_MQTT_update == true) && (is_Node_ID_inNetwork(updated_Node_ID) == true))
+    {
+      memset(temp, '\0', sizeof(temp));
+
+      data_to_send = Node_Table[get_Index_from_Node_ID(updated_Node_ID)];
+
+      if      (data_to_send.Link.Node_Status == LINK_MODE)    pChar = &link_mode_string;
+      else if (data_to_send.Link.Node_Status == NORMAL_MODE)  pChar = &normal_mode_string;
+      else if (data_to_send.Link.Node_Status == RETRY_MODE)   pChar = &retry_mode_string;
+      else                                                    {logPC("Invalid Status"); continue;}
+
+      sprintf(&temp[0], "SolGarden/Node/%04X/link", data_to_send.Link.Node_ID);
+      len = sprintf(  &temp[1], "[{\"Node ID\": \"0x%04X\",\"Node Mode\": \"%s\",\"Battery Voltage\": %d,\"Period\": %d}]", 
+                      data_to_send.Link.Node_ID, 
+                      pChar, 
+                      data_to_send.Link.Node_Battery_Voltage, 
+                      data_to_send.Link.Node_Period);
+      logPC("MQTT - Topic: '%s'", temp[0]);
+      logPC("MQTT - Payload: '%s'", temp[1]);
+      MQTT_Pub(temp[0], temp[1]);
+
+      memset(temp, '\0', sizeof(temp));
+      osDelay(500);
+
+      sprintf(&temp[0], "SolGarden/Node/%04X/data", data_to_send.Link.Node_ID);
+      len = sprintf(  &temp[1], "[{\"Soil Temp.\": %2.1f,\"Air Temp.\": %2.1f,\"Soil Humd.\": %2.1f,\"Air Humd.\": %2.1f,\"Salinity\": %d,\"Conductivity\": %d,\"pH\": %.1f,\"N\": %d,\"P\": %d,\"K\": %d}]",
+                      (float)(data_to_send.Node_Soil_Temperature/10.0), 
+                      (float)(data_to_send.Node_Air_Temperature/10.0), 
+                      (float)(data_to_send.Node_Soil_Humidity/10.0), 
+                      (float)(data_to_send.Node_Air_Humidity/10.0), 
+                      (uint16_t)data_to_send.Node_Salinity, 
+                      (uint16_t)data_to_send.Node_Conductivity, 
+                      (float)(data_to_send.Node_pH/10.0), 
+                      (uint16_t)(data_to_send.Node_N/10), 
+                      (uint16_t)(data_to_send.Node_P/10), 
+                      (uint16_t)(data_to_send.Node_K/10));
+      logPC("MQTT - Topic: '%s'", temp[0]);
+      logPC("MQTT - Payload: '%s'", temp[1]);
+      MQTT_Pub(temp[0], temp[1]);
+
+      osDelay(500);
+      updated_Node_ID = 0xFFFF;
+      is_MQTT_update = false;
+      timeKeeper = HAL_GetTick();
+    }
+
+    if (MQTT.mqttReceive.newEvent == 1)
+    {
+      logPC("Now parsing MQTT packet...");
+      App_SIM_MQTT_Parser();
+      MQTT.mqttReceive.newEvent = 0;
+    }
+
+    osDelay(200);
   }
   /* USER CODE END Task3Func */
 }
@@ -711,6 +821,37 @@ bool App_Save_Data(Data_Struct_t data)
     }
   }
   return false;
+}
+
+void App_SIM_MQTT_Parser(void)
+{
+
+}
+
+void App_ESP_MQTT_Parser(void)
+{
+
+}
+
+void App_ESP_getTime(void)
+{
+  Time_t timeNow = {0};
+  RTC_TimeTypeDef sTime = {0};
+  RTC_DateTypeDef sDate = {0};
+
+  memcpy(&timeNow, (uint8_t*)strstr(rxBufferUART1, "TIME-")+5U, sizeof(Time_t));
+
+  sTime.Seconds = timeNow.tm_sec;
+  sTime.Minutes = timeNow.tm_min;
+  sTime.Hours = timeNow.tm_hour;
+
+  sDate.Date = timeNow.tm_mday;
+  sDate.Month = timeNow.tm_mon + 1;
+  sDate.Year = timeNow.tm_year - 100;
+  sDate.WeekDay = timeNow.tm_wday;
+  
+  if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BIN) != HAL_OK)  {Error_Handler();}
+  if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BIN) != HAL_OK)  {Error_Handler();}
 }
 
 //-------------------------------------------------------------------------------------------------------------------
@@ -812,7 +953,7 @@ bool listen_before_talk(void)
   return false;
 }
 
-void* LoRa_Packet_Parser(const uint8_t* data, uint32_t len)
+void LoRa_Packet_Parser(const uint8_t* data, uint32_t len)
 {
   // void *p = NULL;
   switch ((uint16_t)((data[0] << 8) & 0xFF00) | (uint16_t)(data[1] & 0x00FF))
@@ -886,7 +1027,7 @@ void* LoRa_Packet_Parser(const uint8_t* data, uint32_t len)
       break;
     }
   }
-  return NULL;
+  return;
 }
 
 //-------------------------------------------------------------------------------------------------------------------
@@ -1153,9 +1294,9 @@ void LCD_Print_Main_Page(void)
 
   if (is_page_change == true) ILI9341_FillScreen(ILI9341_BLACK);
 
-  sprintf(tempString, "SIM:%s-%s", (is_4G_or_WiFi==USE_4G)? ("ON"):("OFF"), (is_4G_connected==true)? ("CON"):("DIS"));
+  sprintf(tempString, "SIM:%s-%s", (is_4G_or_WiFi==USE_4G)? ("ON"):("OFF"), (is_4G_connected==true)? ("CON "):("DIS "));
   ILI9341_WriteString(20, 10, tempString, Font_7x10, ILI9341_YELLOW, ILI9341_BLACK);
-  sprintf(tempString, "WIFI:%s-%s", (is_4G_or_WiFi==USE_WIFI)? ("ON"):("OFF"), (is_WiFi_connected==true)? ("CON"):("DIS"));
+  sprintf(tempString, "WIFI:%s-%s", (is_4G_or_WiFi==USE_WIFI)? ("ON"):("OFF"), (is_WiFi_connected==true)? ("CON "):("DIS "));
   ILI9341_WriteString(125, 10, tempString, Font_7x10, ILI9341_YELLOW, ILI9341_BLACK);
   sprintf(tempString, "MQTT:%s", (is_MQTT_connected==true)? ("CON"):("DIS"));
   ILI9341_WriteString(244, 10, tempString, Font_7x10, ILI9341_YELLOW, ILI9341_BLACK);
@@ -1195,6 +1336,25 @@ void LCD_Main_Page_Handle(const uint16_t x, const uint16_t y)
   {
     Current_Page = CONTROL_PAGE;
     is_page_change = true;
+  }
+  else if ((ILI9341_checkButton(x, y, &Select_4G, false) == true) && (is_4G_or_WiFi == USE_WIFI))
+  {
+    is_4G_or_WiFi = USE_4G;
+    if (uxTaskGetNumberOfTasks() < 6) {Task3Handle = osThreadNew(Task3Func, NULL, &Task3_attributes);}
+    is_4G_connected = false;
+    is_WiFi_connected = false;
+    is_MQTT_connected = false;
+    logPC("\tChoose 4G\tWIFI-OFF\t");
+  }
+  else if ((ILI9341_checkButton(x, y, &Select_WiFi, false) == true) && (is_4G_or_WiFi == USE_4G))
+  {
+    is_4G_or_WiFi = USE_WIFI;
+    if (uxTaskGetNumberOfTasks() >= 6) {osThreadTerminate(Task3Handle);}
+    SIM_Deinit();
+    is_4G_connected = false;
+    is_WiFi_connected = false;
+    is_MQTT_connected = false;
+    logPC("\tChoose WiFi\tWIFI-ON\t");
   }
 }
 

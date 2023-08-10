@@ -67,34 +67,30 @@ void MX_RTC_Init(void)
 
   return;
 
-  // uint32_t reg = (RTC_WEEKDAY_SATURDAY << 16U) | (RTC_MONTH_JULY << 12U) | (29U << 7U) | (23U);
-  // uint32_t reg = (DateToUpdate.WeekDay << 16U) | (DateToUpdate.Month << 12U) | (DateToUpdate.Date << 7U) | (DateToUpdate.Year);
-  // HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR1, reg);
-
   /* USER CODE END Check_RTC_BKUP */
 
   /** Initialize RTC and set the Time and Date
   */
-  // sTime.Hours = 22;
-  // sTime.Minutes = 43;
-  // sTime.Seconds = 0;
+  sTime.Hours = 19;
+  sTime.Minutes = 0;
+  sTime.Seconds = 0;
 
-  // if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BIN) != HAL_OK)
-  // {
-  //   Error_Handler();
-  // }
+  if (HAL_RTC_SetTime(&hrtc, &sTime, RTC_FORMAT_BIN) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  DateToUpdate.WeekDay = RTC_WEEKDAY_WEDNESDAY;
+  DateToUpdate.Month = RTC_MONTH_AUGUST;
+  DateToUpdate.Date = 9;
+  DateToUpdate.Year = 23;
 
-  // DateToUpdate.WeekDay = RTC_WEEKDAY_SATURDAY;
-  // DateToUpdate.Month = RTC_MONTH_JULY;
-  // DateToUpdate.Date = 29;
-  // DateToUpdate.Year = 23;
-
-  // if (HAL_RTC_SetDate(&hrtc, &DateToUpdate, RTC_FORMAT_BIN) != HAL_OK)
-  // {
-  //   Error_Handler();
-  // }
+  if (HAL_RTC_SetDate(&hrtc, &DateToUpdate, RTC_FORMAT_BIN) != HAL_OK)
+  {
+    Error_Handler();
+  }
   /* USER CODE BEGIN RTC_Init 2 */
-
+  // uint32_t reg = (DateToUpdate.WeekDay << 16U) | (DateToUpdate.Month << 12U) | (DateToUpdate.Date << 7U) | (DateToUpdate.Year);
+  // HAL_RTCEx_BKUPWrite(&hrtc, RTC_BKP_DR1, reg);
   /* USER CODE END RTC_Init 2 */
 
 }
