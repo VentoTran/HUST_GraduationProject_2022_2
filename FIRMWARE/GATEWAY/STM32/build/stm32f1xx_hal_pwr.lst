@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
   31:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** 
   32:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** /** @defgroup PWR PWR
   33:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @brief    PWR HAL module driver
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 2
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 2
 
 
   34:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @{
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
   88:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @}
   89:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   */
   90:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 3
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 3
 
 
   91:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** /** @defgroup PWR_CSR_register_alias PWR CSR Register alias address
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
   51              		.thumb
   52              		.thumb_func
   53              		.fpu softvfp
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 4
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 4
 
 
   55              	HAL_PWR_DeInit:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  159:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** }
   71              		.loc 1 159 1 is_stmt 0 view .LVU7
   72 0012 7047     		bx	lr
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 5
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 5
 
 
   73              	.L4:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  118              	.LFB68:
  173:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** 
  174:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** /**
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 6
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 6
 
 
  175:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @brief  Disables access to the backup domain (RTC registers, RTC
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  192:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @brief    Low Power modes configuration functions
  193:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   *
  194:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** @verbatim
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 7
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 7
 
 
  195:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****  ===============================================================================
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  249:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****     [..]
  250:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****       The Stop mode is based on the Cortex-M3 deepsleep mode combined with peripheral
  251:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****       clock gating. The voltage regulator can be configured either in normal or low-power mode.
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 8
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 8
 
 
  252:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****       In Stop mode, all clocks in the 1.8 V domain are stopped, the PLL, the HSI and the HSE RC 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  306:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** /**
  307:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @brief  Configures the voltage threshold detected by the Power Voltage Detector(PVD).
  308:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @param  sConfigPVD: pointer to an PWR_PVDTypeDef structure that contains the configuration
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 9
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 9
 
 
  309:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   *         information for the PVD.
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  197 002e 2A4A     		ldr	r2, .L21
  198 0030 9342     		cmp	r3, r2
  199 0032 07D0     		beq	.L13
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 10
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 10
 
 
  200              		.loc 1 319 3 discriminator 2 view .LVU28
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  333:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****     __HAL_PWR_PVD_EXTI_ENABLE_IT();
  241              		.loc 1 333 5 is_stmt 1 view .LVU39
  242 007c 184A     		ldr	r2, .L21+8
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 11
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 11
 
 
  243 007e 1368     		ldr	r3, [r2]
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  280 00b6 43F48033 		orr	r3, r3, #65536
  281 00ba D360     		str	r3, [r2, #12]
  282              	.L11:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 12
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 12
 
 
  351:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   }
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  360:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   /* Enable the power voltage detector */
  361:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   *(__IO uint32_t *) CR_PVDE_BB = (uint32_t)ENABLE;
  327              		.loc 1 361 3 view .LVU57
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 13
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 13
 
 
  328              		.loc 1 361 33 is_stmt 0 view .LVU58
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  374              		.thumb
  375              		.thumb_func
  376              		.fpu softvfp
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 14
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 14
 
 
  378              	HAL_PWR_EnableWakeUpPin:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
   18:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Unless required by applicable law or agreed to in writing, software
   19:Drivers/CMSIS/Include/cmsis_gcc.h ****  * distributed under the License is distributed on an AS IS BASIS, WITHOUT
   20:Drivers/CMSIS/Include/cmsis_gcc.h ****  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 15
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 15
 
 
   21:Drivers/CMSIS/Include/cmsis_gcc.h ****  * See the License for the specific language governing permissions and
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
   75:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
   76:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32(x)                  (((struct T_UINT32 *)(x))->v)
   77:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 16
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 16
 
 
   78:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_WRITE
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  132:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  133:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  134:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 17
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 17
 
 
  135:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  189:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Control Register (non-secure)
  190:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Writes the given value to the non-secure Control Register when in secure state.
  191:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    control  Control Register value to set
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 18
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 18
 
 
  192:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  246:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  247:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_PSP(void)
  248:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 19
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 19
 
 
  249:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  303:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  304:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  305:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, msp" : "=r" (result) );
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 20
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 20
 
 
  306:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  360:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, sp_ns" : "=r" (result) );
  361:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  362:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 21
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 21
 
 
  363:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  417:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  418:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
  419:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 22
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 22
 
 
  420:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Priority Mask (non-secure)
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  474:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Base Priority register value
  475:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  476:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_BASEPRI_NS(void)
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 23
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 23
 
 
  477:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  531:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, faultmask" : "=r" (result) );
  532:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  533:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 24
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 24
 
 
  534:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  588:Drivers/CMSIS/Include/cmsis_gcc.h ****   
  589:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the Process Stack Pointer Limit (PSPLIM).
  590:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               PSPLIM Register value
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 25
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 25
 
 
  591:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  645:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  646:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  647:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 26
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 26
 
 
  648:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  702:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_MSPLIM_NS(void)
  703:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  704:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (!(defined (__ARM_ARCH_8M_MAIN__ ) && (__ARM_ARCH_8M_MAIN__ == 1)))
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 27
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 27
 
 
  705:Drivers/CMSIS/Include/cmsis_gcc.h ****   // without main extensions, the non-secure MSPLIM is RAZ/WI
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  759:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  760:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  761:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 28
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 28
 
 
  762:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get FPSCR
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  816:Drivers/CMSIS/Include/cmsis_gcc.h ****   @{
  817:Drivers/CMSIS/Include/cmsis_gcc.h **** */
  818:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 29
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 29
 
 
  819:Drivers/CMSIS/Include/cmsis_gcc.h **** /* Define macros for porting to both thumb1 and thumb2.
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  873:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Data Synchronization Barrier
  874:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Acts as a special kind of Data Memory Barrier.
  875:Drivers/CMSIS/Include/cmsis_gcc.h ****            It completes when all explicit memory accesses before this instruction complete.
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 30
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 30
 
 
  876:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  930:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Reverses the byte order in a 16-bit value and returns the signed 16-bit result. For exam
  931:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    value  Value to reverse
  932:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Reversed value
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 31
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 31
 
 
  933:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  984:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  985:Drivers/CMSIS/Include/cmsis_gcc.h **** #if ((defined (__ARM_ARCH_7M__      ) && (__ARM_ARCH_7M__      == 1)) || \
  986:Drivers/CMSIS/Include/cmsis_gcc.h ****      (defined (__ARM_ARCH_7EM__     ) && (__ARM_ARCH_7EM__     == 1)) || \
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 32
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 32
 
 
  987:Drivers/CMSIS/Include/cmsis_gcc.h ****      (defined (__ARM_ARCH_8M_MAIN__ ) && (__ARM_ARCH_8M_MAIN__ == 1))    )
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  440 0030 00000000 		.word	.LC0
  441              		.cfi_endproc
  442              	.LFE72:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 33
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 33
 
 
  444              		.section	.text.HAL_PWR_DisableWakeUpPin,"ax",%progbits
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  482              	.LVL14:
  483              		.loc 2 1001 3 view .LVU85
  484              		.loc 2 1001 3 is_stmt 0 view .LVU86
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 34
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 34
 
 
  485              		.thumb
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  413:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   *            @arg PWR_SLEEPENTRY_WFE: enter SLEEP mode with WFE instruction
  414:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @retval None
  415:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   */
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 35
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 35
 
 
  416:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** void HAL_PWR_EnterSLEEPMode(uint32_t Regulator, uint8_t SLEEPEntry)
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  560              	@ 0 "" 2
  438:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****     __WFE();
  561              		.loc 1 438 5 view .LVU100
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 36
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 36
 
 
  562              	@ 438 "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" 1
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  611              	HAL_PWR_EnterSTOPMode:
  612              	.LVL24:
  613              	.LFB75:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 37
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 37
 
 
  442:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** 
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  640 0012 154A     		ldr	r2, .L58
  641 0014 1368     		ldr	r3, [r2]
  642 0016 23F00203 		bic	r3, r3, #2
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 38
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 38
 
 
  643 001a 1360     		str	r3, [r2]
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  674              	.L56:
  465:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   assert_param(IS_PWR_STOP_ENTRY(STOPEntry));
  675              		.loc 1 465 3 discriminator 1 view .LVU119
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 39
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 39
 
 
  676 0042 40F2D111 		movw	r1, #465
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  493:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** 
  494:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** /**
  495:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @brief Enters Standby mode.
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 40
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 40
 
 
  496:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @note  In Standby mode, all I/O pins are high impedance except for:
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  760              		.global	HAL_PWR_EnableSleepOnExit
  761              		.syntax unified
  762              		.thumb
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 41
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 41
 
 
  763              		.thumb_func
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  540:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** void HAL_PWR_DisableSleepOnExit(void)
  541:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** {
  797              		.loc 1 541 1 is_stmt 1 view -0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 42
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 42
 
 
  798              		.cfi_startproc
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  838              	.L71:
  839              		.align	2
  840              	.L70:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 43
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 43
 
 
  841 000c 00ED00E0 		.word	-536810240
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  573:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** 
  574:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** /**
  575:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @brief  This function handles the PWR PVD interrupt request.
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 44
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 44
 
 
  576:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @note   This API should be called under the PVD_IRQHandler().
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  582:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   {
  913              		.loc 1 582 3 view .LVU146
  582:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 45
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 45
 
 
  914              		.loc 1 582 6 is_stmt 0 view .LVU147
@@ -2680,67 +2680,67 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 1
  946              		.file 7 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h"
  947              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h"
  948              		.file 9 "Core/Inc/stm32f1xx_hal_conf.h"
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 46
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 46
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f1xx_hal_pwr.c
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:16     .text.PWR_OverloadWfe:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:23     .text.PWR_OverloadWfe:00000000 PWR_OverloadWfe
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:48     .text.HAL_PWR_DeInit:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:55     .text.HAL_PWR_DeInit:00000000 HAL_PWR_DeInit
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:76     .text.HAL_PWR_DeInit:00000014 $d
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:81     .text.HAL_PWR_EnableBkUpAccess:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:88     .text.HAL_PWR_EnableBkUpAccess:00000000 HAL_PWR_EnableBkUpAccess
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:105    .text.HAL_PWR_EnableBkUpAccess:00000008 $d
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:110    .text.HAL_PWR_DisableBkUpAccess:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:117    .text.HAL_PWR_DisableBkUpAccess:00000000 HAL_PWR_DisableBkUpAccess
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:134    .text.HAL_PWR_DisableBkUpAccess:00000008 $d
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:139    .rodata.HAL_PWR_ConfigPVD.str1.4:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:144    .text.HAL_PWR_ConfigPVD:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:151    .text.HAL_PWR_ConfigPVD:00000000 HAL_PWR_ConfigPVD
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:305    .text.HAL_PWR_ConfigPVD:000000d8 $d
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:313    .text.HAL_PWR_EnablePVD:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:320    .text.HAL_PWR_EnablePVD:00000000 HAL_PWR_EnablePVD
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:337    .text.HAL_PWR_EnablePVD:00000008 $d
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:342    .text.HAL_PWR_DisablePVD:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:349    .text.HAL_PWR_DisablePVD:00000000 HAL_PWR_DisablePVD
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:366    .text.HAL_PWR_DisablePVD:00000008 $d
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:371    .text.HAL_PWR_EnableWakeUpPin:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:378    .text.HAL_PWR_EnableWakeUpPin:00000000 HAL_PWR_EnableWakeUpPin
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:439    .text.HAL_PWR_EnableWakeUpPin:0000002c $d
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:445    .text.HAL_PWR_DisableWakeUpPin:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:452    .text.HAL_PWR_DisableWakeUpPin:00000000 HAL_PWR_DisableWakeUpPin
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:512    .text.HAL_PWR_DisableWakeUpPin:0000002c $d
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:518    .text.HAL_PWR_EnterSLEEPMode:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:525    .text.HAL_PWR_EnterSLEEPMode:00000000 HAL_PWR_EnterSLEEPMode
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:598    .text.HAL_PWR_EnterSLEEPMode:00000034 $d
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:604    .text.HAL_PWR_EnterSTOPMode:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:611    .text.HAL_PWR_EnterSTOPMode:00000000 HAL_PWR_EnterSTOPMode
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:710    .text.HAL_PWR_EnterSTOPMode:00000068 $d
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:717    .text.HAL_PWR_EnterSTANDBYMode:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:724    .text.HAL_PWR_EnterSTANDBYMode:00000000 HAL_PWR_EnterSTANDBYMode
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:753    .text.HAL_PWR_EnterSTANDBYMode:00000018 $d
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:759    .text.HAL_PWR_EnableSleepOnExit:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:766    .text.HAL_PWR_EnableSleepOnExit:00000000 HAL_PWR_EnableSleepOnExit
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:783    .text.HAL_PWR_EnableSleepOnExit:0000000c $d
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:788    .text.HAL_PWR_DisableSleepOnExit:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:795    .text.HAL_PWR_DisableSleepOnExit:00000000 HAL_PWR_DisableSleepOnExit
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:812    .text.HAL_PWR_DisableSleepOnExit:0000000c $d
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:817    .text.HAL_PWR_EnableSEVOnPend:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:824    .text.HAL_PWR_EnableSEVOnPend:00000000 HAL_PWR_EnableSEVOnPend
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:841    .text.HAL_PWR_EnableSEVOnPend:0000000c $d
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:846    .text.HAL_PWR_DisableSEVOnPend:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:853    .text.HAL_PWR_DisableSEVOnPend:00000000 HAL_PWR_DisableSEVOnPend
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:870    .text.HAL_PWR_DisableSEVOnPend:0000000c $d
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:875    .text.HAL_PWR_PVDCallback:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:882    .text.HAL_PWR_PVDCallback:00000000 HAL_PWR_PVDCallback
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:895    .text.HAL_PWR_PVD_IRQHandler:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:902    .text.HAL_PWR_PVD_IRQHandler:00000000 HAL_PWR_PVD_IRQHandler
-C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s:936    .text.HAL_PWR_PVD_IRQHandler:0000001c $d
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:16     .text.PWR_OverloadWfe:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:23     .text.PWR_OverloadWfe:00000000 PWR_OverloadWfe
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:48     .text.HAL_PWR_DeInit:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:55     .text.HAL_PWR_DeInit:00000000 HAL_PWR_DeInit
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:76     .text.HAL_PWR_DeInit:00000014 $d
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:81     .text.HAL_PWR_EnableBkUpAccess:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:88     .text.HAL_PWR_EnableBkUpAccess:00000000 HAL_PWR_EnableBkUpAccess
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:105    .text.HAL_PWR_EnableBkUpAccess:00000008 $d
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:110    .text.HAL_PWR_DisableBkUpAccess:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:117    .text.HAL_PWR_DisableBkUpAccess:00000000 HAL_PWR_DisableBkUpAccess
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:134    .text.HAL_PWR_DisableBkUpAccess:00000008 $d
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:139    .rodata.HAL_PWR_ConfigPVD.str1.4:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:144    .text.HAL_PWR_ConfigPVD:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:151    .text.HAL_PWR_ConfigPVD:00000000 HAL_PWR_ConfigPVD
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:305    .text.HAL_PWR_ConfigPVD:000000d8 $d
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:313    .text.HAL_PWR_EnablePVD:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:320    .text.HAL_PWR_EnablePVD:00000000 HAL_PWR_EnablePVD
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:337    .text.HAL_PWR_EnablePVD:00000008 $d
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:342    .text.HAL_PWR_DisablePVD:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:349    .text.HAL_PWR_DisablePVD:00000000 HAL_PWR_DisablePVD
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:366    .text.HAL_PWR_DisablePVD:00000008 $d
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:371    .text.HAL_PWR_EnableWakeUpPin:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:378    .text.HAL_PWR_EnableWakeUpPin:00000000 HAL_PWR_EnableWakeUpPin
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:439    .text.HAL_PWR_EnableWakeUpPin:0000002c $d
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:445    .text.HAL_PWR_DisableWakeUpPin:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:452    .text.HAL_PWR_DisableWakeUpPin:00000000 HAL_PWR_DisableWakeUpPin
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:512    .text.HAL_PWR_DisableWakeUpPin:0000002c $d
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:518    .text.HAL_PWR_EnterSLEEPMode:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:525    .text.HAL_PWR_EnterSLEEPMode:00000000 HAL_PWR_EnterSLEEPMode
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:598    .text.HAL_PWR_EnterSLEEPMode:00000034 $d
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:604    .text.HAL_PWR_EnterSTOPMode:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:611    .text.HAL_PWR_EnterSTOPMode:00000000 HAL_PWR_EnterSTOPMode
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:710    .text.HAL_PWR_EnterSTOPMode:00000068 $d
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:717    .text.HAL_PWR_EnterSTANDBYMode:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:724    .text.HAL_PWR_EnterSTANDBYMode:00000000 HAL_PWR_EnterSTANDBYMode
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:753    .text.HAL_PWR_EnterSTANDBYMode:00000018 $d
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:759    .text.HAL_PWR_EnableSleepOnExit:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:766    .text.HAL_PWR_EnableSleepOnExit:00000000 HAL_PWR_EnableSleepOnExit
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:783    .text.HAL_PWR_EnableSleepOnExit:0000000c $d
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:788    .text.HAL_PWR_DisableSleepOnExit:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:795    .text.HAL_PWR_DisableSleepOnExit:00000000 HAL_PWR_DisableSleepOnExit
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:812    .text.HAL_PWR_DisableSleepOnExit:0000000c $d
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:817    .text.HAL_PWR_EnableSEVOnPend:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:824    .text.HAL_PWR_EnableSEVOnPend:00000000 HAL_PWR_EnableSEVOnPend
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:841    .text.HAL_PWR_EnableSEVOnPend:0000000c $d
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:846    .text.HAL_PWR_DisableSEVOnPend:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:853    .text.HAL_PWR_DisableSEVOnPend:00000000 HAL_PWR_DisableSEVOnPend
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:870    .text.HAL_PWR_DisableSEVOnPend:0000000c $d
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:875    .text.HAL_PWR_PVDCallback:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:882    .text.HAL_PWR_PVDCallback:00000000 HAL_PWR_PVDCallback
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:895    .text.HAL_PWR_PVD_IRQHandler:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:902    .text.HAL_PWR_PVD_IRQHandler:00000000 HAL_PWR_PVD_IRQHandler
+C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s:936    .text.HAL_PWR_PVD_IRQHandler:0000001c $d
 
 UNDEFINED SYMBOLS
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccLihHtK.s 			page 47
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccxqOylN.s 			page 47
 
 
 assert_failed

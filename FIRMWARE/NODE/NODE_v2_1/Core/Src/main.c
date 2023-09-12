@@ -34,6 +34,7 @@
 #include "common.h"
 #include "sx1278.h"
 #include "string.h"
+#include "flash.h"
 
 /* USER CODE END Includes */
 
@@ -51,8 +52,10 @@ typedef struct LoRa_Link_Struct
 typedef struct LoRa_Data_Struct
 {
   Link_Struct_t Link;
-  uint16_t Node_Temperature;
-  uint16_t Node_Humidity;
+  uint16_t Node_Soil_Temperature;
+  uint16_t Node_Air_Temperature;
+  uint16_t Node_Soil_Humidity;
+  uint16_t Node_Air_Humidity;
   uint16_t Node_Salinity;
   uint16_t Node_Conductivity;
   uint16_t Node_pH;
@@ -114,7 +117,8 @@ typedef enum NodeStatus
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
-#define NODE_ID                     (0x3112U)
+// #define NODE_ID                     (0x3112U)
+#define NODE_ID                     (0x1104U)
 
 #define TIMEOUT_MS                  (50U)
 #define LINK_PACKET_ID              (0xAAAAU)
@@ -149,6 +153,8 @@ typedef enum NodeStatus
 
 #define LINK_ACK      (0xABU)
 #define LINK_NACK     (0xBAU)
+
+#define SAVE_ADDR     (0x08013030U)
 
 /* USER CODE END PD */
 
@@ -190,7 +196,7 @@ static NodeStatus_t myStatus;
 static uint32_t backupStorage = 0U;
 static uint8_t payload[100] = {0};
 static volatile bool is_LoRa_EXTI = false;
-static uint8_t array2store[28] = {0};
+static uint8_t array2store[32] = {0};
 
 /* USER CODE END 0 */
 
@@ -232,6 +238,8 @@ int main(void)
   HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
 
   myStatus = HAL_RTCEx_BKUPRead(&hrtc, RTC_BKP_DR2);
+
+  // myStatus = LINK_MODE;
 
   if (myStatus == 0U)
   {
@@ -578,11 +586,13 @@ void Normal_Mode_Handle(void)
   data_packet.Payload.Link.Node_Status = myStatus;
   data_packet.Payload.Link.Node_Battery_Voltage = (uint16_t)((double)backupStorage  * 2847.868f  * 3.38f / 4095.0f) - 70U;
   data_packet.Payload.Link.Node_Period = (uint16_t)(HAL_RTCEx_BKUPRead(&hrtc, RTC_BKP_DR3));
-  data_packet.Payload.Node_Temperature = mySoil.rawTemperature;
-  data_packet.Payload.Node_Humidity = mySoil.rawHumidity;
+  data_packet.Payload.Node_Soil_Temperature = mySoil.rawTemperature;
+  data_packet.Payload.Node_Air_Temperature = get_random_value(HAL_GetTick(), 260, 275);
+  data_packet.Payload.Node_Soil_Humidity = mySoil.rawHumidity;
+  data_packet.Payload.Node_Air_Humidity = get_random_value(HAL_GetTick(), 650, 750);
   data_packet.Payload.Node_Salinity = mySoil.Salinity;
   data_packet.Payload.Node_Conductivity = mySoil.Conductivity;
-  data_packet.Payload.Node_pH = mySoil.rawPH;
+  data_packet.Payload.Node_pH = get_random_value(HAL_GetTick(), 65, 75);
   data_packet.Payload.Node_N = mySoil.N;
   data_packet.Payload.Node_P = mySoil.P;
   data_packet.Payload.Node_K = mySoil.K;
@@ -610,7 +620,7 @@ void Normal_Mode_Handle(void)
   {
     memset(array2store, '\0', sizeof(array2store));
     memcpy((uint8_t *)&array2store, (uint8_t *)&data_packet, sizeof(Data_Packet_t));
-    Flash_Write_Data(0x08006000, (uint32_t*)&array2store, (sizeof(array2store)/4));
+    Flash_Write_Data(SAVE_ADDR, (uint32_t*)&array2store, 8U);
   }
 
   sx1278_sleep();
@@ -627,7 +637,7 @@ void Retry_Mode_Handle(void)
   HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, GPIO_PIN_RESET);
 
   sx1278_init();
-  Flash_Read_Data(0x08006000, (uint32_t *)&array2store, sizeof(array2store));
+  Flash_Read_Data(SAVE_ADDR, (uint32_t *)&array2store, sizeof(array2store));
   memcpy((uint8_t *)payload, (uint8_t *)&array2store, sizeof(Data_Packet_t));
   
   uint8_t nTry = 0;

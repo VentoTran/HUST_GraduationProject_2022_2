@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
   29:Core/Src/sx1278.c **** // extern EventGroupHandle_t sx1278_evt_group;
   30:Core/Src/sx1278.c **** 
   31:Core/Src/sx1278.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 2
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 2
 
 
   32:Core/Src/sx1278.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
   73              		.loc 1 40 2 is_stmt 1 view .LVU14
   74 0034 4FF47A73 		mov	r3, #1000
   75 0038 0122     		movs	r2, #1
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 3
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 3
 
 
   76 003a 0DF10601 		add	r1, sp, #6
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  125              		.cfi_startproc
  126              		@ args = 0, pretend = 0, frame = 16
  127              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 4
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 4
 
 
  128              		.loc 1 47 1 is_stmt 0 view .LVU24
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  176              		.loc 1 53 2 view .LVU37
  177              	.L9:
  178              		.loc 1 53 55 discriminator 1 view .LVU38
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 5
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 5
 
 
  179              		.loc 1 53 8 discriminator 1 view .LVU39
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  229 0006 0121     		movs	r1, #1
  230 0008 2046     		mov	r0, r4
  231 000a FFF7FEFF 		bl	HAL_GPIO_WritePin
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 6
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 6
 
 
  232              	.LVL17:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  280              		.cfi_offset 3, -8
  281              		.cfi_offset 14, -4
   68:Core/Src/sx1278.c ****     sx1278_write_reg(REG_OP_MODE, MODE_LONG_RANGE_MODE | MODE_SLEEP);
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 7
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 7
 
 
  282              		.loc 1 68 5 view .LVU52
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  331              		.loc 1 77 1 is_stmt 1 view -0
  332              		.cfi_startproc
  333              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 8
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 8
 
 
  334              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  384              		.thumb_func
  385              		.fpu softvfp
  387              	sx1278_tx:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 9
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 9
 
 
  388              	.LFB75:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
   98:Core/Src/sx1278.c **** {
  426              		.loc 1 98 1 is_stmt 1 view -0
  427              		.cfi_startproc
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 10
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 10
 
 
  428              		@ args = 0, pretend = 0, frame = 0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  472 0000 496E7661 		.ascii	"Invalid gain\000"
  472      6C696420 
  472      6761696E 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 11
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 11
 
 
  472      00
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  124:Core/Src/sx1278.c ****     }
  125:Core/Src/sx1278.c **** }
  510              		.loc 1 125 1 view .LVU84
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 12
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 12
 
 
  511 0012 10BD     		pop	{r4, pc}
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  557              		.global	sx1278_set_freq
  558              		.syntax unified
  559              		.thumb
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 13
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 13
 
 
  560              		.thumb_func
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  608              	.LVL51:
  133:Core/Src/sx1278.c **** }
  609              		.loc 1 133 1 is_stmt 0 view .LVU105
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 14
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 14
 
 
  610 0032 10BD     		pop	{r4, pc}
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  144:Core/Src/sx1278.c ****     else if (band <= 20.8E3)
  656              		.loc 1 144 10 is_stmt 1 view .LVU116
  657              		.loc 1 144 13 is_stmt 0 view .LVU117
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 15
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 15
 
 
  658 001a 45F24013 		movw	r3, #20800
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  697              	.LVL54:
  698              		.loc 1 158 43 view .LVU132
  699 004e FFF7FEFF 		bl	sx1278_read_reg
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 16
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 16
 
 
  700              	.LVL55:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  745              	.L58:
  746 0084 48E80100 		.word	125000
  747 0088 90D00300 		.word	250000
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 17
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 17
 
 
  748              		.cfi_endproc
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  172:Core/Src/sx1278.c ****         sx1278_write_reg(REG_DETECTION_THRESHOLD, 0x0c);
  173:Core/Src/sx1278.c ****     }
  174:Core/Src/sx1278.c ****     else
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 18
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 18
 
 
  175:Core/Src/sx1278.c ****     {
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  832 0042 C521     		movs	r1, #197
  833 0044 3120     		movs	r0, #49
  834              	.LVL68:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 19
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 19
 
 
  171:Core/Src/sx1278.c ****         sx1278_write_reg(REG_DETECTION_THRESHOLD, 0x0c);
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  881              		.loc 1 184 8 view .LVU170
  882 0006 032B     		cmp	r3, #3
  883 0008 0ED8     		bhi	.L74
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 20
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 20
 
 
  185:Core/Src/sx1278.c ****     {
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  928              		.section	.text.sx1278_set_header,"ax",%progbits
  929              		.align	1
  930              		.global	sx1278_set_header
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 21
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 21
 
 
  931              		.syntax unified
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  973 0018 1D20     		movs	r0, #29
  974              	.LVL84:
  200:Core/Src/sx1278.c ****         sx1278_write_reg(REG_PAYLOAD_LENGTH, size);
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 22
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 22
 
 
  975              		.loc 1 200 46 view .LVU195
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  1024              	.LVL90:
  1025              		.loc 1 208 9 view .LVU206
  1026 000a 40F00401 		orr	r1, r0, #4
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 23
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 23
 
 
  1027 000e C9B2     		uxtb	r1, r1
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  1073              		.cfi_offset 14, -4
  1074 0002 0446     		mov	r4, r0
  215:Core/Src/sx1278.c ****     sx1278_write_reg(REG_PREAMBLE_MSB, (uint8_t)(len >> 8));
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 24
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 24
 
 
  1075              		.loc 1 215 5 is_stmt 1 view .LVU215
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  1125              		.global	__aeabi_d2f
  1126              		.section	.text.sx1278_get_snr,"ax",%progbits
  1127              		.align	1
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 25
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 25
 
 
  1128              		.global	sx1278_get_snr
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  228:Core/Src/sx1278.c **** 
  229:Core/Src/sx1278.c **** void sx1278_set_irq(uint8_t val)
  230:Core/Src/sx1278.c **** {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 26
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 26
 
 
  1180              		.loc 1 230 1 is_stmt 1 view -0
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  1230              		.loc 1 95 1 is_stmt 0 view .LVU237
  1231 0010 08BD     		pop	{r3, pc}
  1232              		.cfi_endproc
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 27
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 27
 
 
  1233              	.LFE76:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  1277 001a 0F20     		movs	r0, #15
  1278 001c FFF7FEFF 		bl	sx1278_write_reg
  1279              	.LVL115:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 28
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 28
 
 
  241:Core/Src/sx1278.c ****     sx1278_write_reg(REG_FIFO_TX_BASE_ADDR, 0x00);
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  1323              		.loc 1 251 5 view .LVU255
  1324 0064 0020     		movs	r0, #0
  1325 0066 FFF7FEFF 		bl	sx1278_set_irq
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 29
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 29
 
 
  1326              	.LVL126:
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  259:Core/Src/sx1278.c ****     sx1278_write_reg(REG_PAYLOAD_LENGTH, 0);
  1375              		.loc 1 259 5 view .LVU262
  1376 0012 0021     		movs	r1, #0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 30
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 30
 
 
  1377 0014 2220     		movs	r0, #34
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  1417 003a 0A20     		movs	r0, #10
  1418 003c FFF7FEFF 		bl	HAL_Delay
  1419              	.LVL137:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 31
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 31
 
 
  1420              	.L104:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  1461              		@ args = 0, pretend = 0, frame = 0
  1462              		@ frame_needed = 0, uses_anonymous_args = 0
  1463 0000 08B5     		push	{r3, lr}
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 32
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 32
 
 
  1464              	.LCFI27:
@@ -1883,12 +1883,13 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  1480 0014 1220     		movs	r0, #18
  1481 0016 FFF7FEFF 		bl	sx1278_write_reg
  1482              	.LVL146:
- 285:Core/Src/sx1278.c ****     sx1278_rx_single();
+ 285:Core/Src/sx1278.c ****     sx1278_rx_contiuous();
  1483              		.loc 1 285 5 view .LVU290
- 1484 001a FFF7FEFF 		bl	sx1278_rx_single
+ 1484 001a FFF7FEFF 		bl	sx1278_rx_contiuous
  1485              	.LVL147:
- 286:Core/Src/sx1278.c **** }
- 1486              		.loc 1 286 1 is_stmt 0 view .LVU291
+ 286:Core/Src/sx1278.c ****     // sx1278_rx_single();
+ 287:Core/Src/sx1278.c **** }
+ 1486              		.loc 1 287 1 is_stmt 0 view .LVU291
  1487 001e 08BD     		pop	{r3, pc}
  1488              		.cfi_endproc
  1489              	.LFE91:
@@ -1902,25 +1903,25 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  1499              	parse_packet:
  1500              	.LVL148:
  1501              	.LFB92:
- 287:Core/Src/sx1278.c **** 
- 288:Core/Src/sx1278.c **** sx1278_err_t parse_packet(uint8_t *packet_data, sx1278_node_t *node)
- 289:Core/Src/sx1278.c **** {
- 1502              		.loc 1 289 1 is_stmt 1 view -0
+ 288:Core/Src/sx1278.c **** 
+ 289:Core/Src/sx1278.c **** sx1278_err_t parse_packet(uint8_t *packet_data, sx1278_node_t *node)
+ 290:Core/Src/sx1278.c **** {
+ 1502              		.loc 1 290 1 is_stmt 1 view -0
  1503              		.cfi_startproc
  1504              		@ args = 0, pretend = 0, frame = 0
  1505              		@ frame_needed = 0, uses_anonymous_args = 0
  1506              		@ link register save eliminated.
- 290:Core/Src/sx1278.c ****     return SX1278_OK;
- 1507              		.loc 1 290 5 view .LVU293
- 291:Core/Src/sx1278.c **** }
- 1508              		.loc 1 291 1 is_stmt 0 view .LVU294
+ 291:Core/Src/sx1278.c ****     return SX1278_OK;
+ 1507              		.loc 1 291 5 view .LVU293
+ 292:Core/Src/sx1278.c **** }
+ 1508              		.loc 1 292 1 is_stmt 0 view .LVU294
  1509 0000 0020     		movs	r0, #0
  1510              	.LVL149:
- 1511              		.loc 1 291 1 view .LVU295
+ 1511              		.loc 1 292 1 view .LVU295
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 33
+
+
  1512 0002 7047     		bx	lr
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 33
-
-
  1513              		.cfi_endproc
  1514              	.LFE92:
  1516              		.section	.rodata.sx1278_recv_data.str1.4,"aMS",%progbits,1
@@ -1955,32 +1956,32 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  1534              	sx1278_recv_data:
  1535              	.LVL150:
  1536              	.LFB93:
- 292:Core/Src/sx1278.c **** 
- 293:Core/Src/sx1278.c **** /**
- 294:Core/Src/sx1278.c ****  * @brief Function to check, parse and get data from LoRa packet
- 295:Core/Src/sx1278.c ****  * 
- 296:Core/Src/sx1278.c ****  * @param data_recv packet
- 297:Core/Src/sx1278.c ****  * @param len length of data received
- 298:Core/Src/sx1278.c ****  * @param rssi signal strength (Received Signal Strength Indicator)
- 299:Core/Src/sx1278.c ****  * @param snr Signal-to-Noise Ratio
- 300:Core/Src/sx1278.c ****  * @param node place to store data
- 301:Core/Src/sx1278.c ****  * @return sx1278_err_t 
- 302:Core/Src/sx1278.c ****  */
- 303:Core/Src/sx1278.c **** sx1278_err_t sx1278_recv_data(uint8_t *data_recv, uint32_t *len, int *rssi, float *snr, bool isStay
- 304:Core/Src/sx1278.c **** {
- 1537              		.loc 1 304 1 is_stmt 1 view -0
+ 293:Core/Src/sx1278.c **** 
+ 294:Core/Src/sx1278.c **** /**
+ 295:Core/Src/sx1278.c ****  * @brief Function to check, parse and get data from LoRa packet
+ 296:Core/Src/sx1278.c ****  * 
+ 297:Core/Src/sx1278.c ****  * @param data_recv packet
+ 298:Core/Src/sx1278.c ****  * @param len length of data received
+ 299:Core/Src/sx1278.c ****  * @param rssi signal strength (Received Signal Strength Indicator)
+ 300:Core/Src/sx1278.c ****  * @param snr Signal-to-Noise Ratio
+ 301:Core/Src/sx1278.c ****  * @param node place to store data
+ 302:Core/Src/sx1278.c ****  * @return sx1278_err_t 
+ 303:Core/Src/sx1278.c ****  */
+ 304:Core/Src/sx1278.c **** sx1278_err_t sx1278_recv_data(uint8_t *data_recv, uint32_t *len, int *rssi, float *snr, bool isStay
+ 305:Core/Src/sx1278.c **** {
+ 1537              		.loc 1 305 1 is_stmt 1 view -0
  1538              		.cfi_startproc
  1539              		@ args = 4, pretend = 0, frame = 0
  1540              		@ frame_needed = 0, uses_anonymous_args = 0
- 1541              		.loc 1 304 1 is_stmt 0 view .LVU297
+ 1541              		.loc 1 305 1 is_stmt 0 view .LVU297
  1542 0000 2DE9F047 		push	{r4, r5, r6, r7, r8, r9, r10, lr}
  1543              	.LCFI28:
  1544              		.cfi_def_cfa_offset 32
  1545              		.cfi_offset 4, -32
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 34
+
+
  1546              		.cfi_offset 5, -28
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 34
-
-
  1547              		.cfi_offset 6, -24
  1548              		.cfi_offset 7, -20
  1549              		.cfi_offset 8, -16
@@ -1992,90 +1993,90 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  1555 0008 9246     		mov	r10, r2
  1556 000a 9946     		mov	r9, r3
  1557 000c 9DF82080 		ldrb	r8, [sp, #32]	@ zero_extendqisi2
- 305:Core/Src/sx1278.c ****     memset((char *)data_recv, '\0', strlen((char *)data_recv));
- 1558              		.loc 1 305 5 is_stmt 1 view .LVU298
+ 306:Core/Src/sx1278.c ****     memset((char *)data_recv, '\0', strlen((char *)data_recv));
+ 1558              		.loc 1 306 5 is_stmt 1 view .LVU298
  1559 0010 FFF7FEFF 		bl	strlen
  1560              	.LVL151:
- 1561              		.loc 1 305 5 is_stmt 0 view .LVU299
+ 1561              		.loc 1 306 5 is_stmt 0 view .LVU299
  1562 0014 0246     		mov	r2, r0
  1563 0016 0021     		movs	r1, #0
  1564 0018 3846     		mov	r0, r7
  1565 001a FFF7FEFF 		bl	memset
  1566              	.LVL152:
- 306:Core/Src/sx1278.c ****     int irq = sx1278_read_reg(REG_IRQ_FLAGS);
- 1567              		.loc 1 306 5 is_stmt 1 view .LVU300
- 1568              		.loc 1 306 15 is_stmt 0 view .LVU301
+ 307:Core/Src/sx1278.c ****     int irq = sx1278_read_reg(REG_IRQ_FLAGS);
+ 1567              		.loc 1 307 5 is_stmt 1 view .LVU300
+ 1568              		.loc 1 307 15 is_stmt 0 view .LVU301
  1569 001e 1220     		movs	r0, #18
  1570 0020 FFF7FEFF 		bl	sx1278_read_reg
  1571              	.LVL153:
  1572 0024 0546     		mov	r5, r0
  1573              	.LVL154:
- 307:Core/Src/sx1278.c ****     sx1278_write_reg(REG_IRQ_FLAGS, irq);
- 1574              		.loc 1 307 5 is_stmt 1 view .LVU302
+ 308:Core/Src/sx1278.c ****     sx1278_write_reg(REG_IRQ_FLAGS, irq);
+ 1574              		.loc 1 308 5 is_stmt 1 view .LVU302
  1575 0026 0146     		mov	r1, r0
  1576 0028 1220     		movs	r0, #18
  1577              	.LVL155:
- 1578              		.loc 1 307 5 is_stmt 0 view .LVU303
+ 1578              		.loc 1 308 5 is_stmt 0 view .LVU303
  1579 002a FFF7FEFF 		bl	sx1278_write_reg
  1580              	.LVL156:
- 308:Core/Src/sx1278.c **** 
- 309:Core/Src/sx1278.c ****     if (!(irq & IRQ_RX_DONE_MASK))
- 1581              		.loc 1 309 5 is_stmt 1 view .LVU304
- 1582              		.loc 1 309 8 is_stmt 0 view .LVU305
+ 309:Core/Src/sx1278.c **** 
+ 310:Core/Src/sx1278.c ****     if (!(irq & IRQ_RX_DONE_MASK))
+ 1581              		.loc 1 310 5 is_stmt 1 view .LVU304
+ 1582              		.loc 1 310 8 is_stmt 0 view .LVU305
  1583 002e 15F0400F 		tst	r5, #64
  1584 0032 1AD0     		beq	.L118
- 310:Core/Src/sx1278.c ****     {
- 311:Core/Src/sx1278.c ****         LOG(TAG, "Invalid RxDone Interrupt");
- 312:Core/Src/sx1278.c ****         return SX1278_INVALID_RX_DONE;
- 313:Core/Src/sx1278.c ****     }
- 314:Core/Src/sx1278.c **** 
- 315:Core/Src/sx1278.c ****     if (!(irq & IRQ_VALID_HEADER_MASK))
- 1585              		.loc 1 315 5 is_stmt 1 view .LVU306
- 1586              		.loc 1 315 8 is_stmt 0 view .LVU307
+ 311:Core/Src/sx1278.c ****     {
+ 312:Core/Src/sx1278.c ****         LOG(TAG, "Invalid RxDone Interrupt");
+ 313:Core/Src/sx1278.c ****         return SX1278_INVALID_RX_DONE;
+ 314:Core/Src/sx1278.c ****     }
+ 315:Core/Src/sx1278.c **** 
+ 316:Core/Src/sx1278.c ****     if (!(irq & IRQ_VALID_HEADER_MASK))
+ 1585              		.loc 1 316 5 is_stmt 1 view .LVU306
+ 1586              		.loc 1 316 8 is_stmt 0 view .LVU307
  1587 0034 15F0100F 		tst	r5, #16
  1588 0038 1DD0     		beq	.L119
- 316:Core/Src/sx1278.c ****     {
- 317:Core/Src/sx1278.c ****         LOG(TAG, "Invalid Header Interrupt");
- 318:Core/Src/sx1278.c ****         return SX1278_INVALID_HEADER;
- 319:Core/Src/sx1278.c ****     }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 35
+ 317:Core/Src/sx1278.c ****     {
+ 318:Core/Src/sx1278.c ****         LOG(TAG, "Invalid Header Interrupt");
+ 319:Core/Src/sx1278.c ****         return SX1278_INVALID_HEADER;
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 35
 
 
- 320:Core/Src/sx1278.c **** 
- 321:Core/Src/sx1278.c ****     if (irq & IRQ_PAYLOAD_CRC_ERROR_MASK)
- 1589              		.loc 1 321 5 is_stmt 1 view .LVU308
- 1590              		.loc 1 321 8 is_stmt 0 view .LVU309
+ 320:Core/Src/sx1278.c ****     }
+ 321:Core/Src/sx1278.c **** 
+ 322:Core/Src/sx1278.c ****     if (irq & IRQ_PAYLOAD_CRC_ERROR_MASK)
+ 1589              		.loc 1 322 5 is_stmt 1 view .LVU308
+ 1590              		.loc 1 322 8 is_stmt 0 view .LVU309
  1591 003a 15F02005 		ands	r5, r5, #32
  1592 003e 20D1     		bne	.L120
- 322:Core/Src/sx1278.c ****     {
- 323:Core/Src/sx1278.c ****         LOG(TAG, "Payload Crc Error Interrupt");
- 324:Core/Src/sx1278.c ****         return SX1278_PAYLOAD_CRC_ERROR;
- 325:Core/Src/sx1278.c ****     }
- 326:Core/Src/sx1278.c **** 
- 327:Core/Src/sx1278.c ****     *len = sx1278_read_reg(REG_RX_NB_BYTES);
- 1593              		.loc 1 327 5 is_stmt 1 view .LVU310
- 1594              		.loc 1 327 12 is_stmt 0 view .LVU311
+ 323:Core/Src/sx1278.c ****     {
+ 324:Core/Src/sx1278.c ****         LOG(TAG, "Payload Crc Error Interrupt");
+ 325:Core/Src/sx1278.c ****         return SX1278_PAYLOAD_CRC_ERROR;
+ 326:Core/Src/sx1278.c ****     }
+ 327:Core/Src/sx1278.c **** 
+ 328:Core/Src/sx1278.c ****     *len = sx1278_read_reg(REG_RX_NB_BYTES);
+ 1593              		.loc 1 328 5 is_stmt 1 view .LVU310
+ 1594              		.loc 1 328 12 is_stmt 0 view .LVU311
  1595 0040 1320     		movs	r0, #19
  1596 0042 FFF7FEFF 		bl	sx1278_read_reg
  1597              	.LVL157:
- 1598              		.loc 1 327 10 view .LVU312
+ 1598              		.loc 1 328 10 view .LVU312
  1599 0046 3060     		str	r0, [r6]
- 328:Core/Src/sx1278.c ****     *rssi = sx1278_get_rssi();
- 1600              		.loc 1 328 5 is_stmt 1 view .LVU313
- 1601              		.loc 1 328 13 is_stmt 0 view .LVU314
+ 329:Core/Src/sx1278.c ****     *rssi = sx1278_get_rssi();
+ 1600              		.loc 1 329 5 is_stmt 1 view .LVU313
+ 1601              		.loc 1 329 13 is_stmt 0 view .LVU314
  1602 0048 FFF7FEFF 		bl	sx1278_get_rssi
  1603              	.LVL158:
- 1604              		.loc 1 328 11 view .LVU315
+ 1604              		.loc 1 329 11 view .LVU315
  1605 004c CAF80000 		str	r0, [r10]
- 329:Core/Src/sx1278.c ****     *snr = sx1278_get_snr();
- 1606              		.loc 1 329 5 is_stmt 1 view .LVU316
- 1607              		.loc 1 329 12 is_stmt 0 view .LVU317
+ 330:Core/Src/sx1278.c ****     *snr = sx1278_get_snr();
+ 1606              		.loc 1 330 5 is_stmt 1 view .LVU316
+ 1607              		.loc 1 330 12 is_stmt 0 view .LVU317
  1608 0050 FFF7FEFF 		bl	sx1278_get_snr
  1609              	.LVL159:
- 1610              		.loc 1 329 10 view .LVU318
+ 1610              		.loc 1 330 10 view .LVU318
  1611 0054 C9F80000 		str	r0, [r9]	@ float
- 330:Core/Src/sx1278.c ****     sx1278_write_reg(REG_FIFO_ADDR_PTR, sx1278_read_reg(REG_FIFO_RX_CURRENT_ADDR));
- 1612              		.loc 1 330 5 is_stmt 1 view .LVU319
+ 331:Core/Src/sx1278.c ****     sx1278_write_reg(REG_FIFO_ADDR_PTR, sx1278_read_reg(REG_FIFO_RX_CURRENT_ADDR));
+ 1612              		.loc 1 331 5 is_stmt 1 view .LVU319
  1613 0058 1020     		movs	r0, #16
  1614 005a FFF7FEFF 		bl	sx1278_read_reg
  1615              	.LVL160:
@@ -2083,108 +2084,108 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  1617 0060 0D20     		movs	r0, #13
  1618 0062 FFF7FEFF 		bl	sx1278_write_reg
  1619              	.LVL161:
- 331:Core/Src/sx1278.c ****     for (int index = 0; index < *len; index++)
- 1620              		.loc 1 331 5 view .LVU320
+ 332:Core/Src/sx1278.c ****     for (int index = 0; index < *len; index++)
+ 1620              		.loc 1 332 5 view .LVU320
  1621              	.LBB3:
- 1622              		.loc 1 331 10 view .LVU321
- 1623              		.loc 1 331 14 is_stmt 0 view .LVU322
+ 1622              		.loc 1 332 10 view .LVU321
+ 1623              		.loc 1 332 14 is_stmt 0 view .LVU322
  1624 0066 0024     		movs	r4, #0
- 1625              		.loc 1 331 5 view .LVU323
+ 1625              		.loc 1 332 5 view .LVU323
  1626 0068 16E0     		b	.L115
  1627              	.LVL162:
  1628              	.L118:
- 1629              		.loc 1 331 5 view .LVU324
+ 1629              		.loc 1 332 5 view .LVU324
  1630              	.LBE3:
- 311:Core/Src/sx1278.c ****         return SX1278_INVALID_RX_DONE;
- 1631              		.loc 1 311 9 is_stmt 1 view .LVU325
+ 312:Core/Src/sx1278.c ****         return SX1278_INVALID_RX_DONE;
+ 1631              		.loc 1 312 9 is_stmt 1 view .LVU325
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 36
+
+
  1632 006a 1149     		ldr	r1, .L122
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 36
-
-
  1633 006c 1148     		ldr	r0, .L122+4
  1634 006e FFF7FEFF 		bl	LOG
  1635              	.LVL163:
- 312:Core/Src/sx1278.c ****     }
- 1636              		.loc 1 312 9 view .LVU326
- 312:Core/Src/sx1278.c ****     }
- 1637              		.loc 1 312 16 is_stmt 0 view .LVU327
+ 313:Core/Src/sx1278.c ****     }
+ 1636              		.loc 1 313 9 view .LVU326
+ 313:Core/Src/sx1278.c ****     }
+ 1637              		.loc 1 313 16 is_stmt 0 view .LVU327
  1638 0072 0225     		movs	r5, #2
  1639 0074 16E0     		b	.L112
  1640              	.L119:
- 317:Core/Src/sx1278.c ****         return SX1278_INVALID_HEADER;
- 1641              		.loc 1 317 9 is_stmt 1 view .LVU328
+ 318:Core/Src/sx1278.c ****         return SX1278_INVALID_HEADER;
+ 1641              		.loc 1 318 9 is_stmt 1 view .LVU328
  1642 0076 1049     		ldr	r1, .L122+8
  1643 0078 0E48     		ldr	r0, .L122+4
  1644 007a FFF7FEFF 		bl	LOG
  1645              	.LVL164:
- 318:Core/Src/sx1278.c ****     }
- 1646              		.loc 1 318 9 view .LVU329
- 318:Core/Src/sx1278.c ****     }
- 1647              		.loc 1 318 16 is_stmt 0 view .LVU330
+ 319:Core/Src/sx1278.c ****     }
+ 1646              		.loc 1 319 9 view .LVU329
+ 319:Core/Src/sx1278.c ****     }
+ 1647              		.loc 1 319 16 is_stmt 0 view .LVU330
  1648 007e 0425     		movs	r5, #4
  1649 0080 10E0     		b	.L112
  1650              	.L120:
- 323:Core/Src/sx1278.c ****         return SX1278_PAYLOAD_CRC_ERROR;
- 1651              		.loc 1 323 9 is_stmt 1 view .LVU331
+ 324:Core/Src/sx1278.c ****         return SX1278_PAYLOAD_CRC_ERROR;
+ 1651              		.loc 1 324 9 is_stmt 1 view .LVU331
  1652 0082 0E49     		ldr	r1, .L122+12
  1653 0084 0B48     		ldr	r0, .L122+4
  1654 0086 FFF7FEFF 		bl	LOG
  1655              	.LVL165:
- 324:Core/Src/sx1278.c ****     }
- 1656              		.loc 1 324 9 view .LVU332
- 324:Core/Src/sx1278.c ****     }
- 1657              		.loc 1 324 16 is_stmt 0 view .LVU333
+ 325:Core/Src/sx1278.c ****     }
+ 1656              		.loc 1 325 9 view .LVU332
+ 325:Core/Src/sx1278.c ****     }
+ 1657              		.loc 1 325 16 is_stmt 0 view .LVU333
  1658 008a 0325     		movs	r5, #3
  1659 008c 0AE0     		b	.L112
  1660              	.LVL166:
  1661              	.L116:
  1662              	.LBB4:
- 332:Core/Src/sx1278.c ****     {
- 333:Core/Src/sx1278.c ****         data_recv[index] = sx1278_read_reg(REG_FIFO);
- 1663              		.loc 1 333 9 is_stmt 1 discriminator 3 view .LVU334
- 1664              		.loc 1 333 28 is_stmt 0 discriminator 3 view .LVU335
+ 333:Core/Src/sx1278.c ****     {
+ 334:Core/Src/sx1278.c ****         data_recv[index] = sx1278_read_reg(REG_FIFO);
+ 1663              		.loc 1 334 9 is_stmt 1 discriminator 3 view .LVU334
+ 1664              		.loc 1 334 28 is_stmt 0 discriminator 3 view .LVU335
  1665 008e 0020     		movs	r0, #0
  1666 0090 FFF7FEFF 		bl	sx1278_read_reg
  1667              	.LVL167:
- 1668              		.loc 1 333 26 discriminator 3 view .LVU336
+ 1668              		.loc 1 334 26 discriminator 3 view .LVU336
  1669 0094 3855     		strb	r0, [r7, r4]
- 331:Core/Src/sx1278.c ****     {
- 1670              		.loc 1 331 39 is_stmt 1 discriminator 3 view .LVU337
- 331:Core/Src/sx1278.c ****     {
- 1671              		.loc 1 331 44 is_stmt 0 discriminator 3 view .LVU338
+ 332:Core/Src/sx1278.c ****     {
+ 1670              		.loc 1 332 39 is_stmt 1 discriminator 3 view .LVU337
+ 332:Core/Src/sx1278.c ****     {
+ 1671              		.loc 1 332 44 is_stmt 0 discriminator 3 view .LVU338
  1672 0096 0134     		adds	r4, r4, #1
  1673              	.LVL168:
  1674              	.L115:
- 331:Core/Src/sx1278.c ****     {
- 1675              		.loc 1 331 25 is_stmt 1 discriminator 1 view .LVU339
- 331:Core/Src/sx1278.c ****     {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 37
+ 332:Core/Src/sx1278.c ****     {
+ 1675              		.loc 1 332 25 is_stmt 1 discriminator 1 view .LVU339
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 37
 
 
- 1676              		.loc 1 331 33 is_stmt 0 discriminator 1 view .LVU340
+ 332:Core/Src/sx1278.c ****     {
+ 1676              		.loc 1 332 33 is_stmt 0 discriminator 1 view .LVU340
  1677 0098 3368     		ldr	r3, [r6]
- 331:Core/Src/sx1278.c ****     {
- 1678              		.loc 1 331 5 discriminator 1 view .LVU341
+ 332:Core/Src/sx1278.c ****     {
+ 1678              		.loc 1 332 5 discriminator 1 view .LVU341
  1679 009a A342     		cmp	r3, r4
  1680 009c F7D8     		bhi	.L116
  1681              	.LBE4:
- 334:Core/Src/sx1278.c ****     }
- 335:Core/Src/sx1278.c ****     if (isStayinRX == false)    sx1278_standby();
- 1682              		.loc 1 335 5 is_stmt 1 view .LVU342
- 1683              		.loc 1 335 8 is_stmt 0 view .LVU343
+ 335:Core/Src/sx1278.c ****     }
+ 336:Core/Src/sx1278.c ****     if (isStayinRX == false)    sx1278_standby();
+ 1682              		.loc 1 336 5 is_stmt 1 view .LVU342
+ 1683              		.loc 1 336 8 is_stmt 0 view .LVU343
  1684 009e B8F1000F 		cmp	r8, #0
  1685 00a2 02D0     		beq	.L121
  1686              	.LVL169:
  1687              	.L112:
- 336:Core/Src/sx1278.c ****     return SX1278_OK;
- 337:Core/Src/sx1278.c **** }
- 1688              		.loc 1 337 1 view .LVU344
+ 337:Core/Src/sx1278.c ****     return SX1278_OK;
+ 338:Core/Src/sx1278.c **** }
+ 1688              		.loc 1 338 1 view .LVU344
  1689 00a4 2846     		mov	r0, r5
  1690 00a6 BDE8F087 		pop	{r4, r5, r6, r7, r8, r9, r10, pc}
  1691              	.LVL170:
  1692              	.L121:
- 335:Core/Src/sx1278.c ****     return SX1278_OK;
- 1693              		.loc 1 335 33 is_stmt 1 discriminator 1 view .LVU345
+ 336:Core/Src/sx1278.c ****     return SX1278_OK;
+ 1693              		.loc 1 336 33 is_stmt 1 discriminator 1 view .LVU345
  1694 00aa FFF7FEFF 		bl	sx1278_standby
  1695              	.LVL171:
  1696 00ae F9E7     		b	.L112
@@ -2207,453 +2208,447 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 1
  1715              	get_random_value:
  1716              	.LVL172:
  1717              	.LFB94:
- 338:Core/Src/sx1278.c **** 
- 339:Core/Src/sx1278.c **** int get_random_value(int min, int max)
- 340:Core/Src/sx1278.c **** {
- 1718              		.loc 1 340 1 view -0
+ 339:Core/Src/sx1278.c **** 
+ 340:Core/Src/sx1278.c **** int get_random_value(uint32_t seed, int min, int max)
+ 341:Core/Src/sx1278.c **** {
+ 1718              		.loc 1 341 1 view -0
  1719              		.cfi_startproc
  1720              		@ args = 0, pretend = 0, frame = 0
  1721              		@ frame_needed = 0, uses_anonymous_args = 0
- 1722              		.loc 1 340 1 is_stmt 0 view .LVU347
+ 1722              		.loc 1 341 1 is_stmt 0 view .LVU347
  1723 0000 38B5     		push	{r3, r4, r5, lr}
  1724              	.LCFI29:
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 38
+
+
  1725              		.cfi_def_cfa_offset 16
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 38
-
-
  1726              		.cfi_offset 3, -16
  1727              		.cfi_offset 4, -12
  1728              		.cfi_offset 5, -8
  1729              		.cfi_offset 14, -4
- 1730 0002 0546     		mov	r5, r0
- 1731 0004 0C46     		mov	r4, r1
- 341:Core/Src/sx1278.c ****     srand(time(NULL));
- 1732              		.loc 1 341 5 is_stmt 1 view .LVU348
- 1733              		.loc 1 341 11 is_stmt 0 view .LVU349
- 1734 0006 0020     		movs	r0, #0
- 1735              	.LVL173:
- 1736              		.loc 1 341 11 view .LVU350
- 1737 0008 FFF7FEFF 		bl	time
+ 1730 0002 0D46     		mov	r5, r1
+ 1731 0004 1446     		mov	r4, r2
+ 342:Core/Src/sx1278.c ****     srand(seed);
+ 1732              		.loc 1 342 5 is_stmt 1 view .LVU348
+ 1733 0006 FFF7FEFF 		bl	srand
+ 1734              	.LVL173:
+ 343:Core/Src/sx1278.c ****     return (rand() % (int)(max-min)) + min;
+ 1735              		.loc 1 343 5 view .LVU349
+ 1736              		.loc 1 343 13 is_stmt 0 view .LVU350
+ 1737 000a FFF7FEFF 		bl	rand
  1738              	.LVL174:
- 1739              		.loc 1 341 5 view .LVU351
- 1740 000c FFF7FEFF 		bl	srand
- 1741              	.LVL175:
- 342:Core/Src/sx1278.c ****     return (rand() % max) + min;
- 1742              		.loc 1 342 5 is_stmt 1 view .LVU352
- 1743              		.loc 1 342 13 is_stmt 0 view .LVU353
- 1744 0010 FFF7FEFF 		bl	rand
- 1745              	.LVL176:
- 1746              		.loc 1 342 20 view .LVU354
- 1747 0014 90FBF4F1 		sdiv	r1, r0, r4
- 1748 0018 04FB1100 		mls	r0, r4, r1, r0
- 343:Core/Src/sx1278.c **** }
- 1749              		.loc 1 343 1 view .LVU355
- 1750 001c 2844     		add	r0, r0, r5
- 1751 001e 38BD     		pop	{r3, r4, r5, pc}
- 1752              		.loc 1 343 1 view .LVU356
- 1753              		.cfi_endproc
- 1754              	.LFE94:
- 1756              		.section	.text.get_crc_value,"ax",%progbits
- 1757              		.align	1
- 1758              		.global	get_crc_value
- 1759              		.syntax unified
- 1760              		.thumb
- 1761              		.thumb_func
- 1762              		.fpu softvfp
- 1764              	get_crc_value:
- 1765              	.LVL177:
- 1766              	.LFB95:
- 344:Core/Src/sx1278.c **** 
- 345:Core/Src/sx1278.c **** uint8_t get_crc_value(uint8_t *data, int len)
- 346:Core/Src/sx1278.c **** {
- 1767              		.loc 1 346 1 is_stmt 1 view -0
- 1768              		.cfi_startproc
- 1769              		@ args = 0, pretend = 0, frame = 0
- 1770              		@ frame_needed = 0, uses_anonymous_args = 0
- 1771              		@ link register save eliminated.
- 1772              		.loc 1 346 1 is_stmt 0 view .LVU358
- 1773 0000 8446     		mov	ip, r0
- 347:Core/Src/sx1278.c ****     uint8_t crc = 0;
- 1774              		.loc 1 347 5 is_stmt 1 view .LVU359
- 1775              	.LVL178:
- 348:Core/Src/sx1278.c ****     for (int i = 0; i < len; i++)
- 1776              		.loc 1 348 5 view .LVU360
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 39
+ 1739              		.loc 1 343 22 view .LVU351
+ 1740 000e 621B     		subs	r2, r4, r5
+ 1741              		.loc 1 343 20 view .LVU352
+ 1742 0010 90FBF2F3 		sdiv	r3, r0, r2
+ 1743 0014 02FB1300 		mls	r0, r2, r3, r0
+ 344:Core/Src/sx1278.c **** }
+ 1744              		.loc 1 344 1 view .LVU353
+ 1745 0018 2844     		add	r0, r0, r5
+ 1746 001a 38BD     		pop	{r3, r4, r5, pc}
+ 1747              		.loc 1 344 1 view .LVU354
+ 1748              		.cfi_endproc
+ 1749              	.LFE94:
+ 1751              		.section	.text.get_crc_value,"ax",%progbits
+ 1752              		.align	1
+ 1753              		.global	get_crc_value
+ 1754              		.syntax unified
+ 1755              		.thumb
+ 1756              		.thumb_func
+ 1757              		.fpu softvfp
+ 1759              	get_crc_value:
+ 1760              	.LVL175:
+ 1761              	.LFB95:
+ 345:Core/Src/sx1278.c **** 
+ 346:Core/Src/sx1278.c **** uint8_t get_crc_value(uint8_t *data, int len)
+ 347:Core/Src/sx1278.c **** {
+ 1762              		.loc 1 347 1 is_stmt 1 view -0
+ 1763              		.cfi_startproc
+ 1764              		@ args = 0, pretend = 0, frame = 0
+ 1765              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1766              		@ link register save eliminated.
+ 1767              		.loc 1 347 1 is_stmt 0 view .LVU356
+ 1768 0000 8446     		mov	ip, r0
+ 348:Core/Src/sx1278.c ****     uint8_t crc = 0;
+ 1769              		.loc 1 348 5 is_stmt 1 view .LVU357
+ 1770              	.LVL176:
+ 349:Core/Src/sx1278.c ****     for (int i = 0; i < len; i++)
+ 1771              		.loc 1 349 5 view .LVU358
+ 1772              	.LBB5:
+ 1773              		.loc 1 349 10 view .LVU359
+ 1774              		.loc 1 349 14 is_stmt 0 view .LVU360
+ 1775 0002 0023     		movs	r3, #0
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 39
 
 
- 1777              	.LBB5:
- 1778              		.loc 1 348 10 view .LVU361
- 1779              		.loc 1 348 14 is_stmt 0 view .LVU362
- 1780 0002 0023     		movs	r3, #0
- 1781              	.LBE5:
- 347:Core/Src/sx1278.c ****     uint8_t crc = 0;
- 1782              		.loc 1 347 13 view .LVU363
- 1783 0004 1846     		mov	r0, r3
- 1784              	.LVL179:
- 1785              	.LBB6:
- 1786              		.loc 1 348 5 view .LVU364
- 1787 0006 03E0     		b	.L127
- 1788              	.LVL180:
- 1789              	.L128:
- 349:Core/Src/sx1278.c ****     {
- 350:Core/Src/sx1278.c ****         crc ^= data[i];
- 1790              		.loc 1 350 9 is_stmt 1 discriminator 3 view .LVU365
- 1791              		.loc 1 350 20 is_stmt 0 discriminator 3 view .LVU366
- 1792 0008 1CF80320 		ldrb	r2, [ip, r3]	@ zero_extendqisi2
- 1793              		.loc 1 350 13 discriminator 3 view .LVU367
- 1794 000c 5040     		eors	r0, r0, r2
- 1795              	.LVL181:
- 348:Core/Src/sx1278.c ****     for (int i = 0; i < len; i++)
- 1796              		.loc 1 348 30 is_stmt 1 discriminator 3 view .LVU368
- 348:Core/Src/sx1278.c ****     for (int i = 0; i < len; i++)
- 1797              		.loc 1 348 31 is_stmt 0 discriminator 3 view .LVU369
- 1798 000e 0133     		adds	r3, r3, #1
- 1799              	.LVL182:
- 1800              	.L127:
- 348:Core/Src/sx1278.c ****     for (int i = 0; i < len; i++)
- 1801              		.loc 1 348 21 is_stmt 1 discriminator 1 view .LVU370
- 348:Core/Src/sx1278.c ****     for (int i = 0; i < len; i++)
- 1802              		.loc 1 348 5 is_stmt 0 discriminator 1 view .LVU371
- 1803 0010 8B42     		cmp	r3, r1
- 1804 0012 F9DB     		blt	.L128
- 1805              	.LBE6:
- 351:Core/Src/sx1278.c ****     }
- 352:Core/Src/sx1278.c ****     return crc;
- 1806              		.loc 1 352 5 is_stmt 1 view .LVU372
- 353:Core/Src/sx1278.c **** }
- 1807              		.loc 1 353 1 is_stmt 0 view .LVU373
- 1808 0014 7047     		bx	lr
- 1809              		.cfi_endproc
- 1810              	.LFE95:
- 1812              		.section	.text.listen_before_talk,"ax",%progbits
- 1813              		.align	1
- 1814              		.global	listen_before_talk
- 1815              		.syntax unified
- 1816              		.thumb
- 1817              		.thumb_func
- 1818              		.fpu softvfp
- 1820              	listen_before_talk:
- 1821              	.LFB96:
- 354:Core/Src/sx1278.c **** 
- 355:Core/Src/sx1278.c **** /**
- 356:Core/Src/sx1278.c ****  * @brief check communicate line for idle slot to talk
- 357:Core/Src/sx1278.c ****  * 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 40
+ 1776              	.LBE5:
+ 348:Core/Src/sx1278.c ****     uint8_t crc = 0;
+ 1777              		.loc 1 348 13 view .LVU361
+ 1778 0004 1846     		mov	r0, r3
+ 1779              	.LVL177:
+ 1780              	.LBB6:
+ 1781              		.loc 1 349 5 view .LVU362
+ 1782 0006 03E0     		b	.L127
+ 1783              	.LVL178:
+ 1784              	.L128:
+ 350:Core/Src/sx1278.c ****     {
+ 351:Core/Src/sx1278.c ****         crc ^= data[i];
+ 1785              		.loc 1 351 9 is_stmt 1 discriminator 3 view .LVU363
+ 1786              		.loc 1 351 20 is_stmt 0 discriminator 3 view .LVU364
+ 1787 0008 1CF80320 		ldrb	r2, [ip, r3]	@ zero_extendqisi2
+ 1788              		.loc 1 351 13 discriminator 3 view .LVU365
+ 1789 000c 5040     		eors	r0, r0, r2
+ 1790              	.LVL179:
+ 349:Core/Src/sx1278.c ****     for (int i = 0; i < len; i++)
+ 1791              		.loc 1 349 30 is_stmt 1 discriminator 3 view .LVU366
+ 349:Core/Src/sx1278.c ****     for (int i = 0; i < len; i++)
+ 1792              		.loc 1 349 31 is_stmt 0 discriminator 3 view .LVU367
+ 1793 000e 0133     		adds	r3, r3, #1
+ 1794              	.LVL180:
+ 1795              	.L127:
+ 349:Core/Src/sx1278.c ****     for (int i = 0; i < len; i++)
+ 1796              		.loc 1 349 21 is_stmt 1 discriminator 1 view .LVU368
+ 349:Core/Src/sx1278.c ****     for (int i = 0; i < len; i++)
+ 1797              		.loc 1 349 5 is_stmt 0 discriminator 1 view .LVU369
+ 1798 0010 8B42     		cmp	r3, r1
+ 1799 0012 F9DB     		blt	.L128
+ 1800              	.LBE6:
+ 352:Core/Src/sx1278.c ****     }
+ 353:Core/Src/sx1278.c ****     return crc;
+ 1801              		.loc 1 353 5 is_stmt 1 view .LVU370
+ 354:Core/Src/sx1278.c **** }
+ 1802              		.loc 1 354 1 is_stmt 0 view .LVU371
+ 1803 0014 7047     		bx	lr
+ 1804              		.cfi_endproc
+ 1805              	.LFE95:
+ 1807              		.section	.text.listen_before_talk,"ax",%progbits
+ 1808              		.align	1
+ 1809              		.global	listen_before_talk
+ 1810              		.syntax unified
+ 1811              		.thumb
+ 1812              		.thumb_func
+ 1813              		.fpu softvfp
+ 1815              	listen_before_talk:
+ 1816              	.LFB96:
+ 355:Core/Src/sx1278.c **** 
+ 356:Core/Src/sx1278.c **** /**
+ 357:Core/Src/sx1278.c ****  * @brief check communicate line for idle slot to talk
+ 358:Core/Src/sx1278.c ****  * 
+ 359:Core/Src/sx1278.c ****  * @return true ok now TALK!
+ 360:Core/Src/sx1278.c ****  * @return false <infinite loop with random delay time>
+ 361:Core/Src/sx1278.c ****  */
+ 362:Core/Src/sx1278.c **** bool listen_before_talk(void)
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 40
 
 
- 358:Core/Src/sx1278.c ****  * @return true ok now TALK!
- 359:Core/Src/sx1278.c ****  * @return false <infinite loop with random delay time>
- 360:Core/Src/sx1278.c ****  */
- 361:Core/Src/sx1278.c **** bool listen_before_talk(void)
- 362:Core/Src/sx1278.c **** {
- 1822              		.loc 1 362 1 is_stmt 1 view -0
- 1823              		.cfi_startproc
- 1824              		@ args = 0, pretend = 0, frame = 0
- 1825              		@ frame_needed = 0, uses_anonymous_args = 0
- 1826              		@ link register save eliminated.
- 363:Core/Src/sx1278.c ****     // EventBits_t evt_bits;
- 364:Core/Src/sx1278.c ****     // while (1)
- 365:Core/Src/sx1278.c ****     // {
- 366:Core/Src/sx1278.c ****     //     xEventGroupClearBits(sx1278_evt_group, SX1278_DIO0_BIT);
- 367:Core/Src/sx1278.c ****     //     sx1278_cad();
- 368:Core/Src/sx1278.c ****     //     evt_bits = xEventGroupWaitBits(sx1278_evt_group, SX1278_DIO0_BIT, pdTRUE, pdFALSE, portM
- 369:Core/Src/sx1278.c ****     //     if(evt_bits & SX1278_DIO0_BIT)
- 370:Core/Src/sx1278.c ****     //     {
- 371:Core/Src/sx1278.c ****     //         int irq = sx1278_read_reg(REG_IRQ_FLAGS);
- 372:Core/Src/sx1278.c ****     //         sx1278_write_reg(REG_IRQ_FLAGS, irq);
- 373:Core/Src/sx1278.c ****     //         LOG(TAG, "CAD timeout");
- 374:Core/Src/sx1278.c ****     //         sx1278_set_irq(0xB0);
- 375:Core/Src/sx1278.c ****     //         sx1278_standby();
- 376:Core/Src/sx1278.c ****     //         return true;
- 377:Core/Src/sx1278.c ****     //     }
- 378:Core/Src/sx1278.c ****     //     else
- 379:Core/Src/sx1278.c ****     //     {
- 380:Core/Src/sx1278.c ****     //         int irq = sx1278_read_reg(REG_IRQ_FLAGS);
- 381:Core/Src/sx1278.c ****     //         sx1278_write_reg(REG_IRQ_FLAGS, irq);
- 382:Core/Src/sx1278.c ****     //         sx1278_standby();
- 383:Core/Src/sx1278.c ****     //         TickType_t time_delay = (TickType_t)get_random_value(0, 50);
- 384:Core/Src/sx1278.c ****     //         LOG(TAG, "CAD detect");
- 385:Core/Src/sx1278.c ****     //         HAL_Delay(time_delay);
- 386:Core/Src/sx1278.c ****     //     }
- 387:Core/Src/sx1278.c ****     // }
- 388:Core/Src/sx1278.c ****     return true;
- 1827              		.loc 1 388 5 view .LVU375
- 389:Core/Src/sx1278.c **** }
- 1828              		.loc 1 389 1 is_stmt 0 view .LVU376
- 1829 0000 0120     		movs	r0, #1
- 1830 0002 7047     		bx	lr
- 1831              		.cfi_endproc
- 1832              	.LFE96:
- 1834              		.section	.rodata.send_respond.str1.4,"aMS",%progbits,1
- 1835              		.align	2
- 1836              	.LC9:
- 1837 0000 242C2564 		.ascii	"$,%d,%d,%d,%s,%s,%d,%s,*\000"
- 1837      2C25642C 
- 1837      25642C25 
- 1837      732C2573 
- 1837      2C25642C 
- 1838              		.section	.text.send_respond,"ax",%progbits
- 1839              		.align	1
- 1840              		.global	send_respond
- 1841              		.syntax unified
- 1842              		.thumb
- 1843              		.thumb_func
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 41
+ 363:Core/Src/sx1278.c **** {
+ 1817              		.loc 1 363 1 is_stmt 1 view -0
+ 1818              		.cfi_startproc
+ 1819              		@ args = 0, pretend = 0, frame = 0
+ 1820              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1821              		@ link register save eliminated.
+ 364:Core/Src/sx1278.c ****     // EventBits_t evt_bits;
+ 365:Core/Src/sx1278.c ****     // while (1)
+ 366:Core/Src/sx1278.c ****     // {
+ 367:Core/Src/sx1278.c ****     //     xEventGroupClearBits(sx1278_evt_group, SX1278_DIO0_BIT);
+ 368:Core/Src/sx1278.c ****     //     sx1278_cad();
+ 369:Core/Src/sx1278.c ****     //     evt_bits = xEventGroupWaitBits(sx1278_evt_group, SX1278_DIO0_BIT, pdTRUE, pdFALSE, portM
+ 370:Core/Src/sx1278.c ****     //     if(evt_bits & SX1278_DIO0_BIT)
+ 371:Core/Src/sx1278.c ****     //     {
+ 372:Core/Src/sx1278.c ****     //         int irq = sx1278_read_reg(REG_IRQ_FLAGS);
+ 373:Core/Src/sx1278.c ****     //         sx1278_write_reg(REG_IRQ_FLAGS, irq);
+ 374:Core/Src/sx1278.c ****     //         LOG(TAG, "CAD timeout");
+ 375:Core/Src/sx1278.c ****     //         sx1278_set_irq(0xB0);
+ 376:Core/Src/sx1278.c ****     //         sx1278_standby();
+ 377:Core/Src/sx1278.c ****     //         return true;
+ 378:Core/Src/sx1278.c ****     //     }
+ 379:Core/Src/sx1278.c ****     //     else
+ 380:Core/Src/sx1278.c ****     //     {
+ 381:Core/Src/sx1278.c ****     //         int irq = sx1278_read_reg(REG_IRQ_FLAGS);
+ 382:Core/Src/sx1278.c ****     //         sx1278_write_reg(REG_IRQ_FLAGS, irq);
+ 383:Core/Src/sx1278.c ****     //         sx1278_standby();
+ 384:Core/Src/sx1278.c ****     //         TickType_t time_delay = (TickType_t)get_random_value(0, 50);
+ 385:Core/Src/sx1278.c ****     //         LOG(TAG, "CAD detect");
+ 386:Core/Src/sx1278.c ****     //         HAL_Delay(time_delay);
+ 387:Core/Src/sx1278.c ****     //     }
+ 388:Core/Src/sx1278.c ****     // }
+ 389:Core/Src/sx1278.c ****     return true;
+ 1822              		.loc 1 389 5 view .LVU373
+ 390:Core/Src/sx1278.c **** }
+ 1823              		.loc 1 390 1 is_stmt 0 view .LVU374
+ 1824 0000 0120     		movs	r0, #1
+ 1825 0002 7047     		bx	lr
+ 1826              		.cfi_endproc
+ 1827              	.LFE96:
+ 1829              		.section	.rodata.send_respond.str1.4,"aMS",%progbits,1
+ 1830              		.align	2
+ 1831              	.LC9:
+ 1832 0000 242C2564 		.ascii	"$,%d,%d,%d,%s,%s,%d,%s,*\000"
+ 1832      2C25642C 
+ 1832      25642C25 
+ 1832      732C2573 
+ 1832      2C25642C 
+ 1833              		.section	.text.send_respond,"ax",%progbits
+ 1834              		.align	1
+ 1835              		.global	send_respond
+ 1836              		.syntax unified
+ 1837              		.thumb
+ 1838              		.thumb_func
+ 1839              		.fpu softvfp
+ 1841              	send_respond:
+ 1842              	.LVL181:
+ 1843              	.LFB97:
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 41
 
 
- 1844              		.fpu softvfp
- 1846              	send_respond:
- 1847              	.LVL183:
- 1848              	.LFB97:
- 390:Core/Src/sx1278.c **** 
- 391:Core/Src/sx1278.c **** /**
- 392:Core/Src/sx1278.c ****  * @brief response packet
- 393:Core/Src/sx1278.c ****  * 
- 394:Core/Src/sx1278.c ****  * @param opcode 
- 395:Core/Src/sx1278.c ****  * @param node 
- 396:Core/Src/sx1278.c ****  * @param packet 
- 397:Core/Src/sx1278.c ****  */
- 398:Core/Src/sx1278.c **** void send_respond(sx1278_opcode_type_t opcode, sx1278_node_t node, uint8_t *packet)
- 399:Core/Src/sx1278.c **** {
- 1849              		.loc 1 399 1 is_stmt 1 view -0
- 1850              		.cfi_startproc
- 1851              		@ args = 52, pretend = 16, frame = 0
- 1852              		@ frame_needed = 0, uses_anonymous_args = 0
- 1853              		.loc 1 399 1 is_stmt 0 view .LVU378
- 1854 0000 84B0     		sub	sp, sp, #16
- 1855              	.LCFI30:
- 1856              		.cfi_def_cfa_offset 16
- 1857 0002 30B5     		push	{r4, r5, lr}
- 1858              	.LCFI31:
- 1859              		.cfi_def_cfa_offset 28
- 1860              		.cfi_offset 4, -28
- 1861              		.cfi_offset 5, -24
- 1862              		.cfi_offset 14, -20
- 1863 0004 87B0     		sub	sp, sp, #28
- 1864              	.LCFI32:
- 1865              		.cfi_def_cfa_offset 56
- 1866 0006 0546     		mov	r5, r0
- 1867 0008 0BA8     		add	r0, sp, #44
- 1868 000a 80E80E00 		stm	r0, {r1, r2, r3}
- 1869 000e 169C     		ldr	r4, [sp, #88]
- 400:Core/Src/sx1278.c ****     memset((char *)packet, '\0', strlen((char *)packet));
- 1870              		.loc 1 400 5 is_stmt 1 view .LVU379
- 1871 0010 2046     		mov	r0, r4
- 1872              	.LVL184:
- 1873              		.loc 1 400 5 is_stmt 0 view .LVU380
- 1874 0012 FFF7FEFF 		bl	strlen
- 1875              	.LVL185:
- 1876 0016 0246     		mov	r2, r0
- 1877 0018 0021     		movs	r1, #0
- 1878 001a 2046     		mov	r0, r4
- 1879 001c FFF7FEFF 		bl	memset
- 1880              	.LVL186:
- 401:Core/Src/sx1278.c ****     if (opcode == UPLINK_TX_RESPOND_OPCODE)
- 1881              		.loc 1 401 5 is_stmt 1 view .LVU381
- 1882              		.loc 1 401 8 is_stmt 0 view .LVU382
- 1883 0020 142D     		cmp	r5, #20
- 1884 0022 0BD0     		beq	.L133
- 1885              	.LVL187:
- 1886              	.L131:
- 402:Core/Src/sx1278.c ****     {
- 403:Core/Src/sx1278.c ****         sprintf((char *)packet, "$,%d,%d,%d,%s,%s,%d,%s,*", opcode, node.node_id, node.gate_id, nod
+ 391:Core/Src/sx1278.c **** 
+ 392:Core/Src/sx1278.c **** /**
+ 393:Core/Src/sx1278.c ****  * @brief response packet
+ 394:Core/Src/sx1278.c ****  * 
+ 395:Core/Src/sx1278.c ****  * @param opcode 
+ 396:Core/Src/sx1278.c ****  * @param node 
+ 397:Core/Src/sx1278.c ****  * @param packet 
+ 398:Core/Src/sx1278.c ****  */
+ 399:Core/Src/sx1278.c **** void send_respond(sx1278_opcode_type_t opcode, sx1278_node_t node, uint8_t *packet)
+ 400:Core/Src/sx1278.c **** {
+ 1844              		.loc 1 400 1 is_stmt 1 view -0
+ 1845              		.cfi_startproc
+ 1846              		@ args = 52, pretend = 16, frame = 0
+ 1847              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1848              		.loc 1 400 1 is_stmt 0 view .LVU376
+ 1849 0000 84B0     		sub	sp, sp, #16
+ 1850              	.LCFI30:
+ 1851              		.cfi_def_cfa_offset 16
+ 1852 0002 30B5     		push	{r4, r5, lr}
+ 1853              	.LCFI31:
+ 1854              		.cfi_def_cfa_offset 28
+ 1855              		.cfi_offset 4, -28
+ 1856              		.cfi_offset 5, -24
+ 1857              		.cfi_offset 14, -20
+ 1858 0004 87B0     		sub	sp, sp, #28
+ 1859              	.LCFI32:
+ 1860              		.cfi_def_cfa_offset 56
+ 1861 0006 0546     		mov	r5, r0
+ 1862 0008 0BA8     		add	r0, sp, #44
+ 1863 000a 80E80E00 		stm	r0, {r1, r2, r3}
+ 1864 000e 169C     		ldr	r4, [sp, #88]
+ 401:Core/Src/sx1278.c ****     memset((char *)packet, '\0', strlen((char *)packet));
+ 1865              		.loc 1 401 5 is_stmt 1 view .LVU377
+ 1866 0010 2046     		mov	r0, r4
+ 1867              	.LVL182:
+ 1868              		.loc 1 401 5 is_stmt 0 view .LVU378
+ 1869 0012 FFF7FEFF 		bl	strlen
+ 1870              	.LVL183:
+ 1871 0016 0246     		mov	r2, r0
+ 1872 0018 0021     		movs	r1, #0
+ 1873 001a 2046     		mov	r0, r4
+ 1874 001c FFF7FEFF 		bl	memset
+ 1875              	.LVL184:
+ 402:Core/Src/sx1278.c ****     if (opcode == UPLINK_TX_RESPOND_OPCODE)
+ 1876              		.loc 1 402 5 is_stmt 1 view .LVU379
+ 1877              		.loc 1 402 8 is_stmt 0 view .LVU380
+ 1878 0020 142D     		cmp	r5, #20
+ 1879 0022 0BD0     		beq	.L133
+ 1880              	.LVL185:
+ 1881              	.L131:
+ 403:Core/Src/sx1278.c ****     {
+ 404:Core/Src/sx1278.c ****         sprintf((char *)packet, "$,%d,%d,%d,%s,%s,%d,%s,*", opcode, node.node_id, node.gate_id, nod
+ 405:Core/Src/sx1278.c ****         int size = strlen((char *)packet);
+ 406:Core/Src/sx1278.c ****         packet[size] = get_crc_value(packet, size);
+ 407:Core/Src/sx1278.c ****     }
+ 408:Core/Src/sx1278.c ****     sx1278_send_data(packet, strlen((char *)packet));
+ 1882              		.loc 1 408 5 is_stmt 1 view .LVU381
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 42
+
+
+ 1883              		.loc 1 408 30 is_stmt 0 view .LVU382
+ 1884 0024 2046     		mov	r0, r4
+ 1885 0026 FFF7FEFF 		bl	strlen
+ 1886              	.LVL186:
+ 1887 002a 0146     		mov	r1, r0
+ 1888              		.loc 1 408 5 view .LVU383
+ 1889 002c 2046     		mov	r0, r4
+ 1890 002e FFF7FEFF 		bl	sx1278_send_data
+ 1891              	.LVL187:
+ 409:Core/Src/sx1278.c **** }
+ 1892              		.loc 1 409 1 view .LVU384
+ 1893 0032 07B0     		add	sp, sp, #28
+ 1894              	.LCFI33:
+ 1895              		.cfi_remember_state
+ 1896              		.cfi_def_cfa_offset 28
+ 1897              		@ sp needed
+ 1898 0034 BDE83040 		pop	{r4, r5, lr}
+ 1899              	.LCFI34:
+ 1900              		.cfi_restore 14
+ 1901              		.cfi_restore 5
+ 1902              		.cfi_restore 4
+ 1903              		.cfi_def_cfa_offset 16
+ 1904 0038 04B0     		add	sp, sp, #16
+ 1905              	.LCFI35:
+ 1906              		.cfi_def_cfa_offset 0
+ 1907 003a 7047     		bx	lr
+ 1908              	.LVL188:
+ 1909              	.L133:
+ 1910              	.LCFI36:
+ 1911              		.cfi_restore_state
+ 1912              	.LBB7:
  404:Core/Src/sx1278.c ****         int size = strlen((char *)packet);
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 42
-
-
+ 1913              		.loc 1 404 9 is_stmt 1 view .LVU385
+ 1914 003c 13AB     		add	r3, sp, #76
+ 1915 003e 0493     		str	r3, [sp, #16]
+ 1916 0040 129B     		ldr	r3, [sp, #72]
+ 1917 0042 0393     		str	r3, [sp, #12]
+ 1918 0044 0DF13E03 		add	r3, sp, #62
+ 1919 0048 0293     		str	r3, [sp, #8]
+ 1920 004a 0DAB     		add	r3, sp, #52
+ 1921 004c 0193     		str	r3, [sp, #4]
+ 1922 004e 0C9B     		ldr	r3, [sp, #48]
+ 1923 0050 0093     		str	r3, [sp]
+ 1924 0052 0B9B     		ldr	r3, [sp, #44]
+ 1925 0054 2A46     		mov	r2, r5
+ 1926 0056 0749     		ldr	r1, .L134
+ 1927 0058 2046     		mov	r0, r4
+ 1928 005a FFF7FEFF 		bl	sprintf
+ 1929              	.LVL189:
  405:Core/Src/sx1278.c ****         packet[size] = get_crc_value(packet, size);
+ 1930              		.loc 1 405 9 view .LVU386
+ 405:Core/Src/sx1278.c ****         packet[size] = get_crc_value(packet, size);
+ 1931              		.loc 1 405 20 is_stmt 0 view .LVU387
+ 1932 005e 2046     		mov	r0, r4
+ 1933 0060 FFF7FEFF 		bl	strlen
+ 1934              	.LVL190:
+ 1935 0064 0546     		mov	r5, r0
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 43
+
+
+ 1936              	.LVL191:
  406:Core/Src/sx1278.c ****     }
- 407:Core/Src/sx1278.c ****     sx1278_send_data(packet, strlen((char *)packet));
- 1887              		.loc 1 407 5 is_stmt 1 view .LVU383
- 1888              		.loc 1 407 30 is_stmt 0 view .LVU384
- 1889 0024 2046     		mov	r0, r4
- 1890 0026 FFF7FEFF 		bl	strlen
- 1891              	.LVL188:
- 1892 002a 0146     		mov	r1, r0
- 1893              		.loc 1 407 5 view .LVU385
- 1894 002c 2046     		mov	r0, r4
- 1895 002e FFF7FEFF 		bl	sx1278_send_data
- 1896              	.LVL189:
- 408:Core/Src/sx1278.c **** }
- 1897              		.loc 1 408 1 view .LVU386
- 1898 0032 07B0     		add	sp, sp, #28
- 1899              	.LCFI33:
- 1900              		.cfi_remember_state
- 1901              		.cfi_def_cfa_offset 28
- 1902              		@ sp needed
- 1903 0034 BDE83040 		pop	{r4, r5, lr}
- 1904              	.LCFI34:
- 1905              		.cfi_restore 14
- 1906              		.cfi_restore 5
- 1907              		.cfi_restore 4
- 1908              		.cfi_def_cfa_offset 16
- 1909 0038 04B0     		add	sp, sp, #16
- 1910              	.LCFI35:
- 1911              		.cfi_def_cfa_offset 0
- 1912 003a 7047     		bx	lr
- 1913              	.LVL190:
- 1914              	.L133:
- 1915              	.LCFI36:
- 1916              		.cfi_restore_state
- 1917              	.LBB7:
- 403:Core/Src/sx1278.c ****         int size = strlen((char *)packet);
- 1918              		.loc 1 403 9 is_stmt 1 view .LVU387
- 1919 003c 13AB     		add	r3, sp, #76
- 1920 003e 0493     		str	r3, [sp, #16]
- 1921 0040 129B     		ldr	r3, [sp, #72]
- 1922 0042 0393     		str	r3, [sp, #12]
- 1923 0044 0DF13E03 		add	r3, sp, #62
- 1924 0048 0293     		str	r3, [sp, #8]
- 1925 004a 0DAB     		add	r3, sp, #52
- 1926 004c 0193     		str	r3, [sp, #4]
- 1927 004e 0C9B     		ldr	r3, [sp, #48]
- 1928 0050 0093     		str	r3, [sp]
- 1929 0052 0B9B     		ldr	r3, [sp, #44]
- 1930 0054 2A46     		mov	r2, r5
- 1931 0056 0749     		ldr	r1, .L134
- 1932 0058 2046     		mov	r0, r4
- 1933 005a FFF7FEFF 		bl	sprintf
- 1934              	.LVL191:
- 404:Core/Src/sx1278.c ****         packet[size] = get_crc_value(packet, size);
- 1935              		.loc 1 404 9 view .LVU388
- 404:Core/Src/sx1278.c ****         packet[size] = get_crc_value(packet, size);
- 1936              		.loc 1 404 20 is_stmt 0 view .LVU389
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 43
-
-
- 1937 005e 2046     		mov	r0, r4
- 1938 0060 FFF7FEFF 		bl	strlen
- 1939              	.LVL192:
- 1940 0064 0546     		mov	r5, r0
- 1941              	.LVL193:
- 405:Core/Src/sx1278.c ****     }
- 1942              		.loc 1 405 9 is_stmt 1 view .LVU390
- 405:Core/Src/sx1278.c ****     }
- 1943              		.loc 1 405 24 is_stmt 0 view .LVU391
- 1944 0066 0146     		mov	r1, r0
- 1945 0068 2046     		mov	r0, r4
- 1946              	.LVL194:
- 405:Core/Src/sx1278.c ****     }
- 1947              		.loc 1 405 24 view .LVU392
- 1948 006a FFF7FEFF 		bl	get_crc_value
- 1949              	.LVL195:
- 405:Core/Src/sx1278.c ****     }
- 1950              		.loc 1 405 22 view .LVU393
- 1951 006e 6055     		strb	r0, [r4, r5]
- 1952 0070 D8E7     		b	.L131
- 1953              	.L135:
- 1954 0072 00BF     		.align	2
- 1955              	.L134:
- 1956 0074 00000000 		.word	.LC9
- 1957              	.LBE7:
- 1958              		.cfi_endproc
- 1959              	.LFE97:
- 1961              		.text
- 1962              	.Letext0:
- 1963              		.file 2 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\machine\\_default_type
- 1964              		.file 3 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\sys\\_stdint.h"
- 1965              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h"
- 1966              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
- 1967              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
- 1968              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
- 1969              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"
- 1970              		.file 9 "Core/Inc/sx1278.h"
- 1971              		.file 10 "Core/Inc/spi.h"
- 1972              		.file 11 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\stdio.h"
- 1973              		.file 12 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\string.h"
- 1974              		.file 13 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\time.h"
- 1975              		.file 14 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\stdlib.h"
- 1976              		.file 15 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
- 1977              		.file 16 "Core/Inc/common.h"
- 1978              		.file 17 "<built-in>"
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 44
+ 1937              		.loc 1 406 9 is_stmt 1 view .LVU388
+ 406:Core/Src/sx1278.c ****     }
+ 1938              		.loc 1 406 24 is_stmt 0 view .LVU389
+ 1939 0066 0146     		mov	r1, r0
+ 1940 0068 2046     		mov	r0, r4
+ 1941              	.LVL192:
+ 406:Core/Src/sx1278.c ****     }
+ 1942              		.loc 1 406 24 view .LVU390
+ 1943 006a FFF7FEFF 		bl	get_crc_value
+ 1944              	.LVL193:
+ 406:Core/Src/sx1278.c ****     }
+ 1945              		.loc 1 406 22 view .LVU391
+ 1946 006e 6055     		strb	r0, [r4, r5]
+ 1947 0070 D8E7     		b	.L131
+ 1948              	.L135:
+ 1949 0072 00BF     		.align	2
+ 1950              	.L134:
+ 1951 0074 00000000 		.word	.LC9
+ 1952              	.LBE7:
+ 1953              		.cfi_endproc
+ 1954              	.LFE97:
+ 1956              		.text
+ 1957              	.Letext0:
+ 1958              		.file 2 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\machine\\_default_type
+ 1959              		.file 3 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 1960              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h"
+ 1961              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 1962              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ 1963              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 1964              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h"
+ 1965              		.file 9 "Core/Inc/sx1278.h"
+ 1966              		.file 10 "Core/Inc/spi.h"
+ 1967              		.file 11 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\stdio.h"
+ 1968              		.file 12 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\string.h"
+ 1969              		.file 13 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\stdlib.h"
+ 1970              		.file 14 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 1971              		.file 15 "Core/Inc/common.h"
+ 1972              		.file 16 "<built-in>"
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 44
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 sx1278.c
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:16     .text.sx1278_read_reg:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:24     .text.sx1278_read_reg:00000000 sx1278_read_reg
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:108    .text.sx1278_read_reg:00000064 $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:114    .text.sx1278_write_reg:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:121    .text.sx1278_write_reg:00000000 sx1278_write_reg
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:202    .text.sx1278_write_reg:00000060 $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:208    .text.sx1278_reset:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:215    .text.sx1278_reset:00000000 sx1278_reset
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:258    .text.sx1278_reset:00000030 $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:264    .text.sx1278_sleep:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:271    .text.sx1278_sleep:00000000 sx1278_sleep
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:293    .text.sx1278_standby:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:300    .text.sx1278_standby:00000000 sx1278_standby
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:322    .text.sx1278_rx_contiuous:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:329    .text.sx1278_rx_contiuous:00000000 sx1278_rx_contiuous
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:351    .text.sx1278_rx_single:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:358    .text.sx1278_rx_single:00000000 sx1278_rx_single
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:380    .text.sx1278_tx:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:387    .text.sx1278_tx:00000000 sx1278_tx
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:409    .rodata.sx1278_set_tx_power.str1.4:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:416    .text.sx1278_set_tx_power:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:423    .text.sx1278_set_tx_power:00000000 sx1278_set_tx_power
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:464    .text.sx1278_set_tx_power:0000001c $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:470    .rodata.sx1278_set_LNA_gain.str1.4:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:474    .text.sx1278_set_LNA_gain:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:481    .text.sx1278_set_LNA_gain:00000000 sx1278_set_LNA_gain
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:549    .text.sx1278_set_LNA_gain:0000003c $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:556    .text.sx1278_set_freq:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:563    .text.sx1278_set_freq:00000000 sx1278_set_freq
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:615    .text.sx1278_set_freq:00000034 $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:620    .text.sx1278_set_bandwidth:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:627    .text.sx1278_set_bandwidth:00000000 sx1278_set_bandwidth
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:746    .text.sx1278_set_bandwidth:00000084 $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:752    .rodata.sx1278_set_sf.str1.4:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:756    .text.sx1278_set_sf:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:763    .text.sx1278_set_sf:00000000 sx1278_set_sf
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:847    .text.sx1278_set_sf:00000054 $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:853    .rodata.sx1278_set_cr.str1.4:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:857    .text.sx1278_set_cr:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:864    .text.sx1278_set_cr:00000000 sx1278_set_cr
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:923    .text.sx1278_set_cr:00000034 $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:929    .text.sx1278_set_header:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:936    .text.sx1278_set_header:00000000 sx1278_set_header
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:995    .text.sx1278_set_crc:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1002   .text.sx1278_set_crc:00000000 sx1278_set_crc
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1054   .text.sx1278_set_preamble:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1061   .text.sx1278_set_preamble:00000000 sx1278_set_preamble
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1094   .text.sx1278_get_rssi:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1101   .text.sx1278_get_rssi:00000000 sx1278_get_rssi
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1127   .text.sx1278_get_snr:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1134   .text.sx1278_get_snr:00000000 sx1278_get_snr
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1165   .text.sx1278_get_snr:0000001c $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1170   .text.sx1278_set_irq:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1177   .text.sx1278_set_irq:00000000 sx1278_set_irq
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1203   .text.sx1278_cad:00000000 $t
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cczkCig6.s 			page 45
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:16     .text.sx1278_read_reg:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:24     .text.sx1278_read_reg:00000000 sx1278_read_reg
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:108    .text.sx1278_read_reg:00000064 $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:114    .text.sx1278_write_reg:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:121    .text.sx1278_write_reg:00000000 sx1278_write_reg
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:202    .text.sx1278_write_reg:00000060 $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:208    .text.sx1278_reset:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:215    .text.sx1278_reset:00000000 sx1278_reset
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:258    .text.sx1278_reset:00000030 $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:264    .text.sx1278_sleep:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:271    .text.sx1278_sleep:00000000 sx1278_sleep
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:293    .text.sx1278_standby:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:300    .text.sx1278_standby:00000000 sx1278_standby
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:322    .text.sx1278_rx_contiuous:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:329    .text.sx1278_rx_contiuous:00000000 sx1278_rx_contiuous
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:351    .text.sx1278_rx_single:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:358    .text.sx1278_rx_single:00000000 sx1278_rx_single
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:380    .text.sx1278_tx:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:387    .text.sx1278_tx:00000000 sx1278_tx
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:409    .rodata.sx1278_set_tx_power.str1.4:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:416    .text.sx1278_set_tx_power:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:423    .text.sx1278_set_tx_power:00000000 sx1278_set_tx_power
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:464    .text.sx1278_set_tx_power:0000001c $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:470    .rodata.sx1278_set_LNA_gain.str1.4:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:474    .text.sx1278_set_LNA_gain:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:481    .text.sx1278_set_LNA_gain:00000000 sx1278_set_LNA_gain
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:549    .text.sx1278_set_LNA_gain:0000003c $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:556    .text.sx1278_set_freq:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:563    .text.sx1278_set_freq:00000000 sx1278_set_freq
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:615    .text.sx1278_set_freq:00000034 $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:620    .text.sx1278_set_bandwidth:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:627    .text.sx1278_set_bandwidth:00000000 sx1278_set_bandwidth
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:746    .text.sx1278_set_bandwidth:00000084 $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:752    .rodata.sx1278_set_sf.str1.4:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:756    .text.sx1278_set_sf:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:763    .text.sx1278_set_sf:00000000 sx1278_set_sf
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:847    .text.sx1278_set_sf:00000054 $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:853    .rodata.sx1278_set_cr.str1.4:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:857    .text.sx1278_set_cr:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:864    .text.sx1278_set_cr:00000000 sx1278_set_cr
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:923    .text.sx1278_set_cr:00000034 $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:929    .text.sx1278_set_header:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:936    .text.sx1278_set_header:00000000 sx1278_set_header
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:995    .text.sx1278_set_crc:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1002   .text.sx1278_set_crc:00000000 sx1278_set_crc
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1054   .text.sx1278_set_preamble:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1061   .text.sx1278_set_preamble:00000000 sx1278_set_preamble
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1094   .text.sx1278_get_rssi:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1101   .text.sx1278_get_rssi:00000000 sx1278_get_rssi
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1127   .text.sx1278_get_snr:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1134   .text.sx1278_get_snr:00000000 sx1278_get_snr
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1165   .text.sx1278_get_snr:0000001c $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1170   .text.sx1278_set_irq:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1177   .text.sx1278_set_irq:00000000 sx1278_set_irq
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1203   .text.sx1278_cad:00000000 $t
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s 			page 45
 
 
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1210   .text.sx1278_cad:00000000 sx1278_cad
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1236   .rodata.sx1278_init.str1.4:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1240   .text.sx1278_init:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1247   .text.sx1278_init:00000000 sx1278_init
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1335   .text.sx1278_init:00000070 $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1343   .text.sx1278_send_data:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1350   .text.sx1278_send_data:00000000 sx1278_send_data
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1450   .text.sx1278_start_recv_data:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1457   .text.sx1278_start_recv_data:00000000 sx1278_start_recv_data
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1492   .text.parse_packet:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1499   .text.parse_packet:00000000 parse_packet
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1517   .rodata.sx1278_recv_data.str1.4:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1527   .text.sx1278_recv_data:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1534   .text.sx1278_recv_data:00000000 sx1278_recv_data
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1700   .text.sx1278_recv_data:000000b0 $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1708   .text.get_random_value:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1715   .text.get_random_value:00000000 get_random_value
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1757   .text.get_crc_value:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1764   .text.get_crc_value:00000000 get_crc_value
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1813   .text.listen_before_talk:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1820   .text.listen_before_talk:00000000 listen_before_talk
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1835   .rodata.send_respond.str1.4:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1839   .text.send_respond:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1846   .text.send_respond:00000000 send_respond
-C:\Users\Vento\AppData\Local\Temp\cczkCig6.s:1956   .text.send_respond:00000074 $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1210   .text.sx1278_cad:00000000 sx1278_cad
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1236   .rodata.sx1278_init.str1.4:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1240   .text.sx1278_init:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1247   .text.sx1278_init:00000000 sx1278_init
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1335   .text.sx1278_init:00000070 $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1343   .text.sx1278_send_data:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1350   .text.sx1278_send_data:00000000 sx1278_send_data
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1450   .text.sx1278_start_recv_data:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1457   .text.sx1278_start_recv_data:00000000 sx1278_start_recv_data
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1492   .text.parse_packet:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1499   .text.parse_packet:00000000 parse_packet
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1517   .rodata.sx1278_recv_data.str1.4:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1527   .text.sx1278_recv_data:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1534   .text.sx1278_recv_data:00000000 sx1278_recv_data
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1700   .text.sx1278_recv_data:000000b0 $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1708   .text.get_random_value:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1715   .text.get_random_value:00000000 get_random_value
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1752   .text.get_crc_value:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1759   .text.get_crc_value:00000000 get_crc_value
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1808   .text.listen_before_talk:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1815   .text.listen_before_talk:00000000 listen_before_talk
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1830   .rodata.send_respond.str1.4:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1834   .text.send_respond:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1841   .text.send_respond:00000000 send_respond
+C:\Users\Vento\AppData\Local\Temp\cc4QU1EC.s:1951   .text.send_respond:00000074 $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin
@@ -2670,7 +2665,6 @@ __aeabi_d2f
 logPC
 strlen
 memset
-time
 srand
 rand
 sprintf

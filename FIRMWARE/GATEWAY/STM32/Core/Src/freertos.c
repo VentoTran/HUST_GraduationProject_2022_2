@@ -419,7 +419,7 @@ void Task0Func(void *argument)
       logPC("UART1 RX - %s", rxBufferUART1);
       if      (strstr(rxBufferUART1, "WIFI-CONNECTED") != NULL)     {is_WiFi_connected = true;}
       else if (strstr(rxBufferUART1, "WIFI-DISCONNECTED") != NULL)  {is_WiFi_connected = false; is_MQTT_connected = false;}
-      else if (strstr(rxBufferUART1, "MQTT-CONNECTED") != NULL)     {is_MQTT_connected = true;}
+      else if (strstr(rxBufferUART1, "MQTT-CONNECTED") != NULL)     {is_MQTT_connected = true; is_WiFi_connected = true;}
       else if (strstr(rxBufferUART1, "MQTT-DISCONNECTED") != NULL)  {is_MQTT_connected = false;}
       if      (strstr(rxBufferUART1, "MQTT-DATA") != NULL)          {App_ESP_MQTT_Parser();};
       if      (strstr(rxBufferUART1, "TIME-") != NULL)              {App_ESP_getTime();};
@@ -812,6 +812,7 @@ bool App_Delete_Node_From_Network(uint16_t Node_ID)
 
 bool App_Save_Data(Data_Struct_t data)
 {
+  // if ()
   for (int i = 0; i < MAX_NODE; i++)
   {
     if (Node_Table[i].Link.Node_ID == data.Link.Node_ID)
@@ -825,12 +826,12 @@ bool App_Save_Data(Data_Struct_t data)
 
 void App_SIM_MQTT_Parser(void)
 {
-
+  logPC("MQTT Receive through SIM\t");
 }
 
 void App_ESP_MQTT_Parser(void)
 {
-
+  logPC("MQTT Receive through ESP\t");
 }
 
 void App_ESP_getTime(void)
@@ -840,6 +841,7 @@ void App_ESP_getTime(void)
   RTC_DateTypeDef sDate = {0};
 
   memcpy(&timeNow, (uint8_t*)strstr(rxBufferUART1, "TIME-")+5U, sizeof(Time_t));
+  logPC("Getting time... Now is %02d/%02d/%02d %02d:%02d:%02d\t", timeNow.tm_mday, timeNow.tm_mon+1, timeNow.tm_year-100, timeNow.tm_hour, timeNow.tm_min, timeNow.tm_sec);
 
   sTime.Seconds = timeNow.tm_sec;
   sTime.Minutes = timeNow.tm_min;

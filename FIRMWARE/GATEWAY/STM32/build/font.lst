@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
   63 001a 0000     		.short	0
   64 001c 0000     		.short	0
   65 001e 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 2
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 2
 
 
   66 0020 0000     		.short	0
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  120 008c 0000     		.short	0
  121 008e 0000     		.short	0
  122 0090 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 3
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 3
 
 
  123 0092 001E     		.short	7680
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  177 00fe 000C     		.short	3072
  178 0100 000C     		.short	3072
  179 0102 000C     		.short	3072
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 4
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 4
 
 
  180 0104 000C     		.short	3072
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  234 0170 001E     		.short	7680
  235 0172 0033     		.short	13056
  236 0174 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 5
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 5
 
 
  237 0176 0000     		.short	0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  291 01e2 0000     		.short	0
  292 01e4 0000     		.short	0
  293 01e6 001E     		.short	7680
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 6
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 6
 
 
  294 01e8 001E     		.short	7680
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  348 0254 8061     		.short	24960
  349 0256 8061     		.short	24960
  350 0258 0033     		.short	13056
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 7
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 7
 
 
  351 025a 003F     		.short	16128
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  405 02c6 003F     		.short	16128
  406 02c8 001E     		.short	7680
  407 02ca 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 8
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 8
 
 
  408 02cc 0000     		.short	0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  462 0338 0000     		.short	0
  463 033a 0000     		.short	0
  464 033c 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 9
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 9
 
 
  465 033e 807F     		.short	32640
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  519 03aa 0000     		.short	0
  520 03ac 0000     		.short	0
  521 03ae 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 10
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 10
 
 
  522 03b0 0000     		.short	0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  576 041c 0000     		.short	0
  577 041e 807F     		.short	32640
  578 0420 807F     		.short	32640
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 11
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 11
 
 
  579 0422 0000     		.short	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  633 048e 806D     		.short	28032
  634 0490 806D     		.short	28032
  635 0492 806F     		.short	28544
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 12
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 12
 
 
  636 0494 8067     		.short	26496
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  690 0500 0060     		.short	24576
  691 0502 8061     		.short	24960
  692 0504 8031     		.short	12672
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 13
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 13
 
 
  693 0506 003F     		.short	16128
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  747 0572 0060     		.short	24576
  748 0574 0060     		.short	24576
  749 0576 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 14
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 14
 
 
  750 0578 0000     		.short	0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  804 05e4 0000     		.short	0
  805 05e6 0000     		.short	0
  806 05e8 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 15
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 15
 
 
  807 05ea 8001     		.short	384
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  861 0656 C071     		.short	29120
  862 0658 C071     		.short	29120
  863 065a C07B     		.short	31680
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 16
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 16
 
 
  864 065c C07A     		.short	31424
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  918 06c8 8061     		.short	24960
  919 06ca 8061     		.short	24960
  920 06cc 8061     		.short	24960
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 17
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 17
 
 
  921 06ce 8063     		.short	25472
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  975 073a 001E     		.short	7680
  976 073c 0007     		.short	1792
  977 073e 8003     		.short	896
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 18
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 18
 
 
  978 0740 8061     		.short	24960
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  1032 07ac 001B     		.short	6912
  1033 07ae 000E     		.short	3584
  1034 07b0 000E     		.short	3584
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 19
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 19
 
 
  1035 07b2 000E     		.short	3584
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  1089 081e 000C     		.short	3072
  1090 0820 000C     		.short	3072
  1091 0822 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 20
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 20
 
 
  1092 0824 0000     		.short	0
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  1146 0890 0000     		.short	0
  1147 0892 0000     		.short	0
  1148 0894 001E     		.short	7680
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 21
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 21
 
 
  1149 0896 001E     		.short	7680
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  1203 0902 0038     		.short	14336
  1204 0904 0018     		.short	6144
  1205 0906 000C     		.short	3072
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 22
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 22
 
 
  1206 0908 0000     		.short	0
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  1260 0974 0000     		.short	0
  1261 0976 001E     		.short	7680
  1262 0978 003F     		.short	16128
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 23
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 23
 
 
  1263 097a 8073     		.short	29568
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  1317 09e6 000C     		.short	3072
  1318 09e8 000C     		.short	3072
  1319 09ea 000C     		.short	3072
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 24
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 24
 
 
  1320 09ec 000C     		.short	3072
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  1374 0a58 0006     		.short	1536
  1375 0a5a 0006     		.short	1536
  1376 0a5c 0006     		.short	1536
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 25
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 25
 
 
  1377 0a5e 0006     		.short	1536
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  1431 0aca 0006     		.short	1536
  1432 0acc 0006     		.short	1536
  1433 0ace 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 26
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 26
 
 
  1434 0ad0 0000     		.short	0
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  1488 0b3c 0000     		.short	0
  1489 0b3e 0000     		.short	0
  1490 0b40 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 27
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 27
 
 
  1491 0b42 0000     		.short	0
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  1545 0bae 0000     		.short	0
  1546 0bb0 0000     		.short	0
  1547 0bb2 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 28
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 28
 
 
  1548 0bb4 0000     		.short	0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  1602 0c20 0000     		.short	0
  1603 0c22 C060     		.short	24768
  1604 0c24 8031     		.short	12672
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 29
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 29
 
 
  1605 0c26 8031     		.short	12672
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  1659 0c92 0033     		.short	13056
  1660 0c94 0033     		.short	13056
  1661 0c96 001B     		.short	6912
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 30
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 30
 
 
  1662 0c98 001B     		.short	6912
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  1716 0d04 0006     		.short	1536
  1717 0d06 0006     		.short	1536
  1718 0d08 0006     		.short	1536
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 31
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 31
 
 
  1719 0d0a 0006     		.short	1536
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  1775 0014 0000     		.short	0
  1776 0016 0000     		.short	0
  1777 0018 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 32
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 32
 
 
  1778 001a 0000     		.short	0
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  1832 0086 0000     		.short	0
  1833 0088 0000     		.short	0
  1834 008a 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 33
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 33
 
 
  1835 008c 0000     		.short	0
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  1889 00f8 F00F     		.short	4080
  1890 00fa E001     		.short	480
  1891 00fc E001     		.short	480
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 34
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 34
 
 
  1892 00fe 0000     		.short	0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  1946 016a 0000     		.short	0
  1947 016c E003     		.short	992
  1948 016e E003     		.short	992
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 35
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 35
 
 
  1949 0170 E003     		.short	992
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  2003 01dc E001     		.short	480
  2004 01de F001     		.short	496
  2005 01e0 F000     		.short	240
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 36
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 36
 
 
  2006 01e2 F000     		.short	240
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  2060 024e C001     		.short	448
  2061 0250 C001     		.short	448
  2062 0252 C001     		.short	448
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 37
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 37
 
 
  2063 0254 C001     		.short	448
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  2117 02c0 0000     		.short	0
  2118 02c2 0000     		.short	0
  2119 02c4 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 38
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 38
 
 
  2120 02c6 0000     		.short	0
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  2174 0332 001E     		.short	7680
  2175 0334 003C     		.short	15360
  2176 0336 003C     		.short	15360
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 39
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 39
 
 
  2177 0338 0078     		.short	30720
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  2231 03a4 0000     		.short	0
  2232 03a6 0000     		.short	0
  2233 03a8 E00F     		.short	4064
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 40
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 40
 
 
  2234 03aa F83F     		.short	16376
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  2288 0416 F801     		.short	504
  2289 0418 F803     		.short	1016
  2290 041a F807     		.short	2040
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 41
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 41
 
 
  2291 041c F807     		.short	2040
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  2345 0488 F83D     		.short	15864
  2346 048a FC3F     		.short	16380
  2347 048c 3E7F     		.short	32574
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 42
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 42
 
 
  2348 048e 1F7E     		.short	32287
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  2402 04fa 1F3C     		.short	15391
  2403 04fc 1F7C     		.short	31775
  2404 04fe 0F7C     		.short	31759
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 43
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 43
 
 
  2405 0500 0F7C     		.short	31759
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  2459 056c E003     		.short	992
  2460 056e E003     		.short	992
  2461 0570 E003     		.short	992
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 44
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 44
 
 
  2462 0572 0000     		.short	0
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  2516 05de 0000     		.short	0
  2517 05e0 0000     		.short	0
  2518 05e2 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 45
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 45
 
 
  2519 05e4 0000     		.short	0
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  2573 0650 3E38     		.short	14398
  2574 0652 1F38     		.short	14367
  2575 0654 1F38     		.short	14367
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 46
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 46
 
 
  2576 0656 1E00     		.short	30
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  2630 06c2 F007     		.short	2032
  2631 06c4 780F     		.short	3960
  2632 06c6 780F     		.short	3960
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 47
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 47
 
 
  2633 06c8 7C0E     		.short	3708
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  2687 0734 0078     		.short	30720
  2688 0736 0078     		.short	30720
  2689 0738 007C     		.short	31744
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 48
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 48
 
 
  2690 073a 007C     		.short	31744
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  2744 07a6 003E     		.short	15872
  2745 07a8 003E     		.short	15872
  2746 07aa FF3F     		.short	16383
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 49
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 49
 
 
  2747 07ac FF3F     		.short	16383
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  2801 0818 0000     		.short	0
  2802 081a 0000     		.short	0
  2803 081c 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 50
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 50
 
 
  2804 081e 0000     		.short	0
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  2858 088a 0000     		.short	0
  2859 088c 0000     		.short	0
  2860 088e FC1F     		.short	8188
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 51
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 51
 
 
  2861 0890 FC1F     		.short	8188
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  2915 08fc 003E     		.short	15872
  2916 08fe 003E     		.short	15872
  2917 0900 003E     		.short	15872
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 52
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 52
 
 
  2918 0902 003E     		.short	15872
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  2972 096e EF7B     		.short	31727
  2973 0970 EF79     		.short	31215
  2974 0972 FF79     		.short	31231
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 53
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 53
 
 
  2975 0974 FF78     		.short	30975
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  3029 09e0 003E     		.short	15872
  3030 09e2 003E     		.short	15872
  3031 09e4 003E     		.short	15872
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 54
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 54
 
 
  3032 09e6 003E     		.short	15872
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  3086 0a52 0000     		.short	0
  3087 0a54 0000     		.short	0
  3088 0a56 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 55
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 55
 
 
  3089 0a58 0000     		.short	0
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  3143 0ac4 0000     		.short	0
  3144 0ac6 0000     		.short	0
  3145 0ac8 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 56
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 56
 
 
  3146 0aca 0F7C     		.short	31759
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  3200 0b36 03F0     		.short	-4093
  3201 0b38 07F0     		.short	-4089
  3202 0b3a E7F3     		.short	-3097
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 57
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 57
 
 
  3203 0b3c E7F3     		.short	-3097
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  3257 0ba8 F80F     		.short	4088
  3258 0baa F007     		.short	2032
  3259 0bac E003     		.short	992
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 58
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 58
 
 
  3260 0bae E003     		.short	992
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  3314 0c1a 8007     		.short	1920
  3315 0c1c 8007     		.short	1920
  3316 0c1e 8007     		.short	1920
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 59
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 59
 
 
  3317 0c20 8007     		.short	1920
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  3371 0c8c F000     		.short	240
  3372 0c8e F000     		.short	240
  3373 0c90 F000     		.short	240
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 60
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 60
 
 
  3374 0c92 F07F     		.short	32752
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  3428 0cfe 0000     		.short	0
  3429 0d00 F000     		.short	240
  3430 0d02 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 61
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 61
 
 
  3431 0d04 0000     		.short	0
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  3485 0d70 003C     		.short	15360
  3486 0d72 003C     		.short	15360
  3487 0d74 F83D     		.short	15864
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 62
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 62
 
 
  3488 0d76 FE3F     		.short	16382
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  3542 0de2 1F3C     		.short	15391
  3543 0de4 1F7C     		.short	31775
  3544 0de6 1F7C     		.short	31775
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 63
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 63
 
 
  3545 0de8 1F7C     		.short	31775
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  3599 0e54 C007     		.short	1984
  3600 0e56 C007     		.short	1984
  3601 0e58 C007     		.short	1984
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 64
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 64
 
 
  3602 0e5a C007     		.short	1984
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  3656 0ec6 1F3C     		.short	15391
  3657 0ec8 1F3C     		.short	15391
  3658 0eca 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 65
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 65
 
 
  3659 0ecc 0000     		.short	0
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  3713 0f38 F071     		.short	29168
  3714 0f3a E07F     		.short	32736
  3715 0f3c 003C     		.short	15360
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 66
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 66
 
 
  3716 0f3e 003C     		.short	15360
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  3770 0faa 0000     		.short	0
  3771 0fac 0000     		.short	0
  3772 0fae 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 67
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 67
 
 
  3773 0fb0 9EF7     		.short	-2146
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  3827 101c 3E3E     		.short	15934
  3828 101e 1F3C     		.short	15391
  3829 1020 1F7C     		.short	31775
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 68
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 68
 
 
  3830 1022 0F78     		.short	30735
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  3884 108e 1E78     		.short	30750
  3885 1090 1E78     		.short	30750
  3886 1092 1E78     		.short	30750
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 69
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 69
 
 
  3887 1094 1E7C     		.short	31774
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  3941 1100 3E3C     		.short	15422
  3942 1102 FC3F     		.short	16380
  3943 1104 F01F     		.short	8176
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 70
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 70
 
 
  3944 1106 0000     		.short	0
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  3998 1172 0000     		.short	0
  3999 1174 0000     		.short	0
  4000 1176 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 71
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 71
 
 
  4001 1178 0000     		.short	0
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  4055 11e4 0000     		.short	0
  4056 11e6 0000     		.short	0
  4057 11e8 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 72
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 72
 
 
  4058 11ea 0000     		.short	0
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  4112 1256 FF3F     		.short	16383
  4113 1258 1F00     		.short	31
  4114 125a 3E00     		.short	62
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 73
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 73
 
 
  4115 125c 7C00     		.short	124
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  4169 12c8 C001     		.short	448
  4170 12ca C001     		.short	448
  4171 12cc C001     		.short	448
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 74
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 74
 
 
  4172 12ce C001     		.short	448
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  4226 133a 0000     		.short	0
  4227 133c 0000     		.short	0
  4228 133e 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 75
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 75
 
 
  4229 1340 0000     		.short	0
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  4285 005a 0054     		.short	21504
  4286 005c 0054     		.short	21504
  4287 005e 0038     		.short	14336
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 76
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 76
 
 
  4288 0060 0010     		.short	4096
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  4342 00cc 0010     		.short	4096
  4343 00ce 0028     		.short	10240
  4344 00d0 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 77
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 77
 
 
  4345 00d2 0000     		.short	0
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  4399 013e 0000     		.short	0
  4400 0140 0038     		.short	14336
  4401 0142 0044     		.short	17408
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 78
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 78
 
 
  4402 0144 0044     		.short	17408
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  4456 01b0 0044     		.short	17408
  4457 01b2 0038     		.short	14336
  4458 01b4 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 79
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 79
 
 
  4459 01b6 0000     		.short	0
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  4513 0222 0010     		.short	4096
  4514 0224 0000     		.short	0
  4515 0226 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 80
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 80
 
 
  4516 0228 0000     		.short	0
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  4570 0294 0010     		.short	4096
  4571 0296 0028     		.short	10240
  4572 0298 0028     		.short	10240
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 81
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 81
 
 
  4573 029a 0028     		.short	10240
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  4627 0306 0040     		.short	16384
  4628 0308 0000     		.short	0
  4629 030a 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 82
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 82
 
 
  4630 030c 0038     		.short	14336
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  4684 0378 0040     		.short	16384
  4685 037a 0040     		.short	16384
  4686 037c 0040     		.short	16384
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 83
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 83
 
 
  4687 037e 007C     		.short	31744
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  4741 03ea 0044     		.short	17408
  4742 03ec 0044     		.short	17408
  4743 03ee 0044     		.short	17408
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 84
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 84
 
 
  4744 03f0 0078     		.short	30720
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  4798 045c 0000     		.short	0
  4799 045e 0000     		.short	0
  4800 0460 0044     		.short	17408
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 85
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 85
 
 
  4801 0462 0028     		.short	10240
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  4855 04ce 0010     		.short	4096
  4856 04d0 0010     		.short	4096
  4857 04d2 0010     		.short	4096
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 86
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 86
 
 
  4858 04d4 0010     		.short	4096
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  4912 0540 0038     		.short	14336
  4913 0542 0044     		.short	17408
  4914 0544 0040     		.short	16384
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 87
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 87
 
 
  4915 0546 0040     		.short	16384
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  4969 05b2 0000     		.short	0
  4970 05b4 0010     		.short	4096
  4971 05b6 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 88
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 88
 
 
  4972 05b8 0070     		.short	28672
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  5026 0624 0044     		.short	17408
  5027 0626 0044     		.short	17408
  5028 0628 0000     		.short	0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 89
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 89
 
 
  5029 062a 0000     		.short	0
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  5083 0696 0020     		.short	8192
  5084 0698 0020     		.short	8192
  5085 069a 0020     		.short	8192
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 90
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 90
 
 
  5086 069c 0020     		.short	8192
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  5140 0708 0000     		.short	0
  5141 070a 0000     		.short	0
  5142 070c 007C     		.short	31744
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 91
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 91
 
 
  5143 070e 0008     		.short	2048
@@ -5454,22 +5454,22 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 1
  5193              		.file 2 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\sys\\_stdint.h"
  5194              		.file 3 "Core/Inc/font.h"
  5195              		.file 4 "Core/Src/font.c"
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s 			page 92
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s 			page 92
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 font.c
-C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s:31     .data.Font_16x26:00000000 Font_16x26
-C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s:22     .data.Font_11x18:00000000 Font_11x18
-C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s:40     .data.Font_7x10:00000000 Font_7x10
-C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s:19     .data.Font_11x18:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s:49     .rodata.Font11x18:00000000 Font11x18
-C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s:28     .data.Font_16x26:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s:1764   .rodata.Font16x26:00000000 Font16x26
-C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s:37     .data.Font_7x10:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s:4239   .rodata.Font7x10:00000000 Font7x10
-C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s:46     .rodata.Font11x18:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s:1761   .rodata.Font16x26:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\ccfkpvuF.s:4236   .rodata.Font7x10:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s:31     .data.Font_16x26:00000000 Font_16x26
+C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s:22     .data.Font_11x18:00000000 Font_11x18
+C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s:40     .data.Font_7x10:00000000 Font_7x10
+C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s:19     .data.Font_11x18:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s:49     .rodata.Font11x18:00000000 Font11x18
+C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s:28     .data.Font_16x26:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s:1764   .rodata.Font16x26:00000000 Font16x26
+C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s:37     .data.Font_7x10:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s:4239   .rodata.Font7x10:00000000 Font7x10
+C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s:46     .rodata.Font11x18:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s:1761   .rodata.Font16x26:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\cc5eb8E4.s:4236   .rodata.Font7x10:00000000 $d
 
 NO UNDEFINED SYMBOLS

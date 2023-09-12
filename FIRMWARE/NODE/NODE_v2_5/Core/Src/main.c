@@ -123,7 +123,10 @@ typedef enum NodeStatus
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
-#define NODE_ID     (0x1303U)
+// #define NODE_ID     (0x1303U)
+// #define NODE_ID     (0x3112U)
+// #define NODE_ID     (0x1010U)
+#define NODE_ID     (0xCAACU)
 
 #define TIMEOUT_MS                  (50U)
 #define LINK_PACKET_ID              (0xAAAAU)
@@ -309,7 +312,8 @@ int main(void)
   // else { is_All_Power_OFF = true; }
 
   if (is_All_Power_OFF == true)   HAL_GPIO_WritePin(PWR_MAIN_GPIO_Port, PWR_MAIN_Pin, GPIO_PIN_RESET);
-  else                            HAL_GPIO_WritePin(PWR_MAIN_GPIO_Port, PWR_MAIN_Pin, GPIO_PIN_SET);
+  else                            {HAL_GPIO_WritePin(PWR_MAIN_GPIO_Port, PWR_MAIN_Pin, GPIO_PIN_SET); while(1);}
+
   goingDark();
 
   /* USER CODE END 2 */
@@ -815,6 +819,11 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
   {
     is_LoRa_EXTI = true;
   }
+}
+
+void HAL_RTCEx_RTCEventCallback(RTC_HandleTypeDef *hrtc)
+{
+  HAL_NVIC_SystemReset();
 }
 
 /* USER CODE END 4 */

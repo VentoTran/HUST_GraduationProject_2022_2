@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc2lHNag.s 			page 1
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccQqiPsI.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc2lHNag.s 			page 1
   30:Core/Src/stm32f1xx_hal_msp.c **** /* USER CODE END TD */
   31:Core/Src/stm32f1xx_hal_msp.c **** 
   32:Core/Src/stm32f1xx_hal_msp.c **** /* Private define ------------------------------------------------------------*/
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc2lHNag.s 			page 2
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccQqiPsI.s 			page 2
 
 
   33:Core/Src/stm32f1xx_hal_msp.c **** /* USER CODE BEGIN Define */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc2lHNag.s 			page 1
   44 0008 42F00102 		orr	r2, r2, #1
   45 000c 9A61     		str	r2, [r3, #24]
   46              		.loc 1 69 3 view .LVU4
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc2lHNag.s 			page 3
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccQqiPsI.s 			page 3
 
 
   47 000e 9A69     		ldr	r2, [r3, #24]
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc2lHNag.s 			page 1
   80:Core/Src/stm32f1xx_hal_msp.c ****   /* USER CODE BEGIN MspInit 1 */
   81:Core/Src/stm32f1xx_hal_msp.c **** 
   82:Core/Src/stm32f1xx_hal_msp.c ****   /* USER CODE END MspInit 1 */
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc2lHNag.s 			page 4
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccQqiPsI.s 			page 4
 
 
   83:Core/Src/stm32f1xx_hal_msp.c **** }
@@ -201,14 +201,14 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc2lHNag.s 			page 1
  108              		.file 3 "d:\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\sys\\_stdint.h"
  109              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h"
  110              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h"
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc2lHNag.s 			page 5
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccQqiPsI.s 			page 5
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f1xx_hal_msp.c
-C:\Users\Vento\AppData\Local\Temp\cc2lHNag.s:16     .text.HAL_MspInit:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc2lHNag.s:24     .text.HAL_MspInit:00000000 HAL_MspInit
-C:\Users\Vento\AppData\Local\Temp\cc2lHNag.s:100    .text.HAL_MspInit:0000004c $d
+C:\Users\Vento\AppData\Local\Temp\ccQqiPsI.s:16     .text.HAL_MspInit:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccQqiPsI.s:24     .text.HAL_MspInit:00000000 HAL_MspInit
+C:\Users\Vento\AppData\Local\Temp\ccQqiPsI.s:100    .text.HAL_MspInit:0000004c $d
 
 UNDEFINED SYMBOLS
 HAL_NVIC_SetPriority

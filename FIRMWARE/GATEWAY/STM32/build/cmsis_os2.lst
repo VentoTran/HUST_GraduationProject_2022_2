@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
   30:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** #include "FreeRTOS.h"                   // ARM.FreeRTOS::RTOS:Core
   31:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** #include "task.h"                       // ARM.FreeRTOS::RTOS:Core
   32:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** #include "event_groups.h"               // ARM.FreeRTOS::RTOS:Event Groups
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 2
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 2
 
 
   33:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** #include "semphr.h"                     // ARM.FreeRTOS::RTOS:Core
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
   87:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
   88:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** #define KERNEL_ID                 "FreeRTOS V10.0.1"
   89:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 3
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 3
 
 
   90:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** /* Timer callback information structure definition */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  144:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         vPortDefineHeapRegions (xHeapRegions);
  145:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       #endif
  146:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       KernelState = osKernelReady;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 4
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 4
 
 
  147:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       stat = osOK;
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  201:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   if (IS_IRQ()) {
  202:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     stat = osErrorISR;
  203:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 5
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 5
 
 
  204:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   else {
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  258:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           }
  259:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         }
  260:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         break;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 6
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 6
 
 
  261:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  315:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   if (IS_IRQ()) {
  316:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     ticks = xTaskGetTickCountFromISR();
  317:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   } else {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 7
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 7
 
 
  318:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     ticks = xTaskGetTickCount();
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  372:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       }
  373:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  374:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       if ((prio < osPriorityIdle) || (prio > osPriorityISR) || ((attr->attr_bits & osThreadJoinable
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 8
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 8
 
 
  375:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         return (NULL);
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  429:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  430:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   if (IS_IRQ()) {
  431:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     id = NULL;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 9
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 9
 
 
  432:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   } else {
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  486:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   osStatus_t stat;
  487:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  488:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   if (IS_IRQ()) {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 10
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 10
 
 
  489:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     stat = osErrorISR;
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  543:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   return (stat);
  544:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** }
  545:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 11
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 11
 
 
  546:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** osStatus_t osThreadResume (osThreadId_t thread_id) {
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  600:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** uint32_t osThreadGetCount (void) {
  601:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   uint32_t count;
  602:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 12
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 12
 
 
  603:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   if (IS_IRQ()) {
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  657:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       portYIELD_FROM_ISR (yield);
  658:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     }
  659:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     else {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 13
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 13
 
 
  660:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       (void)xTaskNotify (hTask, flags, eSetBits);
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  714:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** }
  715:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  716:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** uint32_t osThreadFlagsWait (uint32_t flags, uint32_t options, uint32_t timeout) {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 14
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 14
 
 
  717:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   uint32_t rflags, nval;
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  771:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           tout  = 0;
  772:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         } else {
  773:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           tout -= td;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 15
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 15
 
 
  774:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         }
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
   27              		.loc 1 827 50 view -0
   28              		.cfi_startproc
   29              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 16
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 16
 
 
   30              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  138:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     stat = osErrorISR;
   76              		.loc 1 138 3 view .LVU14
   77              	.LBB334:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 17
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 17
 
 
   78              	.LBI334:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
   53:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __NO_RETURN                            __attribute__((__noreturn__))
   54:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   55:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __USED
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 18
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 18
 
 
   56:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __USED                                 __attribute__((used))
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  110:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __ALIGNED
  111:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __ALIGNED(x)                           __attribute__((aligned(x)))
  112:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 19
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 19
 
 
  113:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __RESTRICT
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  167:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  168:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  169:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 20
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 20
 
 
  170:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, control_ns" : "=r" (result) );
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
   93              	.LBE335:
   94              	.LBE334:
  138:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     stat = osErrorISR;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 21
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 21
 
 
   95              		.loc 1 138 6 view .LVU20
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  261:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  262:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_PSP_NS(void)
  263:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 22
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 22
 
 
  264:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  318:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  319:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  320:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, msp_ns" : "=r" (result) );
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 23
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 23
 
 
  321:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  375:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  376:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  377:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 24
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 24
 
 
  378:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Priority Mask
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  135              	.L11:
  136              	.LBB338:
  137              	.LBI338:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 25
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 25
 
 
  388:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  442:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  443:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  444:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 26
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 26
 
 
  445:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  167 0038 4FF0FF30 		mov	r0, #-1
  168              	.LVL9:
  153:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 27
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 27
 
 
  169              		.loc 1 153 3 is_stmt 1 view .LVU42
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  159:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     version->kernel = KERNEL_VERSION;
  214              		.loc 1 159 21 view .LVU50
  215 000a 0860     		str	r0, [r1]
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 28
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 28
 
 
  160:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  261              	.LFB50:
  173:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   osKernelState_t state;
  262              		.loc 1 173 41 is_stmt 1 view -0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 29
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 29
 
 
  263              		.cfi_startproc
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  305 0020 00000000 		.word	.LANCHOR0
  306              		.cfi_endproc
  307              	.LFE50:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 30
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 30
 
 
  309              		.section	.text.osKernelStart,"ax",%progbits
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  353              		.loc 2 384 3 view .LVU85
  386:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  354              		.loc 2 386 3 view .LVU86
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 31
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 31
 
 
  355              		.syntax unified
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  396              		.loc 2 461 31 is_stmt 1 view .LVU99
  397              	.LBB345:
  463:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 32
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 32
 
 
  398              		.loc 2 463 3 view .LVU100
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  447              		.loc 1 217 29 is_stmt 1 view -0
  448              		.cfi_startproc
  449              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 33
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 33
 
 
  450              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  491              		.syntax unified
  492              	.LBE349:
  493              	.LBE348:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 34
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 34
 
 
  220:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     lock = (int32_t)osErrorISR;
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  535 002a 0020     		movs	r0, #0
  232:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  536              		.loc 1 232 9 view .LVU138
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 35
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 35
 
 
  537 002c 0CE0     		b	.L40
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  245:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  587              		.loc 1 245 3 view .LVU145
  247:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     lock = (int32_t)osErrorISR;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 36
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 36
 
 
  588              		.loc 1 247 3 view .LVU146
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  629 0010 1B68     		ldr	r3, [r3]
  630 0012 022B     		cmp	r3, #2
  631 0014 02D1     		bne	.L53
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 37
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 37
 
 
  632              	.LBB356:
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  256:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****             lock = (int32_t)osError;
  674              		.loc 1 256 11 is_stmt 1 view .LVU174
  256:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****             lock = (int32_t)osError;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 38
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 38
 
 
  675              		.loc 1 256 15 is_stmt 0 view .LVU175
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  276:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  724              		.loc 1 276 44 is_stmt 1 view -0
  725              		.cfi_startproc
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 39
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 39
 
 
  726              		@ args = 0, pretend = 0, frame = 0
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  767              		.loc 2 387 3 is_stmt 0 view .LVU196
  768              		.thumb
  769              		.syntax unified
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 40
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 40
 
 
  770              	.LBE361:
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  812              		.loc 1 289 11 is_stmt 1 view .LVU210
  289:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****             lock = (int32_t)osError;
  813              		.loc 1 289 14 is_stmt 0 view .LVU211
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 41
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 41
 
 
  814 002c DCB9     		cbnz	r4, .L72
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  855 0058 EDE7     		b	.L64
  856              	.L70:
  279:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 42
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 42
 
 
  857              		.loc 1 279 10 view .LVU225
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  905              	.LBB365:
  207:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  906              		.loc 2 207 3 view .LVU234
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 43
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 43
 
 
  209:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  463:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  949              		.loc 2 463 3 view .LVU247
  465:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 44
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 44
 
 
  950              		.loc 2 465 3 view .LVU248
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  324:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   return (configTICK_RATE_HZ);
  998              		.loc 1 324 37 is_stmt 1 view -0
  999              		.cfi_startproc
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 45
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 45
 
 
  1000              		@ args = 0, pretend = 0, frame = 0
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
   16:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h ****  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
   17:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h ****  * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
   18:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h ****  * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 46
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 46
 
 
   19:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h ****  * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
   73:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** #define portSTACK_GROWTH			( -1 )
   74:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** #define portTICK_PERIOD_MS			( ( TickType_t ) 1000 / configTICK_RATE_HZ )
   75:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** #define portBYTE_ALIGNMENT			8
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 47
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 47
 
 
   76:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** /*-----------------------------------------------------------*/
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  130:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 	__attribute__( ( always_inline ) ) static inline uint8_t ucPortCountLeadingZeros( uint32_t ulBitma
  131:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 	{
  132:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 	uint8_t ucReturn;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 48
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 48
 
 
  133:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  187:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** }
  188:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 
  189:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** /*-----------------------------------------------------------*/
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 49
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 49
 
 
  190:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  205:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** /*-----------------------------------------------------------*/
  206:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** 
  207:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** portFORCE_INLINE static uint32_t ulPortRaiseBASEPRI( void )
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 50
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 50
 
 
  208:Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h **** {
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  1099              		.fpu softvfp
  1101              	osKernelGetSysTimerFreq:
  1102              	.LFB58:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 51
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 51
 
 
  342:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   return (configCPU_CLOCK_HZ);
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  1150              		.loc 1 352 3 view .LVU288
  353:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   int32_t mem;
  1151              		.loc 1 353 3 view .LVU289
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 52
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 52
 
 
  354:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  1191              		.thumb
  1192              		.syntax unified
  1193              	.LBE377:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 53
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 53
 
 
  1194              	.LBE376:
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  1231 0032 03B9     		cbnz	r3, .L99
  360:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  1232              		.loc 1 360 11 view .LVU322
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 54
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 54
 
 
  1233 0034 1823     		movs	r3, #24
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  1273              		.thumb
  1274              		.syntax unified
  1275              	.LBE379:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 55
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 55
 
 
  1276              	.LBE378:
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  1316 0078 D468     		ldr	r4, [r2, #12]
  389:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           mem = 0;
  1317              		.loc 1 389 36 discriminator 1 view .LVU353
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 56
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 56
 
 
  1318 007a 94B9     		cbnz	r4, .L111
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  1358              	.LVL84:
  1359              	.L109:
  1360              	.LCFI12:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 57
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 57
 
 
  1361              		.cfi_restore_state
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  1403              	.LVL92:
  404:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           hTask = NULL;
  1404              		.loc 1 404 13 view .LVU380
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 58
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 58
 
 
  1405 00c6 0192     		str	r2, [sp, #4]
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  1451              		.fpu softvfp
  1453              	osThreadGetName:
  1454              	.LVL100:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 59
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 59
 
 
  1455              	.LFB60:
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  1495              		.syntax unified
  1496              	@ 386 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  1497 0008 EFF31083 		MRS r3, primask
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 60
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 60
 
 
  1498              	@ 0 "" 2
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  1541              	.LBE384:
  418:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     name = NULL;
  1542              		.loc 1 418 7 view .LVU417
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 61
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 61
 
 
  1543 0022 002B     		cmp	r3, #0
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  430:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     id = NULL;
  1591              		.loc 1 430 3 view .LVU426
  1592              	.LBB386:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 62
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 62
 
 
  1593              	.LBI386:
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  1634 0014 02D1     		bne	.L134
  1635              	.LBB390:
  1636              	.LBI390:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 63
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 63
 
 
  461:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  1682              		.section	.text.osThreadGetState,"ax",%progbits
  1683              		.align	1
  1684              		.global	osThreadGetState
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 64
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 64
 
 
  1685              		.syntax unified
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  1728              		.loc 2 382 31 is_stmt 1 view .LVU463
  1729              	.LBB395:
  384:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 65
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 65
 
 
  1730              		.loc 2 384 3 view .LVU464
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  463:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  1774              		.loc 2 463 3 view .LVU475
  465:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 66
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 66
 
 
  1775              		.loc 2 465 3 view .LVU476
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  1816 0042 FAE7     		b	.L141
  1817              	.LVL127:
  1818              	.L144:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 67
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 67
 
 
  454:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     }
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  1861              		.align	1
  1862              		.global	osThreadGetStackSpace
  1863              		.syntax unified
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 68
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 68
 
 
  1864              		.thumb
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  1907              		.loc 2 382 31 is_stmt 1 view .LVU516
  1908              	.LBB401:
  384:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 69
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 69
 
 
  1909              		.loc 2 384 3 view .LVU517
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  1951              	.LVL141:
  1952              		.loc 2 466 3 view .LVU530
  1953              		.loc 2 466 3 is_stmt 0 view .LVU531
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 70
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 70
 
 
  1954              		.thumb
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  481:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** }
  2002              		.loc 1 481 3 view .LVU540
  482:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 71
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 71
 
 
  2003              		.loc 1 482 1 is_stmt 0 view .LVU541
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  2048              		.loc 2 210 3 is_stmt 0 view .LVU552
  2049              		.thumb
  2050              		.syntax unified
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 72
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 72
 
 
  2051              	.LBE405:
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  2091              		.loc 1 496 5 view .LVU566
  2092 0020 FFF7FEFF 		bl	vTaskPrioritySet
  2093              	.LVL152:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 73
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 73
 
 
  495:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     vTaskPrioritySet (hTask, (UBaseType_t)priority);
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  2137 003c 6FF00500 		mvn	r0, #5
  2138              	.LVL160:
  489:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 74
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 74
 
 
  2139              		.loc 1 489 10 view .LVU580
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  2186 0000 08B5     		push	{r3, lr}
  2187              	.LCFI18:
  2188              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 75
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 75
 
 
  2189              		.cfi_offset 3, -8
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  2229              	.LBE413:
  2230              	.LBE412:
  506:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     prio = osPriorityError;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 76
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 76
 
 
  2231              		.loc 1 506 7 view .LVU604
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  2274 002a F7E7     		b	.L182
  2275              	.LVL175:
  2276              	.L185:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 77
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 77
 
 
  507:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   } else {
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  205:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  2323              		.loc 2 205 31 view .LVU628
  2324              	.LBB417:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 78
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 78
 
 
  207:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  2366              	.LVL183:
  522:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
  2367              		.loc 1 522 5 view .LVU642
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 79
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 79
 
 
  2368 0014 4FF0E023 		mov	r3, #-536813568
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  526:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  2412              		.loc 1 526 1 is_stmt 0 view .LVU655
  2413 0038 7047     		bx	lr
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 80
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 80
 
 
  2414              	.LVL187:
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  2461              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  2462 0002 EFF30583 		MRS r3, ipsr
  2463              	@ 0 "" 2
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 81
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 81
 
 
  2464              	.LVL190:
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  2504 0018 FFF7FEFF 		bl	vTaskSuspend
  2505              	.LVL193:
  539:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     vTaskSuspend (hTask);
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 82
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 82
 
 
  2506              		.loc 1 539 10 is_stmt 0 view .LVU679
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  2550              	.LVL201:
  533:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
  2551              		.loc 1 533 10 view .LVU692
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 83
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 83
 
 
  2552 0038 F1E7     		b	.L202
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  209:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  2598              		.loc 2 209 3 view .LVU703
  2599              		.syntax unified
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 84
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 84
 
 
  2600              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  2641              	.LVL208:
  558:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
  2642              		.loc 1 558 5 view .LVU717
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 85
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 85
 
 
  2643 0018 FFF7FEFF 		bl	vTaskResume
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  551:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
  2687              		.loc 1 551 10 view .LVU730
  2688 0034 6FF00500 		mvn	r0, #5
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 86
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 86
 
 
  2689              	.LVL217:
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  2736              		.cfi_endproc
  2737              	.LFE70:
  2739              		.section	.text.osThreadTerminate,"ax",%progbits
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 87
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 87
 
 
  2740              		.align	1
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  2783 0008 0446     		mov	r4, r0
  2784              	.LBB436:
  2785              	.LBI436:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 88
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 88
 
 
  382:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  588:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     } else {
  2825              		.loc 1 588 7 view .LVU767
  2826 0024 2046     		mov	r0, r4
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 89
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 89
 
 
  2827              	.LVL227:
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  2871 003c 6FF00500 		mvn	r0, #5
  2872              	.LVL234:
  598:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 90
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 90
 
 
  2873              		.loc 1 598 1 view .LVU780
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  2921              		@ frame_needed = 0, uses_anonymous_args = 0
  601:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  2922              		.loc 1 601 3 view .LVU789
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 91
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 91
 
 
  603:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     count = 0U;
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  2964              	.LBE443:
  2965              	.LBE442:
  603:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     count = 0U;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 92
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 92
 
 
  2966              		.loc 1 603 7 view .LVU803
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3010              	.LCFI27:
  3011              		.cfi_def_cfa_offset 8
  3012              		.cfi_offset 3, -8
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 93
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 93
 
 
  3013              		.cfi_offset 14, -4
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3059              		.loc 2 207 3 view .LVU825
  209:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  3060              		.loc 2 209 3 view .LVU826
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 94
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 94
 
 
  3061              		.syntax unified
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3103              		.loc 1 616 42 discriminator 6 view .LVU838
  3104 001e 3DB9     		cbnz	r5, .L265
  617:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   } else {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 95
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 95
 
 
  3105              		.loc 1 617 11 view .LVU839
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3147              		.loc 1 622 33 is_stmt 0 view .LVU853
  3148 003a 00EBC000 		add	r0, r0, r0, lsl #3
  3149              	.LVL255:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 96
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 96
 
 
  622:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3187              		.loc 1 627 55 discriminator 4 view .LVU870
  3188 0068 F3E7     		b	.L257
  3189              	.LVL260:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 97
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 97
 
 
  3190              	.L256:
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3238              	.LCFI29:
  3239              		.cfi_def_cfa_offset 12
  3240              		.cfi_offset 4, -12
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 98
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 98
 
 
  3241              		.cfi_offset 5, -8
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3280 0016 4BB9     		cbnz	r3, .L272
  3281              	.LBB454:
  3282              	.LBI454:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 99
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 99
 
 
  382:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3325              		.loc 1 652 7 is_stmt 1 view .LVU907
  652:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  3326              		.loc 1 652 13 is_stmt 0 view .LVU908
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 100
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 100
 
 
  3327 002c 0024     		movs	r4, #0
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  646:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
  3371              		.loc 1 646 12 is_stmt 0 view .LVU919
  3372 0066 6FF00303 		mvn	r3, #3
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 101
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 101
 
 
  3373 006a 0393     		str	r3, [sp, #12]
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3422              	osThreadFlagsClear:
  3423              	.LVL280:
  3424              	.LFB75:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 102
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 102
 
 
  668:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   TaskHandle_t hTask;
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  384:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  3467              		.loc 2 384 3 view .LVU939
  386:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 103
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 103
 
 
  3468              		.loc 2 386 3 view .LVU940
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3509              		.loc 1 690 14 view .LVU953
  3510 0032 4FF0FF34 		mov	r4, #-1
  3511 0036 16E0     		b	.L277
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 104
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 104
 
 
  3512              	.LVL286:
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3554              		.loc 1 685 10 view .LVU967
  3555 0058 0128     		cmp	r0, #1
  3556 005a 04D0     		beq	.L277
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 105
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 105
 
 
  686:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       }
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3605              		.loc 1 698 34 is_stmt 1 view -0
  3606              		.cfi_startproc
  3607              		@ args = 0, pretend = 0, frame = 8
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 106
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 106
 
 
  3608              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3649              		.loc 2 387 3 view .LVU988
  387:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  3650              		.loc 2 387 3 is_stmt 0 view .LVU989
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 107
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 107
 
 
  3651              		.thumb
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3695 0028 5DF804FB 		ldr	pc, [sp], #4
  3696              	.L293:
  3697              	.LCFI40:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 108
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 108
 
 
  3698              		.cfi_restore_state
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3745              		.cfi_offset 5, -32
  3746              		.cfi_offset 6, -28
  3747              		.cfi_offset 7, -24
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 109
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 109
 
 
  3748              		.cfi_offset 8, -20
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  386:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  3789              		.loc 2 386 3 view .LVU1024
  3790              		.syntax unified
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 110
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 110
 
 
  3791              	@ 386 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3831              	.LVL305:
  736:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  3832              		.loc 1 736 12 view .LVU1039
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 111
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 111
 
 
  3833 003c 3E46     		mov	r6, r7
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3876              	.LVL310:
  746:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           if ((flags & rflags) == flags) {
  3877              		.loc 1 746 9 is_stmt 1 view .LVU1053
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 112
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 112
 
 
  746:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           if ((flags & rflags) == flags) {
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3915 0084 002F     		cmp	r7, #0
  3916 0086 F0D1     		bne	.L304
  761:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****               break;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 113
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 113
 
 
  3917              		.loc 1 761 22 view .LVU1071
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  3957              		.loc 1 777 12 is_stmt 0 view .LVU1085
  3958 00aa 002F     		cmp	r7, #0
  3959 00ac F1D1     		bne	.L315
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 114
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 114
 
 
  778:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         } else {
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4007              		.syntax unified
  4008              		.thumb
  4009              		.thumb_func
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 115
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 115
 
 
  4010              		.fpu softvfp
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4052              		.syntax unified
  4053              	@ 386 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  4054 0008 EFF31083 		MRS r3, primask
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 116
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 116
 
 
  4055              	@ 0 "" 2
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4096              		.loc 2 466 3 view .LVU1120
  4097              		.loc 2 466 3 is_stmt 0 view .LVU1121
  4098              		.thumb
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 117
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 117
 
 
  4099              		.syntax unified
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4145              		.fpu softvfp
  4147              	osDelayUntil:
  4148              	.LVL343:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 118
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 118
 
 
  4149              	.LFB79:
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4190              		.loc 2 384 3 view .LVU1143
  386:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  4191              		.loc 2 386 3 view .LVU1144
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 119
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 119
 
 
  4192              		.syntax unified
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4235              	.LVL348:
  817:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  4236              		.loc 1 817 10 view .LVU1158
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 120
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 120
 
 
  4237 0024 0190     		str	r0, [sp, #4]
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4281              		.loc 1 822 10 is_stmt 0 view .LVU1168
  4282 0044 F4E7     		b	.L334
  4283              	.L345:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 121
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 121
 
 
  4284 0046 00BF     		.align	2
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  205:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  4329              		.loc 2 205 31 view .LVU1178
  4330              	.LBB489:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 122
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 122
 
 
  207:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4376 0022 1B68     		ldr	r3, [r3]
  4377 0024 022B     		cmp	r3, #2
  4378 0026 20D0     		beq	.L363
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 123
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 123
 
 
  4379              	.L348:
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4415              	.LVL365:
  865:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           name = attr->name;
  866:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 124
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 124
 
 
  867:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4449              		.loc 1 886 20 view .LVU1224
  4450 0068 1AE0     		b	.L346
  4451              	.LVL369:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 125
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 125
 
 
  4452              	.L363:
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4494 0084 0093     		str	r3, [sp]
  4495 0086 0346     		mov	r3, r0
  4496 0088 4A46     		mov	r2, r9
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 126
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 126
 
 
  4497 008a 0121     		movs	r1, #1
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  844:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  4537              		.loc 1 844 10 view .LVU1247
  4538 00a8 FAE7     		b	.L346
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 127
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 127
 
 
  4539              	.LVL382:
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  898:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  899:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   if (IS_IRQ() || (hTimer == NULL)) {
  4586              		.loc 1 899 3 view .LVU1257
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 128
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 128
 
 
  4587              	.LBB494:
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4631              		.loc 1 899 16 discriminator 5 view .LVU1271
  4632 0016 08B1     		cbz	r0, .L367
  900:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     p = NULL;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 129
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 129
 
 
  901:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   } else {
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4673 002c F6E7     		b	.L367
  4674              	.LVL396:
  4675              	.L371:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 130
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 130
 
 
  900:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   } else {
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4719              		.thumb
  4720              		.syntax unified
  4721              	.LBE501:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 131
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 131
 
 
  4722              	.LBE500:
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4763              		.loc 1 919 9 is_stmt 0 view .LVU1308
  4764 001c 0023     		movs	r3, #0
  4765 001e 0093     		str	r3, [sp]
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 132
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 132
 
 
  4766 0020 0421     		movs	r1, #4
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  913:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
  4808              		.loc 1 913 10 view .LVU1319
  4809 003a 6FF00500 		mvn	r0, #5
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 133
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 133
 
 
  4810              	.LVL405:
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4856              		.thumb
  4857              		.thumb_func
  4858              		.fpu softvfp
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 134
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 134
 
 
  4860              	osTimerStop:
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4901              		.loc 2 382 31 is_stmt 1 view .LVU1341
  4902              	.LBB509:
  384:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 135
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 135
 
 
  4903              		.loc 2 384 3 view .LVU1342
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4943 002e FFF7FEFF 		bl	xTimerGenericCommand
  4944              	.LVL419:
  4945              		.loc 1 944 10 view .LVU1356
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 136
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 136
 
 
  4946 0032 0128     		cmp	r0, #1
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  4985              		.loc 1 934 10 view .LVU1366
  4986 0048 F6E7     		b	.L393
  4987              	.LVL423:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 137
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 137
 
 
  4988              	.L396:
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  5034              		.section	.text.osTimerIsRunning,"ax",%progbits
  5035              		.align	1
  5036              		.global	osTimerIsRunning
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 138
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 138
 
 
  5037              		.syntax unified
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  382:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  5081              		.loc 2 382 31 is_stmt 1 view .LVU1388
  5082              	.LBB515:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 139
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 139
 
 
  384:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  5127              		.loc 2 466 3 is_stmt 0 view .LVU1403
  5128              		.thumb
  5129              		.syntax unified
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 140
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 140
 
 
  5130              	.LBE517:
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  5174              		.loc 1 969 3 view .LVU1411
  970:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   osStatus_t stat;
  5175              		.loc 1 970 3 view .LVU1412
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 141
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 141
 
 
  971:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** #ifndef USE_FreeRTOS_HEAP_1
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  5217              	@ 0 "" 2
  5218              	.LVL442:
  387:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 142
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 142
 
 
  5219              		.loc 2 387 3 view .LVU1425
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  5262              	.LVL448:
  985:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       stat = osOK;
  5263              		.loc 1 985 7 view .LVU1439
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 143
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 143
 
 
  5264              		.loc 1 985 12 is_stmt 0 view .LVU1440
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  5302              		.loc 1 975 10 view .LVU1449
  5303 004e F6E7     		b	.L419
  5304              	.LVL453:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 144
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 144
 
 
  5305              	.L422:
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  5352              		.global	osEventFlagsNew
  5353              		.syntax unified
  5354              		.thumb
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 145
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 145
 
 
  5355              		.thumb_func
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  5395              	.LBB526:
  5396              	.LBI526:
  382:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 146
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 146
 
 
  5397              		.loc 2 382 31 is_stmt 1 view .LVU1471
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1006:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  5439              		.loc 1 1006 9 view .LVU1488
  5440 0024 4FF0FF33 		mov	r3, #-1
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 147
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 147
 
 
  5441              	.L437:
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  5476              	.LVL470:
 1003:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
  5477              		.loc 1 1003 15 view .LVU1501
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 148
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 148
 
 
  5478 003a 0DE0     		b	.L434
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  5515              		.loc 1 1033 1 view .LVU1513
  5516 0058 08BD     		pop	{r3, pc}
  5517              	.LVL478:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 149
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 149
 
 
  5518              	.L441:
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  5561 0002 10B5     		push	{r4, lr}
  5562              	.LCFI75:
  5563              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 150
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 150
 
 
  5564              		.cfi_offset 4, -8
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  387:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  5606              		.loc 2 387 3 is_stmt 0 view .LVU1538
  5607              		.thumb
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 151
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 151
 
 
  5608              		.syntax unified
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1048:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     } else {
 1049:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       rflags = flags;
  5655              		.loc 1 1049 7 is_stmt 1 view .LVU1554
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 152
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 152
 
 
  5656              	.LVL489:
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1057:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   return (rflags);
 1058:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** }
  5701              		.loc 1 1058 1 view .LVU1566
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 153
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 153
 
 
  5702 0064 7047     		bx	lr
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1059:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
 1060:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** uint32_t osEventFlagsClear (osEventFlagsId_t ef_id, uint32_t flags) {
  5753              		.loc 1 1060 69 is_stmt 1 view -0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 154
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 154
 
 
  5754              		.cfi_startproc
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  5796              	.LBB538:
  5797              	.LBI538:
  382:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 155
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 155
 
 
  5798              		.loc 2 382 31 is_stmt 1 view .LVU1587
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  5844              		.loc 1 1068 14 view .LVU1602
  5845 002a FFF7FEFF 		bl	xEventGroupGetBitsFromISR
  5846              	.LVL507:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 156
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 156
 
 
  5847              		.loc 1 1068 14 view .LVU1603
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  5885 004c 6FF00305 		mvn	r5, #3
  5886 0050 01E0     		b	.L466
  5887              	.L471:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 157
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 157
 
 
 1065:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  205:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  5932              		.loc 2 205 31 view .LVU1626
  5933              	.LBB543:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 158
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 158
 
 
  207:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  5977              		.loc 2 463 3 view .LVU1640
  465:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  5978              		.loc 2 465 3 view .LVU1641
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 159
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 159
 
 
  5979              		.syntax unified
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1086:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
  6021              		.loc 1 1086 12 view .LVU1653
  6022 0032 0020     		movs	r0, #0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 160
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 160
 
 
  6023              	.LVL529:
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  6069 000a 8446     		mov	ip, r0
  6070              		.loc 1 1104 29 discriminator 1 view .LVU1664
  6071 000c 11F07F4F 		tst	r1, #-16777216
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 161
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 161
 
 
  6072 0010 31D1     		bne	.L494
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  6113 001e 1E4B     		ldr	r3, .L507
  6114 0020 1B68     		ldr	r3, [r3]
  6115 0022 022B     		cmp	r3, #2
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 162
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 162
 
 
  6116 0024 13D0     		beq	.L506
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  6151 0044 19D0     		beq	.L487
 1127:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         if (timeout > 0U) {
  6152              		.loc 1 1127 9 is_stmt 1 view .LVU1693
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 163
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 163
 
 
  6153              		.loc 1 1127 12 is_stmt 0 view .LVU1694
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  6197              		.loc 1 1120 16 view .LVU1707
  6198 0062 E8E7     		b	.L491
  6199              	.LVL545:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 164
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 164
 
 
  6200              	.L492:
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  6234              		.loc 1 1105 12 view .LVU1716
  6235 0076 6FF00300 		mvn	r0, #3
  6236              	.LVL550:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 165
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 165
 
 
  6237              	.L487:
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  6283              		.section	.text.osEventFlagsDelete,"ax",%progbits
  6284              		.align	1
  6285              		.global	osEventFlagsDelete
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 166
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 166
 
 
  6286              		.syntax unified
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  382:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  6329              		.loc 2 382 31 is_stmt 1 view .LVU1738
  6330              	.LBB557:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 167
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 167
 
 
  384:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  6365 001e 08BD     		pop	{r3, pc}
  6366              	.LVL566:
  6367              	.L517:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 168
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 168
 
 
  6368              	.LBB558:
@@ -10078,7 +10078,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  6411              	.LVL574:
 1167:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** }
  6412              		.loc 1 1167 3 is_stmt 1 view .LVU1764
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 169
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 169
 
 
 1167:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** }
@@ -10138,7 +10138,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  6453              	.LBB560:
  6454              	.LBI560:
  205:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 170
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 170
 
 
  6455              		.loc 2 205 31 view .LVU1775
@@ -10198,7 +10198,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  6500              	.L522:
 1184:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     if (attr != NULL) {
  6501              		.loc 1 1184 5 is_stmt 1 view .LVU1788
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 171
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 171
 
 
  6502              		.loc 1 1184 8 is_stmt 0 view .LVU1789
@@ -10258,7 +10258,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1203:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         else {
 1204:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           if ((attr->cb_mem == NULL) && (attr->cb_size == 0U)) {
  6538              		.loc 1 1204 11 is_stmt 1 view .LVU1805
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 172
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 172
 
 
  6539              		.loc 1 1204 14 is_stmt 0 view .LVU1806
@@ -10318,7 +10318,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1233:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         if (attr != NULL) {
  6564              		.loc 1 1233 9 is_stmt 1 view .LVU1817
  6565              		.loc 1 1233 12 is_stmt 0 view .LVU1818
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 173
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 173
 
 
  6566 0050 04B1     		cbz	r4, .L532
@@ -10378,7 +10378,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  6607              		.syntax unified
  6608              	.LBE565:
  6609              	.LBE564:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 174
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 174
 
 
 1183:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     if (attr != NULL) {
@@ -10438,7 +10438,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  6649 008a FFF7FEFF 		bl	xQueueCreateMutexStatic
  6650              	.LVL600:
  6651 008e 0546     		mov	r5, r0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 175
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 175
 
 
  6652              	.LVL601:
@@ -10498,7 +10498,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  6690              		.loc 1 1249 1 view .LVU1859
  6691 00aa 2846     		mov	r0, r5
  6692 00ac 70BD     		pop	{r4, r5, r6, pc}
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 176
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 176
 
 
  6693              	.LVL611:
@@ -10558,7 +10558,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1262:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   if (IS_IRQ()) {
  6733              		.loc 1 1262 3 view .LVU1871
  6734              	.LBB566:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 177
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 177
 
 
  6735              	.LBI566:
@@ -10618,7 +10618,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  387:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  6778              		.loc 2 387 3 is_stmt 0 view .LVU1884
  6779              		.thumb
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 178
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 178
 
 
  6780              		.syntax unified
@@ -10678,7 +10678,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  6821              		.syntax unified
  6822              	@ 465 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  6823 0038 EFF31182 		MRS r2, basepri
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 179
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 179
 
 
  6824              	@ 0 "" 2
@@ -10738,7 +10738,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  6865 0058 6FF00500 		mvn	r0, #5
  6866              	.LVL627:
 1282:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         } else {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 180
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 180
 
 
 1283:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           stat = osErrorResource;
@@ -10798,7 +10798,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  6905              		.loc 1 1283 16 view .LVU1923
  6906 0078 6FF00200 		mvn	r0, #2
  6907              	.LVL635:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 181
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 181
 
 
 1289:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** }
@@ -10858,7 +10858,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  6946              		.syntax unified
  6947              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  6948 0000 EFF30582 		MRS r2, ipsr
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 182
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 182
 
 
  6949              	@ 0 "" 2
@@ -10918,7 +10918,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  6994 001e 07D0     		beq	.L579
  6995              	.L567:
 1304:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     stat = osErrorISR;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 183
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 183
 
 
 1305:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
@@ -10978,7 +10978,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  7027              	.LVL644:
  7028              		.loc 2 466 3 view .LVU1961
  7029              		.loc 2 466 3 is_stmt 0 view .LVU1962
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 184
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 184
 
 
  7030              		.thumb
@@ -11038,7 +11038,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  7075 0056 6FF00500 		mvn	r0, #5
  7076              	.LVL651:
 1304:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 185
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 185
 
 
  7077              		.loc 1 1304 10 view .LVU1973
@@ -11098,7 +11098,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1326:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   SemaphoreHandle_t hMutex;
  7125              		.loc 1 1326 3 is_stmt 1 view .LVU1982
 1327:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   osThreadId_t owner;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 186
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 186
 
 
  7126              		.loc 1 1327 3 view .LVU1983
@@ -11158,7 +11158,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  7166              	.LBE581:
  7167              	.LBE580:
  7168              		.loc 1 1331 7 view .LVU1997
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 187
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 187
 
 
  7169 0010 7BB9     		cbnz	r3, .L586
@@ -11218,7 +11218,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  7213              		.loc 1 1332 11 view .LVU2011
  7214 002e 0020     		movs	r0, #0
  7215              	.LVL665:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 188
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 188
 
 
  7216              	.L582:
@@ -11278,7 +11278,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1344:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
 1345:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   hMutex = (SemaphoreHandle_t)((uint32_t)mutex_id & ~1U);
  7258              		.loc 1 1345 3 view .LVU2021
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 189
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 189
 
 
 1346:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
@@ -11338,7 +11338,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  7300              		.thumb
  7301              		.syntax unified
  7302              	.LBE587:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 190
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 190
 
 
  7303              	.LBE586:
@@ -11398,7 +11398,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  7337              	.LBB589:
  463:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  7338              		.loc 2 463 3 view .LVU2046
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 191
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 191
 
 
  465:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
@@ -11458,7 +11458,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  7385              	.LVL686:
 1364:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** }
  7386              		.loc 1 1364 3 is_stmt 1 view .LVU2058
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 192
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 192
 
 
 1364:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** }
@@ -11518,7 +11518,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  7429              	.LBI590:
  205:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  7430              		.loc 2 205 31 view .LVU2067
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 193
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 193
 
 
  7431              	.LBB591:
@@ -11578,7 +11578,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  7476              		.loc 1 1378 17 discriminator 5 view .LVU2080
  7477 0020 0028     		cmp	r0, #0
  7478 0022 51D0     		beq	.L621
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 194
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 194
 
 
  7479              		.loc 1 1378 37 discriminator 6 view .LVU2081
@@ -11638,7 +11638,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  7522              		.thumb
  7523              		.syntax unified
  7524              	.LBE595:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 195
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 195
 
 
  7525              	.LBE594:
@@ -11698,7 +11698,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  7547 0052 3146     		mov	r1, r6
  7548              	.LVL696:
  7549              		.loc 1 1416 24 view .LVU2108
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 196
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 196
 
 
  7550 0054 FFF7FEFF 		bl	xQueueCreateCountingSemaphore
@@ -11758,7 +11758,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  7587              		.loc 1 1401 24 view .LVU2122
  7588 0072 0021     		movs	r1, #0
  7589              	.LVL704:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 197
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 197
 
 
 1401:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         }
@@ -11818,7 +11818,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1398:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         }
  7630              		.loc 1 1398 24 is_stmt 0 view .LVU2137
  7631 009e AB68     		ldr	r3, [r5, #8]
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 198
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 198
 
 
  7632 00a0 0322     		movs	r2, #3
@@ -11878,7 +11878,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1433:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   return ((osSemaphoreId_t)hSemaphore);
 1434:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** }
  7670              		.loc 1 1434 1 view .LVU2149
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 199
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 199
 
 
  7671 00be 2046     		mov	r0, r4
@@ -11938,7 +11938,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  7720              		@ args = 0, pretend = 0, frame = 8
  7721              		@ frame_needed = 0, uses_anonymous_args = 0
 1437:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   SemaphoreHandle_t hSemaphore = (SemaphoreHandle_t)semaphore_id;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 200
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 200
 
 
  7722              		.loc 1 1437 3 view .LVU2156
@@ -11998,7 +11998,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  7761              	.LBI598:
  382:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  7762              		.loc 2 382 31 is_stmt 1 view .LVU2170
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 201
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 201
 
 
  7763              	.LBB599:
@@ -12058,7 +12058,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1450:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     else {
 1451:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       yield = pdFALSE;
  7807              		.loc 1 1451 7 is_stmt 1 view .LVU2185
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 202
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 202
 
 
  7808              		.loc 1 1451 13 is_stmt 0 view .LVU2186
@@ -12118,7 +12118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1467:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     }
 1468:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
 1469:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 203
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 203
 
 
 1470:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   return (stat);
@@ -12178,7 +12178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  7889              	.LCFI111:
  7890              		.cfi_def_cfa_offset 16
  7891              		.cfi_offset 4, -8
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 204
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 204
 
 
  7892              		.cfi_offset 14, -4
@@ -12238,7 +12238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  7937              		.loc 1 1475 3 view .LVU2217
 1476:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   BaseType_t yield;
  7938              		.loc 1 1476 3 view .LVU2218
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 205
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 205
 
 
 1477:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
@@ -12298,7 +12298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  7977              		.loc 2 386 3 view .LVU2232
  7978              		.syntax unified
  7979              	@ 386 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 206
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 206
 
 
  7980 000e EFF31083 		MRS r3, primask
@@ -12358,7 +12358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  8026 002a FFF7FEFF 		bl	xQueueGiveFromISR
  8027              	.LVL748:
  8028              		.loc 1 1486 8 view .LVU2248
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 207
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 207
 
 
  8029 002e 0128     		cmp	r0, #1
@@ -12418,7 +12418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  8067 0054 1A46     		mov	r2, r3
  8068 0056 1946     		mov	r1, r3
  8069 0058 6046     		mov	r0, ip
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 208
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 208
 
 
  8070              	.LVL751:
@@ -12478,7 +12478,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  8117              		.fpu softvfp
  8119              	osSemaphoreGetCount:
  8120              	.LVL756:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 209
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 209
 
 
  8121              	.LFB101:
@@ -12538,7 +12538,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  382:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  8160              		.loc 2 382 31 is_stmt 1 view .LVU2279
  8161              	.LBB611:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 210
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 210
 
 
  384:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -12598,7 +12598,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  8208              	.LVL761:
  8209              	.L661:
 1510:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   } else {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 211
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 211
 
 
 1511:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     count = (uint32_t)uxSemaphoreGetCount (hSemaphore);
@@ -12658,7 +12658,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  8253              		.loc 1 1517 61 is_stmt 1 view -0
  8254              		.cfi_startproc
  8255              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 212
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 212
 
 
  8256              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -12718,7 +12718,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  8296              	.LVL769:
  387:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  8297              		.loc 2 387 3 view .LVU2317
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 213
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 213
 
 
  387:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -12778,7 +12778,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  8331              	.LVL774:
  8332              	.L683:
  8333              	.LBB618:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 214
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 214
 
 
  8334              	.LBI618:
@@ -12838,7 +12838,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  8379 0042 F1E7     		b	.L672
  8380              	.LVL781:
  8381              	.L678:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 215
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 215
 
 
 1526:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
@@ -12898,7 +12898,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  8424              	.LVL784:
 1553:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
 1554:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   if (!IS_IRQ() && (msg_count > 0U) && (msg_size > 0U)) {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 216
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 216
 
 
  8425              		.loc 1 1554 3 view .LVU2350
@@ -12958,7 +12958,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  8469 0018 1B68     		ldr	r3, [r3]
  8470 001a 022B     		cmp	r3, #2
  8471 001c 21D0     		beq	.L706
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 217
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 217
 
 
  8472              	.L688:
@@ -13018,7 +13018,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1566:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         }
 1567:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       }
 1568:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 218
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 218
 
 
 1569:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     else {
@@ -13078,7 +13078,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  8546              	.LBB624:
  8547              	.LBI624:
  461:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 219
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 219
 
 
  8548              		.loc 2 461 31 is_stmt 1 view .LVU2394
@@ -13138,7 +13138,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  8590              	.L691:
  8591              	.LVL798:
 1573:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       hQueue = xQueueCreateStatic (msg_count, msg_size, attr->mq_mem, attr->cb_mem);
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 220
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 220
 
 
  8592              		.loc 1 1573 5 is_stmt 1 view .LVU2409
@@ -13198,7 +13198,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  8631 00a6 30BD     		pop	{r4, r5, pc}
  8632              	.LVL805:
  8633              	.L695:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 221
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 221
 
 
  8634              	.LCFI126:
@@ -13258,7 +13258,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1599:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   QueueHandle_t hQueue = (QueueHandle_t)mq_id;
  8684              		.loc 1 1599 3 is_stmt 1 view .LVU2425
  8685              	.LVL808:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 222
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 222
 
 
 1600:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   osStatus_t stat;
@@ -13318,7 +13318,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  8722              		.loc 2 387 3 is_stmt 0 view .LVU2441
  8723              		.thumb
  8724              		.syntax unified
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 223
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 223
 
 
  8725              	.LBE629:
@@ -13378,7 +13378,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  8758              	.L724:
  8759              	.LBB630:
  8760              	.LBI630:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 224
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 224
 
 
  461:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -13438,7 +13438,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1617:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       }
  8801              		.loc 1 1617 9 is_stmt 1 view .LVU2470
  8802 004e 0198     		ldr	r0, [sp, #4]
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 225
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 225
 
 
  8803 0050 50B1     		cbz	r0, .L711
@@ -13498,7 +13498,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  8841              		.loc 1 1609 12 view .LVU2478
  8842 0072 6FF00300 		mvn	r0, #3
  8843              	.LVL821:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 226
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 226
 
 
 1609:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     }
@@ -13558,7 +13558,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  8886              	.L725:
  8887 009c 00000000 		.word	.LANCHOR0
  8888              		.cfi_endproc
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 227
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 227
 
 
  8889              	.LFE104:
@@ -13618,7 +13618,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  8931 0006 EFF30583 		MRS r3, ipsr
  8932              	@ 0 "" 2
  8933              	.LVL833:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 228
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 228
 
 
  210:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -13678,7 +13678,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1663:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     if ((hQueue == NULL) || (msg_ptr == NULL)) {
  8967              		.loc 1 1663 5 is_stmt 1 view .LVU2512
  8968              		.loc 1 1663 8 is_stmt 0 view .LVU2513
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 229
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 229
 
 
  8969 001a 90B3     		cbz	r0, .L735
@@ -13738,7 +13738,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1649:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       stat = osErrorParameter;
  9012              		.loc 1 1649 8 is_stmt 0 view .LVU2529
  9013 0038 B8B1     		cbz	r0, .L731
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 230
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 230
 
 
 1649:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       stat = osErrorParameter;
@@ -13798,7 +13798,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1671:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****           stat = osErrorResource;
 1672:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****         }
 1673:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****       }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 231
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 231
 
 
 1674:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     }
@@ -13858,7 +13858,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  9094              		.loc 1 1664 12 view .LVU2552
  9095 0086 EEE7     		b	.L727
  9096              	.LVL851:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 232
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 232
 
 
  9097              	.L736:
@@ -13918,7 +13918,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  9141              		.loc 1 1684 6 is_stmt 0 view .LVU2563
  9142 0000 08B1     		cbz	r0, .L745
 1685:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     capacity = 0U;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 233
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 233
 
 
 1686:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   } else {
@@ -13978,7 +13978,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  9181              		.loc 1 1702 5 is_stmt 1 view .LVU2575
  9182              		.loc 1 1702 10 is_stmt 0 view .LVU2576
  9183 0002 006C     		ldr	r0, [r0, #64]
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 234
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 234
 
 
  9184              	.LVL860:
@@ -14038,7 +14038,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  9225              		.loc 1 1715 8 is_stmt 1 view .LVU2587
  9226              	.LBB638:
  9227              	.LBI638:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 235
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 235
 
 
  205:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -14098,7 +14098,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  9271              		.loc 2 461 31 is_stmt 1 view .LVU2601
  9272              	.LBB643:
  463:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 236
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 236
 
 
  9273              		.loc 2 463 3 view .LVU2602
@@ -14158,7 +14158,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  9314              		.cfi_restore 3
  9315              		.cfi_restore 14
 1713:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 237
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 237
 
 
  9316              		.loc 1 1713 11 view .LVU2615
@@ -14218,7 +14218,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  205:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  9360              		.loc 2 205 31 view .LVU2626
  9361              	.LBB645:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 238
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 238
 
 
  207:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -14278,7 +14278,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  9405              		.loc 2 463 3 view .LVU2640
  465:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  9406              		.loc 2 465 3 view .LVU2641
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 239
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 239
 
 
  9407              		.syntax unified
@@ -14338,7 +14338,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  9452              	.LVL880:
 1738:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
 1739:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     taskEXIT_CRITICAL_FROM_ISR(isrm);
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 240
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 240
 
 
  9453              		.loc 1 1739 5 is_stmt 1 view .LVU2655
@@ -14398,7 +14398,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  9493              		.loc 1 1746 1 is_stmt 0 view .LVU2666
  9494 004a 7047     		bx	lr
  9495              	.L770:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 241
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 241
 
 
  9496              		.align	2
@@ -14458,7 +14458,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  9541              		.syntax unified
  9542              	.LBE655:
  9543              	.LBE654:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 242
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 242
 
 
  9544              		.loc 1 1752 6 view .LVU2677
@@ -14518,7 +14518,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  9584              	.L771:
 1761:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
 1762:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 243
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 243
 
 
 1763:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   return (stat);
@@ -14578,7 +14578,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  9627 003a F1E7     		b	.L771
  9628              	.LVL901:
  9629              	.L777:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 244
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 244
 
 
 1756:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
@@ -14638,7 +14638,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  9672              		.loc 2 210 3 view .LVU2714
  210:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  9673              		.loc 2 210 3 is_stmt 0 view .LVU2715
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 245
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 245
 
 
  9674              		.thumb
@@ -14698,7 +14698,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1779:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****     vQueueUnregisterQueue (hQueue);
  9715              		.loc 1 1779 5 is_stmt 1 view .LVU2727
  9716 001a 2046     		mov	r0, r4
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 246
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 246
 
 
  9717              	.LVL906:
@@ -14758,7 +14758,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  9754              		.loc 1 1772 10 view .LVU2739
  9755 0032 6FF00500 		mvn	r0, #5
  9756              	.LVL912:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 247
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 247
 
 
 1772:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c ****   }
@@ -14818,7 +14818,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  9806              	.LFB112:
 1791:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
 1792:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** /*---------------------------------------------------------------------------*/
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 248
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 248
 
 
 1793:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
@@ -14878,7 +14878,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
 1847:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** static StackType_t  Idle_Stack[configMINIMAL_STACK_SIZE];
 1848:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** 
 1849:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** /* Timer task control block and stack */
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 249
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 249
 
 
 1850:Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c **** static StaticTask_t Timer_TCB;
@@ -14938,7 +14938,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  9845              		.loc 1 1867 148 is_stmt 1 view -0
  9846              		.cfi_startproc
  9847              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 250
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 250
 
 
  9848              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -14998,7 +14998,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  9899 0000 00000000 		.space	1024
  9899      00000000 
  9899      00000000 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 251
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 251
 
 
  9899      00000000 
@@ -15027,226 +15027,226 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 1
  9919              		.file 14 "Core/Inc/FreeRTOSConfig.h"
  9920              		.file 15 "Middlewares/Third_Party/FreeRTOS/Source/include/portable.h"
  9921              		.file 16 "<built-in>"
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 252
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 252
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 cmsis_os2.c
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:16     .text.TimerCallback:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:23     .text.TimerCallback:00000000 TimerCallback
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:61     .text.osKernelInitialize:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:68     .text.osKernelInitialize:00000000 osKernelInitialize
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:175    .text.osKernelInitialize:00000040 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:180    .rodata.osKernelGetInfo.str1.4:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:184    .text.osKernelGetInfo:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:191    .text.osKernelGetInfo:00000000 osKernelGetInfo
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:247    .text.osKernelGetInfo:00000024 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:253    .text.osKernelGetState:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:260    .text.osKernelGetState:00000000 osKernelGetState
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:305    .text.osKernelGetState:00000020 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:310    .text.osKernelStart:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:317    .text.osKernelStart:00000000 osKernelStart
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:433    .text.osKernelStart:00000048 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:438    .text.osKernelLock:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:445    .text.osKernelLock:00000000 osKernelLock
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:564    .text.osKernelLock:0000004c $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:569    .text.osKernelUnlock:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:576    .text.osKernelUnlock:00000000 osKernelUnlock
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:709    .text.osKernelUnlock:0000005c $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:714    .text.osKernelRestoreLock:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:721    .text.osKernelRestoreLock:00000000 osKernelRestoreLock
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:877    .text.osKernelRestoreLock:0000006c $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:882    .text.osKernelGetTickCount:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:889    .text.osKernelGetTickCount:00000000 osKernelGetTickCount
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:984    .text.osKernelGetTickCount:00000028 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:989    .text.osKernelGetTickFreq:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:996    .text.osKernelGetTickFreq:00000000 osKernelGetTickFreq
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1011   .text.osKernelGetSysTimerCount:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1018   .text.osKernelGetSysTimerCount:00000000 osKernelGetSysTimerCount
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1088   .text.osKernelGetSysTimerCount:00000030 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1094   .text.osKernelGetSysTimerFreq:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1101   .text.osKernelGetSysTimerFreq:00000000 osKernelGetSysTimerFreq
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1116   .text.osKernelGetSysTimerFreq:00000008 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1121   .text.osThreadNew:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1128   .text.osThreadNew:00000000 osThreadNew
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1441   .text.osThreadNew:000000e8 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1446   .text.osThreadGetName:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1453   .text.osThreadGetName:00000000 osThreadGetName
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1567   .text.osThreadGetName:00000034 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1572   .text.osThreadGetId:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1579   .text.osThreadGetId:00000000 osThreadGetId
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1678   .text.osThreadGetId:00000030 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1683   .text.osThreadGetState:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1690   .text.osThreadGetState:00000000 osThreadGetState
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1762   .text.osThreadGetState:00000024 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1856   .text.osThreadGetState:00000060 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1861   .text.osThreadGetStackSpace:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1868   .text.osThreadGetStackSpace:00000000 osThreadGetStackSpace
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1981   .text.osThreadGetStackSpace:00000038 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1986   .text.osThreadGetStackSize:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1993   .text.osThreadGetStackSize:00000000 osThreadGetStackSize
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2012   .text.osThreadSetPriority:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2019   .text.osThreadSetPriority:00000000 osThreadSetPriority
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 253
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:16     .text.TimerCallback:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:23     .text.TimerCallback:00000000 TimerCallback
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:61     .text.osKernelInitialize:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:68     .text.osKernelInitialize:00000000 osKernelInitialize
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:175    .text.osKernelInitialize:00000040 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:180    .rodata.osKernelGetInfo.str1.4:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:184    .text.osKernelGetInfo:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:191    .text.osKernelGetInfo:00000000 osKernelGetInfo
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:247    .text.osKernelGetInfo:00000024 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:253    .text.osKernelGetState:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:260    .text.osKernelGetState:00000000 osKernelGetState
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:305    .text.osKernelGetState:00000020 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:310    .text.osKernelStart:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:317    .text.osKernelStart:00000000 osKernelStart
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:433    .text.osKernelStart:00000048 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:438    .text.osKernelLock:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:445    .text.osKernelLock:00000000 osKernelLock
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:564    .text.osKernelLock:0000004c $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:569    .text.osKernelUnlock:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:576    .text.osKernelUnlock:00000000 osKernelUnlock
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:709    .text.osKernelUnlock:0000005c $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:714    .text.osKernelRestoreLock:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:721    .text.osKernelRestoreLock:00000000 osKernelRestoreLock
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:877    .text.osKernelRestoreLock:0000006c $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:882    .text.osKernelGetTickCount:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:889    .text.osKernelGetTickCount:00000000 osKernelGetTickCount
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:984    .text.osKernelGetTickCount:00000028 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:989    .text.osKernelGetTickFreq:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:996    .text.osKernelGetTickFreq:00000000 osKernelGetTickFreq
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1011   .text.osKernelGetSysTimerCount:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1018   .text.osKernelGetSysTimerCount:00000000 osKernelGetSysTimerCount
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1088   .text.osKernelGetSysTimerCount:00000030 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1094   .text.osKernelGetSysTimerFreq:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1101   .text.osKernelGetSysTimerFreq:00000000 osKernelGetSysTimerFreq
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1116   .text.osKernelGetSysTimerFreq:00000008 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1121   .text.osThreadNew:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1128   .text.osThreadNew:00000000 osThreadNew
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1441   .text.osThreadNew:000000e8 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1446   .text.osThreadGetName:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1453   .text.osThreadGetName:00000000 osThreadGetName
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1567   .text.osThreadGetName:00000034 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1572   .text.osThreadGetId:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1579   .text.osThreadGetId:00000000 osThreadGetId
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1678   .text.osThreadGetId:00000030 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1683   .text.osThreadGetState:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1690   .text.osThreadGetState:00000000 osThreadGetState
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1762   .text.osThreadGetState:00000024 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1856   .text.osThreadGetState:00000060 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1861   .text.osThreadGetStackSpace:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1868   .text.osThreadGetStackSpace:00000000 osThreadGetStackSpace
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1981   .text.osThreadGetStackSpace:00000038 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1986   .text.osThreadGetStackSize:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1993   .text.osThreadGetStackSize:00000000 osThreadGetStackSize
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2012   .text.osThreadSetPriority:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2019   .text.osThreadSetPriority:00000000 osThreadSetPriority
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 253
 
 
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2166   .text.osThreadSetPriority:00000054 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2171   .text.osThreadGetPriority:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2178   .text.osThreadGetPriority:00000000 osThreadGetPriority
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2300   .text.osThreadGetPriority:00000040 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2305   .text.osThreadYield:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2312   .text.osThreadYield:00000000 osThreadYield
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2425   .text.osThreadYield:00000048 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2430   .text.osThreadSuspend:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2437   .text.osThreadSuspend:00000000 osThreadSuspend
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2564   .text.osThreadSuspend:00000040 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2569   .text.osThreadResume:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2576   .text.osThreadResume:00000000 osThreadResume
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2703   .text.osThreadResume:00000040 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2708   .text.osThreadExit:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2715   .text.osThreadExit:00000000 osThreadExit
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2740   .text.osThreadTerminate:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2747   .text.osThreadTerminate:00000000 osThreadTerminate
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2904   .text.osThreadTerminate:00000054 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2909   .text.osThreadGetCount:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:2916   .text.osThreadGetCount:00000000 osThreadGetCount
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:3023   .text.osThreadGetCount:0000002c $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:3028   .text.osThreadEnumerate:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:3035   .text.osThreadEnumerate:00000000 osThreadEnumerate
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:3217   .text.osThreadEnumerate:00000084 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:3222   .text.osThreadFlagsSet:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:3229   .text.osThreadFlagsSet:00000000 osThreadFlagsSet
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:3410   .text.osThreadFlagsSet:0000008c $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:3415   .text.osThreadFlagsClear:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:3422   .text.osThreadFlagsClear:00000000 osThreadFlagsClear
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:3591   .text.osThreadFlagsClear:00000078 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:3596   .text.osThreadFlagsGet:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:3603   .text.osThreadFlagsGet:00000000 osThreadFlagsGet
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:3721   .text.osThreadFlagsGet:00000048 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:3726   .text.osThreadFlagsWait:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:3733   .text.osThreadFlagsWait:00000000 osThreadFlagsWait
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:4000   .text.osThreadFlagsWait:000000d4 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:4005   .text.osDelay:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:4012   .text.osDelay:00000000 osDelay
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:4135   .text.osDelay:00000040 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:4140   .text.osDelayUntil:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:4147   .text.osDelayUntil:00000000 osDelayUntil
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:4286   .text.osDelayUntil:00000048 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:4291   .text.osTimerNew:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:4298   .text.osTimerNew:00000000 osTimerNew
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:4557   .text.osTimerNew:000000b4 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:4563   .text.osTimerGetName:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:4570   .text.osTimerGetName:00000000 osTimerGetName
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:4684   .text.osTimerGetName:00000034 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:4689   .text.osTimerStart:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:4696   .text.osTimerStart:00000000 osTimerStart
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:4848   .text.osTimerStart:00000058 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:4853   .text.osTimerStop:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:4860   .text.osTimerStop:00000000 osTimerStop
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:5030   .text.osTimerStop:00000068 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:5035   .text.osTimerIsRunning:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:5042   .text.osTimerIsRunning:00000000 osTimerIsRunning
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:5155   .text.osTimerIsRunning:00000038 $d
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 254
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2166   .text.osThreadSetPriority:00000054 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2171   .text.osThreadGetPriority:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2178   .text.osThreadGetPriority:00000000 osThreadGetPriority
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2300   .text.osThreadGetPriority:00000040 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2305   .text.osThreadYield:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2312   .text.osThreadYield:00000000 osThreadYield
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2425   .text.osThreadYield:00000048 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2430   .text.osThreadSuspend:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2437   .text.osThreadSuspend:00000000 osThreadSuspend
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2564   .text.osThreadSuspend:00000040 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2569   .text.osThreadResume:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2576   .text.osThreadResume:00000000 osThreadResume
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2703   .text.osThreadResume:00000040 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2708   .text.osThreadExit:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2715   .text.osThreadExit:00000000 osThreadExit
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2740   .text.osThreadTerminate:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2747   .text.osThreadTerminate:00000000 osThreadTerminate
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2904   .text.osThreadTerminate:00000054 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2909   .text.osThreadGetCount:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:2916   .text.osThreadGetCount:00000000 osThreadGetCount
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:3023   .text.osThreadGetCount:0000002c $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:3028   .text.osThreadEnumerate:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:3035   .text.osThreadEnumerate:00000000 osThreadEnumerate
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:3217   .text.osThreadEnumerate:00000084 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:3222   .text.osThreadFlagsSet:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:3229   .text.osThreadFlagsSet:00000000 osThreadFlagsSet
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:3410   .text.osThreadFlagsSet:0000008c $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:3415   .text.osThreadFlagsClear:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:3422   .text.osThreadFlagsClear:00000000 osThreadFlagsClear
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:3591   .text.osThreadFlagsClear:00000078 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:3596   .text.osThreadFlagsGet:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:3603   .text.osThreadFlagsGet:00000000 osThreadFlagsGet
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:3721   .text.osThreadFlagsGet:00000048 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:3726   .text.osThreadFlagsWait:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:3733   .text.osThreadFlagsWait:00000000 osThreadFlagsWait
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:4000   .text.osThreadFlagsWait:000000d4 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:4005   .text.osDelay:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:4012   .text.osDelay:00000000 osDelay
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:4135   .text.osDelay:00000040 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:4140   .text.osDelayUntil:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:4147   .text.osDelayUntil:00000000 osDelayUntil
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:4286   .text.osDelayUntil:00000048 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:4291   .text.osTimerNew:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:4298   .text.osTimerNew:00000000 osTimerNew
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:4557   .text.osTimerNew:000000b4 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:4563   .text.osTimerGetName:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:4570   .text.osTimerGetName:00000000 osTimerGetName
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:4684   .text.osTimerGetName:00000034 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:4689   .text.osTimerStart:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:4696   .text.osTimerStart:00000000 osTimerStart
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:4848   .text.osTimerStart:00000058 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:4853   .text.osTimerStop:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:4860   .text.osTimerStop:00000000 osTimerStop
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:5030   .text.osTimerStop:00000068 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:5035   .text.osTimerIsRunning:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:5042   .text.osTimerIsRunning:00000000 osTimerIsRunning
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:5155   .text.osTimerIsRunning:00000038 $d
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 254
 
 
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:5160   .text.osTimerDelete:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:5167   .text.osTimerDelete:00000000 osTimerDelete
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:5346   .text.osTimerDelete:00000068 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:5351   .text.osEventFlagsNew:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:5358   .text.osEventFlagsNew:00000000 osEventFlagsNew
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:5535   .text.osEventFlagsNew:00000064 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:5540   .text.osEventFlagsSet:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:5547   .text.osEventFlagsSet:00000000 osEventFlagsSet
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:5738   .text.osEventFlagsSet:00000078 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:5743   .text.osEventFlagsClear:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:5750   .text.osEventFlagsClear:00000000 osEventFlagsClear
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:5898   .text.osEventFlagsClear:0000005c $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:5903   .text.osEventFlagsGet:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:5910   .text.osEventFlagsGet:00000000 osEventFlagsGet
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:6030   .text.osEventFlagsGet:00000038 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:6035   .text.osEventFlagsWait:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:6042   .text.osEventFlagsWait:00000000 osEventFlagsWait
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:6279   .text.osEventFlagsWait:00000098 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:6284   .text.osEventFlagsDelete:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:6291   .text.osEventFlagsDelete:00000000 osEventFlagsDelete
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:6418   .text.osEventFlagsDelete:00000040 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:6423   .text.osMutexNew:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:6430   .text.osMutexNew:00000000 osMutexNew
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:6708   .text.osMutexNew:000000b8 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:6713   .text.osMutexAcquire:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:6720   .text.osMutexAcquire:00000000 osMutexAcquire
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:6914   .text.osMutexAcquire:00000080 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:6919   .text.osMutexRelease:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:6926   .text.osMutexRelease:00000000 osMutexRelease
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:7100   .text.osMutexRelease:00000070 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:7105   .text.osMutexGetOwner:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:7112   .text.osMutexGetOwner:00000000 osMutexGetOwner
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:7237   .text.osMutexGetOwner:0000003c $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:7242   .text.osMutexDelete:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:7249   .text.osMutexDelete:00000000 osMutexDelete
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:7392   .text.osMutexDelete:0000004c $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:7397   .text.osSemaphoreNew:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:7404   .text.osSemaphoreNew:00000000 osSemaphoreNew
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:7703   .text.osSemaphoreNew:000000d4 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:7708   .text.osSemaphoreAcquire:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:7715   .text.osSemaphoreAcquire:00000000 osSemaphoreAcquire
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:7917   .text.osSemaphoreAcquire:00000084 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:7922   .text.osSemaphoreRelease:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:7929   .text.osSemaphoreRelease:00000000 osSemaphoreRelease
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:8107   .text.osSemaphoreRelease:00000078 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:8112   .text.osSemaphoreGetCount:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:8119   .text.osSemaphoreGetCount:00000000 osSemaphoreGetCount
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:8238   .text.osSemaphoreGetCount:00000034 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:8243   .text.osSemaphoreDelete:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:8250   .text.osSemaphoreDelete:00000000 osSemaphoreDelete
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:8391   .text.osSemaphoreDelete:0000004c $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:8396   .text.osMessageQueueNew:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:8403   .text.osMessageQueueNew:00000000 osMessageQueueNew
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:8655   .text.osMessageQueueNew:000000b8 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:8660   .text.osMessageQueuePut:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:8667   .text.osMessageQueuePut:00000000 osMessageQueuePut
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:8887   .text.osMessageQueuePut:0000009c $d
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 255
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:5160   .text.osTimerDelete:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:5167   .text.osTimerDelete:00000000 osTimerDelete
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:5346   .text.osTimerDelete:00000068 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:5351   .text.osEventFlagsNew:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:5358   .text.osEventFlagsNew:00000000 osEventFlagsNew
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:5535   .text.osEventFlagsNew:00000064 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:5540   .text.osEventFlagsSet:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:5547   .text.osEventFlagsSet:00000000 osEventFlagsSet
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:5738   .text.osEventFlagsSet:00000078 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:5743   .text.osEventFlagsClear:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:5750   .text.osEventFlagsClear:00000000 osEventFlagsClear
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:5898   .text.osEventFlagsClear:0000005c $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:5903   .text.osEventFlagsGet:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:5910   .text.osEventFlagsGet:00000000 osEventFlagsGet
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:6030   .text.osEventFlagsGet:00000038 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:6035   .text.osEventFlagsWait:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:6042   .text.osEventFlagsWait:00000000 osEventFlagsWait
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:6279   .text.osEventFlagsWait:00000098 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:6284   .text.osEventFlagsDelete:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:6291   .text.osEventFlagsDelete:00000000 osEventFlagsDelete
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:6418   .text.osEventFlagsDelete:00000040 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:6423   .text.osMutexNew:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:6430   .text.osMutexNew:00000000 osMutexNew
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:6708   .text.osMutexNew:000000b8 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:6713   .text.osMutexAcquire:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:6720   .text.osMutexAcquire:00000000 osMutexAcquire
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:6914   .text.osMutexAcquire:00000080 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:6919   .text.osMutexRelease:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:6926   .text.osMutexRelease:00000000 osMutexRelease
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:7100   .text.osMutexRelease:00000070 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:7105   .text.osMutexGetOwner:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:7112   .text.osMutexGetOwner:00000000 osMutexGetOwner
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:7237   .text.osMutexGetOwner:0000003c $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:7242   .text.osMutexDelete:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:7249   .text.osMutexDelete:00000000 osMutexDelete
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:7392   .text.osMutexDelete:0000004c $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:7397   .text.osSemaphoreNew:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:7404   .text.osSemaphoreNew:00000000 osSemaphoreNew
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:7703   .text.osSemaphoreNew:000000d4 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:7708   .text.osSemaphoreAcquire:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:7715   .text.osSemaphoreAcquire:00000000 osSemaphoreAcquire
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:7917   .text.osSemaphoreAcquire:00000084 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:7922   .text.osSemaphoreRelease:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:7929   .text.osSemaphoreRelease:00000000 osSemaphoreRelease
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:8107   .text.osSemaphoreRelease:00000078 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:8112   .text.osSemaphoreGetCount:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:8119   .text.osSemaphoreGetCount:00000000 osSemaphoreGetCount
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:8238   .text.osSemaphoreGetCount:00000034 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:8243   .text.osSemaphoreDelete:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:8250   .text.osSemaphoreDelete:00000000 osSemaphoreDelete
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:8391   .text.osSemaphoreDelete:0000004c $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:8396   .text.osMessageQueueNew:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:8403   .text.osMessageQueueNew:00000000 osMessageQueueNew
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:8655   .text.osMessageQueueNew:000000b8 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:8660   .text.osMessageQueuePut:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:8667   .text.osMessageQueuePut:00000000 osMessageQueuePut
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:8887   .text.osMessageQueuePut:0000009c $d
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 255
 
 
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:8892   .text.osMessageQueueGet:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:8899   .text.osMessageQueueGet:00000000 osMessageQueueGet
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9118   .text.osMessageQueueGet:00000098 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9123   .text.osMessageQueueGetCapacity:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9130   .text.osMessageQueueGetCapacity:00000000 osMessageQueueGetCapacity
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9161   .text.osMessageQueueGetMsgSize:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9168   .text.osMessageQueueGetMsgSize:00000000 osMessageQueueGetMsgSize
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9199   .text.osMessageQueueGetCount:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9206   .text.osMessageQueueGetCount:00000000 osMessageQueueGetCount
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9325   .text.osMessageQueueGetCount:00000034 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9330   .text.osMessageQueueGetSpace:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9337   .text.osMessageQueueGetSpace:00000000 osMessageQueueGetSpace
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9498   .text.osMessageQueueGetSpace:0000004c $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9503   .text.osMessageQueueReset:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9510   .text.osMessageQueueReset:00000000 osMessageQueueReset
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9639   .text.osMessageQueueReset:00000044 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9644   .text.osMessageQueueDelete:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9651   .text.osMessageQueueDelete:00000000 osMessageQueueDelete
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9792   .text.osMessageQueueDelete:0000004c $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9797   .text.vApplicationGetIdleTaskMemory:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9804   .text.vApplicationGetIdleTaskMemory:00000000 vApplicationGetIdleTaskMemory
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9829   .text.vApplicationGetIdleTaskMemory:00000010 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9835   .text.vApplicationGetTimerTaskMemory:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9842   .text.vApplicationGetTimerTaskMemory:00000000 vApplicationGetTimerTaskMemory
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9867   .text.vApplicationGetTimerTaskMemory:00000010 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9873   .bss.Idle_Stack:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9877   .bss.Idle_Stack:00000000 Idle_Stack
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9880   .bss.Idle_TCB:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9884   .bss.Idle_TCB:00000000 Idle_TCB
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9887   .bss.KernelState:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9891   .bss.KernelState:00000000 KernelState
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9894   .bss.Timer_Stack:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9898   .bss.Timer_Stack:00000000 Timer_Stack
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9901   .bss.Timer_TCB:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:9905   .bss.Timer_TCB:00000000 Timer_TCB
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1768   .text.osThreadGetState:00000029 $d
-C:\Users\Vento\AppData\Local\Temp\ccMoev87.s:1768   .text.osThreadGetState:0000002a $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:8892   .text.osMessageQueueGet:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:8899   .text.osMessageQueueGet:00000000 osMessageQueueGet
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9118   .text.osMessageQueueGet:00000098 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9123   .text.osMessageQueueGetCapacity:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9130   .text.osMessageQueueGetCapacity:00000000 osMessageQueueGetCapacity
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9161   .text.osMessageQueueGetMsgSize:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9168   .text.osMessageQueueGetMsgSize:00000000 osMessageQueueGetMsgSize
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9199   .text.osMessageQueueGetCount:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9206   .text.osMessageQueueGetCount:00000000 osMessageQueueGetCount
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9325   .text.osMessageQueueGetCount:00000034 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9330   .text.osMessageQueueGetSpace:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9337   .text.osMessageQueueGetSpace:00000000 osMessageQueueGetSpace
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9498   .text.osMessageQueueGetSpace:0000004c $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9503   .text.osMessageQueueReset:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9510   .text.osMessageQueueReset:00000000 osMessageQueueReset
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9639   .text.osMessageQueueReset:00000044 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9644   .text.osMessageQueueDelete:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9651   .text.osMessageQueueDelete:00000000 osMessageQueueDelete
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9792   .text.osMessageQueueDelete:0000004c $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9797   .text.vApplicationGetIdleTaskMemory:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9804   .text.vApplicationGetIdleTaskMemory:00000000 vApplicationGetIdleTaskMemory
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9829   .text.vApplicationGetIdleTaskMemory:00000010 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9835   .text.vApplicationGetTimerTaskMemory:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9842   .text.vApplicationGetTimerTaskMemory:00000000 vApplicationGetTimerTaskMemory
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9867   .text.vApplicationGetTimerTaskMemory:00000010 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9873   .bss.Idle_Stack:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9877   .bss.Idle_Stack:00000000 Idle_Stack
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9880   .bss.Idle_TCB:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9884   .bss.Idle_TCB:00000000 Idle_TCB
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9887   .bss.KernelState:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9891   .bss.KernelState:00000000 KernelState
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9894   .bss.Timer_Stack:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9898   .bss.Timer_Stack:00000000 Timer_Stack
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9901   .bss.Timer_TCB:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:9905   .bss.Timer_TCB:00000000 Timer_TCB
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1768   .text.osThreadGetState:00000029 $d
+C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s:1768   .text.osThreadGetState:0000002a $t
 
 UNDEFINED SYMBOLS
 pvTimerGetTimerID
@@ -15267,7 +15267,7 @@ uxTaskGetStackHighWaterMark
 vTaskPrioritySet
 uxTaskPriorityGet
 vTaskSuspend
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccMoev87.s 			page 256
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccXJMAKZ.s 			page 256
 
 
 vTaskResume

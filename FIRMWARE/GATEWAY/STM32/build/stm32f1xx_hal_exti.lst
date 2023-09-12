@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
   20:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   *
   21:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   ******************************************************************************
   22:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   @verbatim
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 2
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 2
 
 
   23:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   ==============================================================================
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
   77:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c **** 
   78:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****     (#) Clear interrupt pending bit using HAL_EXTI_ClearPending().
   79:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 3
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 3
 
 
   80:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****     (#) Generate software interrupt using HAL_EXTI_GenerateSWI().
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  134:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   */
  135:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c **** 
  136:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c **** /**
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 4
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 4
 
 
  137:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   * @brief  Set configuration of a dedicated Exti line.
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
   67 0026 46D0     		beq	.L4
   68              		.loc 1 155 3 discriminator 3 view .LVU10
   69 0028 B3F1C06F 		cmp	r3, #100663296
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 5
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 5
 
 
   70 002c 43D0     		beq	.L4
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  113              		.loc 1 166 6 is_stmt 0 view .LVU26
  114 0058 16F0007F 		tst	r6, #33554432
  115 005c 19D0     		beq	.L8
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 6
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 6
 
 
  167:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   {
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  190:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****     }
  191:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c **** 
  192:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 7
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 7
 
 
  193:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****     /* Configure gpio port selection in case of gpio exti line */
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  174 00a4 13F0020F 		tst	r3, #2
  175 00a8 44D0     		beq	.L18
  220:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   {
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 8
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 8
 
 
  221:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****     EXTI->EMR |= maskline;
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  215 00d6 1E4A     		ldr	r2, .L29+4
  216 00d8 D368     		ldr	r3, [r2, #12]
  217 00da 23EA0503 		bic	r3, r3, r5
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 9
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 9
 
 
  218 00de D360     		str	r3, [r2, #12]
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  258              	.LVL17:
  202:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****     }
  259              		.loc 1 202 7 is_stmt 1 view .LVU75
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 10
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 10
 
 
  202:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****     }
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  305              		.cfi_restore 5
  306              		.cfi_restore 6
  307              		.cfi_restore 7
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 11
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 11
 
 
  308              		.cfi_restore 14
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  352              		@ frame_needed = 0, uses_anonymous_args = 0
  239:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   uint32_t regval;
  353              		.loc 1 239 3 view .LVU90
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 12
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 12
 
 
  240:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   uint32_t linepos;
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  251:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c **** 
  252:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   /* Store handle line number to configuration structure */
  253:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   pExtiConfig->Line = hexti->Line;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 13
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 13
 
 
  396              		.loc 1 253 3 is_stmt 1 view .LVU103
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  274:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   {
  275:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****     pExtiConfig->Mode |= EXTI_MODE_EVENT;
  430              		.loc 1 275 5 is_stmt 1 view .LVU118
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 14
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 14
 
 
  431              		.loc 1 275 23 is_stmt 0 view .LVU119
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  294:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****     {
  295:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****       pExtiConfig->Trigger |= EXTI_TRIGGER_FALLING;
  467              		.loc 1 295 7 is_stmt 1 view .LVU134
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 15
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 15
 
 
  468              		.loc 1 295 28 is_stmt 0 view .LVU135
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  504              		.loc 1 303 7 view .LVU145
  303:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****       pExtiConfig->GPIOSel = (regval >> (AFIO_EXTICR1_EXTI1_Pos * (linepos & 0x03u))) & AFIO_EXTICR
  505              		.loc 1 303 37 is_stmt 0 view .LVU146
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 16
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 16
 
 
  506 00ac B608     		lsrs	r6, r6, #2
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  550              	.L43:
  551              	.LCFI5:
  552              		.cfi_def_cfa_offset 16
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 17
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 17
 
 
  553              		.cfi_offset 4, -16
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  319:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   uint32_t linepos;
  597              		.loc 1 319 3 view .LVU165
  320:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   uint32_t maskline;
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 18
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 18
 
 
  598              		.loc 1 320 3 view .LVU166
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  333:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   maskline = (1uL << linepos);
  639              		.loc 1 333 3 is_stmt 1 view .LVU178
  640              		.loc 1 333 12 is_stmt 0 view .LVU179
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 19
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 19
 
 
  641 0034 0123     		movs	r3, #1
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  683 0060 D860     		str	r0, [r3, #12]
  346:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c **** 
  347:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****     /* Get Gpio port selection for gpio lines */
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 20
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 20
 
 
  348:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****     if ((hexti->Line & EXTI_GPIO) == EXTI_GPIO)
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  720              	.LVL61:
  353:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****       AFIO->EXTICR[linepos >> 2u] = regval;
  721              		.loc 1 353 65 view .LVU212
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 21
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 21
 
 
  722 0090 B600     		lsls	r6, r6, #2
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  768              		.loc 1 359 1 view .LVU222
  769 00b6 70BD     		pop	{r4, r5, r6, pc}
  770              	.LVL69:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 22
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 22
 
 
  771              	.L70:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  809              		.loc 1 377 7 is_stmt 1 view .LVU231
  810 0008 7047     		bx	lr
  811              	.L73:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 23
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 23
 
 
  378:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c **** 
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  848 000a 23F01F03 		bic	r3, r3, #31
  849 000e 3BB9     		cbnz	r3, .L75
  850              		.loc 1 397 3 is_stmt 0 discriminator 2 view .LVU238
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 24
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 24
 
 
  851 0010 01F0C063 		and	r3, r1, #100663296
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  889              		.loc 1 402 12 view .LVU251
  890 003c 0120     		movs	r0, #1
  891 003e F7E7     		b	.L78
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 25
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 25
 
 
  892              	.L82:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  438:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c **** 
  439:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   /* Compute line mask */
  440:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   maskline = (1uL << (hexti->Line & EXTI_PIN_MASK));
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 26
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 26
 
 
  922              		.loc 1 440 3 view .LVU256
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  961 0020 00040140 		.word	1073808384
  962              		.cfi_endproc
  963              	.LFE70:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 27
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 27
 
 
  965              		.section	.text.HAL_EXTI_GetPending,"ax",%progbits
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  1002              		.loc 1 473 3 discriminator 3 view .LVU279
  1003 001c B3F1C06F 		cmp	r3, #100663296
  1004 0020 15D0     		beq	.L90
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 28
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 28
 
 
  1005              	.L89:
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  1045              		.loc 1 487 1 is_stmt 0 view .LVU295
  1046 004a D840     		lsrs	r0, r0, r3
  1047              	.LVL93:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 29
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 29
 
 
  1048              		.loc 1 487 1 view .LVU296
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  498:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c **** void HAL_EXTI_ClearPending(EXTI_HandleTypeDef *hexti, uint32_t Edge)
  499:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c **** {
  1091              		.loc 1 499 1 is_stmt 1 view -0
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 30
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 30
 
 
  1092              		.cfi_startproc
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  508:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   UNUSED(Edge);
  1138              		.loc 1 508 3 view .LVU311
  509:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c **** 
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 31
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 31
 
 
  510:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c ****   /* Compute line mask */
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  1185              		.align	1
  1186              		.global	HAL_EXTI_GenerateSWI
  1187              		.syntax unified
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 32
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 32
 
 
  1188              		.thumb
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  1230 002c 13F0007F 		tst	r3, #33554432
  1231 0030 0CD0     		beq	.L116
  1232              	.L114:
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 33
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 33
 
 
  529:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c **** 
@@ -1975,38 +1975,38 @@ ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 1
  1276              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
  1277              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h"
  1278              		.file 7 "Core/Inc/stm32f1xx_hal_conf.h"
-ARM GAS  C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s 			page 34
+ARM GAS  C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s 			page 34
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f1xx_hal_exti.c
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:16     .rodata.HAL_EXTI_SetConfigLine.str1.4:00000000 $d
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:21     .text.HAL_EXTI_SetConfigLine:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:29     .text.HAL_EXTI_SetConfigLine:00000000 HAL_EXTI_SetConfigLine
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:332    .text.HAL_EXTI_SetConfigLine:0000014c $d
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:339    .text.HAL_EXTI_GetConfigLine:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:346    .text.HAL_EXTI_GetConfigLine:00000000 HAL_EXTI_GetConfigLine
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:575    .text.HAL_EXTI_GetConfigLine:000000e4 $d
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:582    .text.HAL_EXTI_ClearConfigLine:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:589    .text.HAL_EXTI_ClearConfigLine:00000000 HAL_EXTI_ClearConfigLine
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:775    .text.HAL_EXTI_ClearConfigLine:000000b8 $d
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:782    .text.HAL_EXTI_RegisterCallback:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:789    .text.HAL_EXTI_RegisterCallback:00000000 HAL_EXTI_RegisterCallback
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:822    .text.HAL_EXTI_GetHandle:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:829    .text.HAL_EXTI_GetHandle:00000000 HAL_EXTI_GetHandle
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:895    .text.HAL_EXTI_GetHandle:00000040 $d
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:900    .text.HAL_EXTI_IRQHandler:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:907    .text.HAL_EXTI_IRQHandler:00000000 HAL_EXTI_IRQHandler
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:961    .text.HAL_EXTI_IRQHandler:00000020 $d
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:966    .text.HAL_EXTI_GetPending:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:973    .text.HAL_EXTI_GetPending:00000000 HAL_EXTI_GetPending
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:1075   .text.HAL_EXTI_GetPending:00000070 $d
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:1081   .text.HAL_EXTI_ClearPending:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:1088   .text.HAL_EXTI_ClearPending:00000000 HAL_EXTI_ClearPending
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:1179   .text.HAL_EXTI_ClearPending:0000006c $d
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:1185   .text.HAL_EXTI_GenerateSWI:00000000 $t
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:1192   .text.HAL_EXTI_GenerateSWI:00000000 HAL_EXTI_GenerateSWI
-C:\Users\Vento\AppData\Local\Temp\cc4Lj2Qg.s:1266   .text.HAL_EXTI_GenerateSWI:00000058 $d
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:16     .rodata.HAL_EXTI_SetConfigLine.str1.4:00000000 $d
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:21     .text.HAL_EXTI_SetConfigLine:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:29     .text.HAL_EXTI_SetConfigLine:00000000 HAL_EXTI_SetConfigLine
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:332    .text.HAL_EXTI_SetConfigLine:0000014c $d
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:339    .text.HAL_EXTI_GetConfigLine:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:346    .text.HAL_EXTI_GetConfigLine:00000000 HAL_EXTI_GetConfigLine
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:575    .text.HAL_EXTI_GetConfigLine:000000e4 $d
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:582    .text.HAL_EXTI_ClearConfigLine:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:589    .text.HAL_EXTI_ClearConfigLine:00000000 HAL_EXTI_ClearConfigLine
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:775    .text.HAL_EXTI_ClearConfigLine:000000b8 $d
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:782    .text.HAL_EXTI_RegisterCallback:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:789    .text.HAL_EXTI_RegisterCallback:00000000 HAL_EXTI_RegisterCallback
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:822    .text.HAL_EXTI_GetHandle:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:829    .text.HAL_EXTI_GetHandle:00000000 HAL_EXTI_GetHandle
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:895    .text.HAL_EXTI_GetHandle:00000040 $d
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:900    .text.HAL_EXTI_IRQHandler:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:907    .text.HAL_EXTI_IRQHandler:00000000 HAL_EXTI_IRQHandler
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:961    .text.HAL_EXTI_IRQHandler:00000020 $d
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:966    .text.HAL_EXTI_GetPending:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:973    .text.HAL_EXTI_GetPending:00000000 HAL_EXTI_GetPending
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:1075   .text.HAL_EXTI_GetPending:00000070 $d
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:1081   .text.HAL_EXTI_ClearPending:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:1088   .text.HAL_EXTI_ClearPending:00000000 HAL_EXTI_ClearPending
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:1179   .text.HAL_EXTI_ClearPending:0000006c $d
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:1185   .text.HAL_EXTI_GenerateSWI:00000000 $t
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:1192   .text.HAL_EXTI_GenerateSWI:00000000 HAL_EXTI_GenerateSWI
+C:\Users\Vento\AppData\Local\Temp\ccisdnpe.s:1266   .text.HAL_EXTI_GenerateSWI:00000058 $d
 
 UNDEFINED SYMBOLS
 assert_failed

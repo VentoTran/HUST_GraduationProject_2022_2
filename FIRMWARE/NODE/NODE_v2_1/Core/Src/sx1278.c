@@ -282,7 +282,8 @@ void sx1278_start_recv_data(void)
     sx1278_standby();
 	sx1278_set_irq(0x00);
     sx1278_write_reg(REG_IRQ_FLAGS, sx1278_read_reg(REG_IRQ_FLAGS));
-    sx1278_rx_single();
+    sx1278_rx_contiuous();
+    // sx1278_rx_single();
 }
 
 sx1278_err_t parse_packet(uint8_t *packet_data, sx1278_node_t *node)
@@ -336,10 +337,10 @@ sx1278_err_t sx1278_recv_data(uint8_t *data_recv, uint32_t *len, int *rssi, floa
     return SX1278_OK;
 }
 
-int get_random_value(int min, int max)
+int get_random_value(uint32_t seed, int min, int max)
 {
-    srand(time(NULL));
-    return (rand() % max) + min;
+    srand(seed);
+    return (rand() % (int)(max-min)) + min;
 }
 
 uint8_t get_crc_value(uint8_t *data, int len)
